@@ -1,0 +1,38 @@
+﻿line_key,line_name,cabin_tier,gratuities_per_day
+carnival,Carnival,Standard / base,17
+carnival,Carnival,Suites,19
+royal,Royal Caribbean,Standard / base,18.5
+royal,Royal Caribbean,Suites,21
+ncl,Norwegian (NCL),Standard / base,20
+ncl,Norwegian (NCL),Haven / Suites,25
+msc,MSC Cruises,Standard / base,17
+msc,MSC Cruises,Europe sailings,€12 (€16 Yacht Club)
+msc,MSC Cruises,Yacht Club (US sailings),23
+disney,Disney Cruise Line,Standard / base,16
+disney,Disney Cruise Line,Concierge,27.25
+celebrity,Celebrity Cruises,Standard / base,18
+celebrity,Celebrity Cruises,Concierge / AquaClass,19
+celebrity,Celebrity Cruises,The Retreat,23
+princess,Princess Cruises,Standard / base,18
+princess,Princess Cruises,Mini-Suite,19
+princess,Princess Cruises,Suites,20
+hal,Holland America,Standard / base,18
+hal,Holland America,Suites,20
+virgin,Virgin Voyages,Standard / base,20
+viking,Viking Ocean,Standard / base,20
+oceania,Oceania Cruises,Standard / base,0
+azamara,Azamara,Standard / base,0
+windstar,Windstar,Standard / base,16
+quark,Quark Expeditions,Standard / base,16
+cunard,Cunard,Standard / base,18
+cunard,Cunard,Grill Suites,19
+lindblad,Lindblad / Nat Geo,Standard / base,0
+hx,HX (Hurtigruten Expeditions),Standard / base,0
+aurora,Aurora Expeditions,Standard / base,0
+hurtigrutenCoastal,Hurtigruten Coastal,Standard / base,0
+po,P&O Cruises (UK),Standard / base,0
+marella,Marella (TUI),Standard / base,0
+celestyal,Celestyal Cruises,Standard / base,0
+carnivalAu,Carnival Australia,Standard / base,0
+royalAu,Royal Caribbean (AU),Standard / base,0
+princessAu,Princess Cruises (AU),Standard / base,0

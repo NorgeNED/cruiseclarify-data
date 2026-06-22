@@ -1,0 +1,1041 @@
+{
+  "dataset": "CruiseClarify — Real All-In Cruise Costs",
+  "source": "https://cruiseclarify.com",
+  "license": "CC-BY-4.0",
+  "attribution": "Data by CruiseClarify (cruiseclarify.com)",
+  "basis": "per person, per day, what the guest actually pays",
+  "currency_note": "Per person per day in each line’s native currency (see \"currency\" field; USD unless noted).",
+  "last_refreshed": "2026-06",
+  "next_refresh_due": "2026-09",
+  "line_count": 34,
+  "lines": {
+    "carnival": {
+      "name": "Carnival",
+      "segment": "Mainstream",
+      "packageTreatment": "drinks_only",
+      "gratuities": {
+        "included": false,
+        "perDay": 17,
+        "tiers": {
+          "Suites": 19
+        },
+        "note": "Raised 2 Apr 2026",
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 24,
+        "range": [
+          20,
+          26
+        ],
+        "plans": "Social $20 · Value $24 · Premium $26",
+        "note": "A4 convention: Value $24 is the headline — Social is social-apps-only, not general browsing",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "Cheers!",
+        "perDay": 83.94,
+        "onboardPerDay": 89.94,
+        "servicePct": 20,
+        "serviceIncludedInPrice": true,
+        "note": "Carnival quotes $69.95 pre / $74.95 onboard + 20% = $83.94 / $89.94 all-in (verified). NOT honoured at Celebration Key, Half Moon Cay or Princess Cays.",
+        "verified": "2026-06"
+      },
+      "specialtyDining": {
+        "range": [
+          20,
+          63
+        ],
+        "note": "JiJi $24 · Steakhouse $62.40 all-in ($52 + 20%, carnival.com Jun 2026)"
+      },
+      "surcharge": {
+        "pct": 20,
+        "appliesTo": "drinks, specialty dining, spa"
+      }
+    },
+    "royal": {
+      "name": "Royal Caribbean",
+      "segment": "Mainstream",
+      "packageTreatment": "drinks_only",
+      "gratuities": {
+        "included": false,
+        "perDay": 18.5,
+        "tiers": {
+          "Suites": 21
+        },
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 20,
+        "range": [
+          18,
+          35
+        ],
+        "onboardPerDay": 39,
+        "plans": "VOOM Surf+Stream — single tier (browse-only Surf discontinued 2023)",
+        "note": "A4/D2 resolved 10 Jun 2026: tracker median ~$20/day pre-cruise (range $18-35, onboard to ~$39)",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "Deluxe Beverage Package",
+        "perDay": 75,
+        "perDayBasis": "fleet MEDIAN pre-cruise ~$72-77 (two trackers, Mar 2026); per-ship typically $49-90, extremes $44-121; newest ships at the top",
+        "servicePct": 18,
+        "serviceIncludedInPrice": false,
+        "verify": "Sept: re-check fleet median (rule: move only if median shifts >$5/day, two sources agree); note Mar 2026 perk removal (Coca-Cola cups/Freestyle)",
+        "verified": "2026-06"
+      },
+      "specialtyDining": {
+        "range": [
+          45,
+          70
+        ],
+        "note": "Chops ~$50 pre-cruise / $65-70 onboard · premium venues $110-200"
+      },
+      "surcharge": {
+        "pct": 18,
+        "appliesTo": "drinks, mini-bar; 20% spa"
+      }
+    },
+    "ncl": {
+      "name": "Norwegian (NCL)",
+      "segment": "Mainstream",
+      "packageTreatment": "drinks_only",
+      "gratuities": {
+        "included": false,
+        "perDay": 20,
+        "tiers": {
+          "Haven / Suites": 25
+        },
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 30,
+        "range": [
+          30,
+          40
+        ],
+        "plans": "Browse $30 · Streaming $40",
+        "fasNote": "Free at Sea includes 150 min Starlink; unlimited streaming comes with the paid Free at Sea Plus ($49.99/day). The old ~$17 unlimited upgrade was More at Sea-era — retired.",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "Free at Sea",
+        "perDay": 28.5,
+        "perDayBasis": "package is \"free\" on promo but the $28.50/day charge is MANDATORY (flat, 6+ night sailings) — that is the real cost shown. D1 verified 10 Jun 2026: programme reverted More at Sea -> Free at Sea for bookings from 5 Nov 2025",
+        "shortSailingPerDay": 32,
+        "shortSailingNote": "$32/day on 2-5-night sailings since 1 May 2026 (Cruise Hive)",
+        "standaloneOpenBar": "$89/day + 20% = ~$106.80 ($109 base on Pride of America only)",
+        "servicePct": 20,
+        "serviceIncludedInPrice": false,
+        "verified": "2026-06"
+      },
+      "packageComponents": {
+        "gratuitiesPerDay": 20,
+        "note": "Inside Free at Sea: gratuities = prepaid crew gratuities. Wi-Fi no longer valued (150 min only; the ~$17 unlimited upgrade was More at Sea-era)."
+      },
+      "specialtyDining": {
+        "range": [
+          30,
+          59
+        ],
+        "note": "Cagney's ~$40 · Teppanyaki ~$39"
+      },
+      "surcharge": {
+        "pct": 20,
+        "appliesTo": "drinks, specialty dining, spa"
+      }
+    },
+    "msc": {
+      "name": "MSC Cruises",
+      "segment": "Mainstream",
+      "packageTreatment": "drinks_only",
+      "gratuities": {
+        "included": false,
+        "perDay": 17,
+        "tiers": {
+          "Europe sailings": "€12 (€16 Yacht Club)",
+          "Yacht Club (US sailings)": 23
+        },
+        "note": "A3 resolved 10 Jun 2026: depends on BOOKING MARKET, not itinerary. US-market bookings: never included — €12/adult/night Europe, $17/night Caribbean/Alaska since 11 May 2026 ($23 YC). UK/EU-market bookings often include it.",
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 16,
+        "range": [
+          16,
+          21
+        ],
+        "plans": "Browse $16 · Stream $21",
+        "note": "A4 convention applied 10 Jun 2026: headline = Browse $16 (was $18)",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "Premium Extra",
+        "perDay": 85,
+        "perDayBasis": "gratuity folded into price; varies by sailing, ~$85 is the ceiling. Easy/Easy Plus retired: North America 18 Dec 2024, worldwide Aug 2025; 15-alcoholic-drinks/day cap applies",
+        "servicePct": 18,
+        "serviceIncludedInPrice": true,
+        "verified": "2026-06"
+      },
+      "packageComponents": {
+        "gratuitiesPerDay": 17,
+        "note": "Gratuities folded into Premium Extra."
+      },
+      "specialtyDining": {
+        "range": [
+          25,
+          50
+        ],
+        "note": "Varies by ship"
+      },
+      "surcharge": {
+        "pct": 15,
+        "appliesTo": "individual drinks only — not packages"
+      }
+    },
+    "disney": {
+      "name": "Disney Cruise Line",
+      "segment": "Mainstream",
+      "packageTreatment": "no_package",
+      "gratuities": {
+        "included": false,
+        "perDay": 16,
+        "tiers": {
+          "Concierge": 27.25
+        },
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 30,
+        "range": [
+          30,
+          49
+        ],
+        "plans": "Browse $30 · Stream $49",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": false,
+        "note": "No unlimited drinks package — alcohol paid per drink. Estimate ~$60-80/day pp if drinking."
+      },
+      "specialtyDining": {
+        "range": [
+          55,
+          145
+        ],
+        "note": "Palo $55 · Remy/Enchante $145 (Remy brunch $85) — Jun 2025 rises (D3 verified)"
+      },
+      "surcharge": {
+        "pct": 18,
+        "appliesTo": "all bar purchases"
+      }
+    },
+    "celebrity": {
+      "name": "Celebrity Cruises",
+      "segment": "Premium",
+      "packageTreatment": "drinks_only",
+      "gratuities": {
+        "included": false,
+        "perDay": 18,
+        "tiers": {
+          "Concierge / AquaClass": 19,
+          "The Retreat": 23
+        },
+        "note": "Removed from All Included fares Oct 2023 — even \"all-inclusive\" fares do not cover them",
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 20,
+        "range": [
+          20,
+          35
+        ],
+        "plans": "Basic $20 · Premium $27-35",
+        "note": "A4 resolved 10 Jun 2026: headline = Basic $20 per convention (was $28, a premium-tier price)",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "Classic / Premium",
+        "perDay": 90,
+        "perDayBasis": "Classic $84.99 · Premium $92.99 pre-cruise ($100/$125 onboard); $90 = representative pre-cruise. Caps: Classic <=$12, Premium <=$19. Upgrade from All Included ~$20/day (pre-cruise gap can be ~$8)",
+        "servicePct": 20,
+        "serviceIncludedInPrice": false,
+        "note": "A1 resolved 10 Jun 2026: 20% confirmed on celebritycruises.com",
+        "verified": "2026-06"
+      },
+      "packageComponents": {
+        "wifiPerDay": 20,
+        "note": "Basic Wi-Fi value inside All Included; aligned to A4 convention 10 Jun 2026 (was 18)."
+      },
+      "specialtyDining": {
+        "range": [
+          58,
+          169
+        ],
+        "note": "Fine Cut $58-67 · Chef's Table $135-169"
+      },
+      "surcharge": {
+        "pct": 20,
+        "appliesTo": "drinks, specialty dining, spa, room service"
+      }
+    },
+    "princess": {
+      "name": "Princess Cruises",
+      "segment": "Premium",
+      "packageTreatment": "bundle",
+      "gratuities": {
+        "included": false,
+        "perDay": 18,
+        "tiers": {
+          "Mini-Suite": 19,
+          "Suites": 20
+        },
+        "note": "Raised Mar 2026. Japan sailings still charged.",
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 25,
+        "range": [
+          25,
+          45
+        ],
+        "plans": "Classic $25 · Max $45 (MedallionNet)",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "Plus Beverage Package (standalone)",
+        "perDay": 77.99,
+        "perDayBasis": "$64.99 + 20% service = $77.99 (service charge raised 18% -> 20% fleetwide early Mar 2026, same announcement as the crew-appreciation raise)",
+        "servicePct": 20,
+        "serviceIncludedInPrice": true,
+        "verify": "Sept: confirm 20% is what the booking flow adds at package checkout (raise to 20% multi-sourced Mar 2026: Cruise Critic, Cruise Hive; princess.com checkout not directly read)",
+        "verified": "2026-06"
+      },
+      "bundle": {
+        "name": "Princess Plus",
+        "perDay": 65,
+        "note": "$70/day on Sun & Star Princess. Includes drinks, Wi-Fi, crew appreciation, 4 casual meals. Premier ~$85/day.",
+        "verified": "2026-06"
+      },
+      "packageComponents": {
+        "wifiPerDay": 16,
+        "gratuitiesPerDay": 18,
+        "diningPerDay": 15,
+        "note": "Value attributed to non-drinks items inside Princess Plus (calculator break-even). Gratuities component 17->18 on 10 Jun 2026 to match the Mar 2026 crew-appreciation raise (A6)."
+      },
+      "specialtyDining": {
+        "range": [
+          35,
+          115
+        ],
+        "note": "Crown Grill $39 · Chef's Table $115"
+      },
+      "surcharge": {
+        "pct": 20,
+        "appliesTo": "drinks, specialty dining, spa",
+        "note": "Raised 18% -> 20% early Mar 2026. Same rate now applies at package checkout — keep aligned with drinksPackage.servicePct."
+      }
+    },
+    "hal": {
+      "name": "Holland America",
+      "segment": "Premium",
+      "packageTreatment": "bundle",
+      "gratuities": {
+        "included": false,
+        "perDay": 18,
+        "tiers": {
+          "Suites": 20
+        },
+        "note": "Raised from $17/$19 spring 2026 — noticed early Apr; trade sources conflict on effective date (Apr 6 vs Jun 1)",
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 18,
+        "range": [
+          18,
+          36
+        ],
+        "plans": "Surf $18 · Premium $24 · Stream $36 (pre-cruise per-day on a 7-night); onboard daily $31-47",
+        "note": "A2/D4 resolved 10 Jun 2026: official tier pricing, headline = Surf per cheapest-unlimited convention",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "Signature Beverage Package",
+        "perDay": 61.14,
+        "perDayBasis": "$50.95 + 20% service = $61.14 (official page, Jun 2026)",
+        "servicePct": 20,
+        "serviceIncludedInPrice": true,
+        "verify": "Sept: confirm Signature base in booking flow ($50.95 official vs $54.95-60.95 third-party); 20% service charge effective spring 2026 (sources conflict Apr 6 vs Jun 1)",
+        "verified": "2026-06"
+      },
+      "bundle": {
+        "name": "Have It All",
+        "perDay": 60,
+        "note": "$70 if added onboard. Drinks + Wi-Fi + dining credit. Gratuities NOT included.",
+        "verified": "2026-06"
+      },
+      "packageComponents": {
+        "wifiPerDay": 16,
+        "diningPerDay": 15,
+        "note": "Value attributed inside Have It All (gratuities NOT included)."
+      },
+      "specialtyDining": {
+        "range": [
+          20,
+          45
+        ],
+        "note": "Pinnacle Grill $45 · Tamarind $30"
+      },
+      "surcharge": {
+        "pct": 20,
+        "appliesTo": "drinks, specialty dining"
+      }
+    },
+    "virgin": {
+      "name": "Virgin Voyages",
+      "segment": "Premium",
+      "packageTreatment": "prepaid_credit",
+      "gratuities": {
+        "included": false,
+        "perDay": 20,
+        "onboardPerDay": 22,
+        "note": "Separate charge for bookings from Oct 7 2025: $20 prepaid / $22 onboard. Earlier bookings may still include them.",
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": true,
+        "premiumPerDay": 30,
+        "note": "Basic Wi-Fi included (1 device pp); streaming upgrade ~$30/day"
+      },
+      "drinksPackage": {
+        "offered": false,
+        "name": "Bar Tab (prepaid credit)",
+        "barTabTiers": [
+          {
+            "pay": 200,
+            "credit": 225
+          },
+          {
+            "pay": 300,
+            "credit": 350
+          },
+          {
+            "pay": 500,
+            "credit": 600
+          },
+          {
+            "pay": 750,
+            "credit": 925
+          },
+          {
+            "pay": 1000,
+            "credit": 1250
+          }
+        ],
+        "note": "No unlimited package. Prepaid credit with 12-23% bonus; unused credit is lost.",
+        "verified": "2026-06"
+      },
+      "dining": {
+        "included": true,
+        "note": "All 20+ restaurants included"
+      },
+      "surcharge": {
+        "pct": 0,
+        "appliesTo": "none — no auto-surcharge"
+      }
+    },
+    "viking": {
+      "name": "Viking Ocean",
+      "segment": "Premium Plus",
+      "packageTreatment": "premium_fare",
+      "gratuities": {
+        "included": false,
+        "perDay": 20,
+        "note": "+15% on bar tabs beyond inclusions",
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": true
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "Silver Spirits",
+        "perDay": 27,
+        "perDayBasis": "house wine/beer with meals already in fare; Silver Spirits = anytime drinks up to $18. Both cabin guests must buy.",
+        "servicePct": 15,
+        "serviceIncludedInPrice": true,
+        "verified": "2026-06"
+      },
+      "baseDrinks": "House wine, beer, soft drinks with lunch & dinner included; bar drinks between meals are NOT",
+      "dining": {
+        "included": true
+      },
+      "surcharge": {
+        "pct": 15,
+        "appliesTo": "bar tabs beyond inclusion"
+      }
+    },
+    "oceania": {
+      "name": "Oceania Cruises",
+      "segment": "Premium Plus",
+      "packageTreatment": "premium_fare",
+      "gratuities": {
+        "included": true,
+        "note": "Included since Jan 2025"
+      },
+      "wifi": {
+        "included": true
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "Prestige Select upgrade",
+        "perDay": 30,
+        "perDayBasis": "upgrade on top of included wine & beer at meals; standalone ~$60 pre-cruise / ~$70 onboard",
+        "servicePct": 18,
+        "serviceIncludedInPrice": true,
+        "verified": "2026-06"
+      },
+      "baseDrinks": "Non-alcoholic always included. Wine & beer at lunch/dinner ONLY if Wine & Beer amenity chosen over excursion credit (Your World Included).",
+      "dining": {
+        "included": true
+      },
+      "surcharge": {
+        "pct": 20,
+        "appliesTo": "bar purchases beyond inclusions"
+      }
+    },
+    "azamara": {
+      "name": "Azamara",
+      "segment": "Premium Plus",
+      "packageTreatment": "premium_fare",
+      "gratuities": {
+        "included": true
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 22,
+        "range": [
+          18,
+          25
+        ],
+        "note": "Included for suite guests and loyalty members",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "Premium / Ultimate upgrade",
+        "perDay": 32,
+        "perDayBasis": "Premium ~$32 (named mid-range spirits) · Ultimate ~$40 (top-shelf + champagne). Loyalty members pay less.",
+        "servicePct": 0,
+        "serviceIncludedInPrice": true,
+        "note": "No service charge on drinks or packages — gratuities in fare; 18% applies to spa/salon only (matches surcharge, D6). Was wrongly 18 until 11 Jun 2026 (inert — never used in a displayed figure).",
+        "verified": "2026-06"
+      },
+      "baseDrinks": "Standard spirits, beer, wine by glass, cocktails included ALL DAY at bars — firsthand-verified",
+      "specialtyDining": {
+        "range": [
+          49.95,
+          49.95
+        ],
+        "note": "Prime C & Aqualina $49.95 · Veranda Plus: 1 visit included · suites: all included — firsthand-verified"
+      },
+      "surcharge": {
+        "pct": 0,
+        "appliesTo": "no auto service charge on drinks — menu price is final; 18% auto-gratuity on spa/salon only (D6 verified 10 Jun 2026)"
+      }
+    },
+    "windstar": {
+      "name": "Windstar",
+      "segment": "Premium Plus",
+      "packageTreatment": "bundle",
+      "gratuities": {
+        "included": false,
+        "perDay": 16,
+        "note": "Hotel Service Charge — auto-added, not optional",
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 35,
+        "note": "1 device; cheaper full-voyage plans; Starlink fleet-wide",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "name": "All-Inclusive package",
+        "perDay": 99,
+        "onboardPerDay": 109,
+        "perDayBasis": "BUNDLE: drinks + Wi-Fi + gratuities all covered; removes 18% bar charge. Book 5+ days pre-sailing. Often free on promo fares. Includes 30% off wine bottles up to $100. Bundle composition + standalone values ($99/day pre / $109 onboard; Wi-Fi $35/day; Hotel Service Charge $16/day) multi-source verified 21 Jun 2026 (cruisemummy, emmacruises, sometimessailing).",
+        "coversGratuities": true,
+        "coversWifi": true,
+        "servicePct": 18,
+        "serviceIncludedInPrice": true,
+        "verified": "2026-06"
+      },
+      "packageComponents": {
+        "wifiPerDay": 35,
+        "gratuitiesPerDay": 16,
+        "note": "Wi-Fi and Hotel Service Charge values bundled in the All-Inclusive package."
+      },
+      "baseDrinks": "No alcohol in base fare — à la carte ~$10/drink +18%. Non-alcoholic included.",
+      "dining": {
+        "included": true,
+        "note": "Including specialty venues"
+      },
+      "surcharge": {
+        "pct": 18,
+        "appliesTo": "bar purchases without package"
+      }
+    },
+    "regent": {
+      "name": "Regent Seven Seas",
+      "segment": "Luxury / Ultra-Luxury",
+      "allInclusive": true,
+      "note": "Even shore excursions included",
+      "verified": "2026-06"
+    },
+    "seabourn": {
+      "name": "Seabourn",
+      "segment": "Luxury / Ultra-Luxury",
+      "allInclusive": true,
+      "verified": "2026-06"
+    },
+    "silversea": {
+      "name": "Silversea",
+      "segment": "Luxury / Ultra-Luxury",
+      "allInclusive": true,
+      "verified": "2026-06"
+    },
+    "crystal": {
+      "name": "Crystal Cruises",
+      "segment": "Luxury / Ultra-Luxury",
+      "allInclusive": true,
+      "verified": "2026-06"
+    },
+    "ponant": {
+      "name": "Ponant",
+      "segment": "Luxury / Ultra-Luxury",
+      "allInclusive": true,
+      "verified": "2026-06"
+    },
+    "explora": {
+      "name": "Explora Journeys",
+      "segment": "Luxury / Ultra-Luxury",
+      "allInclusive": true,
+      "note": "MSC's luxury brand",
+      "verified": "2026-06"
+    },
+    "quark": {
+      "name": "Quark Expeditions",
+      "segment": "Expedition",
+      "gratuities": {
+        "included": false,
+        "perDay": 16,
+        "range": [
+          15,
+          18
+        ],
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 25,
+        "range": [
+          20,
+          30
+        ],
+        "note": "Limited polar coverage",
+        "verified": "2026-06"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "perDay": 50,
+        "perDayBasis": "packages vary by voyage",
+        "verified": "2026-06"
+      },
+      "surcharge": {
+        "pct": 15,
+        "appliesTo": "approximate"
+      }
+    },
+    "cunard": {
+      "name": "Cunard",
+      "segment": "Premium",
+      "currency": "USD",
+      "packageTreatment": "drinks_only",
+      "gratuities": {
+        "included": false,
+        "perDay": 18,
+        "tiers": {
+          "Grill Suites": 19
+        },
+        "note": "Hotel & Dining (hotel) service charge, in USD to ALL guests incl. children. Britannia/Britannia Club $18; Queens & Princess Grill Suites $19. Confirmed cunard.com 16 Jun 2026 (up from $16/$18 after the 2024 rise). Adjustable/removable at Guest Services (Purser desk). Grill Suite drinks + prepaid grats appear only via wave-season promos (e.g. Treat Yourself On Us, booking window closed 25 Feb 2026) — promo, not standing policy (D7).",
+        "verified": "2026-06"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 24,
+        "range": [
+          24,
+          36
+        ],
+        "plans": "Basic $24 · Premium $36"
+      },
+      "drinksPackage": {
+        "offered": true,
+        "perDay": 77,
+        "currency": "USD",
+        "servicePct": 18,
+        "serviceIncludedInPrice": true,
+        "perDayBasis": "A World of Drinks \"Beverage Collection\" pre-book, 7-14 nts (76.50); full range 49.50-94.50 by voyage length",
+        "serviceIncluded": true,
+        "prebookSaving": "10% vs onboard",
+        "collections": {
+          "Alcohol-Free": {
+            "cap": 4.5,
+            "perDayPrebook": 18
+          },
+          "Premium Alcohol-Free": {
+            "cap": 12,
+            "perDayPrebookRange": [
+              31.5,
+              45
+            ]
+          },
+          "Beverage Collection": {
+            "cap": 13.5,
+            "perDayPrebookRange": [
+              49.5,
+              94.5
+            ],
+            "bottledWineDiscountPct": 15
+          },
+          "Premium Beverage Collection": {
+            "cap": 20,
+            "perDayPrebookRange": [
+              63,
+              108
+            ],
+            "bottledWineDiscountPct": 25
+          }
+        },
+        "rules": "15 alcoholic drinks per 24h (6am-6am), one at a time, ~10-min wait; whole cabin must buy same collection; no sharing; voyages 5+ nights",
+        "signaturePackages": "Signature = Beverage Collection + Essential Wi-Fi + dining credit; Premium Signature = Premium Beverage Collection + Premium Wi-Fi + higher credit. On sale 18 Dec 2025, voyages from Mar 2026.",
+        "note": "Priced in US$ per cunard.com 16 Jun 2026 (corrects earlier GBP assumption). 18% service charge already included in package price. OVER-CAP RULES DIFFER: the promotional Grills (NA) inclusive package = pay FULL price over the cap, NO differential (confirmed by an onboard QV guest report, Jun 2026; its cap was $12, raised to $13.50 on board only after complaints); the PAID Beverage Collection = pay the difference per Cunard marketing wording (not eyewitness-confirmed). \"Limiting\" is price creep, not a cap change: Cunard Spritz 10.50->13.50, same Queens gin now $15/$15.50/$17, some cocktails to $15 (above the $13.50 cap), new $25/$35 wine flights outside both packages. (Source: Cruise Critic \"Menu Updates and Drink Price Increases\", Jun 2026.)",
+        "verified": "2026-06"
+      },
+      "specialtyDining": {
+        "range": [
+          40,
+          75
+        ],
+        "note": "Grill class guests: included; Aji Wa Omikaze ~$70pp (2026)"
+      },
+      "surcharge": {
+        "pct": 18,
+        "appliesTo": "food & beverage in bars & restaurants (raised from 15% and extended to food ~1 Jun 2026)"
+      }
+    },
+    "lindblad": {
+      "name": "Lindblad / Nat Geo",
+      "segment": "Expedition",
+      "gratuities": {
+        "included": true
+      },
+      "wifi": {
+        "included": true,
+        "note": "Limited polar"
+      },
+      "baseDrinks": "Wine & beer with meals included; spirits extra",
+      "surcharge": {
+        "pct": 18,
+        "appliesTo": "approximate"
+      },
+      "verified": "2026-06"
+    },
+    "hx": {
+      "name": "HX (Hurtigruten Expeditions)",
+      "segment": "Expedition",
+      "gratuities": {
+        "included": true
+      },
+      "wifi": {
+        "included": true,
+        "note": "Limited polar"
+      },
+      "dining": {
+        "included": true
+      },
+      "baseDrinks": "Wine & beer with meals included; spirits extra",
+      "surcharge": {
+        "pct": 15,
+        "appliesTo": "approximate"
+      },
+      "verified": "2026-06"
+    },
+    "aurora": {
+      "name": "Aurora Expeditions",
+      "segment": "Expedition",
+      "currency": "AUD",
+      "gratuities": {
+        "included": true
+      },
+      "wifi": {
+        "included": true,
+        "note": "Limited polar/remote"
+      },
+      "baseDrinks": "Wine & beer with meals included; spirits extra",
+      "surcharge": {
+        "pct": 15,
+        "appliesTo": "approximate"
+      },
+      "verified": "2026-06"
+    },
+    "hurtigrutenCoastal": {
+      "name": "Hurtigruten Coastal",
+      "segment": "Expedition",
+      "gratuities": {
+        "included": false,
+        "perDay": 0,
+        "note": "Optional — no auto-charge (Scandinavian norm)"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 25,
+        "range": [
+          20,
+          30
+        ]
+      },
+      "drinksPackage": {
+        "offered": true,
+        "perDay": 52,
+        "perDayBasis": "approximate"
+      },
+      "verified": "2026-06"
+    },
+    "po": {
+      "name": "P&O Cruises (UK)",
+      "segment": "Mainstream",
+      "currency": "GBP",
+      "gratuities": {
+        "included": true,
+        "note": "Auto service charges removed since 2019 — included in fare"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 17,
+        "range": [
+          15,
+          20
+        ]
+      },
+      "drinksPackage": {
+        "offered": true,
+        "perDay": 50,
+        "perDayBasis": "Classic package mid"
+      },
+      "specialtyDining": {
+        "range": [
+          20,
+          45
+        ]
+      },
+      "surcharge": {
+        "pct": 0,
+        "appliesTo": "none — no auto charges on drinks"
+      },
+      "verified": "2026-06"
+    },
+    "marella": {
+      "name": "Marella (TUI)",
+      "segment": "Mainstream",
+      "currency": "GBP",
+      "gratuities": {
+        "included": true
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 14,
+        "range": [
+          10,
+          18
+        ]
+      },
+      "drinksPackage": {
+        "offered": false,
+        "note": "Drinks included in fare"
+      },
+      "baseDrinks": "Drinks included in the fare",
+      "specialtyDining": {
+        "range": [
+          15,
+          35
+        ],
+        "note": "Most dining included"
+      },
+      "surcharge": {
+        "pct": 0
+      },
+      "verified": "2026-06"
+    },
+    "saga": {
+      "name": "Saga Cruises",
+      "segment": "Premium Plus",
+      "currency": "GBP",
+      "allInclusive": true,
+      "verified": "2026-06"
+    },
+    "hebridean": {
+      "name": "Hebridean Island Cruises",
+      "segment": "Luxury / Ultra-Luxury",
+      "currency": "GBP",
+      "allInclusive": true,
+      "note": "Wi-Fi signal limited on Scottish coast",
+      "verified": "2026-06"
+    },
+    "celestyal": {
+      "name": "Celestyal Cruises",
+      "segment": "Mainstream",
+      "currency": "EUR",
+      "gratuities": {
+        "included": true,
+        "note": "Port fees & gratuities in Celestyal One fare"
+      },
+      "wifi": {
+        "included": true,
+        "note": "Essential Wi-Fi in all fares"
+      },
+      "drinksPackage": {
+        "offered": false,
+        "note": "Select drinks included with meals; cocktails & extras via the CelestyalPay wallet"
+      },
+      "baseDrinks": "Select drinks included with meals",
+      "surcharge": {
+        "pct": 0,
+        "appliesTo": "wallet model — no auto-surcharge"
+      },
+      "verified": "2026-06"
+    },
+    "hapagLloyd": {
+      "name": "Hapag-Lloyd Cruises",
+      "segment": "Luxury / Ultra-Luxury",
+      "currency": "EUR",
+      "allInclusive": true,
+      "note": "Europa / Europa 2",
+      "verified": "2026-06"
+    },
+    "carnivalAu": {
+      "name": "Carnival Australia",
+      "segment": "Mainstream",
+      "currency": "AUD",
+      "gratuities": {
+        "included": true,
+        "note": "Not charged — tipping not expected"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 25,
+        "range": [
+          20,
+          30
+        ]
+      },
+      "drinksPackage": {
+        "offered": true,
+        "perDay": 90,
+        "perDayBasis": "Cheers! equivalent, service charge included"
+      },
+      "specialtyDining": {
+        "range": [
+          25,
+          45
+        ]
+      },
+      "surcharge": {
+        "pct": 20
+      },
+      "verified": "2026-06"
+    },
+    "royalAu": {
+      "name": "Royal Caribbean (AU)",
+      "segment": "Mainstream",
+      "currency": "AUD",
+      "gratuities": {
+        "included": true,
+        "note": "Built into AU/NZ pricing"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 28,
+        "range": [
+          20,
+          35
+        ]
+      },
+      "drinksPackage": {
+        "offered": true,
+        "perDay": 115,
+        "perDayBasis": "Deluxe Bev Pkg mid"
+      },
+      "specialtyDining": {
+        "range": [
+          40,
+          65
+        ]
+      },
+      "surcharge": {
+        "pct": 18
+      },
+      "verified": "2026-06"
+    },
+    "princessAu": {
+      "name": "Princess Cruises (AU)",
+      "segment": "Mainstream",
+      "currency": "AUD",
+      "gratuities": {
+        "included": true,
+        "note": "Not charged on AU homeport sailings"
+      },
+      "wifi": {
+        "included": false,
+        "perDay": 35,
+        "range": [
+          25,
+          45
+        ]
+      },
+      "drinksPackage": {
+        "offered": true,
+        "perDay": 95,
+        "perDayBasis": "Plus package mid"
+      },
+      "specialtyDining": {
+        "range": [
+          40,
+          120
+        ]
+      },
+      "surcharge": {
+        "pct": 20
+      },
+      "verified": "2026-06"
+    }
+  }
+}
