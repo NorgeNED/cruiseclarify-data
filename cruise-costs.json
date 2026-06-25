@@ -30,6 +30,9 @@
           26
         ],
         "plans": "Social $20 · Value $24 · Premium $26",
+        "tiers": {
+          "Premium": 26
+        },
         "note": "A4 convention: Value $24 is the headline — Social is social-apps-only, not general browsing",
         "verified": "2026-06"
       },
@@ -121,6 +124,7 @@
           40
         ],
         "plans": "Browse $30 · Streaming $40",
+        "fasIncludedMin": 150,
         "fasNote": "Free at Sea includes 150 min Starlink; unlimited streaming comes with the paid Free at Sea Plus ($49.99/day). The old ~$17 unlimited upgrade was More at Sea-era — retired.",
         "verified": "2026-06"
       },
@@ -174,6 +178,9 @@
           21
         ],
         "plans": "Browse $16 · Stream $21",
+        "tiers": {
+          "Stream": 21
+        },
         "note": "A4 convention applied 10 Jun 2026: headline = Browse $16 (was $18)",
         "verified": "2026-06"
       },
@@ -222,6 +229,9 @@
           49
         ],
         "plans": "Browse $30 · Stream $49",
+        "tiers": {
+          "Stream": 49
+        },
         "verified": "2026-06"
       },
       "drinksPackage": {
@@ -313,6 +323,9 @@
           45
         ],
         "plans": "Classic $25 · Max $45 (MedallionNet)",
+        "tiers": {
+          "Max": 45
+        },
         "verified": "2026-06"
       },
       "drinksPackage": {
@@ -371,6 +384,10 @@
           36
         ],
         "plans": "Surf $18 · Premium $24 · Stream $36 (pre-cruise per-day on a 7-night); onboard daily $31-47",
+        "tiers": {
+          "Premium": 24,
+          "Stream": 36
+        },
         "note": "A2/D4 resolved 10 Jun 2026: official tier pricing, headline = Surf per cheapest-unlimited convention",
         "verified": "2026-06"
       },
@@ -448,7 +465,7 @@
             "credit": 1250
           }
         ],
-        "note": "No unlimited package. Prepaid credit with 12-23% bonus; unused credit is lost.",
+        "note": "No unlimited package. Prepaid credit with 12-25% bonus (bigger bonus on bigger tabs); unused credit is lost.",
         "verified": "2026-06"
       },
       "dining": {
@@ -695,15 +712,18 @@
           24,
           36
         ],
-        "plans": "Basic $24 · Premium $36"
+        "plans": "Basic $24 · Premium $36",
+        "tiers": {
+          "Premium": 36
+        }
       },
       "drinksPackage": {
         "offered": true,
-        "perDay": 77,
+        "perDay": 76.5,
         "currency": "USD",
         "servicePct": 18,
         "serviceIncludedInPrice": true,
-        "perDayBasis": "A World of Drinks \"Beverage Collection\" pre-book, 7-14 nts (76.50); full range 49.50-94.50 by voyage length",
+        "perDayBasis": "A World of Drinks \"Beverage Collection\" pre-book, 7-14 nts ($76.50 — exact, matches cost-reference + Cunard article); full range 49.50-94.50 by voyage length",
         "serviceIncluded": true,
         "prebookSaving": "10% vs onboard",
         "collections": {
