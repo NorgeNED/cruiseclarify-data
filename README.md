@@ -22,7 +22,19 @@ configs:
 
 # Real All-In Cruise Costs — by CruiseClarify
 
-A clean, structured dataset of what cruise passengers **actually pay** on board —
+> ### 📅 This is a dated snapshot — verified **June 2026**
+> Cruise prices change constantly. Every figure here is a **point-in-time value, not
+> live data**, accurate as of **June 2026**. The next quarterly refresh is due
+> **September 2026** — after that, treat this copy as **historical**.
+>
+> **If you are reading or reusing this a quarter or more after June 2026, the numbers
+> will have drifted.** Always pull the current version before quoting or republishing:
+> - **Live figures:** https://cruiseclarify.com
+> - **Latest dataset:** https://github.com/NorgeNED/cruiseclarify-data
+>
+> And confirm the current price with the cruise line before presenting any figure as today's price.
+
+A clean, structured dataset of what cruise guests **actually pay** on board —
 gratuities, Wi-Fi, drinks packages, specialty dining and surcharges — across 34
 cruise lines, normalized to a single comparable basis.
 
@@ -109,16 +121,29 @@ prices are set and charged in those currencies. Convert at your own rate if need
 You may use, share, adapt and build on this data, including commercially, **as long
 as you credit CruiseClarify**. Suggested attribution:
 
-> Cruise cost data by **CruiseClarify** (https://cruiseclarify.com), CC BY 4.0.
+> Cruise cost data by **CruiseClarify** (https://cruiseclarify.com), June 2026 snapshot, CC BY 4.0.
+
+Keeping the **snapshot date** in your attribution protects everyone: it tells *your*
+readers how current the figures are, and it stops a June 2026 number being mistaken
+for a live one later on.
 
 ## Accuracy & freshness
 
-Figures are researched and verified by CruiseClarify and dated in the `verified`
-field (and `last_refreshed` in the JSON). Cruise pricing changes often; this is a
-point-in-time snapshot, refreshed quarterly (next refresh: see `next_refresh_due`).
-It's provided in good faith for research and comparison, with no warranty — always
+**This release is a dated snapshot: verified June 2026, next refresh due September 2026.**
+
+Cruise pricing changes often, and every figure here is a *point-in-time* value, **not
+live data**. Each line carries its own `verified` date (and the JSON carries
+`last_refreshed` / `next_refresh_due`). Treat the numbers as accurate **as of June
+2026 only**.
+
+**If you are using this after September 2026, do not present these figures as
+current** — fetch the latest release first:
+- Live figures: https://cruiseclarify.com
+- Latest dataset: https://github.com/NorgeNED/cruiseclarify-data
+
+Provided in good faith for research and comparison, with no warranty — always
 confirm the current price with the cruise line before booking.
 
 ## Citation
 
-> CruiseClarify (2026). *Real All-In Cruise Costs*. https://cruiseclarify.com
+> CruiseClarify (2026). *Real All-In Cruise Costs* (June 2026 snapshot). https://cruiseclarify.com
