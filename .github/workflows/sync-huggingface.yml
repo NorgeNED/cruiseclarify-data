@@ -1,0 +1,51 @@
+name: Sync to Hugging Face
+
+# Mirrors the public dataset files to the Hugging Face dataset
+# (CruiseClarify/cruise-costs) whenever they change on main.
+# Auth: add an HF *write* token as a repo secret named HF_TOKEN
+#       (Settings -> Secrets and variables -> Actions -> New repository secret).
+# Manual run: Actions tab -> "Sync to Hugging Face" -> Run workflow.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'cruise-costs.json'
+      - 'cruise-costs.csv'
+      - 'cruise-packages.csv'
+      - 'cruise-gratuities-tiers.csv'
+      - 'README.md'
+      - 'LICENSE'
+  workflow_dispatch:
+
+concurrency:
+  group: hf-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Hugging Face CLI
+        run: pip install -U "huggingface_hub[cli]"
+
+      - name: Upload public files to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "::error::HF_TOKEN secret is not set. Add an HF write token as a repo secret named HF_TOKEN."
+            exit 1
+          fi
+          huggingface-cli upload CruiseClarify/cruise-costs . . \
+            --repo-type dataset \
+            --include "cruise-costs.json" "cruise-costs.csv" "cruise-packages.csv" "cruise-gratuities-tiers.csv" "README.md" "LICENSE" \
+            --commit-message "Sync from GitHub ${GITHUB_SHA}"
