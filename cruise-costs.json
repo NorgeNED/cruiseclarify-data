@@ -30,8 +30,10 @@
         "tiers": {
           "Suites": 19
         },
+        "officialName": "Gratuities",
+        "officialNameSource": "carnival.com; a 'Sail & Sign' account line item. Verified 2026-07.",
         "note": "Raised 2 Apr 2026",
-        "verified": "2026-06",
+        "verified": "2026-07-30",
         "child": {
           "freeUnderAge": 2,
           "note": "Under 2 exempt; age 2 and older pay the full adult rate — no reduced child rate. Official Carnival FAQ.",
@@ -40,17 +42,23 @@
       },
       "wifi": {
         "included": false,
-        "perDay": 24,
+        "perDay": 23.8,
         "range": [
-          20,
-          26
+          20.4,
+          25.5
         ],
-        "plans": "Social $20 · Value $24 · Premium $26",
+        "onboardPerDay": 35,
+        "plans": "Social $20.40 · Value $23.80 · Premium $25.50 (pre-cruise); onboard $25 / $32 / $35",
         "tiers": {
-          "Premium": 26
+          "Premium": 25.5,
+          "Social onboard": 25,
+          "Value onboard": 32,
+          "Premium onboard": 35,
+          "Premium Multi-Device (4 devices, pre-cruise only)": 90
         },
-        "note": "A4 convention: Value $24 is the headline — Social is social-apps-only, not general browsing",
-        "verified": "2026-06"
+        "note": "A4 convention: Value $23.80 is the headline — Social is social-apps-only (\"excludes access to most other websites, email, video, and music streaming\"), not general browsing. REPRICED, read off carnival.com/help?topicid=6005 (rendered DOM) 4 Aug 2026: Social $20->$20.40, Value $24->$23.80, Premium $26->$25.50, and an onboard set recorded for the first time ($25 / $32 / $35). Mixed direction in cents — a re-price, not a rise; the old record was rounded to the dollar. Carnival states no effective date. Evidence: docs/price-changes/2026-08-04-carnival-wifi.md",
+        "verify": "Sept: recheck; also source the HUB App chat fee — the article cites $5 pp one-time but Carnival publishes no chat price on its HUB or Wi-Fi help pages (read 4 Aug 2026).",
+        "verified": "2026-08-04"
       },
       "drinksPackage": {
         "offered": true,
@@ -59,8 +67,21 @@
         "onboardPerDay": 89.94,
         "servicePct": 20,
         "serviceIncludedInPrice": true,
-        "note": "Carnival quotes $69.95 pre / $74.95 onboard + 20% = $83.94 / $89.94 all-in (verified). NOT honoured at Celebration Key, Half Moon Cay or Princess Cays.",
+        "cap": 20,
+        "dailyLimit": 15,
+        "overCapDiscountPct": 25,
+        "capSource": "carnival.com/help?topicid=6005 — \"with a $20.00 USD or lower menu price, per serving\"; \"25% discount off the menu price for any spirit, cocktail or wine by the glass, costing above $20.00 USD, per serving\"; \"guests are allowed up to 15 drinks per day, but a guest may be limited to fewer than 15 drinks based on our team's judgment and discretion\" — the 15 is explicitly NOT an entitlement, never present it as a guarantee. Also verbatim: \"Each adult assigned to the same stateroom must purchase the program\" and a 10-minute wait between orders. Read 2026-08-04, rendered DOM. Evidence: docs/price-changes/2026-08-04-carnival-cheers-terms.md",
+        "capVerified": "2026-08-04",
+        "note": "Carnival quotes $69.95 pre / $74.95 onboard + 20% = $83.94 / $89.94 all-in (verified). NOT honoured at Celebration Key, Half Moon Cay or Princess Cays — confirmed verbatim 4 Aug 2026 (\"Beverages purchased off the ship at any port of call, including Celebration Key, Half Moon Cay and Princess Cays\"). Not sold on 2-day cruises or charters.",
         "verified": "2026-06"
+      },
+      "sodaPackage": {
+        "name": "Bottomless Bubbles",
+        "childPerDay": 8.34,
+        "adultPerDay": 14.38,
+        "serviceIncludedInPrice": true,
+        "source": "carnival.com/help?topicid=6005 — \"Kids (17 years of age and younger): $8.34 USD per person, per day including 20% service charge / Adults (18 years of age and older): $14.38 USD per person, per day including 20% service charge\". Read 2026-08-04.",
+        "verified": "2026-08-04"
       },
       "specialtyDining": {
         "range": [
@@ -97,7 +118,9 @@
         "tiers": {
           "Suites": 21
         },
-        "verified": "2026-06",
+        "verified": "2026-07-30",
+        "officialName": "Gratuities",
+        "officialNameSource": "royalcaribbean.com; charged to the SeaPass account. Verified 2026-07.",
         "includedByCabin": [
           "star"
         ],
@@ -134,7 +157,14 @@
         "includedByCabin": [
           "star"
         ],
-        "verify": "Sept: re-check fleet median (rule: move only if median shifts >$5/day, two sources agree); note Mar 2026 perk removal (Coca-Cola cups/Freestyle)",
+        "cap": 14,
+        "dailyLimit": null,
+        "bottledWineDiscountPct": 40,
+        "bottledWineDiscountPctOver100": 20,
+        "freestyleCupFee": 4.99,
+        "capSource": "royalcaribbean.com/faq/questions/what-is-the-deluxe-beverage-package — \"Package includes any single beverage item with a value up to $14. Plus, receive a 40% discount on bottled wines priced up to $100, and a 20% discount on wines priced above $100.\" Freestyle Cup $4.99 onboard; the cup left the package effective 15 Mar 2026. Daily limit: /faq/questions/is-there-a-limit-for-drinks-with-the-deluxe-beverage-package — \"No, there is not a daily limit\" (Princess and HAL both cap at 15/day; Royal does not). Royal does NOT publish the over-cap mechanic — do not assert \"pay the difference\" as sourced. Read 2026-08-04, rendered DOM. Evidence: docs/price-changes/2026-08-04-royal-deluxe-cap.md",
+        "capVerified": "2026-08-04",
+        "verify": "Sept: re-check fleet median (rule: move only if median shifts >$5/day, two sources agree). Unresolved: Royal’s beverage-package gratuity FAQ carries the \"modified in the guest’s sole discretion\" sentence — see the evidence file conflict note.",
         "verified": "2026-07"
       },
       "dining": {
@@ -180,12 +210,14 @@
         "tiers": {
           "Haven / Suites": 25
         },
+        "officialName": "Daily Onboard Service Charge",
+        "officialNameSource": "ncl.com — NOT called gratuities; a guest searching their booking for 'gratuities' will not find it. Verified 2026-07.",
         "note": "Daily Onboard Service Charge — always charged. Base Free at Sea does NOT prepay it; only Free at Sea Plus ($49.99/pp/day) does.",
-        "verified": "2026-06",
+        "verified": "2026-07-30",
         "child": {
           "freeUnderAge": 3,
           "note": "Service charge applies to guests 3 and older; children 2 and under are exempt. NCL policy.",
-          "verified": "2026-07"
+          "verified": "2026-07-30"
         }
       },
       "wifi": {
@@ -197,6 +229,8 @@
         ],
         "plans": "Browse $30 · Streaming $40",
         "fasIncludedMin": 150,
+        "fasBasis": "per_person",
+        "fasBasisSource": "NCL MIAMI promotions terms, 3 Aug 2026: \"Wi-Fi package is per person\", table header \"Internet Minutes Per Person\". Flyer FASvsFAS+_Flyer_4.26.pdf: \"All guests receive 150 minutes of high-speed Wi-Fi powered by Starlink - regardless of sail length.\" TD-014.5 CLOSED: the allowance is PER PERSON, not shared, and does not scale with length. Nothing computes from this — the allowance is budgeted at $0 — it exists so no page hedges a settled fact. Source: docs/price-changes/2026-08-03-ncl-us-terms/full-text.md.",
         "fasNote": "Free at Sea includes 150 min Starlink; unlimited streaming comes with the paid Free at Sea Plus ($49.99/day). The old ~$17 unlimited upgrade was More at Sea-era — retired.",
         "verified": "2026-06"
       },
@@ -205,23 +239,64 @@
         "name": "Free at Sea",
         "serviceChargeOnly": true,
         "perDay": 28.5,
-        "perDayBasis": "Single combined MANDATORY service charge ($28.50/pp/day, flat, 6+ night sailings, guests 21+) covering the Unlimited Open Bar AND the Specialty Dining perk. It does NOT prepay daily gratuities. Verified 4 Jul 2026 (ncl.com + norwegiancruiselineblog 2026 guide).",
+        "perDayBasis": "Single combined MANDATORY service charge covering the Unlimited Open Bar AND the Specialty Dining perk. It does NOT prepay daily gratuities. VERIFIED FIRST-PARTY 3 Aug 2026 against the NCL MIAMI promotions terms — the edition whose own scope line reads \"Applicable to NCL MIAMI, NCL INTL, NCL AUSTRALIA, NCL BRAZIL and NCL ASIA / Not applicable to NCL MEA, NCL GERMANY/CE or NCL UK offices\". That distinction matters: the CE/UK edition served to European visitors prices Free at Sea as a per-person upgrade fee instead and explicitly excludes NCL Miami, which is why two earlier verification attempts failed. Beverage Package Pricing table, verbatim: 2-5 Nights $32.00 USD, 6+ Nights $28.50 USD, \"Price in USD Per Person\"; per-day confirmed by the same document (\"Unlimited Pop Beverage Package is $12.50 USD per person per day\", Hawaii package \"$28.50 per person per day\") and by ncl.com FAQ (\"Starting at $28.50 per guest per day\"). PASSENGER BASIS: applicable to guests 1-8; guests 1-2 must be 21+, and guests 1-2 under 21 receive the Pop (soda) package instead at $12.50/pp/day. Guests onboard accounts may reflect applicable VAT/taxes on certain ports or itineraries. Source transcription: docs/price-changes/2026-08-03-ncl-us-terms/full-text.md.",
         "covers": "Unlimited Open Bar + Specialty Dining service (guests 21+). Does NOT cover daily gratuities.",
         "shortSailingPerDay": 32,
-        "shortSailingNote": "$32/day on 2-5-night sailings since 1 May 2026 (Cruise Hive)",
+        "shortSailingNote": "$32.00 USD per person on 2-5-night sailings; $28.50 on 6+. Both bands read verbatim off the NCL MIAMI promotions terms Beverage Package Pricing table, 3 Aug 2026 — this REPLACES the previous single secondary citation (Cruise Hive), which was the weakest sourcing on any money-bearing NCL field. The 2-5 / 6+ boundary is NCL's own and matches the engine band exactly. Source transcription: docs/price-changes/2026-08-03-ncl-us-terms/full-text.md.",
+        "minNights": 2,
+        "minNightsSource": "ncl.com/ca/en/about/terms-and-conditions/promotions (NCL MIAMI edition) — \"Sailings that are 1 day, select Charters or on Pride of America sailings are excluded\", plus \"Fleetwide - 2+ night sailings\". Corroborated by the CE/UK edition read 3 Aug 2026.",
+        "minNightsVerifiedOn": "2026-08-03",
         "plusPerDay": 49.99,
-        "plusNote": "Free at Sea Plus daily charge ($49.99/pp/day) — the paid upgrade tier that ALSO prepays daily gratuities and adds unlimited streaming Wi-Fi. Verified 4 Jul 2026 (ncl.com).",
-        "standaloneOpenBar": "$89/day + 20% = ~$106.80 ($109 base on Pride of America only)",
+        "plusNote": "VERIFIED FIRST-PARTY 3 Aug 2026 (NCL MIAMI terms, \"US $49.99 Per Person Per Day\", guests 1-8 Adult; child rate $40; guests who already have prepaid service charges receive a $15 discount, i.e. $34.99 — recorded as prose, NOT as a live numeric field, because nothing computes it and an unread number rots). Free at Sea Plus daily charge ($49.99/pp/day) — the paid upgrade tier that ALSO prepays daily gratuities and adds unlimited streaming Wi-Fi. Verified 4 Jul 2026 (ncl.com).",
+        "standaloneAvailability": {
+          "soldSeparately": false,
+          "verified": true,
+          "note": "NCL publishes NO separately purchasable price for its alcohol package. Its own beverage-packages page prices only the Unlimited Soda and Unlimited Starbucks packages; against every alcohol package it says only that \"an additional cost will be added to your booking for this optional upgrade selection\". The open bar is branded \"Free at Sea Premium Beverage Package\" and NCL states it is the only adult beverage package it offers. Where a figure IS quoted it is a RETAIL VALUE — the base NCL applies a percentage to, per its own wording \"20% gratuity and beverage service charge on the retail value of the package\" — not a shelf price. CruiseClarify therefore compares the mandatory charge a guest actually pays (perDay / shortSailingPerDay) against expected pay-as-you-go spending, and quotes no standalone price. Pride of America is a genuinely separate product (Free at Sea Hawaii Beverage Package), not a price variant of this one.",
+          "verify": "Retired figures, kept here only so they are recognisable if they resurface: the record previously asserted $89/day + 20% = ~$106.80, with \"$109 base on Pride of America only\". Live pages also carried $109 + 20% (implying $130.80). None is a price a guest can pay; $89 is additionally stale. Secondary 2026 sources put the current retail VALUE near $109 — not recorded as a number here because CruiseClarify neither publishes nor computes from it. Articles still quoting these figures are corrected in a later phase (TD-014).",
+          "source": "ncl.com/onboard-packages/beverage-packages",
+          "verified_on": "2026-08-03"
+        },
+        "credits": {
+          "specialtyDining": {
+            "amount": null,
+            "verified": true,
+            "deducted": false,
+            "appliesToGuests": 2,
+            "minAge": 2,
+            "mealsByLength": {
+              "2-4": 1,
+              "5-6": 2,
+              "7-8": 3,
+              "9+": 4
+            },
+            "note": "Free at Sea includes a fixed number of specialty dining meals set by sailing length — NCL: \"Number of meals depends on the length of the cruise.\" A COUNT for the whole voyage, not a nightly allowance, so no per-night value can represent it. Meals beyond the entitlement are charged at the venue cover (see specialtyDining.range); NCL: \"Anything consumed above the promotional benefit will be the responsibility of the guest at prevailing rates.\" Free at Sea Plus adds 50% off those extra covers. Stated in full, valued at nothing.",
+            "verify": "PARTLY RESOLVED 3 Aug 2026 (NCL MIAMI terms). SETTLED: the package is \"Applicable to guests 1-2 on the reservation\" and \"applicable to guests ages 2 and older\" — so guests 3-8 receive none, and TD-014.2 (age) is closed. STILL UNRESOLVED, AND THE REASON NO MULTIPLIER IS RECORDED: NCL never states that EACH of guests 1 and 2 receives the published count. It states who the package applies to, and separately how many meals the package contains. Two pieces of evidence point AWAY from doubling: (a) its dining price column is headed \"Pre-Purchase Price (gratuities included)\" with NO \"Per Person\" qualifier, where the Beverage Package Pricing table immediately above it explicitly says \"Price in USD Per Person\"; (b) the second-guest clause reads \"up to the amount of nights THE RESERVATION is entitled to\", which frames the entitlement at reservation level. Until NCL says otherwise, no renderer may multiply the count by guests. Source: docs/price-changes/2026-08-03-ncl-us-terms/full-text.md. SUPERSEDED NOTES FOLLOW: (1) whether the meal count is per ELIGIBLE GUEST or per stateroom — NCL's table says only \"Meals\". The offer is priced per person and the Wi-Fi line specifies \"1 login per guest\", which points to per guest, and CruiseClarify's own NCL article already says \"per person\" — but NCL does not state it for dining, so no basis flag is recorded here and no renderer may assume one. (2) whether any age restriction applies (the beverage component is 21+; dining is not stated). (3) whether the entitlement differs by cabin grade or fare type — Suite/Haven receive the same component set under a different promo code, but this is not confirmed for the US market. Resolve before any renderer multiplies this count by guests. TD-014.",
+            "source": "ncl.com/cruise-deals/free-at-sea",
+            "verified_on": "2026-08-03"
+          },
+          "shoreExcursion": {
+            "amount": 50,
+            "verified": true,
+            "deducted": false,
+            "firstGuestOnly": true,
+            "perPort": true,
+            "rollsOver": false,
+            "note": "Free at Sea grants a $50 shore-excursion credit. NCL MIAMI terms, verbatim: \"A $50 Shore Excursion Credit is available for each port of call on the voyage\", and \"The first guest may apply the $50 credit per port to one or multiple eligible excursions within the same port.\" FIRST GUEST ONLY — \"Other guests in the same stateroom are not eligible\" and the credit \"may not be applied to purchases for other guests\". PER PORT, not per excursion, and it may be split across several excursions in the same port. NO ROLL-OVER: \"If the cost of an eligible excursion is less than $50, the unused value is forfeited. No cash value or substitute credit will be issued.\" Redeemable only against NCL-booked excursions, so it is worth nothing to a guest who explores independently. STATED AND NEVER DEDUCTED: `deducted` is false, and treating a restricted credit as cash would overstate the package exactly as ignoring it understates it.",
+            "verify": "RESOLVED 3 Aug 2026 against the NCL MIAMI terms (TD-014.3 closed): per port not per excursion; may be split across multiple excursions within the same port; does NOT roll over; first guest only; not refundable, not transferable, no cash value. ONE CONFLICT NOTED AND RESOLVED BY HIERARCHY: NCL's own flyer (FASvsFAS+_Flyer_4.26.pdf) says \"$50 credit per tour\", which the terms contradict with the per-port wording above. Terms outrank the flyer. STILL OPEN: nothing. Source: docs/price-changes/2026-08-03-ncl-us-terms/full-text.md.",
+            "source": "ncl.com/cruise-deals/free-at-sea",
+            "verified_on": "2026-08-03"
+          }
+        },
         "servicePct": 20,
         "serviceIncludedInPrice": true,
-        "verified": "2026-07"
+        "verified": "2026-08-03"
       },
       "specialtyDining": {
         "range": [
           30,
           59
         ],
-        "note": "Cagney's ~$40 · Teppanyaki ~$39. Free at Sea includes some specialty nights (its service charge covers them); this range is for meals beyond those."
+        "note": "Cagney's ~$40 · Teppanyaki ~$39. Free at Sea includes a set number of specialty meals by sailing length (see drinksPackage.credits.specialtyDining) and its service charge covers those; this range is for meals beyond the entitlement."
       },
       "surcharge": {
         "pct": 20,
@@ -248,16 +323,18 @@
       "gratuities": {
         "included": false,
         "perDay": 17,
+        "officialName": "Hotel Service Charge",
+        "officialNameSource": "msccruisesusa.com/manage-booking/before-you-go/service-charges — the page is headed \"HOTEL SERVICE CHARGE\" and the rate tables are labelled \"Hotel Service Charges\". Read from the rendered DOM 9 Aug 2026; the earlier 'Service charge' entry was our shorthand, not MSC's name for it.",
         "tiers": {
           "Europe sailings": "€12 (€16 Yacht Club)",
           "Yacht Club (US sailings)": 23
         },
-        "note": "A3 resolved 10 Jun 2026: depends on BOOKING MARKET, not itinerary. US-market bookings: never included — €12/adult/night Europe, $17/night Caribbean/Alaska since 11 May 2026 ($23 YC). UK & Ireland-market bookings: service charge INCLUDED in the cruise fare, categorically — paid at booking, nothing added on board (msccruises.co.uk service-charges page + all-inclusive FAQ, verified 13 Jul 2026); other EU markets vary.",
-        "verified": "2026-06",
+        "note": "A3 resolved 10 Jun 2026: depends on BOOKING MARKET, not itinerary. US-market bookings: never included — €12/adult/night Europe, $17/night Caribbean/Alaska for cruises booked from May 11, 2026 ($23 YC). THE TRIGGER IS BOOKING DATE, NOT SAILING DATE: MSC heads the two tables \"For cruises booked from May 11, 2026\" and \"For cruises booked before May 11, 2026\", so a guest who booked earlier stays on the prior $16 ($20 Yacht Club) however late they sail — never write \"since May 11\" or \"sailings from May 11\". UK & Ireland-market bookings: service charge INCLUDED in the cruise fare, categorically — paid at booking, nothing added on board (msccruises.co.uk service-charges page, re-read 9 Aug 2026); other EU markets vary.",
+        "verified": "2026-08-09",
         "child": {
           "freeUnderAge": 2,
           "note": "US market: two tiers only — guests 2 and older pay the full rate, under-2s pay nothing. No reduced rate for older children. Confirmed on msccruisesusa.com Hotel Service Charge page (screenshot 10 Jul 2026). Non-US booking markets may reduce for children.",
-          "verified": "2026-07"
+          "verified": "2026-07-30"
         }
       },
       "wifi": {
@@ -283,12 +360,17 @@
         "offered": true,
         "name": "Premium Extra",
         "perDay": 85,
-        "perDayBasis": "18% beverage service folded into price; varies by sailing, ~$85 is the ceiling ($95 on 3-night). Easy/Easy Plus retired: North America 18 Dec 2024, worldwide Aug 2025; 15-alcoholic-drinks/day cap applies",
+        "perDayBasis": "LENGTH BASIS (settled 9 Aug 2026): the pre-cruise price is ~$85/guest/day on sailings of 4 nights and longer, ~$95 on 3-night sailings — so perDay 85 is the 4+-night figure and every surface must say \"4+ nights\", never \"7+\". 18% beverage service folded into price. MSC publishes NO drinks price publicly (prices appear only inside a logged-in MyMSC booking), so 85 is third-party, not first-party — see verify. Easy/Easy Plus retired: North America 18 Dec 2024, worldwide Aug 2025",
         "servicePct": 18,
         "serviceIncludedInPrice": true,
         "includedByCabin": [
           "yachtClub"
         ],
+        "cap": 16,
+        "dailyLimit": 15,
+        "capSource": "msccruises.com/int/on-board/dining-and-drinks/drinks-packages — Premium Extra: \"Drinks with a value over €14 / $ 16 are excluded.\" The same page splits the ceiling by region: \"$16 CAR, NOA, ALA, FAE\" and \"€14 MED, NOR, WEE, EMW, SOC, WOR\" — cap 16 is therefore the US/Caribbean/Alaska figure and does NOT hold on Mediterranean or North Europe sailings. Daily limit: msccruisesusa.com/on-board/dining-drinks/drinks-packages — \"the new Premium Extra Package includes a maximum daily limit of 15 alcoholic beverages\", \"The new pricing and daily 15 alcoholic beverage limit will impact all sailings as of April 1, 2025\", measured \"within a 24-hour period, measured from 06:00 AM-06:00 AM\", non-alcoholic drinks unlimited, and the limit applies inside MSC Yacht Club too. Over the limit MSC charges \"full menu price\" — NOT the difference. Read from the rendered DOM 2026-08-09. Evidence: docs/price-changes/2026-08-09-msc-cap-limit-booking-date.md",
+        "capVerified": "2026-08-09",
+        "verify": "Sept 2026 re-verify, data-only: the $85/$95 pre-cruise price and the $95-$105 onboard band are THIRD-PARTY only — MSC publishes no drinks price on the open site. MSC also states new beverage packages took effect for the summer 2026 season and that only the new packages have been sold since 1 Oct 2025, so re-price before trusting the July read. Also unverified this pass: surcharge.pct 15 on individual drinks (no first-party statement found 9 Aug 2026).",
         "verified": "2026-07"
       },
       "specialtyDining": {
@@ -325,11 +407,13 @@
         "tiers": {
           "Concierge": 27.25
         },
-        "verified": "2026-06",
+        "verified": "2026-07-30",
+        "officialName": "Gratuities",
+        "officialNameSource": "disneycruise.disney.go.com; per night per guest. Verified 2026-07.",
         "child": {
           "sameAsAdult": true,
           "note": "Charged for every guest including infants — no age exemption. Official Disney FAQ.",
-          "verified": "2026-07"
+          "verified": "2026-07-30"
         }
       },
       "wifi": {
@@ -371,27 +455,29 @@
           "The Retreat",
           "Zenith Captain's Club"
         ],
-        "note": "Current policy 20%; an older FAQ passage still says 18%.",
+        "note": "RESOLVED 27 Jul 2026 — 20%, not 18%. celebritycruises.com/faqs/gratuity-program lists room service by name: \"a 20% gratuity will be automatically added to all pre-cruise and onboard purchases of spa and salon services, beverages and beverage packages, specialty dining and specialty dining packages, room service and mini bar purchases.\" The 18% figure is the pre-11 Jul 2023 rate, still repeated by stale third-party pages. Same page corroborates daily gratuities $19.50/$20.50/$24.50, re-read 30 Jul 2026 after the 29 Jul rise; the 20% room-service line above was re-confirmed unchanged in that same read.",
         "source": "celebritycruises.com/faqs/gratuity-program",
-        "verified": "2026-07",
-        "conflictFlag": true
+        "verified": "2026-07-30",
+        "conflictFlag": false
       },
       "name": "Celebrity Cruises",
       "segment": "Premium",
       "packageTreatment": "drinks_only",
       "gratuities": {
         "included": false,
-        "perDay": 18,
+        "perDay": 19.5,
+        "officialName": "Gratuities",
+        "officialNameSource": "celebritycruises.com/faqs/gratuity-program. Verified 2026-07-30.",
         "tiers": {
-          "Concierge / AquaClass": 19,
-          "The Retreat": 23
+          "Concierge / AquaClass": 20.5,
+          "The Retreat": 24.5
         },
-        "note": "Removed from All Included fares Oct 2023 — even \"all-inclusive\" fares do not cover them. Tiers reconfirmed vs celebritycruises.com gratuity FAQ 7 Jul 2026 (Inside/Ocean View/Veranda $18; Concierge & AquaClass $19; The Retreat $23).",
-        "verified": "2026-07",
+        "note": "Removed from All Included fares Oct 2023 — even \"all-inclusive\" fares do not cover them. RATE RISE effective 29 Jul 2026: +$1.50 on every tier (Inside/Ocean View/Veranda $18→$19.50; Concierge & AquaClass $19→$20.50; The Retreat $23→$24.50). Read off celebritycruises.com/faqs/gratuity-program 30 Jul 2026 and corroborated by the guest letter Reint received. Royal Caribbean (parent line) checked the same day and did NOT move — still $18.50 / $21 suites.",
+        "verified": "2026-07-30",
         "child": {
           "sameAsAdult": true,
           "note": "No published age exemption found — charged for all guests (same pattern as parent line RCI).",
-          "verified": "2026-07"
+          "verified": "2026-07-30"
         }
       },
       "wifi": {
@@ -411,9 +497,17 @@
       "drinksPackage": {
         "offered": true,
         "name": "Classic / Premium",
+        "cap": 12,
+        "premiumCap": 19,
+        "capSource": "celebritycruises.com/faqs/beverage-packages — \"$12 per serving\" Classic, \"$19 per serving\" Premium; over-cap = difference + 20% gratuity. Read 2026-07-30.",
+        "capVerified": "2026-07-30",
         "dynamicPricing": true,
         "perDay": 90,
         "premiumPerDay": 110,
+        "upgradeAllIncludedPerDay": 20,
+        "upgradeIncludesGratuity": true,
+        "upgradeSource": "celebritycruises.com/faqs/all-included — \"The upgrade charge will be $20 per person per day which includes the beverage gratuity.\" Read 2026-08-04, rendered DOM. NOTE: the same page describes Classic as drinks \"under $10\" and Premium \"under $17\" — those are the PRE-increase caps; the page is headed \"All Included Pricing Changes – Effective 10/4/23\" and is stale on that point. /faqs/beverage-packages read the same minute confirms $12 / $19 per serving, so cap/premiumCap above are correct — do not \"fix\" them to $10/$17. Evidence: docs/price-changes/2026-08-04-celebrity-gratuity-grandfathering.md",
+        "upgradeVerified": "2026-08-04",
         "perDayBasis": "DYNAMIC — Celebrity prices Classic/Premium per ship/sail date (celebritycruises.com FAQ: prices \"can vary by ship and sail date\", verified 7 Jul 2026). Base per person/day BEFORE the 20% gratuity: Classic ~$90, Premium ~$110 (observed spread Classic ~$58-90, Premium ~$105-120); Classic->Premium upgrade ~$20/day. perDay (Classic) and premiumPerDay are prefilled DEFAULTS the traveller edits, not fixed facts. Per-drink ceilings: Classic <=$12, Premium <=$19.",
         "servicePct": 20,
         "serviceIncludedInPrice": false,
@@ -422,7 +516,7 @@
         ],
         "nonAlcoholic": "A third package (Non-Alcoholic — premium waters, specialty coffees/teas, juices, sodas, mocktails) is offered but is OUT of the calculator, matching the drinks-decision scope used for NCL / RC Refreshment.",
         "note": "Pricing model corrected fixed -> DYNAMIC 7 Jul 2026 (RI-05 verification vs celebritycruises.com); 20% package gratuity confirmed official (A1). Prior fixed figures were treated as fixed; now prefilled DEFAULTS. Classic held at $90 (was already recorded) to match the widely-reported ~$20 Classic->Premium upgrade gap; Premium added at $110. Retreat inclusions: product ruling 17 Jul 2026.",
-        "verify": "Sept: reconfirm dynamic base medians — Celebrity publishes no single standard per-day price, so these rest partly on secondary sources (Points Guy, RoyalCaribbeanBlog, eatsleepcruise). One source cites a Classic fleet median nearer ~$72; reconcile against the ~$20 upgrade gap then, and sync are-cruise-drink-packages-worth-it.html if the median moves.",
+        "verify": "Sept: reconfirm dynamic base medians — Celebrity publishes no single standard per-day price, so these rest partly on secondary sources (Points Guy, RoyalCaribbeanBlog, eatsleepcruise). One source cites a Classic fleet median nearer ~$72; reconcile against the ~$20 upgrade gap then, and sync are-cruise-drink-packages-worth-it.html if the median moves. ADDED 27 Jul 2026: (a) Premium observed range here is 105-120 but iCruise showed 109-149 — widen or confirm the upper bound; (b) source a EUROPE Classic price — celebrity-all-included.html carried an unverified $54.99 Europe figure (below this record's own ~$58 floor); it was REMOVED rather than guessed, and the article now teaches the sum instead of quoting a European price; (c) decide whether the Non-Alcoholic package earns a price field — the article quoted $39.99 with nothing backing it, also removed.",
         "verified": "2026-07"
       },
       "packageComponents": {
@@ -461,12 +555,14 @@
       "gratuities": {
         "included": false,
         "perDay": 18,
+        "officialName": "Crew Appreciation",
+        "officialNameSource": "princess.com — NOT called gratuities. Already referenced in this line's child note. Verified 2026-07.",
         "tiers": {
           "Mini-Suite": 19,
           "Suites": 20
         },
         "note": "Raised Mar 2026. Japan sailings still charged.",
-        "verified": "2026-06",
+        "verified": "2026-07-30",
         "child": {
           "sameAsAdult": true,
           "note": "Crew Appreciation applies to all guests regardless of age — no exemption. Princess FAQ.",
@@ -480,20 +576,27 @@
           25,
           45
         ],
-        "plans": "Classic $25 · Max $45 (MedallionNet)",
+        "plans": "MedallionNet Classic, sold separately: $25 one device · $45 four devices. MedallionNet Max is package-only (Plus 1 device, Premier 4 devices) and has no standalone price.",
         "tiers": {
-          "Max": 45
+          "Classic four-device": 45
         },
+        "note": "Max is not a purchasable tier. The $45 is the four-device Classic plan, which this record mislabelled as \"Max\" until 3 Aug 2026. Product structure read first-party from princess.com 2026-08-03; the two prices remain secondary-sourced (see verify).",
+        "verify": "Sept: princess.com publishes NO public a-la-carte MedallionNet price — it sits behind Manage Booking / the Princess app. The one-device $25 and four-device $45 are secondary-sourced (SeatWiFi, last verified 8 May 2026, corroborated by independent trackers) and were carried into this record in Jun 2026 without a recorded source. Read both from the booking flow, and decide then whether the published $24.99 / $44.99 should replace these whole-dollar figures.",
         "verified": "2026-06"
       },
       "drinksPackage": {
         "offered": true,
         "name": "Plus Beverage Package (standalone)",
+        "cap": 15,
+        "premierCap": 20,
+        "dailyLimit": 15,
+        "capSource": "princess.com/html/global/personalizer/ssv/beverages/disclaimer/ — Plus covers beer, spirits, wine by the glass and cocktails $15.00 USD and under, limit 15 alcoholic drinks per 24h (6am-6am); over-cap charged the difference. Premier cap $20.00 USD effective 14 Jan 2026 (princess.com Premier Beverage Package T&C). Both read 2026-07-30.",
+        "capVerified": "2026-07-30",
         "perDay": 77.99,
         "perDayBasis": "$64.99 + 20% service = $77.99 (service charge raised 18% -> 20% fleetwide early Mar 2026, same announcement as the crew-appreciation raise)",
         "servicePct": 20,
         "serviceIncludedInPrice": true,
-        "verify": "Sept: confirm 20% is what the booking flow adds at package checkout (raise to 20% multi-sourced Mar 2026: Cruise Critic, Cruise Hive; princess.com checkout not directly read)",
+        "verify": "Sept: confirm 20% is what the booking flow adds at package checkout (raise to 20% multi-sourced Mar 2026: Cruise Critic, Cruise Hive; princess.com checkout not directly read). NOTE 30 Jul 2026 — do NOT \"correct\" this to 18% on the strength of princess.com/html/global/personalizer/ssv/beverages/disclaimer/, which still reads \"$64.99 per day plus 18% service charge (totaling $76.70)\": that page is headed \"for cruises departing February 20, 2023 and beyond\" and predates the Mar 2026 raise. Third-party pages quoting $76.70 appear to echo it. Only the live booking flow settles this.",
         "verified": "2026-06"
       },
       "bundle": {
@@ -502,20 +605,58 @@
         "premierPerDay": 100,
         "basis": "per_guest_per_night",
         "note": "Plus $65/day pre-booked ($70 onboard); $70/day on Sun & Star ($75 onboard). Includes drinks, Wi-Fi, crew appreciation, 4 casual meals. Premier $100/day pre-booked ($105 onboard); $105/day on Sun & Star ($110 onboard) — adds unlimited casual + specialty dining, 4-device Wi-Fi, a length-based shore-excursion credit ($100/$200/$300) and more. Premier $85->$100 verified 9 Jul 2026 (princesscruisesblog, quiltripping, travelagewest 2026).",
+        "credits": {
+          "casualDining": {
+            "tier": "plus",
+            "mealsPerVoyage": 4,
+            "amount": null,
+            "verified": true,
+            "note": "Princess terms, verbatim: \"Limited to 4 prix fixe meals per guest during the entire voyage at ship's select Casual Dining venues.\" A fixed count for the WHOLE voyage, not a nightly allowance — which is why no per-night value can represent it. Stated in the calculator, never priced.",
+            "verify": "Stage 2 (Sept): decide whether the casual-dining cover charge earns a recorded value. princess.com states \"Select casual dining venues include a cover charge of $14.99 for multi-course prix fixe meals\" (read 2026-08-01) — but not every casual venue charges, so 4 x 14.99 is an UPPER BOUND on the entitlement, not its value. CAUTION: this record already carries an unrelated $14.99 in roomService.note (the one-time OceanNow delivery access fee). Two different fees, same number — do not conflate them, and expect a sweep to flag them as duplicates.",
+            "source": "princess.com/cruise-deals-promotions/plus-premier-cruise-packages/terms-and-conditions",
+            "verified_on": "2026-08-01"
+          },
+          "specialtyDining": {
+            "tier": "premier",
+            "unlimited": true,
+            "covers": "casual and specialty dining",
+            "amount": null,
+            "verified": true,
+            "materialUnpriced": true,
+            "note": "Premier includes UNLIMITED casual and specialty dining. Princess prints \"—\" against specialty dining for Plus: Plus includes none. Unlimited cannot be priced without assuming how often the traveller eats there, so it is stated and never valued.",
+            "source": "princess.com/cruise-deals-promotions/plus-premier-cruise-packages",
+            "verified_on": "2026-08-01"
+          },
+          "shoreExcursion": {
+            "tier": "premier",
+            "amount": null,
+            "verified": true,
+            "perGuest": true,
+            "materialUnpriced": true,
+            "byLength": {
+              "6-9": 100,
+              "10-20": 200,
+              "21+": 300
+            },
+            "note": "Princess terms, verbatim: \"$100 for voyages from 6 to 9 days in length; (ii) $200 for voyages from 10 to 20 days in length; (iii) $300 for voyages of 21 or more days in length.\" Bands start at 6 days — NOT the 4-day floor Have It All uses; do not copy HAL's bands. Redeemable only against Princess-booked shore excursions, so it is stated and never deducted.",
+            "source": "princess.com/cruise-deals-promotions/plus-premier-cruise-packages/terms-and-conditions",
+            "verified_on": "2026-08-01"
+          }
+        },
         "verified": "2026-07"
       },
       "packageComponents": {
-        "wifiPerDay": 16,
+        "wifiPerDay": 25,
         "gratuitiesPerDay": 18,
-        "diningPerDay": 15,
-        "note": "Value attributed to non-drinks items inside Princess Plus (calculator break-even). Gratuities component 17->18 on 10 Jun 2026 to match the Mar 2026 crew-appreciation raise (A6)."
+        "diningPerDay": 0,
+        "note": "Value attributed to non-drinks items inside Princess Plus (calculator break-even). wifiPerDay CORRECTED 16 -> 25 on 3 Aug 2026, closing TD-013. The 16 was a pre-SSOT figure migrated verbatim from the hardcoded calculator on 10 Jun 2026 (commit b222855) and matched no Princess rate, past or present. THE VALUATION RULE, which is an AVOIDED COST and not the price of what Plus includes: Plus includes MedallionNet MAX for one device, and Max is not sold separately, so it has no retail price and is given none. What a Plus buyer demonstrably avoids is buying the cheapest separately purchasable plan — Classic, one device — which is this record's own published wifi.perDay. That published rate is therefore credited, and Max's superior service is worth more than the credit but is deliberately assigned NO extra value. Conservative by construction: it can understate Plus, never overstate it. SCOPE: this rule is written for the PLUS one-device entitlement. This ONE object serves both tiers, so Premier is credited the same $25 — Premier's four-device Max entitlement is NOT valued at the $45 four-device Classic plan, because no owner ruling has approved that and Premier's own article states the extra devices are convenience rather than avoided spending. Premier is therefore understated here, in the same safe direction. Gratuities component 17->18 on 10 Jun 2026 to match the Mar 2026 crew-appreciation raise (A6). diningPerDay SET TO 0 on 1 Aug 2026 (Stage 1) and deliberately kept as a key so the reason survives: this ONE object serves BOTH tiers, and $15/day was wrong for each of them in opposite directions. PLUS includes NO specialty dining at all — princess.com prints \"—\" against it — so crediting a specialty-dining value made the calculator claim an inclusion that does not exist. Plus includes 4 CASUAL prix-fixe meals per guest for the WHOLE VOYAGE (bundle.credits.casualDining), a fixed count, so no per-night figure can represent it. PREMIER includes UNLIMITED casual and specialty dining, which cannot be priced without assuming how often the traveller eats there. Both tiers now STATE their dining benefit and neither has a dollar value attached. Evidence: docs/price-changes/2026-08-01-princess-plus-dining-correction.md (dining, Stage 1) and docs/price-changes/2026-08-03-princess-wifi-avoided-cost.md (Wi-Fi, this correction)."
       },
       "specialtyDining": {
         "range": [
-          35,
+          55,
           115
         ],
-        "note": "Crown Grill $39 · Chef's Table $115"
+        "note": "Standard venues $55 flat ($60 on Sun & Star, children 3-11 half price) per princess.com FAQ · Chef's Table $115. Cover charge only; 20% service charge added when paying out of pocket (see surcharge). Was Crown Grill $39 — verified 23 Jul 2026 (princess.com Crown Grill FAQ)."
       },
       "surcharge": {
         "pct": 20,
@@ -544,8 +685,10 @@
         "tiers": {
           "Suites": 20
         },
+        "officialName": "Crew Appreciation",
+        "officialNameSource": "hollandamerica.com — NOT called gratuities; same term as sister line Princess. Verified 2026-07.",
         "note": "Raised from $17/$19 spring 2026 — noticed early Apr; trade sources conflict on effective date (Apr 6 vs Jun 1)",
-        "verified": "2026-06",
+        "verified": "2026-07-30",
         "child": {
           "sameAsAdult": true,
           "note": "Charged per guest for all ages — auto-applied even to infant accounts. HAL FAQ.",
@@ -574,6 +717,10 @@
         "perDayBasis": "$50.95 + 20% service = $61.14 (official page, Jun 2026)",
         "servicePct": 20,
         "serviceIncludedInPrice": true,
+        "cap": 12,
+        "dailyLimit": 15,
+        "capSource": "hollandamerica.com/en/us/cruise-deals/have-it-all/have-it-all-upgrade — \"beer, wine, cocktails, and spirits up to $12, plus specialty coffee, mocktails, and sodas — up to 15 drinks per day\". Read 2026-08-01.",
+        "capVerified": "2026-08-01",
         "verify": "Sept: confirm Signature base in booking flow ($50.95 official vs $54.95-60.95 third-party); 20% service charge effective spring 2026 (sources conflict Apr 6 vs Jun 1)",
         "verified": "2026-06"
       },
@@ -582,32 +729,61 @@
         "perDay": 60,
         "onboardPerDay": 70,
         "basis": "per_guest_per_night",
+        "minNights": 4,
+        "appliesToFirstNGuests": 2,
+        "verify": "Summer 2027: Have It All rises to $65 per guest/night. HAL has published no precise effective departure date — re-read hollandamerica.com/en/us/cruise-deals/have-it-all/have-it-all-upgrade each quarter and set perDay to 65 when the date is known. Recorded 2026-08-01.",
         "note": "perDay is the pre-cruise price; onboardPerDay ($70) is informational only and never enters a calculation. Includes drinks + Surf Wi-Fi + a specialty-dining credit + a shore-excursion credit. Gratuities NOT included.",
         "credits": {
           "shoreExcursion": {
             "amount": null,
-            "verified": false,
-            "note": "Have It All shore-excursion credit — figure pending verification."
+            "verified": true,
+            "perGuest": true,
+            "byLength": {
+              "4-9": 100,
+              "10-20": 200,
+              "21+": 300
+            },
+            "note": "US$100 for 4-9 days (incl. Alaska cruisetours) · US$200 for 10-20 · US$300 for 21+, EXCLUDING Grand Voyages. Issued per guest, not per stateroom. HAL-operated excursions only — not independent operators, private tours or transfers.",
+            "source": "hollandamerica.com/en/us/faq/deals/have-it-all/shore-excursion-credit",
+            "verified_on": "2026-07-27"
           },
           "specialtyDining": {
             "amount": null,
-            "verified": false,
-            "note": "Have It All specialty-dining credit — figure pending verification."
+            "verified": true,
+            "nightsByLength": {
+              "4-9": 1,
+              "10-20": 2,
+              "21+": 3
+            },
+            "note": "Credit is in NIGHTS, not dollars: 1 night for 4-9 days · 2 for 10-20 · 3 for 21+, EXCLUDING Grand Voyages. Pinnacle Grill / Canaletto / Tamarind; Tamarind is Signature and Pinnacle class only.",
+            "source": "hollandamerica.com/en/us/faq/deals/have-it-all/have-it-all-included",
+            "verified_on": "2026-07-27"
           }
         },
         "verified": "2026-06"
       },
       "packageComponents": {
-        "wifiPerDay": 16,
-        "diningPerDay": 15,
-        "note": "Value attributed inside Have It All (gratuities NOT included)."
+        "wifiPerDay": 18,
+        "diningPerDay": 0,
+        "note": "Value attributed inside Have It All (gratuities NOT included). wifiPerDay CORRECTED 16 -> 18 on 1 Aug 2026: Have It All includes Surf, and Surf is this record's own published wifi.perDay, so the attributed value IS the published value. The 16 was a pre-SSOT figure migrated verbatim from the hardcoded calculator on 10 Jun 2026 (commit b222855) and never matched any HAL rate. diningPerDay SET TO 0 on 1 Aug 2026 and deliberately kept as a key so the reason survives: Have It All grants a FIXED NUMBER OF NIGHTS (see bundle.credits.specialtyDining.nightsByLength), not a daily allowance, so $15/day compounded a one-off benefit over every night of the sailing. No current HAL specialty cover charge is verified (see specialtyDining.verify), so the honest treatment is to STATE the included nights and not deduct a dollar value — the same treatment the shore-excursion credit already gets. Conservative and temporary: it understates the package. Logged in docs/TECH-DEBT.md; exit condition is the Sept 2026 cover-charge verification."
       },
       "specialtyDining": {
         "range": [
-          20,
-          45
+          25,
+          55
         ],
-        "note": "Pinnacle Grill $45 · Tamarind $30"
+        "venues": {
+          "Canaletto": 25,
+          "Tamarind": 39,
+          "Pinnacle Grill": 52,
+          "Sel de Mer": 55
+        },
+        "referenceValuation": 52,
+        "referenceValuationBasis": "Published Pinnacle Grill dinner cover charge (US$52 per person). CruiseClarify reference valuation for one included Have It All specialty-dining night — not a HAL-published credit value.",
+        "source": "hollandamerica.com/en/eu/onboard-experiences/dining/{pinnacle-grill,tamarind,sel-de-mer,canaletto} — Pinnacle Grill \"Cost is US$52 per person (subject to change). Have It All package guests may apply their Specialty Dining credit here. A 20% service charge applies.\"; Tamarind \"$39 per person\"; Sel de Mer \"$55\" (per person in USD); Canaletto \"$25\" (USD, subject to change). Identical figures served on /en/us/.",
+        "verified_on": "2026-08-09",
+        "verify": "Quarterly: re-read the four dining pages. Prices are marked \"subject to change\" and HAL moved the 20% service charge in spring 2026.",
+        "note": "Canaletto $25 · Tamarind $39 · Pinnacle Grill $52 · Sel de Mer $55. Cover charge only — a further 20% service charge is added when paying out of pocket (see surcharge). Sel de Mer is a dedicated restaurant on Koningsdam, Nieuw Statendam and Rotterdam."
       },
       "surcharge": {
         "pct": 20,
@@ -631,13 +807,15 @@
       "name": "Virgin Voyages",
       "segment": "Premium",
       "packageTreatment": "prepaid_credit",
-      "fareModel": "VoyageFair Choices — 3-tier fare (Base/Essential/Premium) since Oct 7 2025; gratuities separate on all tiers; Premium bundles a Bar Tab.",
+      "fareModel": "VoyageFair Choices — 3-tier fare (Base/Essential/Premium) since Oct 7 2025; gratuities separate on all tiers; Premium bundles $15/Sailor/night of Bar Tab.",
+      "premiumTierBarTabPerDay": 15,
+      "premiumTierBarTabSource": "trade press (VV Insider, Seatrade) — not first-party; verify",
       "gratuities": {
         "included": false,
         "perDay": 20,
         "onboardPerDay": 22,
         "note": "Separate charge for bookings from Oct 7 2025: $20 prepaid / $22 onboard, flat across all cabins. Earlier (\"Legacy Fare\") bookings may still include them.",
-        "verified": "2026-06",
+        "verified": "2026-07-30",
         "child": {
           "adultsOnly": true,
           "note": "Virgin ships are 18+ — no children aboard, so no child gratuity applies.",
@@ -647,7 +825,11 @@
       "wifi": {
         "included": true,
         "premiumPerDay": 30,
-        "note": "Basic Wi-Fi included (1 device pp); streaming/premium upgrade ~$30/day. Included Wi-Fi tier scales with the fare tier."
+        "additionalDevicePerDay": 15,
+        "plans": "Basic included (1 device pp) · Premium $30/day first device, +$15/day each additional",
+        "note": "Basic Wi-Fi included (1 device pp); streaming/premium upgrade $30/day for the first device and $15/day for each additional device. Included Wi-Fi tier scales with the fare tier.",
+        "source": "virginvoyages.com; VV Insider Wi-Fi guide",
+        "verified": "2026-07"
       },
       "drinksPackage": {
         "offered": false,
@@ -674,8 +856,44 @@
             "credit": 1250
           }
         ],
-        "note": "No unlimited package. Prepaid credit with 12.5-25% bonus (bigger bonus on bigger tabs). Bought per Sailor; cabinmates can pool one tab by merging folios onboard. Unused credit is forfeited at voyage end.",
-        "verified": "2026-06"
+        "purchaseDeadlineHours": 24,
+        "loyaltyBonus": [
+          {
+            "status": "Sea-Blazer",
+            "pay": 300,
+            "credit": 425,
+            "bonus": 125,
+            "permanent": true,
+            "note": "Always-on; permanent for as long as the Virgin Voyages account is maintained."
+          },
+          {
+            "status": "Sea-Rover",
+            "pay": 300,
+            "credit": 400,
+            "bonus": 100,
+            "permanent": false,
+            "earnedBefore": "2024-01-01",
+            "honouredThrough": "2026-12-31",
+            "note": "Legacy 2024 benefit — only for Sailors who earned Sea-Rover before 1 Jan 2024, honoured through end of 2026."
+          }
+        ],
+        "loyaltyPromoCredit": {
+          "status": "Deep Blue Extras (5+ voyages)",
+          "amount": 100,
+          "throughDate": "2026-12-31",
+          "note": "Promotional Bar Tab credit, not a purchase bonus. Base/Essential/Premium all eligible since 7 Oct 2025; available through 31 Dec 2026."
+        },
+        "note": "No unlimited package. Prepaid credit with 12.5-25% bonus (bigger bonus on bigger tabs). Must be bought at least 24h before sailing — you can still add credit onboard, but with NO bonus. Bought per purchase, not per Sailor: no requirement for every Sailor in a stateroom to buy one, and the tab can buy drinks for anyone onboard. Covers alcohol, specialty coffee, fresh juices, smoothies, drinks at The Beach Club at Bimini, and $25 restaurant corkage. Does NOT cover spa, casino, retail, or packaged goods taken off the ship. Unused credit is forfeited at voyage end.",
+        "unlimitedTrial": {
+          "name": "Drink Like a VIP",
+          "perDay": 95,
+          "ship": "Valiant Lady",
+          "period": "Apr-May 2025",
+          "adopted": false,
+          "verified": "2026-07"
+        },
+        "source": "virginvoyages.com (tiers, deadline, sharing, exclusions; sailing-club page for loyalty bonuses)",
+        "verified": "2026-07"
       },
       "dining": {
         "included": true,
@@ -684,6 +902,14 @@
       "surcharge": {
         "pct": 0,
         "appliesTo": "none — Virgin adds no auto-gratuity/service charge to bar or drink purchases"
+      },
+      "corkage": {
+        "cabinFree": true,
+        "venueFee": 25,
+        "bottleLimit": 2,
+        "note": "Up to two 750ml bottles of wine, sparkling wine or Champagne per stateroom, in carry-on. Free in your stateroom; $25 corkage to drink it in an eatery — and Bar Tab may be used to pay the corkage.",
+        "source": "virginvoyages.com",
+        "verified": "2026-07"
       }
     },
     "viking": {
@@ -880,6 +1106,8 @@
       "gratuities": {
         "included": false,
         "perDay": 16,
+        "officialName": "Hotel Service Charge",
+        "officialNameSource": "windstarcruises.com — per this line's own note. Verified 2026-06.",
         "note": "Hotel Service Charge — auto-added, not optional",
         "verified": "2026-06",
         "child": {
@@ -1058,23 +1286,31 @@
         "tiers": {
           "Grill Suites": 19
         },
+        "officialName": "Hotel & Dining charge",
+        "officialNameSource": "cunard.com — 'Hotel & Dining (hotel) service charge', per this line's own note. Verified 2026-06.",
         "note": "Hotel & Dining (hotel) service charge, in USD to ALL guests incl. children. Britannia/Britannia Club $18; Queens & Princess Grill Suites $19. Confirmed cunard.com 16 Jun 2026 (up from $16/$18 after the 2024 rise). Adjustable/removable at Guest Services (Purser desk). Grill Suite drinks + prepaid grats appear only via wave-season promos (e.g. Treat Yourself On Us, booking window closed 25 Feb 2026) — promo, not standing policy (D7).",
-        "verified": "2026-06"
+        "verified": "2026-07-30"
       },
       "wifi": {
         "included": false,
-        "perDay": 24,
+        "perDay": 22,
         "range": [
-          24,
-          36
+          22,
+          30
         ],
-        "plans": "Basic $24 · Premium $36",
+        "plans": "Essential $22 · Premium $30",
         "tiers": {
-          "Premium": 36
-        }
+          "Premium": 30
+        },
+        "source": "cunard.com \"Staying connected\" — \"The Essential Internet plan\" / \"The Premium Internet plan\". Rendered read, US locale, 2026-08-09. Evidence: docs/price-changes/2026-08-09-cunard-wifi.md",
+        "perDayBasis": "Per-day rate on a WHOLE-VOYAGE plan, Cunard's own wording: \"This plan is available for US$22 per day if purchased for the whole voyage\" (Premium: US$30). Onboard 24-hour day passes are a SEPARATE product at $28 Essential / $44 Premium — informational only, deliberately not stored as numeric leaves, the same convention hal.wifi uses for its onboard range. Cunard also states unquantified discounts for multi-device plans and for voyages over 50 nights; no percentage is published, so none is recorded.",
+        "note": "Essential covers browsing, email and social media (text and images); Premium adds music and video streaming and video calling. Buying for the whole voyage up to four days before sailing saves 10% against onboard prices, so perDay is the pre-purchase rate — the onboard equivalent is derivable but deliberately not stored, to avoid carrying two prices for one product. One plan covers multiple devices but only one at a time. Starlink. Supersedes the previous record, which was Basic $24 / Premium $36 and carried no source and no verification date at any point; \"Basic\" is a retired product name and both figures were wrong.",
+        "verify": "Sept: re-read the two plan prices and confirm the product names still read Essential / Premium. Note cunard.com/en-us hard-redirects to /en-gb outside the US and the en-gb page publishes NO prices — a rendered read from a US locale is the only route to these figures, and a fetch of the en-us URL times out. Open question left alone: the Signature bundle folds in \"Essential Wi-Fi\" with no standalone price, so the bundle's Wi-Fi component still cannot be valued first-party.",
+        "verified": "2026-08-09"
       },
       "drinksPackage": {
         "offered": true,
+        "name": "Beverage Collection",
         "perDay": 76.5,
         "currency": "USD",
         "servicePct": 18,
@@ -1172,15 +1408,15 @@
           "note": "On sale 18 Dec 2025, voyages from Mar 2026. Package price GBP, dining credit USD — verified 10 Jul 2026 from cunard.com packages FAQ. Written into cunard-drinks-gratuities-2026.html (\"The new Signature bundles\"). GBP-priced bundle on a USD line is a modelling wrinkle if Cunard ever enters the calculator.",
           "verified": "2026-07"
         },
+        "verify": "Sept: re-read A World of Drinks and reconfirm the 7-14 night rate and the four caps. Two open items. (a) The Premium Beverage Collection 7-14 night rate is printed in cunard-drinks-gratuities-2026.html but has no field here — only the range — so the article's premium recommendation rests on a figure the SSOT cannot drift-check; decide whether it earns one. (b) The paid collection's \"pay the difference\" over-cap rule is Cunard's own marketing wording and has never been eyewitness-confirmed; the article says so, and it should keep saying so until someone reads it off a bill.",
         "note": "Priced in US$ per cunard.com 16 Jun 2026 (corrects earlier GBP assumption). 18% service charge already included in package price. OVER-CAP RULES DIFFER: the promotional Grills (NA) inclusive package = pay FULL price over the cap, NO differential (confirmed by an onboard QV guest report, Jun 2026; its cap was $12, raised to $13.50 on board only after complaints); the PAID Beverage Collection = pay the difference per Cunard marketing wording (not eyewitness-confirmed). \"Limiting\" is price creep, not a cap change: Cunard Spritz 10.50->13.50, same Queens gin now $15/$15.50/$17, some cocktails to $15 (above the $13.50 cap), new $25/$35 wine flights outside both packages. (Source: Cruise Critic \"Menu Updates and Drink Price Increases\", Jun 2026.)",
         "verified": "2026-06"
       },
       "specialtyDining": {
-        "range": [
-          40,
-          75
-        ],
-        "note": "Grill class guests: included; Aji Wa Omikaze ~$70pp (2026)"
+        "included": false,
+        "basis": "Varies by venue — deliberately NOT carried as a numeric range. Cunard mixes fixed-price and a-la-carte alternative venues and prices differ by venue and ship, so a single generic band is false precision. The previous [40, 75] had an unsourced floor and rendered in the cost table as though it were a representative Cunard cover charge.",
+        "note": "Grills fares include dining in the guest's assigned Queens or Princess Grill restaurant. That is the Grill dining room, NOT a specialty-dining inclusion — optional alternative venues can still carry a charge for Grills guests, and the previous note (\"Grill class guests: included\") read as the opposite. Informational only: no numeric leaf, no calculator input, no invoice line, no assumed dining budget. The Signature bundle carries a dining CREDIT, which is not the same as dining being included.",
+        "verify": "Sept: leave as informational unless Cunard publishes a single fixed cover charge. Reinstating a numeric range needs per-venue first-party prices — do not rebuild a band from secondary sources or from one venue."
       },
       "surcharge": {
         "pct": 18,
@@ -1458,6 +1694,8 @@
       "gratuities": {
         "included": false,
         "perDay": 11,
+        "officialName": "Service charge",
+        "officialNameSource": "costacruises.com — 'service charge', per this line's own note. Verified 2026-07.",
         "tiers": {
           "Dec 2026+ departures booked after Jun 2025": 12
         },
