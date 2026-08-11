@@ -45,7 +45,31 @@ jobs:
             echo "::error::HF_TOKEN secret is not set. Add an HF write token as a repo secret named HF_TOKEN."
             exit 1
           fi
-          huggingface-cli upload CruiseClarify/cruise-costs . . \
+
+          # huggingface_hub renamed its command-line tool from `huggingface-cli`
+          # to `hf`. This step installs the LATEST library every run, so pinning
+          # to either name breaks the day upstream changes it — the sync sat
+          # broken for three weeks in Aug 2026 for exactly this reason. Pick
+          # whichever exists, and say which one, so a future failure is readable.
+          if command -v hf >/dev/null 2>&1; then
+            HF_CLI="hf"
+          elif command -v huggingface-cli >/dev/null 2>&1; then
+            HF_CLI="huggingface-cli"
+          else
+            echo "::error::Neither 'hf' nor 'huggingface-cli' is on PATH after install."
+            pip show huggingface_hub || true
+            exit 1
+          fi
+          echo "Using CLI: $HF_CLI ($(pip show huggingface_hub | grep -i '^Version' || true))"
+
+          # Confirm the token authenticates before attempting the upload, so an
+          # auth problem reports as an auth problem rather than a failed upload.
+          $HF_CLI auth whoami 2>/dev/null || $HF_CLI whoami || {
+            echo "::error::HF_TOKEN did not authenticate. Check the token is a WRITE token owned by the account that owns CruiseClarify/cruise-costs."
+            exit 1
+          }
+
+          $HF_CLI upload CruiseClarify/cruise-costs . . \
             --repo-type dataset \
             --include "cruise-costs.json" "cruise-costs.csv" "cruise-packages.csv" "cruise-gratuities-tiers.csv" "README.md" "LICENSE" \
             --commit-message "Sync from GitHub ${GITHUB_SHA}"
