@@ -995,6 +995,7 @@
         "name": "Prestige Select upgrade",
         "perDay": 30,
         "perDayBasis": "upgrade on top of included wine & beer at meals; standalone ~$60 pre-cruise / ~$70 onboard",
+        "verify": "Sept 2026 re-verify, data-only: the $30/day is THIRD-PARTY only — Oceania publishes no beverage-package price on the open site. Its own upgrade FAQ (\"contact Oceania Cruises guest services team or your Travel Advisor\") and its promotional terms (\"Contact Oceania Cruises or your Travel Advisor for current pricing\") both route away from a figure, read from the rendered DOM 18 Aug 2026 — so a page read CANNOT settle this one: price it from the booking flow or an advisor quote. Verified first-party the same day: the Your World Included / Luxury of Choice amenity is either Complimentary Wine & Beer or a Shore Excursion Credit (US$400-1,200 by voyage length, per stateroom except solo), same choice for both guests in a stateroom, by final payment date. This $30 is the UPGRADE from the wine & beer amenity; what an excursion-credit guest pays for the same coverage is UNESTABLISHED — the ~$60/$70 standalone above is uncited prose and is deliberately shown nowhere on the site. Carried unchanged since the SSOT was created (10 Jun 2026).",
         "servicePct": 18,
         "serviceIncludedInPrice": true,
         "verified": "2026-06"
