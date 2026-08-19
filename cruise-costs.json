@@ -122,9 +122,10 @@
         "tiers": {
           "Suites": 21
         },
-        "verified": "2026-07-30",
+        "verified": "2026-08-19",
         "officialName": "Gratuities",
         "officialNameSource": "royalcaribbean.com; charged to the SeaPass account. Verified 2026-07.",
+        "gratuitySource": "royalcaribbean.com/faq/questions/onboard-service-gratuity-expense — \"$21.00 USD per guest, per day will be applied to guests sailing on any suite; and $18.50 USD per guest, per day will be applied to guests sailing on all other stateroom categories.\" Read 2026-08-19, rendered DOM. Wording unchanged in Wayback snapshots back to 2025-01-13.",
         "includedByCabin": [
           "star"
         ],
@@ -147,7 +148,9 @@
           "sky",
           "star"
         ],
-        "note": "A4/D2: tracker median ~$20/day. Royal Suite Class Sky/Star include VOOM Surf+Stream (1 device/guest) — royalcaribbean.com FAQ, verified 17 Jul 2026.",
+        "excludedByCabinNote": "royalcaribbean.com/faq/questions/what-rooms-are-included-in-the-royal-suite-class — \"† VOOM Surf + Stream package not included for Sky Junior Suite, Sky Junior Suite Accessible, Sunset Junior Suite and Sky Balcony.\" Same footnote on /faq/questions/is-voom-included-for-star-and-sky-guests and /faq/questions/what-are-the-benefits-of-royal-suite-class, the latter two adding: \"For Sky Balcony Suite (BY) on Spectrum of the Seas, VOOM benefit available only for guests booked on or before April 27, 2026.\" Read 2026-08-19, rendered DOM.",
+        "excludedByCabinVerified": "2026-08-19",
+        "note": "A4/D2: tracker median ~$20/day. Royal Suite Class Sky/Star include VOOM Surf+Stream (1 device/guest) — royalcaribbean.com FAQ, verified 17 Jul 2026; Sky exclusions re-read 19 Aug 2026.",
         "verified": "2026-07"
       },
       "drinksPackage": {
@@ -166,17 +169,27 @@
         "bottledWineDiscountPct": 40,
         "bottledWineDiscountPctOver100": 20,
         "freestyleCupFee": 4.99,
-        "capSource": "royalcaribbean.com/faq/questions/what-is-the-deluxe-beverage-package — \"Package includes any single beverage item with a value up to $14. Plus, receive a 40% discount on bottled wines priced up to $100, and a 20% discount on wines priced above $100.\" Freestyle Cup $4.99 onboard; the cup left the package effective 15 Mar 2026. Daily limit: /faq/questions/is-there-a-limit-for-drinks-with-the-deluxe-beverage-package — \"No, there is not a daily limit\" (Princess and HAL both cap at 15/day; Royal does not). Royal does NOT publish the over-cap mechanic — do not assert \"pay the difference\" as sourced. Read 2026-08-04, rendered DOM. Evidence: docs/price-changes/2026-08-04-royal-deluxe-cap.md",
-        "capVerified": "2026-08-04",
+        "capSource": "royalcaribbean.com/faq/questions/what-is-the-deluxe-beverage-package — \"Package includes any single beverage item with a value up to $14. Plus, receive a 40% discount on bottled wines priced up to $100, and a 20% discount on wines priced above $100.\" Freestyle Cup $4.99 onboard; the cup left the package effective 15 Mar 2026. Daily limit: /faq/questions/is-there-a-limit-for-drinks-with-the-deluxe-beverage-package — \"No, there is not a daily limit\" (Princess and HAL both cap at 15/day; Royal does not). Re-read 2026-08-19: the FAQ wording is unchanged. The 4 Aug note that Royal does not publish the over-cap mechanic is SUPERSEDED — see overCapSource below. Caveat from the official package PDF (©2025, US.0825): the cap is stated there as \"$14 for select ships and sail dates\", so $14 is the published figure but not warranted fleet-wide. Read 2026-08-04, re-read 2026-08-19, rendered DOM. Evidence: docs/price-changes/2026-08-04-royal-deluxe-cap.md, docs/price-changes/2026-08-19-royal-overcap-mechanic.md",
+        "capVerified": "2026-08-19",
+        "overCapMechanic": "difference",
+        "overCapScope": "Published for Star suite guests only; no purchaser-facing Royal page states it.",
+        "overCapSource": "royalcaribbean.com/faq/questions/do-all-guests-in-a-star-suite-receive-the-deluxe-beverage-package — \"If a Star guest purchases a drink that is more than the value of the call or premium drink ordered, the Star guest will be charged the difference. The difference will have to be paid on call and premium cocktails over $14 and on premium wine by the glass over $14. For example, if a guest orders a $20 glass of wine, they will be charged $6 on their account.\" SCOPE, stated plainly: the page answers a Star-suite question, and it is the only Royal page that publishes the mechanic. It is read as the PACKAGE's mechanic because the product it describes IS the Deluxe Beverage Package (\"one beverage package per person ... is included\") and the threshold is the package's own published $14, not a suite figure. Corroborated by the official package terms (PDF, ©2025 US.0825): \"Package does not include ... super premium category beverages above $14.\" Read 2026-08-19, rendered DOM + PDFKit text extraction. Evidence: docs/price-changes/2026-08-19-royal-overcap-mechanic.md",
+        "overCapVerified": "2026-08-19",
         "verify": "Sept: re-check fleet median (rule: move only if median shifts >$5/day, two sources agree). Unresolved: Royal’s beverage-package gratuity FAQ carries the \"modified in the guest’s sole discretion\" sentence — see the evidence file conflict note.",
         "verified": "2026-07"
       },
       "dining": {
         "included": false,
-        "includedByCabin": [
+        "mostIncludedByCabin": [
           "star"
         ],
-        "note": "Star Class includes most specialty dining; Chef’s Table / Royal Railway / Izumi Omakase etc. may still carry a charge — royalcaribbean.com RSC benefits, verified 17 Jul 2026."
+        "coverChargeRange": [
+          15,
+          130
+        ],
+        "coverChargeSource": "royalcaribbean.com/faq/questions/what-are-the-benefits-of-royal-suite-class — STAR: \"Star Class guests are entitled to complimentary dining throughout the ship, including most specialty dining venues\", then \"Star Class guests enjoy priority reservations and a discounted per person cover charge at the following specialty venues: Izumi, Hibachi/Teppanyaki: $15.00 · Wonderland by Dadong (Spectrum of the Seas Only): $25.00 · Royal Railway: $50.00 · Chef's Table: $50.00 · Izumi Omakase: $60.00 · Empire Supper Club: $130.00 · Lincoln Park Supper Club: $130.00\". Also chargeable: \"Signature Cuts at Chops Grille, Celebration Table, Food items from Starbucks, Seafood Tower and Seafood Platter\". Corroborated on /faq/questions/royal-genie-package-benefits: \"The following dining options are excluded from the Star Class Dining benefit: ... Signature Cuts at Chops Grille ... Hibachi - $15 surcharge, Chef's Table - $50 surcharge\". Read 2026-08-19, rendered DOM. Evidence: docs/price-changes/2026-08-19-royal-suite-gratuity-correction.md",
+        "coverChargeVerified": "2026-08-19",
+        "note": "Star Class includes most specialty dining; Chef’s Table / Royal Railway / Izumi Omakase and the supper clubs still carry a discounted cover ($15–$130) — royalcaribbean.com RSC benefits, re-verified 19 Aug 2026."
       },
       "specialtyDining": {
         "range": [
