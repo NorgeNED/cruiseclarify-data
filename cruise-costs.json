@@ -418,8 +418,17 @@
         "cap": 16,
         "dailyLimit": 15,
         "capSource": "msccruises.com/int/on-board/dining-and-drinks/drinks-packages — Premium Extra: \"Drinks with a value over €14 / $ 16 are excluded.\" The same page splits the ceiling by region: \"$16 CAR, NOA, ALA, FAE\" and \"€14 MED, NOR, WEE, EMW, SOC, WOR\" — cap 16 is therefore the US/Caribbean/Alaska figure and does NOT hold on Mediterranean or North Europe sailings. Daily limit: msccruisesusa.com/on-board/dining-drinks/drinks-packages — \"the new Premium Extra Package includes a maximum daily limit of 15 alcoholic beverages\", \"The new pricing and daily 15 alcoholic beverage limit will impact all sailings as of April 1, 2025\", measured \"within a 24-hour period, measured from 06:00 AM-06:00 AM\", non-alcoholic drinks unlimited, and the limit applies inside MSC Yacht Club too. Over the limit MSC charges \"full menu price\" — NOT the difference. Read from the rendered DOM 2026-08-09. Evidence: docs/price-changes/2026-08-09-msc-cap-limit-booking-date.md",
-        "capVerified": "2026-08-09",
-        "verify": "Sept 2026 re-verify, data-only: the $85/$95 pre-cruise price and the $95-$105 onboard band are THIRD-PARTY only — MSC publishes no drinks price on the open site. MSC also states new beverage packages took effect for the summer 2026 season and that only the new packages have been sold since 1 Oct 2025, so re-price before trusting the July read. Also unverified this pass: surcharge.pct 15 on individual drinks (no first-party statement found 9 Aug 2026).",
+        "capVerified": "2026-08-19",
+        "overCapMechanic": "difference",
+        "overCapStatedToPurchaser": true,
+        "overCapScope": "Published on the US drinks-packages page itself, in the purchaser FAQ — not scoped to a cabin grade, tier or market.",
+        "overCapSource": "msccruisesusa.com/on-board/dining-drinks/drinks-packages, verbatim: \"Guests who purchase the Premium Extra Package, and who want to enjoy cocktails, spirits and/or wines by the glass that are not included in their package, will pay only the price difference between the package allowance and the à la carte price of ordered beverages.\" Corroborated on the same page: \"If you purchase an alcoholic beverage valued higher than your package allowance and you only paid the difference in price, that beverage will count towards your daily limit since you used the value of your package allowance and did not pay full menu price for the beverage.\" Read 2026-08-19, rendered DOM.",
+        "overCapVerified": "2026-08-19",
+        "exclusionsSource": "msccruisesusa.com/on-board/dining-drinks/drinks-packages/terms-and-conditions, verbatim: \"The following exclusions apply: tobacco, souvenir glasses, ice cream menu, retail items, minibar, room service, promotions and signature venues, including Venchi 1878 establishments, Lavazza Coffee Shops, Jean Philippe Chocolate, Coffee, Crepes & Gelato, regardless of beverage price.\" Note the closing clause: those venues are excluded whatever the drink costs, so the $16 ceiling is not the only thing that stops the package working. Read 2026-08-19, rendered DOM.",
+        "exclusionsVerified": "2026-08-19",
+        "packageTermsSource": "msccruisesusa.com/on-board/dining-drinks/drinks-packages/terms-and-conditions, read 2026-08-19, rendered DOM.",
+        "packageTermsVerified": "2026-08-19",
+        "verify": "Sept 2026 re-verify, data-only: the $85/$95 pre-cruise price and the $95-$105 onboard band are THIRD-PARTY only — MSC publishes no drinks price on the open site. MSC also states new beverage packages took effect for the summer 2026 season and that only the new packages have been sold since 1 Oct 2025, so re-price before trusting the July read. RESOLVED 19 Aug 2026 — the bar service charge is no longer unverified: see `surcharge` below. It is 18% on North America itineraries and 15% elsewhere, and this record had carried the non-North-America figure. The drinks pages do not state it; the On Board Information FAQ does.",
         "verified": "2026-07"
       },
       "specialtyDining": {
@@ -431,8 +440,14 @@
         "verified": "2026-07"
       },
       "surcharge": {
-        "pct": 15,
-        "appliesTo": "individual drinks only — not packages"
+        "pct": 18,
+        "appliesTo": "individual bar purchases on North America itineraries — not packages, which have their own 18% folded into the price",
+        "byItinerary": {
+          "North America": 18,
+          "European, Emirates, South Caribbean, Red Sea, South America (Brazil and Argentine), Far East": 15
+        },
+        "source": "msccruisesusa.com/faq/on-board-information, verbatim: \"Bar Service Charge — A 18% Bar Service Charge is automatically added to all purchases.\" And under \"What additional costs should I plan for?\": \"Onboard bar purchases will incur a service charge, automatically added to all purchases: 15% service charge on European, Emirates, South Caribbean, Red Sea, South America (Brazil and Argentine) and Far East itineraries, and 18% service charge on North America itineraries.\" Read 2026-08-19, rendered DOM. NOTE for the next verification: this figure is on the On Board Information FAQ, NOT on any drinks-packages or service-charge page — four of those were searched first and none carries a percentage.",
+        "verified": "2026-08-19"
       }
     },
     "disney": {
