@@ -50,6 +50,7 @@
         "onboardPerDay": 35,
         "plans": "Social $20.40 · Value $23.80 · Premium $25.50 (pre-cruise); onboard $25 / $32 / $35",
         "tiers": {
+          "Social — social apps only": 20.4,
           "Premium": 25.5,
           "Social onboard": 25,
           "Value onboard": 32,
@@ -72,6 +73,9 @@
         "overCapDiscountPct": 25,
         "capSource": "carnival.com/help?topicid=6005 — \"with a $20.00 USD or lower menu price, per serving\"; \"25% discount off the menu price for any spirit, cocktail or wine by the glass, costing above $20.00 USD, per serving\"; \"guests are allowed up to 15 drinks per day, but a guest may be limited to fewer than 15 drinks based on our team's judgment and discretion\" — the 15 is explicitly NOT an entitlement, never present it as a guarantee. Also verbatim: \"Each adult assigned to the same stateroom must purchase the program\" and a 10-minute wait between orders. Read 2026-08-04, rendered DOM. Evidence: docs/price-changes/2026-08-04-carnival-cheers-terms.md",
         "capVerified": "2026-08-04",
+        "minNights": 3,
+        "minNightsSource": "carnival.com/help?topicid=6005 (rendered DOM) — \"CHEERS! is not offered on 2-day cruises, charter cruises and beverage purchases made at Celebration Key, Half Moon Cay and Princess Cays in The Bahamas\". Carnival states the exclusion, not a minimum; 3 is that exclusion in this field's terms (2 nights or fewer = not sold). Evidence: docs/price-changes/2026-08-19-carnival-cheers-min-nights.md",
+        "minNightsVerifiedOn": "2026-08-04",
         "note": "Carnival quotes $69.95 pre / $74.95 onboard + 20% = $83.94 / $89.94 all-in (verified). NOT honoured at Celebration Key, Half Moon Cay or Princess Cays — confirmed verbatim 4 Aug 2026 (\"Beverages purchased off the ship at any port of call, including Celebration Key, Half Moon Cay and Princess Cays\"). Not sold on 2-day cruises or charters.",
         "verified": "2026-06"
       },
@@ -238,15 +242,47 @@
         "offered": true,
         "name": "Free at Sea",
         "serviceChargeOnly": true,
+        "beverageName": "Unlimited Open Bar",
         "perDay": 28.5,
-        "perDayBasis": "Single combined MANDATORY service charge covering the Unlimited Open Bar AND the Specialty Dining perk. It does NOT prepay daily gratuities. VERIFIED FIRST-PARTY 3 Aug 2026 against the NCL MIAMI promotions terms — the edition whose own scope line reads \"Applicable to NCL MIAMI, NCL INTL, NCL AUSTRALIA, NCL BRAZIL and NCL ASIA / Not applicable to NCL MEA, NCL GERMANY/CE or NCL UK offices\". That distinction matters: the CE/UK edition served to European visitors prices Free at Sea as a per-person upgrade fee instead and explicitly excludes NCL Miami, which is why two earlier verification attempts failed. Beverage Package Pricing table, verbatim: 2-5 Nights $32.00 USD, 6+ Nights $28.50 USD, \"Price in USD Per Person\"; per-day confirmed by the same document (\"Unlimited Pop Beverage Package is $12.50 USD per person per day\", Hawaii package \"$28.50 per person per day\") and by ncl.com FAQ (\"Starting at $28.50 per guest per day\"). PASSENGER BASIS: applicable to guests 1-8; guests 1-2 must be 21+, and guests 1-2 under 21 receive the Pop (soda) package instead at $12.50/pp/day. Guests onboard accounts may reflect applicable VAT/taxes on certain ports or itineraries. Source transcription: docs/price-changes/2026-08-03-ncl-us-terms/full-text.md.",
-        "covers": "Unlimited Open Bar + Specialty Dining service (guests 21+). Does NOT cover daily gratuities.",
+        "perDayBasis": "MANDATORY service charge for the BEVERAGE perk only. It does NOT prepay daily gratuities, and — CORRECTED 18 Aug 2026 — it does NOT cover the specialty dining perk either. This field previously read \"Single combined MANDATORY service charge covering the Unlimited Open Bar AND the Specialty Dining perk\", which was wrong and understated every NCL estimate by the dining fee. NCL bills the two perks separately, each under its own heading with its own price table and its own liability sentence: \"Guests are responsible for the cost of the Unlimited Open Bar and Soda [Package] prior to their cruise\" under Beverage Package Pricing, and \"Guests are responsible for the ADDITIONAL cost of the Specialty Dining Package prior to their cruise\" under Specialty Dining Package. The dining price lives in drinksPackage.specialtyDiningCharge. Evidence: docs/price-changes/2026-08-18-ncl-specialty-dining-charge.md. VERIFIED FIRST-PARTY 3 Aug 2026 against the NCL MIAMI promotions terms — the edition whose own scope line reads \"Applicable to NCL MIAMI, NCL INTL, NCL AUSTRALIA, NCL BRAZIL and NCL ASIA / Not applicable to NCL MEA, NCL GERMANY/CE or NCL UK offices\". That distinction matters: the CE/UK edition served to European visitors prices Free at Sea as a per-person upgrade fee instead and explicitly excludes NCL Miami, which is why two earlier verification attempts failed. Beverage Package Pricing table, verbatim: 2-5 Nights $32.00 USD, 6+ Nights $28.50 USD, \"Price in USD Per Person\"; per-day confirmed by the same document (\"Unlimited Pop Beverage Package is $12.50 USD per person per day\", Hawaii package \"$28.50 per person per day\") and by ncl.com FAQ (\"Starting at $28.50 per guest per day\"). PASSENGER BASIS: applicable to guests 1-8; guests 1-2 must be 21+, and guests 1-2 under 21 receive the Pop (soda) package instead at $12.50/pp/day. Guests onboard accounts may reflect applicable VAT/taxes on certain ports or itineraries. Source transcription: docs/price-changes/2026-08-03-ncl-us-terms/full-text.md.",
+        "covers": "Unlimited Open Bar (guests 21+). Does NOT cover daily gratuities, and does NOT cover the specialty dining perk — that carries its own separate pre-purchase fee (drinksPackage.specialtyDiningCharge). Corrected 18 Aug 2026; this field previously claimed the charge covered dining too.",
         "shortSailingPerDay": 32,
         "shortSailingNote": "$32.00 USD per person on 2-5-night sailings; $28.50 on 6+. Both bands read verbatim off the NCL MIAMI promotions terms Beverage Package Pricing table, 3 Aug 2026 — this REPLACES the previous single secondary citation (Cruise Hive), which was the weakest sourcing on any money-bearing NCL field. The 2-5 / 6+ boundary is NCL's own and matches the engine band exactly. Source transcription: docs/price-changes/2026-08-03-ncl-us-terms/full-text.md.",
         "minNights": 2,
         "minNightsSource": "ncl.com/ca/en/about/terms-and-conditions/promotions (NCL MIAMI edition) — \"Sailings that are 1 day, select Charters or on Pride of America sailings are excluded\", plus \"Fleetwide - 2+ night sailings\". Corroborated by the CE/UK edition read 3 Aug 2026.",
         "minNightsVerifiedOn": "2026-08-03",
+        "specialtyDiningCharge": {
+          "perGuestByLength": {
+            "2-4": 20,
+            "5-6": 40,
+            "7-8": 60,
+            "9+": 80
+          },
+          "appliesToFirstNGuests": 2,
+          "gratuitiesIncluded": true,
+          "basis": "per_eligible_guest_per_voyage",
+          "note": "Free at Sea specialty dining is an ADDITIONAL charge, separate from the beverage service charge in perDay. NCL US terms, verbatim: \"Guests are responsible for the additional cost of the Specialty Dining Package prior to their cruise\", under a Specialty Dining Package heading and price table distinct from Beverage Package Pricing. Charged PER ELIGIBLE GUEST for the whole voyage, guests 1-2 only. The meal count is written at reservation level, but the FEE is unambiguously per guest: a second guest aged 2-12 on the kids' menu \"will not be charged the specialty dining package fee\", and one aged 13 or older pays \"the standard Free at Sea specialty dining package fee\". Owner ruling 18 Aug 2026: two adults on a 7-night sailing pay the 7-8 band twice. FREE AT SEA PLUS PAYS IT TOO — checked, not assumed: the Plus prepaid service charge \"does not cover bar and beverage service charges, specialty dining gratuities, spa services\", and the Plus dining benefit is 50% off ADDITIONAL covers only. So it attaches on both tiers and does not move the Free at Sea vs Plus comparison. Ages are not modelled (standing scope decision), so the calculator charges min(guests, 2); a stateroom whose second guest is a child eating from the kids' menu is overstated by one fee, which is the conservative direction.",
+          "source": "NCL US promotions terms, Specialty Dining Package pricing table, captured 18 Aug 2026 from https://www.ncl.com/cruise-deals/promotion-terms#free-at-sea (PDF sha256 bea97f0ed5418f46964a637e4c2ef99ceaaf70afc1f17057a029a417a23626ed). The table is demonstrably current, not legacy: its Onboard Price column shows $72.00 per meal, which is NCL's live top-tier $60 cover charge plus this record's own surcharge.pct of 20% — exactly — and it scales linearly across all four bands. Full working: docs/price-changes/2026-08-18-ncl-specialty-dining-charge.md.",
+          "verified": "2026-08-18"
+        },
         "plusPerDay": 49.99,
+        "plusUpgrade": {
+          "tier": "freeAtSeaPlus",
+          "supersetOf": "freeAtSea",
+          "prepaysServiceCharge": true,
+          "wifi": "unlimited_streaming",
+          "diningCoverDiscountPct": 50,
+          "beverageAdds": [
+            "top-shelf spirits",
+            "premium wines and champagne by the glass",
+            "unlimited Starbucks (one drink per visit)",
+            "specialty and bottled water",
+            "energy drinks and fresh juice"
+          ],
+          "note": "Free at Sea Plus is the paid upgrade tier. Its $49.99 REPLACES the base service charge rather than stacking on it — NCL FAQ, verbatim: \"The Free at Sea Plus Package includes the above amenities for a cost of $49.99 per person per day.\" Upgrade items, verbatim from the terms: Unlimited Open Bar Package: Great Stirrup Cay / Unlimited Starbucks Package (One Drink Per Visit) / Premium Wines, Champagne & Liquors Package (by the glass) / Filtered Bottled Water, Specialty Water and Energy Drink Package (from the bar) / Unlimited Wifi Streaming Voyage Pass Upgrade / 50% Discount on Additional Specialty Dining Cover Charge / Prepaid Service Charge. The dining line is the one most often reported wrongly: it is a discount on EXTRA covers, and the sailing-length meal entitlement above is unchanged — NCL's own table reads \"Free at Sea speciality dining meals AND: 50% off the cover charges on any additional speciality dining nights.\" Guests 12 and under do not get the 50% but pay a reduced $20 cover.",
+          "source": "ncl.com promotions terms, NORWEGIAN'S FREE AT SEA PLUS block. The Plus block is ONE global section applicable to every NCL office including MIAMI and priced in USD, so unlike base Free at Sea it reads identically in the US and CE/UK editions — re-read live 18 Aug 2026 and unchanged from the 3 Aug capture. Primary: docs/price-changes/2026-08-03-ncl-us-terms/full-text.md; corroborated by the US flyer and FAQ in that folder's other-sources.md.",
+          "verified_on": "2026-08-18"
+        },
         "plusNote": "VERIFIED FIRST-PARTY 3 Aug 2026 (NCL MIAMI terms, \"US $49.99 Per Person Per Day\", guests 1-8 Adult; child rate $40; guests who already have prepaid service charges receive a $15 discount, i.e. $34.99 — recorded as prose, NOT as a live numeric field, because nothing computes it and an unread number rots). Free at Sea Plus daily charge ($49.99/pp/day) — the paid upgrade tier that ALSO prepays daily gratuities and adds unlimited streaming Wi-Fi. Verified 4 Jul 2026 (ncl.com).",
         "standaloneAvailability": {
           "soldSeparately": false,
@@ -432,6 +468,11 @@
       "drinksPackage": {
         "offered": false,
         "note": "No unlimited drinks package — alcohol paid per drink. PAYG field stays blank (Personal); ~$60-80/day is editorial context only — never prefill the calculator value (AO-016)."
+      },
+      "dining": {
+        "included": false,
+        "note": "Rotational main dining included; every adult restaurant (Palo / Palo Steakhouse / Remy / Enchanté) is a paid cover charge + 18%.",
+        "verified": "2026-08-19"
       },
       "specialtyDining": {
         "range": [
