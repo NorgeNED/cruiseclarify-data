@@ -1023,6 +1023,7 @@
         "perDay": 20,
         "note": "+15% on bar tabs beyond inclusions",
         "verified": "2026-06",
+        "verify": "Sept 2026 — the $20/day has NO first-party source on this record and cannot get one from here: the reachable Viking market (UK) publishes \"Gratuities are included on board\" and no daily rate at all. Needs a US-locale read or a captured US document, exactly as HAL's terms PDF. Do not \"correct\" it against a UK page.",
         "child": {
           "adultsOnly": true,
           "note": "Viking Ocean is 18+ — no children aboard, so no child gratuity applies.",
@@ -1037,24 +1038,43 @@
         "name": "Silver Spirits",
         "perDay": 27,
         "perDayBasis": "house wine/beer with meals already in fare; Silver Spirits = anytime drinks up to $18. Both cabin guests must buy.",
+        "cap": 18,
+        "dailyLimit": null,
+        "capSource": "vikingcruises.co.uk/oceans/my-trip/silver-spirits-beverage-package, footnote **, verbatim: \"Ocean & Expedition: This Silver Spirits Beverage Package includes select wines by the glass, house champagne by the glass, cocktails, aperitifs, and any drink up to $18 USD, throughout the day and anywhere on the ship\". Corroborated on the ocean FAQ (\"Can I upgrade the complimentary beverages?\"): \"a selection of upgraded whiskeys and soft drinks, up to $18 USD each.\" OCEAN vs RIVER — the SAME footnote states the river rule differently and it has NO ceiling: \"River: Includes premium wines by the glass and bottle … and any drink except treasure wines\", plus \"The Silver Spirits Beverage Package is not available on Egypt itineraries\". A river read must never be taken for the ocean rule. Read 2026-08-19, rendered DOM.",
+        "capVerified": "2026-08-19",
+        "wholeCabinRequired": true,
+        "wholeCabinSource": "Same page, footnote *, verbatim: \"Both guests in a stateroom must purchase the package for the full length of the cruise in order for it to be valid.\" The ocean FAQ says the same with \"voyage\" for \"cruise\". Read 2026-08-19, rendered DOM.",
+        "wholeCabinVerified": "2026-08-19",
+        "minAge": 21,
+        "purchaseDeadlineHours": null,
+        "purchaseWindowSource": "Same page, verbatim: \"you must be 21 years of age or older to purchase and consume alcoholic beverages\"; and \"If you have already booked a voyage, you may purchase the beverage package prior to sailing, including on the My Viking Journey Dining & Beverage page, or once you are on board.\" No pre-sailing deadline — unlike Virgin's 24h. Also stated: the package \"is not refundable\". Read 2026-08-19, rendered DOM.",
+        "includes": "The Chef's Table premium wine pairing; complimentary access to standard tasting events; 50% discount for premium tasting events; 30% discount on premium beverages including bottles of wine.",
+        "includesSource": "Same page, footnote **, and the ocean FAQ answer, both read 2026-08-19, rendered DOM. NOT carried: a claim that Silver Spirits is complimentary on the Longitudinal World Cruise and Pole-to-Pole voyages. It was looked for on both pages on 2026-08-19 and is not there; it is recorded here as UNVERIFIED so nobody re-adds it from memory.",
         "servicePct": 15,
         "serviceIncludedInPrice": true,
-        "verified": "2026-06"
+        "servicePctSource": "Same page, footnote *, verbatim: \"A 15% service charge per person is included with the price.\" This is the charge folded into the PACKAGE price. It is NOT evidence for `surcharge.pct` below, which is a different fact about à-la-carte bar tabs. Read 2026-08-19, rendered DOM.",
+        "servicePctVerified": "2026-08-19",
+        "verified": "2026-06",
+        "verify": "Sept 2026 — the $27/day is a US figure with NO first-party source. The only reachable Viking market publishes the UK price (£21 GBP per day, stated twice: the Silver Spirits page and the ocean FAQ), and a GBP figure cannot confirm or refute a USD one. Needs a US-locale read or a captured US document. Everything else on this record was settled first-party 19 Aug 2026."
       },
-      "baseDrinks": "House wine, beer, soft drinks with lunch & dinner included; bar drinks between meals are NOT",
+      "baseDrinks": "House wine, beer, soft drinks with lunch & dinner included; bar drinks between meals are NOT. Coffees, hot teas, juices and bottled water are complimentary 24 hours a day, all voyage.",
+      "baseDrinksSource": "vikingcruises.co.uk/oceans/my-trip/silver-spirits-beverage-package, verbatim: \"beyond our complimentary house beers, wines and soft drinks (available with onboard lunches and dinners), and all-day coffees and hot teas\"; its inclusion table also shows \"Selection of coffees, teas, juices; bottled water\" already in the fare. The ocean FAQ says \"assorted hot teas and coffees that are available 24 hours a day.\" Read 2026-08-19, rendered DOM.",
+      "baseDrinksVerified": "2026-08-19",
       "dining": {
         "included": true
       },
       "surcharge": {
         "pct": 15,
-        "appliesTo": "bar tabs beyond inclusion"
+        "appliesTo": "bar tabs beyond inclusion",
+        "verify": "Sept 2026 — needs a US-market source. The 15% here may be the package's own service charge generalised to bar tabs; that inference has never been checked. Decide in the same pass whether the calculator should keep applying it silently or state it (drinks.barCharge)."
       },
       "corkage": {
         "cabinFree": true,
         "venueFee": 0,
-        "note": "No corkage; bring your own freely. A rarely-enforced ~$25 is cited by some third-party sources.",
-        "source": "third-party (Cruise Critic)",
-        "verified": "2026-07"
+        "note": "No corkage — Viking states it charges none, in stateroom or restaurant.",
+        "source": "vikingcruises.co.uk/oceans/frequently-asked-questions, \"Can I bring alcoholic and other beverages on board?\", verbatim: \"Guests may bring alcohol and beverages with them, purchase alcohol ashore at destinations that sell alcohol, or purchase them from the onboard shop. Alcohol can be consumed in the guest's stateroom or in public spaces, including the restaurants. There is no corkage fee.\" Read 2026-08-19, rendered DOM. The site already published \"no corkage at all\"; now the line says so itself, and the third-party hedge it rested on is retired.",
+        "verify": "Retired 19 Aug 2026, kept only so it is recognisable if it resurfaces: a rarely-enforced ~$25 corkage was cited by third-party sources (Cruise Critic). Viking itself says there is no corkage fee. Do not reinstate the $25 without a first-party Viking source.",
+        "verified": "2026-08-19"
       }
     },
     "oceania": {
