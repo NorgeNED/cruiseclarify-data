@@ -890,22 +890,27 @@
           "RockStar Quarters"
         ],
         "note": "$10 delivery on orders under $10; waived at $10+.",
-        "source": "virginvoyages.com",
-        "verified": "2026-07",
+        "source": "virginvoyages.com — dining FAQ, \"Is there a charge for ShipEats delivery?\": \"Yes — there is a $10 delivery charge. However, the fee is waived if you order items totalling $10 or more, or if you’re staying in one of our RockStar Quarters.\"",
+        "verified": "2026-08-20",
         "conflictFlag": false
       },
       "name": "Virgin Voyages",
       "segment": "Premium",
       "packageTreatment": "prepaid_credit",
-      "fareModel": "VoyageFair Choices — 3-tier fare (Base/Essential/Premium) since Oct 7 2025; gratuities separate on all tiers; Premium bundles $15/Sailor/night of Bar Tab.",
+      "fareModel": "VoyageFair Choices — Base / Essential / Premium since Oct 7 2025, for Sea Terrace and below only; \"Lock It In\" is a separate non-refundable rate; RockStar and Mega RockStar suites are outside the scheme. Gratuities separate on every fare; the Premium fare includes a daily drinks credit (amount not published — see premiumTierBarTabPerDay).",
+      "fareModelSource": "virginvoyages.com/voyagefairchoices — \"Starting October 7th, 2025, we’ll offer three new options for our Sea Terrace or below categories: Base, Essential, and Premium\" and \"VoyageFair Choices are only applicable to Sea Terrace and the below categories\"; \"Lock It In\" named as its own fare in the cancellation-policy and dining-window tables on /faq/before-you-sail. Rendered read 2026-08-20.",
+      "fareModelVerified": "2026-08-20",
       "premiumTierBarTabPerDay": 15,
-      "premiumTierBarTabSource": "trade press (VV Insider, Seatrade) — not first-party; verify",
+      "premiumTierBarTabSource": "trade press (VV Insider, Seatrade) — not first-party. Virgin’s own /voyagefairchoices page states the benefit without a figure: \"The Premium fare also includes Premium WiFi for 2 devices and a daily drinks credit.\" Verified absent 2026-08-20.",
+      "premiumTierBarTabVerify": "BOOKING FLOW ONLY. Page reads are exhausted (20 Aug 2026). Settle from a Premium-fare booking confirmation or the My Account add-ons screen. Virgin also does not call it \"Bar Tab\", so confirm whether it carries Bar Tab’s rules (24h deadline, forfeiture, shareability) or is generic drinks credit.",
       "gratuities": {
         "included": false,
         "perDay": 20,
         "onboardPerDay": 22,
-        "note": "Separate charge for bookings from Oct 7 2025: $20 prepaid / $22 onboard, flat across all cabins. Earlier (\"Legacy Fare\") bookings may still include them.",
-        "verified": "2026-07-30",
+        "flatAcrossCabins": true,
+        "note": "Separate charge for bookings from Oct 7 2025: $22 per Sailor per night is the DEFAULT — automatically added to the onboard folio — and $20 is the discounted rate for pre-paying before the voyage begins. Flat across all cabins, suites included. The two rates are not the same money with different timing: pre-paying saves $2 per Sailor per night and LOCKS THE CHARGE IN (non-refundable); paying onboard costs more but stays adjustable or removable at Sailor Services at any time before disembarkation. Earlier (\"Legacy Fare\") bookings may still include gratuities.",
+        "source": "virginvoyages.com/voyagefairchoices and /faq/before-you-sail/voyagefair-choices — \"we automatically apply a daily service gratuity of $22 USD per Sailor to your onboard folio. Prefer to take care of it in advance? Pre-pay before the voyage begins and pay just $20 USD per night.\" Rule: \"By pre-paying you get the discounted rate but that service gratuity is locked in and non-refundable. If you pay the daily service gratuities on board, you may modify or remove the amount based on your onboard experience, and you may do so at your discretion by visiting our Sailor Services desk at any time prior to disembarkation.\" Rendered read 2026-08-20.",
+        "verified": "2026-08-20",
         "child": {
           "adultsOnly": true,
           "note": "Virgin ships are 18+ — no children aboard, so no child gratuity applies.",
@@ -916,10 +921,17 @@
         "included": true,
         "premiumPerDay": 30,
         "additionalDevicePerDay": 15,
-        "plans": "Basic included (1 device pp) · Premium $30/day first device, +$15/day each additional",
-        "note": "Basic Wi-Fi included (1 device pp); streaming/premium upgrade $30/day for the first device and $15/day for each additional device. Included Wi-Fi tier scales with the fare tier.",
-        "source": "virginvoyages.com; VV Insider Wi-Fi guide",
-        "verified": "2026-07"
+        "tierNames": [
+          "Basic",
+          "Classic",
+          "Premium",
+          "Work From Sea"
+        ],
+        "plans": "Included tier depends on the fare: Basic (Base fare) or Classic (Essential fare) · Premium and Work From Sea are paid upgrades · the Premium fare includes Premium Wi-Fi for 2 devices",
+        "note": "Wi-Fi is included on every fare — the question is which tier. Basic is the new entry-level tier introduced with the Base fare (social media, messaging, limited browsing); Classic is what the Essential fare carries and is the service Virgin describes as \"the same service you’re used to today\" (messaging, social media, browsing, Wi-Fi audio calling); Premium and Work From Sea are the paid upgrades, and the Premium FARE includes Premium Wi-Fi for two devices. premiumPerDay $30 / additionalDevicePerDay $15 are the paid-upgrade rates and are NOT first-party — see verify.",
+        "source": "virginvoyages.com/faq/the-days-at-sea/wifi (\"you can also upgrade your internet service to Premium or Work from Sea WiFi\") and /voyagefairchoices (\"Our Base fare is a new non-refundable fare that includes our new Basic WiFi tier\"; \"The Essential fare retains … Classic WiFi\"; \"Is Classic WiFi a new offering? Nope! Classic WiFi is the same service you’re used to today\"; \"The Premium fare also includes Premium WiFi for 2 devices\"). Tier NAMES verified first-party 2026-08-20; PRICES are not.",
+        "verify": "BOOKING FLOW ONLY for the two prices. Virgin names all four tiers on its own pages and prices none of them — Premium is bought pre-sailing through My Account or onboard at wifi-vv.com, so a page read cannot settle $30 / $15 however many times it is repeated (established 2026-08-20). The tier NAMES are settled and first-party. Deferred by decision: which tier a given reader gets is a FARE-dependent inclusion, and the calculator collects no fare input — that waits on the fare-type control (Track B), not on this record.",
+        "verified": "2026-08-20"
       },
       "drinksPackage": {
         "offered": false,
@@ -946,7 +958,12 @@
             "credit": 1250
           }
         ],
+        "barTabTiersVerify": "BOOKING FLOW ONLY. Settle whether a $100 Bar Tab is purchasable and, if it is, what bonus it carries. If it exists, the calculator’s recommender floor changes — today the smallest tier it can offer is $200, and it tells anyone below ~$225 to pay as they go.",
         "purchaseDeadlineHours": 24,
+        "purchasableOnboard": false,
+        "purchasableOnboardSource": "virginvoyages.com/faq/before-you-sail/bar-tab — \"Can I buy a Bar Tab onboard?\" / \"While Bar Tab is not available to purchase on board our lady ships, Sailors can pre-purchase their Bar Tab in the Virgin Voyages app or by logging into My Account up until 24 hours prior to sailing.\" Corroborated on /drinks: \"They are not available for purchase on the ship and are non-refundable once your voyage starts.\" Rendered read 2026-08-20.",
+        "carryOverBetweenVoyages": false,
+        "carryOverSource": "virginvoyages.com/faq/the-days-at-sea/drinks — \"No, Bar Tabs and Sailor Loot can’t carry over to your next voyage. They need to be enjoyed during the voyage in which you received them, or they were purchased. If you’d like to have a Bar Tab and Sailor Loot for each leg of your voyage, you’ll simply purchase them separately.\" Matters on back-to-back sailings.",
         "loyaltyBonus": [
           {
             "status": "Sea-Blazer",
@@ -973,7 +990,7 @@
           "throughDate": "2026-12-31",
           "note": "Promotional Bar Tab credit, not a purchase bonus. Base/Essential/Premium all eligible since 7 Oct 2025; available through 31 Dec 2026."
         },
-        "note": "No unlimited package. Prepaid credit with 12.5-25% bonus (bigger bonus on bigger tabs). Must be bought at least 24h before sailing — you can still add credit onboard, but with NO bonus. Bought per purchase, not per Sailor: no requirement for every Sailor in a stateroom to buy one, and the tab can buy drinks for anyone onboard. Covers alcohol, specialty coffee, fresh juices, smoothies, drinks at The Beach Club at Bimini, and $25 restaurant corkage. Does NOT cover spa, casino, retail, or packaged goods taken off the ship. Unused credit is forfeited at voyage end.",
+        "note": "No unlimited package. Prepaid credit with a 12.5-25% bonus (bigger bonus on bigger tabs). Must be bought at least 24h before sailing, through the Virgin Voyages app, My Account, a travel agent or Sailor Services — and it CANNOT be bought on board at all, at any price: miss the cutoff and there is no Bar Tab to buy, bonus or not (drinks then bill to the onboard account at menu price). Bought per purchase, not per Sailor: no requirement for every Sailor in a stateroom to buy one, and the tab can buy drinks for anyone onboard. Covers alcohol, specialty coffee, fresh juices, smoothies, drinks at The Beach Club at Bimini, and $25 restaurant corkage. Does NOT cover spa, casino, retail, or packaged goods taken off the ship. Unused credit is forfeited at voyage end and does not carry over to a back-to-back voyage.",
         "unlimitedTrial": {
           "name": "Drink Like a VIP",
           "perDay": 95,
@@ -982,24 +999,45 @@
           "adopted": false,
           "verified": "2026-07"
         },
-        "source": "virginvoyages.com (tiers, deadline, sharing, exclusions; sailing-club page for loyalty bonuses)",
-        "verified": "2026-07"
+        "source": "virginvoyages.com (tiers and bonuses from /drinks; deadline, no-onboard-purchase, sharing and exclusions from /faq/before-you-sail/bar-tab; carry-over and corkage from /faq/the-days-at-sea/drinks; sailing-club page for loyalty bonuses)",
+        "verified": "2026-08-20"
+      },
+      "cabinDrinksInclusion": {
+        "Mega RockStar Quarters": {
+          "perDrinkCap": 25,
+          "wineBottlesPerDay": 2,
+          "wineBottleCap": 90,
+          "discountAbovePct": 25,
+          "note": "Complimentary alcoholic and non-alcoholic drinks up to $25 per drink, plus two 750ml bottles of wine per day per cabin up to $90 each; 25% off drinks above $25 and off additional or dearer bottles.",
+          "source": "virginvoyages.com/faq/the-days-at-sea/drinks — \"What’s included in the Mega RockStar daily bar tab?\": \"Sailors staying in a Mega RockStar Quarter can revel in exclusive access to complimentary drinks and bottles of wine around the ship - with reasonable limits, of course. This includes both alcoholic and non-alcoholic drinks (up to $25 per drink) and two (2) bottles of wine per day per cabin (up to $90). Beyond this, Sailors will receive 25% off drinks priced more than $25, as well as 25% off additional bottles and those priced more than $90.\" Rendered read 2026-08-20.",
+          "verified": "2026-08-20"
+        },
+        "RockStar Quarters": {
+          "perDrinkCap": null,
+          "note": "NOT a drinks inclusion. RockStar Quarters get a stocked in-room bar and a select first round of beverages — a one-off, not a daily allowance — so a RockStar Sailor still faces the ordinary Bar Tab decision. Recorded so the two RockStar tiers are not conflated.",
+          "source": "virginvoyages.com/faq/the-days-at-sea/drinks — \"What’s included in the RockStar daily bar tab?\": \"Sailors that are booked in a RockStar Quarter can enjoy a fully stocked, in-room bar, as well as a select first round of beverages on us.\"",
+          "verified": "2026-08-20"
+        }
       },
       "dining": {
         "included": true,
-        "note": "All 20+ restaurants included; no specialty cover charges"
+        "note": "All 20+ restaurants included, with no per-visit cover charge. Two exceptions Virgin states itself and which are NOT cover charges: \"Treat Yourself\" items on select menus, and the ticketed dinner shows (Another Rose, It’s a Ship Show). Reservation windows run 15–120 days before sailing depending on the fare and cabin.",
+        "source": "virginvoyages.com/faq/the-days-at-sea/dining — \"What dining experiences will I be charged for?\": \"Although all meals at our 20+ eateries are included, Sailors will have access to Treat Yourself items on select menus and dinner shows like Another Rose and It’s a Ship Show for an additional cost.\" Rendered read 2026-08-20.",
+        "verified": "2026-08-20"
       },
       "surcharge": {
         "pct": 0,
-        "appliesTo": "none — Virgin adds no auto-gratuity/service charge to bar or drink purchases"
+        "appliesTo": "none — Virgin adds no auto-gratuity/service charge to bar, dining or spa purchases",
+        "source": "virginvoyages.com/drinks — \"all tips on us\" and \"We’ve taken care of (taking care of) your servers, so whenever you’re sailing with us, the price you see is the price you pay\"; menu examples on that page are each printed with the words \"(Tip included)\" after the price — figures deliberately not repeated here, they are not canonical values; see the evidence doc. /faq/before-you-sail/voyagefair-choices, \"Are there additional tips for purchases on board?\": \"Nope — once your service gratuity is covered, that’s it … there’s no need to tip for drinks, dining, or spa treatments during your voyage.\" Note SPA is named explicitly — unlike Viking, the 0% genuinely does extend to spa.",
+        "verified": "2026-08-20"
       },
       "corkage": {
         "cabinFree": true,
         "venueFee": 25,
         "bottleLimit": 2,
         "note": "Up to two 750ml bottles of wine, sparkling wine or Champagne per stateroom, in carry-on. Free in your stateroom; $25 corkage to drink it in an eatery — and Bar Tab may be used to pay the corkage.",
-        "source": "virginvoyages.com",
-        "verified": "2026-07"
+        "source": "virginvoyages.com/faq/the-days-at-sea/drinks — \"Can I bring my own wine to dinner and is there a corkage fee?\": \"Of course! Our corkage fee is $25 at our eateries.\"; \"Can Sailors pay for their corkage fee with their Bar Tab?\": \"Yes, Sailors can use their Bar Tab to cover corkage fees.\"; \"Sailors may bring up to (2) 750 mL bottles of wine, sparkling wine or Champagne per cabin in carry-on bags.\" Rendered read 2026-08-20.",
+        "verified": "2026-08-20"
       }
     },
     "viking": {
