@@ -57,6 +57,11 @@
           "Premium onboard": 35,
           "Premium Multi-Device (4 devices, pre-cruise only)": 90
         },
+        "tierBasis": {
+          "Premium Multi-Device (4 devices, pre-cruise only)": "per_booking_per_night"
+        },
+        "tierBasisSource": "carnival.com/help?topicid=6005 (rendered DOM), verbatim: \"Premium Multi-Device Wi-Fi Plan: Experience our fastest possible connection across up to 4 devices. This plan can only be purchased online prior to sailing for $90.00 USD per day and is not available onboard. The plan can be shared among guests in additional staterooms, not to exceed 4 devices.\" The final sentence is decisive and was NOT in the 4 Aug 2026 read recorded below — a plan shareable ACROSS staterooms cannot be a per-person or even a per-stateroom charge. The contrasting per-plan rule for the single-device tiers, same page, same read: \"Guests can upgrade from one plan to another and use multiple devices, per plan, including their smart phone or laptop, but only one device can be used at a time.\" Read 2026-08-21. Evidence: docs/price-changes/2026-08-21-carnival-wifi-multi-device-unit.md",
+        "tierBasisVerified": "2026-08-21",
         "note": "A4 convention: Value $23.80 is the headline — Social is social-apps-only (\"excludes access to most other websites, email, video, and music streaming\"), not general browsing. REPRICED, read off carnival.com/help?topicid=6005 (rendered DOM) 4 Aug 2026: Social $20->$20.40, Value $24->$23.80, Premium $26->$25.50, and an onboard set recorded for the first time ($25 / $32 / $35). Mixed direction in cents — a re-price, not a rise; the old record was rounded to the dollar. Carnival states no effective date. Evidence: docs/price-changes/2026-08-04-carnival-wifi.md",
         "verify": "Sept: recheck; also source the HUB App chat fee — the article cites $5 pp one-time but Carnival publishes no chat price on its HUB or Wi-Fi help pages (read 4 Aug 2026).",
         "verified": "2026-08-04"
@@ -144,6 +149,9 @@
         ],
         "onboardPerDay": 39,
         "plans": "VOOM Surf+Stream — single tier (browse-only Surf discontinued 2023)",
+        "chargeBasis": "per_connection_per_night",
+        "chargeBasisSource": "royalcaribbean.com/guides/wifi-cruise-packages, verbatim, both sentences from the same page: \"Surf + Stream packages, meanwhile, tend to cost more per device, per day, allowing you to stream videos on sites such as YouTube.\" and \"This not only gives you the best price on a per-device and per-day basis, but ensures you can get connected the moment you step onboard.\" Live fetch 2026-08-21. CAVEAT recorded rather than hidden: this is Royal's GUIDE surface, not an FAQ answer. A /faq/questions/ page reading \"The cost of VOOM varies by the number of devices and the service package purchased\" was read on 2026-08-21 in the investigation pass, but its URL could not be re-located on the re-read (every guessed FAQ path 404s), so it is NOT cited here. The guide sentences are first-party, purchaser-facing and state the basis directly, which is what this field claims. NO MAXIMUM declared: Royal publishes no device ceiling this pass could verify. Evidence: docs/price-changes/2026-08-21-wifi-charging-units.md",
+        "chargeBasisVerified": "2026-08-21",
         "includedByCabin": [
           "sky",
           "star"
@@ -245,6 +253,10 @@
           40
         ],
         "plans": "Browse $30 · Streaming $40",
+        "unitStatus": "contested",
+        "unitNote": "NCL publishes $29.99 a day and $14.99 a day for additional devices, but its own pages conflict on what the initial $29.99 charge covers — so we are not estimating it.",
+        "unitStatusSource": "ncl.com Voyage Wi-Fi Pass product page (\"1 Device ... $29.99 USD per day\") vs ncl.com internet FAQ (\"$29.99 per stateroom per day\"; \"Additional devices may be added for $14.99 per device per day\"). Both read 2026-08-21 from non-US locales; ncl.com force-redirects away from the US market, so the governing US wording is unread. RESOLVE BY: a US-market or booking-flow read settling which the initial charge covers. Do NOT describe $29.99 as \"the first device\" or \"per stateroom\" on any surface until then — both are claims NCL contradicts somewhere. Evidence: docs/price-changes/2026-08-21-wifi-charging-units.md",
+        "unitStatusVerified": "2026-08-21",
         "fasIncludedMin": 150,
         "fasBasis": "per_person",
         "fasBasisSource": "NCL MIAMI promotions terms, 3 Aug 2026: \"Wi-Fi package is per person\", table header \"Internet Minutes Per Person\". Flyer FASvsFAS+_Flyer_4.26.pdf: \"All guests receive 150 minutes of high-speed Wi-Fi powered by Starlink - regardless of sail length.\" TD-014.5 CLOSED: the allowance is PER PERSON, not shared, and does not scale with length. Nothing computes from this — the allowance is budgeted at $0 — it exists so no page hedges a settled fact. Source: docs/price-changes/2026-08-03-ncl-us-terms/full-text.md.",
@@ -397,6 +409,9 @@
         "tiers": {
           "Stream": 21
         },
+        "chargeBasis": "per_connection_per_night",
+        "chargeBasisSource": "msccruisesusa.com/faq/internet and /on-board/internet-apps/wifi, both live-fetched 2026-08-21, FAQ JSON-LD. Verbatim: \"How can I activate the devices once on board? — Once on board, register on the MSC CAptive portal with the first device you want to use ... To register additional devices, log in with the other devices using the user name and password created during registration.\"; \"Is it possible to change devices once activated? — No, if you activate a device, this device cannot be changed.\"; \"You can upgrade to a Browse package with additional devices or to the Browse & Stream package. You will only pay the difference between the full costs packages.\"; and \"We offer a choice of two different packages to suit different needs and number of devices (smartphones, tablets, laptops, etc.).\" NO MAXIMUM IS DECLARED: the widely-indexed sentence \"packages are available for 1, 2, 3, or 4 devices\" is NOT present on either live surface as read 2026-08-21 — it survives only in search-engine summaries, so tierMaxConnections stays absent rather than carrying a ceiling nobody can cite. UNCHANGED CAVEAT ON THE RATE: MSC publishes no Wi-Fi price anywhere public, so perDay 16 remains third-party and its own device-count basis is unknown — this field settles the UNIT, not the figure. Evidence: docs/price-changes/2026-08-21-wifi-charging-units.md",
+        "chargeBasisVerified": "2026-08-21",
         "includedByCabin": [
           "yachtClub"
         ],
@@ -491,6 +506,9 @@
         "tiers": {
           "Stream": 49
         },
+        "unitStatus": "unknown",
+        "unitStatusSource": "disneycruise.disney.go.com/faq/website-technical-help/wifi-service/ and /guest-services/internet-phone-services/, read 2026-08-21: \"Disney Cruise Line offers multiple internet packages for purchase based on your online needs\" is the entire corporate statement — no unit, no price. NOT USED, and recorded so it is not mistaken for evidence later: planDisney panelist answers (per device, up to four, take turns) are non-authoritative by their own page disclaimer, and the widely-quoted \"$30 per device per day\" is trade press. Evidence: docs/price-changes/2026-08-21-wifi-charging-units.md",
+        "unitStatusVerified": "2026-08-21",
         "verified": "2026-06"
       },
       "drinksPackage": {
@@ -562,6 +580,9 @@
         "includedByCabin": [
           "retreat"
         ],
+        "unitStatus": "unknown",
+        "unitStatusSource": "TARGETED RE-READ 2026-08-21, three surfaces, all live-fetched: celebritycruises.com/things-to-do-onboard/onboard-packages/internet-and-phone-packages (only \"Our Wi-Fi packages are tailored to the level of connection you desire and the number of devices that you need\"), /things-to-do-onboard/onboard-packages/internet-and-phone-packages/compare-wifi-packages (Basic vs Premium FEATURE table — web browsing, messaging, email, streaming — no device count, no price, no unit) and /faqs/wifi-onboard (two questions: \"Is there Wi-Fi onboard?\" and \"Can I upgrade my Basic Wi-Fi included plan to a Premium Wi-Fi plan?\"; neither answer mentions devices). WHAT WOULD SETTLE IT: a Cruise Planner or booking-flow read showing the purchase priced by device count. Evidence: docs/price-changes/2026-08-21-wifi-charging-units.md",
+        "unitStatusVerified": "2026-08-21",
         "note": "A4: headline Basic $20. The Retreat includes Premium Wi-Fi (verified product ruling 17 Jul 2026). Standalone Basic/Premium prices secondary-sourced.",
         "verified": "2026-07"
       },
@@ -661,8 +682,13 @@
         "tiers": {
           "Classic four-device": 45
         },
+        "tierBasis": {
+          "Classic four-device": "per_guest_per_night"
+        },
+        "tierBasisSource": "princess.com, two independent first-party surfaces, read 2026-08-21. (1) /cruise-deals-promotions/plus-premier-cruise-packages, its Wi-Fi FAQ, verbatim Q and A: \"Does each guest in a stateroom that purchased Princess Premier get four devices of MedallionNet Max Wi-Fi?\" — \"Yes, each guest with Princess Premier will receive the four-device MedallionNet Max Wi-Fi plan.\" Princess asks the per-stateroom question itself and answers PER GUEST, using the phrase \"the four-device ... plan\" for a single guest's entitlement. The same page's comparison table: \"Wi-Fi — 4 devices per guest\" (Premier) and \"Wi-Fi — 1 device per guest\" (Plus). (2) /ships-and-experience/princess-medallionclass/medallionnet, device table: \"4 devices per guest in a stateroom\" / \"1 devices per guest in a stateroom\" (Princess's own typo, quoted as printed), and on the standalone product: \"MedallionNet a la carte packages — If you prefer to purchase separately ... Select from one-device or four-device packages.\" Nothing on either surface makes any Wi-Fi plan a stateroom or booking charge, and every entitlement Princess does quantify is per guest. Evidence: docs/price-changes/2026-08-21-princess-wifi-four-device-unit.md",
+        "tierBasisVerified": "2026-08-21",
         "note": "Max is not a purchasable tier. The $45 is the four-device Classic plan, which this record mislabelled as \"Max\" until 3 Aug 2026. Product structure read first-party from princess.com 2026-08-03; the two prices remain secondary-sourced (see verify).",
-        "verify": "Sept: princess.com publishes NO public a-la-carte MedallionNet price — it sits behind Manage Booking / the Princess app. The one-device $25 and four-device $45 are secondary-sourced (SeatWiFi, last verified 8 May 2026, corroborated by independent trackers) and were carried into this record in Jun 2026 without a recorded source. Read both from the booking flow, and decide then whether the published $24.99 / $44.99 should replace these whole-dollar figures.",
+        "verify": "Sept: decide whether the published $24.99 / $44.99 should replace these whole-dollar figures. HALF OF THIS NOTE IS NOW SETTLED (21 Aug 2026) and the rest is narrowed to that one decision. The prices are no longer secondary-sourced: princess.com states them itself, in its 7 Aug 2024 news release, verbatim — \"A la carte pricing for MedallionNet Classic remains $24.99 per day for a single device plan and $44.99 per day for a multi-device plan\" — and the FAQ at /faq/onboard-experience corroborates the single-device figure (\"available for purchase in the MedallionClass app starting at $24.99 USD pre-cruise for a single-device\"). What is still true: the LIVE a-la-carte rate card is not published on the open site, it sits behind Manage Booking / the app, so a September read should confirm the 2024 figures still hold rather than assume them. The whole-dollar 25 / 45 are kept deliberately for now (Interaction Spec D16 — the interface displays whole dollars) and moving them is a money change needing its own evidence gate. Also newly recorded and not yet modelled: Platinum and Elite Captain's Circle members get 50% off a MedallionNet purchase (same FAQ) — a loyalty discount the calculator has no field for on any line.",
         "verified": "2026-06"
       },
       "drinksPackage": {
@@ -671,8 +697,8 @@
         "cap": 15,
         "premierCap": 20,
         "dailyLimit": 15,
-        "capSource": "princess.com/html/global/personalizer/ssv/beverages/disclaimer/ — Plus covers beer, spirits, wine by the glass and cocktails $15.00 USD and under, limit 15 alcoholic drinks per 24h (6am-6am); over-cap charged the difference. Premier cap $20.00 USD effective 14 Jan 2026 (princess.com Premier Beverage Package T&C). Both read 2026-07-30.",
-        "capVerified": "2026-07-30",
+        "capSource": "princess.com/html/global/personalizer/ssv/beverages/disclaimer/ — Plus covers beer, spirits, wine by the glass and cocktails $15.00 USD and under, limit 15 alcoholic drinks per 24h (6am-6am); over-cap charged the difference. Premier cap $20.00 USD effective 14 Jan 2026 (princess.com Premier Beverage Package T&C). Both read 2026-07-30. RE-VERIFIED UNCHANGED 2026-08-21 on the OPEN site, no login: princess.com/cruise-deals-promotions/plus-premier-cruise-packages, its beverage FAQ, verbatim — \"Effective January 14, 2026, the Premier Beverage Package includes an unlimited premium selection of beer, spirits, wine by the glass, alcohol and zero-alcohol cocktails up to a $20 USD / $30 AUD value each.\" The same page's comparison table states both tiers side by side: \"Unlimited (up to $20 each)\" for Premier against \"15 drinks per day (up to $15 each)\" for Plus. So BOTH halves of the calculator's Premier sentence are the line's own — the $20 ceiling and the absence of a daily count. The 15-a-day limit is stated in the PLUS answer only (\"The Plus Beverage Package has a daily limit of 15 beverages over a 24-hour period (i.e. 6 a.m. to 6 a.m.)\"), which is what dailyLimit records and why it must never be attached to Premier. Evidence: docs/price-changes/2026-08-21-princess-premier-drinks-cap.md. PLUS RE-VERIFIED UNCHANGED 2026-08-21 on the disclaimer page itself, verbatim: \"The package includes all beer, spirits, wine by the glass and cocktails $15.00 USD and under as listed on our menu(s)\"; \"Alcoholic drinks are limited to 15 beverages per 24-hour period (6 a.m. to 6 a.m.)\"; \"Non-alcoholic drinks do NOT ha[ve] limitation, nor do they count toward this maximum\"; \"Items selected that exceed the $15.00 USD or $22.00 AUD price are charged according to the difference in price.\" So the calculator wording \"15 ALCOHOLIC drinks a day\" is the line's own and is NOT a paraphrase to be loosened: the marketing FAQ's \"daily limit of 15 beverages\" is the same limit stated less precisely, since it goes on to exclude specialty coffees, teas and bottled water from the count. The two sources agree in substance and the disclaimer is the exact one. NOTE the standing trap in `verify` below still applies to this page: it is headed \"For cruises departing February 20, 2023 and beyond\" and is stale on the SERVICE CHARGE percentage — stale on one figure does not make it stale on all, and the cap and the daily limit are corroborated by the 2026 marketing FAQ. Evidence: docs/price-changes/2026-08-21-princess-plus-cap-guardrail.md",
+        "capVerified": "2026-08-21",
         "perDay": 77.99,
         "perDayBasis": "$64.99 + 20% service = $77.99 (service charge raised 18% -> 20% fleetwide early Mar 2026, same announcement as the crew-appreciation raise)",
         "servicePct": 20,
@@ -793,6 +819,10 @@
           "Premium": 24,
           "Stream": 36
         },
+        "unitStatus": "unknown",
+        "unitNote": "We price this as one plan per guest. HAL publishes how many devices a guest gets on Have It All, but not how a plan bought on its own is charged — worth checking against your booking.",
+        "unitStatusSource": "HAL documents the INCLUDED plan and not the standalone one. Included, verbatim, hollandamerica.com/en/us/faq/deals/have-it-all/have-it-all-wifi-package, read 2026-08-21: \"The base Surf Wi-Fi included with 'Have It All' provides access for one device per guest on the booking. That means if two people are in the stateroom, each has one device they can connect simultaneously. If you want to connect additional devices at the same time, you can purchase an upgrade to a multiple-device plan after boarding.\" Same fact on /faq/onboard-cruise-experience/wifi/does-eveyone-in-the-stateroom-need-to-purchase-or-can-they-share, which is the FAQ that asks the purchase question outright and answers only the Have It All case: \"The base Wi-Fi package included with Have It All provides access for one device for each Guest on a booking ... Guests on a multiple device plan will all have the same tier level package.\" EU and US serve this wording identically, so the /en/us/ -> /en/eu/ redirect trap does not apply. Plan mechanics, four times in docs/price-changes/2026-08-19-hal-us-terms/full-text.md, every instance inside offer terms defining an included perk (Have It All; Early Booking Bonus; an AARP promotion) and two of them narrowed further by \"Offer applies to 1st/2nd guests in a stateroom only\": \"The plan can be activated on any device, but only one device can be actively connected at a time. Upgrades are available once on board for a single day, the remaining duration of the cruise, or adding more devices.\" STANDALONE: NOTHING. The purchase page /onboard-packages/cruise-ship-wifi states prices and no charging unit; all eight WiFi FAQ questions were read and only the sharing one addresses count, scoped to Have It All; /faq/onboard-cruise-experience/wifi/can-i-use-the-internet-mobile-phones-or-web-cams-on-board gives activation mechanics only. PROVENANCE CORRECTION: this field carried chargeBasis per_guest_per_night for part of 2026-08-21. The declaration was withdrawn because its source governs the included package, not the product this record prices — a scope error against the evidence gate introduced the same day. No rate and no total changed in either direction. RESOLVE BY: a Navigator or on-board purchase read. Evidence: docs/price-changes/2026-08-21-wifi-charging-units.md",
+        "unitStatusVerified": "2026-08-21",
         "note": "A2/D4 resolved 10 Jun 2026: official tier pricing, headline = Surf per cheapest-unlimited convention",
         "verified": "2026-06"
       },
@@ -919,6 +949,9 @@
         "included": true,
         "premiumPerDay": 30,
         "additionalDevicePerDay": 15,
+        "unitStatus": "unknown",
+        "unitStatusSource": "virginvoyages.com states no charging unit for the paid Premium / Work From Sea upgrades on any page read to date (tier names verified first-party 2026-08-20; prices and unit both unverified — see `verify`, which establishes that Premium is bought through My Account or onboard at wifi-vv.com, so a page read cannot settle either). The only device sentence Virgin publishes is a FARE inclusion, /voyagefairchoices: \"The Premium fare also includes Premium WiFi for 2 devices\" — not a purchase rule. premiumPerDay 30 and additionalDevicePerDay 15 remain non-first-party. RESOLVE BY: the same booking-flow read that would settle the prices. Evidence: docs/price-changes/2026-08-21-wifi-charging-units.md",
+        "unitStatusVerified": "2026-08-21",
         "tierNames": [
           "Basic",
           "Classic",
@@ -1196,6 +1229,9 @@
         "includedByCabin": [
           "suite"
         ],
+        "unitStatus": "unknown",
+        "unitStatusSource": "Same surfaces as the rate, same result — see `verify` on this record: azamara.com/booked-guests/onboard-packages says only \"choose from full-cruise or daily packages\" available \"for purchase onboard\", and /booked-guests/before-you-board/stay-connected prices CARRIER plans, not Azamara products. Neither states a charging unit. RESOLVE BY: the Voyage Planner read already required for the rate. Evidence: docs/price-changes/2026-08-21-wifi-charging-units.md",
+        "unitStatusVerified": "2026-08-21",
         "note": "Not in standard fare (~$18–$25/day). Included for suite guests and loyalty members — calculator locks $0 on Suite cabin. B04 Pass 4, 17 Jul 2026.",
         "verify": "SAME SHAPE AS THE DRINKS PRICE, found on the same 2026-08-20 pass: the $22/day and the $18–25 range are THIRD-PARTY only and are not page-readable. Azamara sells Wi-Fi but publishes no rate — /booked-guests/onboard-packages says only \"choose from full-cruise or daily packages\" available \"for purchase onboard\", and /booked-guests/before-you-board/stay-connected (US market) says \"For heavier internet use, onboard Wi-Fi packages are available\" and then prices only the CARRIER plans, which are not Azamara products and must never be read as Wi-Fi rates: AT&T Cruise Plus $100 / Cruise Basic $60 per cruise, Verizon Cruise Daily Pass $30 a day ($1.99/min overage). Do not promote any of those three into wifi.perDay. Not acted on this pass — recorded so the next Azamara pass starts from evidence.",
         "verified": "2026-07"
@@ -1289,6 +1325,9 @@
       "wifi": {
         "included": false,
         "perDay": 35,
+        "unitStatus": "unknown",
+        "unitStatusSource": "No first-party Windstar source for the charging unit has ever been recorded here. The \"1 device\" in `note` is undated, unsourced prose carried since the SSOT was created and describes a plan's device allowance, not the basis on which additional plans are sold. RESOLVE BY: a windstarcruises.com read on the same pass that sources the $35. Evidence: docs/price-changes/2026-08-21-wifi-charging-units.md",
+        "unitStatusVerified": "2026-08-21",
         "note": "1 device; cheaper full-voyage plans; Starlink fleet-wide",
         "verified": "2026-06"
       },
@@ -1474,6 +1513,9 @@
         "tiers": {
           "Premium": 30
         },
+        "chargeBasis": "per_connection_per_night",
+        "chargeBasisSource": "cunard.com/en-gb/the-cunard-experience/staying-connected, Terms and conditions, verbatim: \"The prices shown are per day, based on one plan. You may use multiple devices on one plan, but you can only use a single device at any one time. If you wish to use multiple devices simultaneously, you will need to buy additional plans.\" Rendered DOM read 2026-08-21 (cunard.com 403s plain curl on every path, so the route is a real browser). Corroborated by this record's own note, carried since the 2026-08-09 price verification: \"One plan covers multiple devices but only one at a time.\" NO MAXIMUM is declared: Cunard publishes none, and the same terms invite unlimited additional plans. Evidence: docs/price-changes/2026-08-21-wifi-charging-units.md",
+        "chargeBasisVerified": "2026-08-21",
         "source": "cunard.com \"Staying connected\" — \"The Essential Internet plan\" / \"The Premium Internet plan\". Rendered read, US locale, 2026-08-09. Evidence: docs/price-changes/2026-08-09-cunard-wifi.md",
         "perDayBasis": "Per-day rate on a WHOLE-VOYAGE plan, Cunard's own wording: \"This plan is available for US$22 per day if purchased for the whole voyage\" (Premium: US$30). Onboard 24-hour day passes are a SEPARATE product at $28 Essential / $44 Premium — informational only, deliberately not stored as numeric leaves, the same convention hal.wifi uses for its onboard range. Cunard also states unquantified discounts for multi-device plans and for voyages over 50 nights; no percentage is published, so none is recorded.",
         "note": "Essential covers browsing, email and social media (text and images); Premium adds music and video streaming and video calling. Buying for the whole voyage up to four days before sailing saves 10% against onboard prices, so perDay is the pre-purchase rate — the onboard equivalent is derivable but deliberately not stored, to avoid carrying two prices for one product. One plan covers multiple devices but only one at a time. Starlink. Supersedes the previous record, which was Basic $24 / Premium $36 and carried no source and no verification date at any point; \"Basic\" is a retired product name and both figures were wrong.",
