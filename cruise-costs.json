@@ -717,6 +717,10 @@
         "perDay": 65,
         "premierPerDay": 100,
         "basis": "per_guest_per_night",
+        "appliesToFirstNGuests": 2,
+        "beyondFirstNMayOptIn": true,
+        "appliesToFirstNGuestsSource": "princess.com/cruise-deals-promotions/plus-premier-cruise-packages — verbatim: \"guests 1 and 2 on the reservation and must be purchased 4 days (or 96 hours) prior to departure for lower price.\" The opt-in half, same source: \"Third and fourth guests are not required to purchase or defaulted to the selected package of first and second guests in a stateroom. Should 3rd and 4th guests want to opt in to purchase a package, you will need to contact Princess or your Travel Advisor to have it applied to the booking.\" Rendered DOM read 2026-08-21. NOTE the separate under-age rule, recorded here because it is the one that stops \"guests 3-4 are children so it is cheaper\" being assumed: a guest under the local drinking age who IS on the package pays the SAME price and receives the Zero-Alcohol Drink Package \"in lieu\", with no refund for the difference (same site, Plus/Premier terms and conditions, General Terms). So a package guest is a package guest at full price whatever their age.",
+        "appliesToFirstNGuestsVerified": "2026-08-21",
         "note": "Plus $65/day pre-booked ($70 onboard); $70/day on Sun & Star ($75 onboard). Includes drinks, Wi-Fi, crew appreciation, 4 casual meals. Premier $100/day pre-booked ($105 onboard); $105/day on Sun & Star ($110 onboard) — adds unlimited casual + specialty dining, 4-device Wi-Fi, a length-based shore-excursion credit ($100/$200/$300) and more. Premier $85->$100 verified 9 Jul 2026 (princesscruisesblog, quiltripping, travelagewest 2026).",
         "credits": {
           "casualDining": {
