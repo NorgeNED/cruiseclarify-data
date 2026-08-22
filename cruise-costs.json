@@ -1535,7 +1535,15 @@
         "currency": "USD",
         "servicePct": 18,
         "serviceIncludedInPrice": true,
-        "perDayBasis": "A World of Drinks \"Beverage Collection\" pre-book, 7-14 nts ($76.50 — exact, matches cost-reference + Cunard article); full range 49.50-94.50 by voyage length",
+        "perDayBasis": "A World of Drinks \"Beverage Collection\" pre-book, 7-14 nts ($76.50 — exact, matches cost-reference + Cunard article). This is the REPRESENTATIVE figure only: the cost-reference table and the article both quote one rate per line and both frame it as the 7-14 night band. The rate the CALCULATOR charges comes from perDayByLength below, resolved for the sailing in front of the reader.",
+        "perDayByLength": {
+          "1-6": 94.5,
+          "7-14": 76.5,
+          "15-74": 63,
+          "75+": 49.5
+        },
+        "perDayByLengthSource": "cunard.com/en-us/activity-types/bars-and-lounges/a-world-of-drinks, \"A World of Drinks\" price table, rendered DOM read 2026-08-21 (US locale; cunard.com 403s plain curl on every path, so the route is a real browser). Verbatim column headings \"1-6 nights / 7-14 nights / 15-74 nights / 75 nights or more\" and the Beverage Collection row \"$94.50 ($105.00) / $76.50. ($85.00) / $63.00 ($70.00) / $49.50 ($55.00)\", under \"All prices are per person per night, and are shown in US$.\" Corroborated the same day on a second independent surface (owner's own browser session, same table, same sixteen figures) and matching the 2026-08-20 first-party read already recorded in `verify` below.",
+        "perDayByLengthVerified": "2026-08-21",
         "serviceIncluded": true,
         "prebookSaving": "10% vs onboard",
         "collections": {
@@ -1567,7 +1575,7 @@
             "bottledWineDiscountPct": 25
           }
         },
-        "rules": "15 alcoholic drinks per 24h (6am-6am), one at a time, ~10-min wait; whole cabin must buy same collection; no sharing; voyages 5+ nights",
+        "rules": "15 alcoholic drinks per 24h (6am-6am), one at a time, ~10-min wait; all guests of legal drinking age in the stateroom must buy the same collection; no sharing; no minimum voyage length (a 1-6 night band is published)",
         "signaturePackages": {
           "offered": true,
           "onSale": "2025-12-18",
