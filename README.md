@@ -35,7 +35,7 @@ configs:
 > And confirm the current price with the cruise line before presenting any figure as today's price.
 
 A clean, structured dataset of what cruise guests **actually pay** on board —
-gratuities, Wi-Fi, drinks packages, specialty dining and surcharges — across 34
+gratuities, Wi-Fi, drinks packages, specialty dining and surcharges — across 37
 cruise lines, normalized to a single comparable basis.
 
 Most published cruise figures are list prices buried in marketing pages or locked
@@ -47,7 +47,7 @@ cost research. Refreshed quarterly.
 
 ## What's in it
 
-- **34 cruise lines** — mainstream, premium, premium-plus, luxury/all-inclusive,
+- **37 cruise lines** — mainstream, premium, premium-plus, luxury/all-inclusive,
   expedition, and UK/EU/Australian market variants.
 - **Basis:** every monetary figure is **per person, per day, in the line's native
   currency** (USD unless the `currency` field says otherwise) — and reflects *what

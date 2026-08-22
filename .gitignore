@@ -1,0 +1,17 @@
+# Internal — NEVER publish (strategy / tooling / OS cruft)
+ROADMAP.md
+INTERNATIONAL-BACKLOG.md
+# build-dataset.js MOVED 20 Aug 2026 to ../site/scripts/build-dataset.js — the private repo,
+# where it is tracked and has real history. The rule stays as a belt-and-braces guard: if a
+# copy is ever created here again it must still never reach this public repository.
+# Rebuild command is now:  osascript -l JavaScript ../site/scripts/build-dataset.js
+build-dataset.js
+.DS_Store
+
+# Public set (for reference — these ARE published):
+#   cruise-costs.csv
+#   cruise-packages.csv
+#   cruise-gratuities-tiers.csv
+#   cruise-costs.json
+#   README.md
+#   LICENSE

@@ -209,6 +209,29 @@
       "surcharge": {
         "pct": 18,
         "appliesTo": "drinks, mini-bar; 20% spa"
+      },
+      "loyalty": {
+        "program": "Crown & Anchor Society",
+        "complimentaryDrinks": {
+          "fromTier": "Diamond",
+          "perDay": 4,
+          "perDrinkCap": 14,
+          "capByMarket": {
+            "Singapore": 13,
+            "UK & Australia": 15
+          },
+          "usableAnyBar": true,
+          "usableOnPrivateIsland": true,
+          "excludes": [
+            "Starbucks",
+            "Bionic Bar",
+            "Desserted"
+          ],
+          "note": "A SEPARATE published benefit from drinksPackage.cap, which is also $14 today. The two are set independently and must never be synced to each other: a Deluxe cap rise does not move this ceiling. This is the collision the 22 Aug 2026 figure audit found on are-cruise-drink-packages-worth-it.html, where four of eight $14s are this benefit and three are the package cap. The voucher is NOT restricted to soft drinks: the grid carries a separate non-alcoholic row at the same $14, and the tier page sells the voucher on Happy Hour and private destinations. Each voucher also carries 40% off wine bottles under $100 and 20% over — recorded here as published, not modelled anywhere.",
+          "source": "royalcaribbean.com/content/dam/royal/resources/pdf/crown-and-anchor-society-benefit-grid.pdf (©2026 Royal Caribbean Ltd.), verbatim: \"Complimentary daily drinks up to $14 in value ($13 on Singapore sailings, $15 on UK and Australia sailings - excludes Starbucks, Bionic Bar, and Desserted). Each drink voucher can also get you 40% off on wine bottles less than $100, and 20% off bottles more than $100\". The grid states these terms apply \"beginning on sailings departing July 7th, 2026 and onward\" - a SAILING-date trigger, already in force. The count and where it is usable come from royalcaribbean.com/crown-anchor-society/benefits/diamond-members.BenefitsDiamond, verbatim: \"Four beverage vouchers to be used at any bar, at any time, including the daily Happy Hour and private destinations.\" Both read 2026-08-22. Evidence: docs/price-changes/2026-08-22-royal-diamond-loyalty-drink-cap.md",
+          "verified": "2026-08-22",
+          "verify": "Sept: re-read the Crown & Anchor benefit grid, confirm the cap, the market variants and the exclusions, and re-stamp `verified`. Retrieval is awkward and the route that works is written up under \"Retrieval caution\" in docs/price-changes/2026-08-22-royal-diamond-loyalty-drink-cap.md — read that first."
+        }
       }
     },
     "ncl": {
