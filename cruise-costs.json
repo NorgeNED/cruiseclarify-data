@@ -1780,20 +1780,29 @@
       "name": "HX (Hurtigruten Expeditions)",
       "segment": "Expedition",
       "gratuities": {
-        "included": true
+        "included": true,
+        "note": "CONFIRMED, not a change — HX states gratuities are included and that it adds no discretionary charge. Optional cash tipping via reception or a tipping box is separate and is shared among crew, excluding officers and the Expedition Team. NOTE the sibling difference is real, not an inconsistency: Hurtigruten Coastal is modelled included:false/perDay 0 because it describes tipping as merely optional, while HX positively states gratuities ARE included. Both net to zero for the guest; the wording differs and so does the model.",
+        "source": "travelhx.com/en-us/support/faq — \"Are gratuities included?\" answered verbatim: \"Yes, gratuities are included. Fantastic service is standard at HX, and we never add discretionary charges to your bill.\" And \"What is your gratuity policy?\": \"Please note, tipping is optional. If you wish to tip in cash, please tip in Euro or USD only, using the reception or the tipping box.\" Rendered DOM 2026-09-01. Evidence: docs/price-changes/2026-09-01-hx-drinks-and-inclusions.md",
+        "verified": "2026-09-01"
       },
       "wifi": {
         "included": true,
-        "note": "Limited polar"
+        "note": "Limited polar",
+        "source": "travelhx.com/en-us/support/faq — \"Can I use my mobile phone / WiFi work onboard all ships?\": \"We offer Wi-Fi on board, but on expedition cruises to remote destinations, coverage and speed will be very limited... Due to capacity limitations, the included Wi-Fi is limited to browsing and not streaming.\" Rendered DOM 2026-09-01. CONFIRMED against meta.wifiConvention: the included tier does general browsing, so it counts as included — unlike Lindblad, whose free tier is email/messaging/social only and therefore should not.",
+        "verified": "2026-09-01"
       },
       "dining": {
         "included": true
       },
-      "baseDrinks": "Wine & beer with meals included; spirits extra",
+      "baseDrinks": "House beer and wine, a classic cocktail, and spirits and liqueurs are included in the fare for cabin guests, throughout the day and evening. Premium spirits and liqueurs, signature cocktails, premium beer and wine, and bottles of wine cost extra. Suites additionally include signature cocktails and premium beer and wine, with spirits and liqueurs included up to EUR 18.",
+      "baseDrinksSource": "travelhx.com/en-us/support/faq, rendered DOM 2026-09-01. \"Which Drinks are included?\" verbatim — \"Cabin Guests: Included: House beer and wine Classic cocktail Spirits and liqueurs (premium spirits and liqueurs are available at an additional cost) Available for Additional Charges: Signature cocktail Premium beer and wine Bottles of wine... Suite Guests: Included: House beer and wine Classic cocktail Spirits and liqueurs (included up to 18 EUR) Signature cocktail Premium beer and wine\". And \"Are wine, beer, spirits and cocktails available for free all day?\" — \"Alcoholic drinks such as wines, beers and spirits are available throughout the day and evening and are included in your all-inclusive voyage... premium drinks such as cocktails and champagne are not part of our all-inclusive offering and attract an extra charge.\"",
+      "baseDrinksVerified": "2026-09-01",
       "surcharge": {
-        "pct": 15,
-        "appliesTo": "approximate"
+        "pct": 0,
+        "appliesTo": "none — HX states it adds no discretionary charge to the bill and prices drinks as part of an all-inclusive voyage. WAS pct 15, appliesTo \"approximate\", until 2026-09-01: unsourced, and \"approximate\" is not a description of what a charge applies to.",
+        "verified": "2026-09-01"
       },
+      "verify": "HX CONTRADICTS ITSELF ON ITS OWN FAQ PAGE and the record follows the dedicated answer, not the incidental one. The suite-benefits answer (\"What is included when I book a suite?\") says \"House wine, beer, soft drinks... are available and complimentary at lunch and dinner\" and that \"for cabin guests, premium drinks and signature cocktails are not included\" — a MEALTIME window. The dedicated drinks answers say alcoholic drinks are available \"throughout the day and evening\". baseDrinks follows the dedicated answers because they are the ones a purchaser would read, and because the suite answer is written around the Galapagos ship Santa Cruz II (it references the Galapagos Big 15 book and Santa Cruz II by name), so its mealtime rule may be that ship only. WHAT WOULD SETTLE IT: an onboard bar menu, or an HX answer that names the window for the expedition fleet specifically. STILL UNCHECKED on this record: dining.included, which is why the line-level `verified` stays 2026-06. NOT RECORDED AS A FIELD, but true and worth knowing: corkage is charged on Santa Cruz II only, at US$27 plus taxes, and onboard accounts are debited in EUR.",
       "verified": "2026-06"
     },
     "aurora": {
