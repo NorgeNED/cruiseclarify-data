@@ -32,7 +32,7 @@ saga,Saga Cruises,Premium Plus,GBP,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,yes,0,0,0,n
 hebridean,Hebridean Island Cruises,Luxury / Ultra-Luxury,GBP,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,yes,0,0,0,none — all-inclusive,,,,,,2026-06
 costa,Costa Cruises,Mainstream,EUR,no,,no,11,no,12,12,20,no,yes,My Drinks (via Cruise Plus Drinks fares),,,,,,no,25,50,,"individual drinks — a service charge applies, but the CURRENT rate is not first-party verified (a 15% figure circulates in secondary sources only, Jul 2026), so no canonical percentage is recorded and the page shows ""Check sailing"" instead of a precise rate",,,,,,2026-07
 celestyal,Celestyal Cruises,Mainstream,EUR,no,,yes,0,yes,0,,,partial,no,,,,,,,,,,18,"all CelestyalPay purchases, including drinks and specialty-restaurant meals — deducted from the wallet balance at the time of purchase",,,,,,2026-06
-hapagLloyd,Hapag-Lloyd Cruises,Luxury / Ultra-Luxury,EUR,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,yes,0,0,0,none — all-inclusive,,,,,,2026-06
+hapagLloyd,Hapag-Lloyd Cruises,Luxury / Ultra-Luxury,EUR,no,drinks_only,yes,0,yes,0,,,partial,yes,Beverage package,44,,verified,,,yes,0,0,,,,,,,,2026-06
 carnivalAu,Carnival Australia,Mainstream,AUD,no,,yes,0,no,25,20,30,no,yes,CHEERS!,111,,verified,,,no,25,45,20,,,,,,,2026-09-01
 royalAu,Royal Caribbean (AU),Mainstream,AUD,no,,yes,0,no,28,20,35,no,yes,,115,,approximate,,,no,40,65,18,,,,,,,2026-06
 princessAu,Princess Cruises (AU),Mainstream,AUD,no,bundle,yes,0,no,35,25,45,no,yes,Plus Beverage Package (standalone),,,,,,no,40,120,20,,,,,,,2026-06

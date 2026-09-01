@@ -2068,6 +2068,9 @@
       "currency": "GBP",
       "allInclusive": true,
       "note": "Wi-Fi signal limited on Scottish coast",
+      "allInclusiveSource": "hebridean.co.uk/hebridean-princess/all-inclusive-luxury-cruises, rendered DOM 2026-09-01. Verbatim: \"Your fare includes all meals, drinks, shore excursions, port taxes, gratuities, and even transfers and parking.\" Drinks: \"A carefully selected range of drinks is included in your fare. Enjoy house wines, spirits, beers, soft drinks, tea, and coffee throughout your cruise... Taittinger Champagne is also included by the glass.\" Dining: \"all included in your fare... with no additional charges throughout your cruise.\" Wi-Fi: \"Stay connected throughout your cruise with free Wi-Fi access.\" Evidence: docs/price-changes/2026-09-01-hebridean-hapag-lloyd.md",
+      "allInclusiveVerified": "2026-09-01",
+      "verify": "CONFIRMED CORRECT 2026-09-01 across all five tracked categories — the second record in this sweep that needed no change, after Saga. Hebridean states free Wi-Fi without qualification, so unlike Lindblad and Hapag-Lloyd it raises no question under meta.wifiConvention. The \"signal limited on Scottish coast\" note is our own observation, not Hebridean's wording, and carries no figure.",
       "verified": "2026-06"
     },
     "costa": {
@@ -2150,8 +2153,42 @@
       "name": "Hapag-Lloyd Cruises",
       "segment": "Luxury / Ultra-Luxury",
       "currency": "EUR",
-      "allInclusive": true,
-      "note": "Europa / Europa 2",
+      "allInclusive": false,
+      "note": "EUROPA · EUROPA 2 · HANSEATIC nature / inspiration / spirit",
+      "gratuities": {
+        "included": true,
+        "note": "Included in the cruise price; anything further is at the guest's discretion.",
+        "source": "hl-cruises.com/service/faq/planning-your-cruise — \"Are on-board gratuities included?\" answered verbatim: \"All gratuities on board are included in the price of the cruise. Acknowledgement of particularly good service is at the discretion of each guest.\" Rendered DOM 2026-09-01.",
+        "verified": "2026-09-01"
+      },
+      "wifi": {
+        "included": true,
+        "perDay": 0,
+        "note": "ONE HOUR per guest per day free, on both the luxury and the expedition ships, plus a personal on-board email account. Hapag-Lloyd publishes no price for use beyond that hour.",
+        "source": "hl-cruises.com/service/faq/planning-your-cruise, rendered DOM 2026-09-01. Verbatim, expedition ships: \"Personal email account (including your own email address on board), Internet free of charge for one hour per guest and day; service depends on satellite positioning, especially in polar regions\". The EUROPA / EUROPA 2 list repeats it: \"internet (free of charge for one hour per guest per day)\".",
+        "verify": "OPEN QUESTION, deliberately not resolved here because it is the SAME question Lindblad raises and the two deserve one decision. meta.wifiConvention takes the headline as the cheapest UNLIMITED plan usable for general browsing. One free hour a day is not an unlimited plan, so included:true / perDay 0 arguably overstates what a normal user gets — but Hapag-Lloyd publishes no paid rate to put in its place, and flipping to included:false would publish a blank price, which the dataset convention reserves for \"not applicable\". Values left exactly as they published before this pass; the decision is Reint's.",
+        "verified": "2026-09-01"
+      },
+      "dining": {
+        "included": true,
+        "source": "hl-cruises.com/service/faq/planning-your-cruise — the cruise-only price includes \"International gourmet cuisine - full board\" on both the luxury and expedition ships. Rendered DOM 2026-09-01.",
+        "verified": "2026-09-01"
+      },
+      "baseDrinks": "Partly. Free: the suite mini bar (soft drinks and beer, plus a selection of spirits in higher categories on EUROPA and EUROPA 2, and in Grand and Junior Suites on the HANSEATIC ships), coffee and tea specialities, selected soft drinks, a welcome bottle of champagne, and bottled water for shore excursions. BAR DRINKS ARE NOT INCLUDED.",
+      "baseDrinksSource": "hl-cruises.com/service/faq/life-on-board — \"Are beverages on board included in the price?\" answered verbatim: \"On board our luxury ships MS EUROPA and MS EUROPA 2, you will find a free mini bar in every suite stocked with refreshing non-alcoholic beverages and beer. In higher categories, the mini bar additionally includes a selection of high-quality spirits. On board our new expedition ships HANSEATIC nature, HANSEATIC inspiration und HANSEATIC spirit: Soft drinks are available free of charge from the mini bar in your cabin/suite and are restocked daily. In the Grand Suites and Junior Suites, you can also enjoy a selection of fine spirits free of charge. On all our ships, coffee and tea specialities, selected softdrinks plus a bottle of champagne to welcome you are also included. In addition, we provide bottled water for shore excursions.\" Rendered DOM 2026-09-01.",
+      "baseDrinksVerified": "2026-09-01",
+      "packageTreatment": "drinks_only",
+      "drinksPackage": {
+        "offered": true,
+        "name": "Beverage package",
+        "perDay": 44,
+        "perDayBasis": "EUR 44 per person per day, the only figure Hapag-Lloyd publishes for it. Bookable in advance through its sales team or on board.",
+        "note": "The existence of this package is what disproves the old allInclusive:true. On-board credit for beverages can ONLY be redeemed against the package on board, so Hapag-Lloyd itself recommends booking on board if you hold such credit.",
+        "source": "hl-cruises.com/service/faq/life-on-board — \"Can I book a beverage package on board?\" answered verbatim: \"To make your cruise even more enjoyable, we are offering a beverage package. For just 44 EUR per person per day, you can enjoy a wide variety of alcoholic and non-alcoholic beverages - whenever and wherever you like. The beverage package can be booked in advance through our sales team or on board. Please note: If you have on-board credit for beverages, this can only be redeemed for the beverage package on board - in this case, we recommend booking on board.\" Rendered DOM 2026-09-01.",
+        "verify": "Dec 2026. NOT STATED: any effective date, whether the rate differs by ship or market, and whether an on-board purchase costs more than booking ahead. Hapag-Lloyd links an \"Included Beverages\" PDF from the same answer which was NOT read on this pass — read it next to pin down where the free tier ends. FALSIFIED ON THIS PASS, recorded so it is not chased again: secondary sources claim \"a selection of alcoholic and non-alcoholic beverages is included in the PLATINUM fare\". Hapag-Lloyd's own fare-structure page shows PLATINUM and SILVER differing on booking flexibility only — cabin choice, excursion booking window, cancellation terms, club miles, discounts and deposit — with \"Included services as per ship\" marked as present for BOTH. The fare tier does not change what drinks you get.",
+        "verified": "2026-09-01"
+      },
+      "verify": "No surcharge figure is recorded: Hapag-Lloyd publishes no service-charge percentage on either FAQ, and the previous allInclusive:true was masking that absence rather than answering it. STILL UNCHECKED: specialty dining (the FAQ says full board with all restaurants covered, which is why dining.included stands, but no venue-level check was done).",
       "verified": "2026-06"
     },
     "carnivalAu": {
