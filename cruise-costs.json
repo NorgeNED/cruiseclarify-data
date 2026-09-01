@@ -5,8 +5,8 @@
   "attribution": "Data by CruiseClarify (cruiseclarify.com)",
   "basis": "per person, per day, what the guest actually pays",
   "currency_note": "Per person per day in each line’s native currency (see \"currency\" field; USD unless noted).",
-  "last_refreshed": "2026-06",
-  "next_refresh_due": "2026-09",
+  "last_refreshed": "2026-09",
+  "next_refresh_due": "2026-12",
   "line_count": 37,
   "lines": {
     "carnival": {
@@ -1511,7 +1511,17 @@
       "name": "Crystal Cruises",
       "segment": "Luxury / Ultra-Luxury",
       "allInclusive": true,
-      "verify": "ALL-INCLUSIVE HOLDS ON DRINKS, GRATUITIES AND WI-FI, BUT NOT ON DINING — checked first-party 2026-09-01 and deliberately left as it published, because fixing it means turning off allInclusive and that cascades into four other fields. crystalcruises.com/faq (Food & Beverage), verbatim: \"Our restaurants are complimentary except for The Vintage Room. Beefbar... is also complimentary but requires reservations in the evening. Beefbar offers premium meat cuts such as Kobe & Wagyu at an additional cost. For our specialty restaurants, Umi Uma and Osteria d'Ovidio, guests are entitled to the following complimentary reservations for up to two people per voyage: Up to 11 nights: One complimentary reservation at each restaurant; 12 to 22 nights: Two...; 23 or more nights: Three...\" So The Vintage Room ALWAYS carries an upcharge and the two specialty rooms are complimentary only up to an allotment, while this record publishes specialty dining at 0. Secondary sources put extra reservations at USD 50 per person; that figure was NOT found on Crystal's own page and must not be stored until it is. Evidence: docs/price-changes/2026-09-01-luxury-all-inclusive-audit.md",
+      "specialtyDining": {
+        "includedWithLimits": true,
+        "paidVenues": [
+          "The Vintage Room"
+        ],
+        "allowanceNote": "Umi Uma and Osteria d'Ovidio: one complimentary reservation at each up to 11 nights, two for 12-22 nights, three for 23 or more, for up to two people per voyage. Beefbar is complimentary but its premium cuts (Kobe, Wagyu) cost extra.",
+        "note": "Included WITH LIMITS AND EXCEPTIONS — not unconditionally. The Vintage Room always carries an upcharge. No unconditional specialty-dining price is published for this line, and no figure is stored: secondary sources put extra reservations at USD 50 per person, which is NOT on Crystal's own page.",
+        "source": "crystalcruises.com/faq (Food & Beverage), rendered DOM 2026-09-01, verbatim: \"Our restaurants are complimentary except for The Vintage Room. Beefbar... is also complimentary but requires reservations in the evening. Beefbar offers premium meat cuts such as Kobe & Wagyu at an additional cost. For our specialty restaurants, Umi Uma and Osteria d'Ovidio, guests are entitled to the following complimentary reservations for up to two people per voyage: Up to 11 nights: One complimentary reservation at each restaurant; 12 to 22 nights: Two complimentary reservations at each restaurant; 23 or more nights: Three complimentary reservations at each restaurant.\"",
+        "verified": "2026-09-01"
+      },
+      "verify": "allInclusive STAYS TRUE by ruling (Reint, 2026-09-01): drinks, gratuities and Wi-Fi are all genuinely included, and turning the flag off to repair one overbroad dining claim would make four correct claims worse. The dining exception is carried by specialtyDining.includedWithLimits instead, which suppresses the unconditional 0. LONGER TERM, recorded as the direction of travel: allInclusive should become a DERIVED editorial label, not a field that dictates every component price. ORIGINAL FINDING — checked first-party 2026-09-01 and deliberately left as it published, because fixing it means turning off allInclusive and that cascades into four other fields. crystalcruises.com/faq (Food & Beverage), verbatim: \"Our restaurants are complimentary except for The Vintage Room. Beefbar... is also complimentary but requires reservations in the evening. Beefbar offers premium meat cuts such as Kobe & Wagyu at an additional cost. For our specialty restaurants, Umi Uma and Osteria d'Ovidio, guests are entitled to the following complimentary reservations for up to two people per voyage: Up to 11 nights: One complimentary reservation at each restaurant; 12 to 22 nights: Two...; 23 or more nights: Three...\" So The Vintage Room ALWAYS carries an upcharge and the two specialty rooms are complimentary only up to an allotment, while this record publishes specialty dining at 0. Secondary sources put extra reservations at USD 50 per person; that figure was NOT found on Crystal's own page and must not be stored until it is. Evidence: docs/price-changes/2026-09-01-luxury-all-inclusive-audit.md",
       "verified": "2026-06"
     },
     "ponant": {
@@ -1521,6 +1531,16 @@
       "gratuities": {
         "included": false,
         "perDay": 0,
+        "chargeBasis": "discretionary",
+        "guidance": {
+          "low": 10,
+          "high": 12,
+          "currency": "EUR",
+          "per": "passenger per day",
+          "status": "discretionary",
+          "defaultCalculation": 0,
+          "explanation": "Not automatically charged; the amount is left to the guest."
+        },
         "note": "NOT in the fare and NOT auto-charged: discretionary, collected by anonymous envelope left in the cabin and dropped into an urn at reception. perDay is 0 because nothing is added to the bill — the same treatment as Hurtigruten Coastal and Quark. UNLIKE those two, Ponant QUANTIFIES the expectation: it states an average of EUR 10-12 per day per passenger. That figure is deliberately not stored as perDay — it is euros on a record denominated in USD, and it is guidance rather than a charge.",
         "source": "us.ponant.com/faq — \"Are tips mandatory?\" answered verbatim: \"The gratuity for the staff is part of the customs on board cruise ships and is left to your discretion. An anonymous envelope is placed in your cabin at the end of the cruise. You can then slip it into a designated urn at the reception. For informational purposes only, the average gratuity is 10 to 12 EUR per day per passenger.\" Rendered DOM 2026-09-01. Evidence: docs/price-changes/2026-09-01-luxury-all-inclusive-audit.md",
         "verify": "OWNER DECISION OPEN: perDay 0 follows the Hurtigruten/Quark precedent (nothing is auto-charged), but it publishes 0 for a line whose own FAQ tells guests to budget EUR 10-12 a day. The alternative is to store the midpoint and accept a currency mismatch. Decide once, and apply the same rule to Hurtigruten Coastal and Quark.",
@@ -1557,6 +1577,8 @@
       "gratuities": {
         "included": false,
         "perDay": 0,
+        "chargeBasis": "discretionary",
+        "guidance": null,
         "note": "Voluntary — Quark states \"Voluntary gratuity at the end of the voyage for expedition staff and shipboard crew\" and publishes NO amount. Same treatment as Hurtigruten Coastal. WAS perDay 16, range [15, 18] until 2026-09-01: that figure had no source on the record and none was found on Quark's pages.",
         "source": "quarkexpeditions.com expedition pages (Antarctic Explorer; Svalbard in Summer), exclusions list, rendered DOM 2026-09-01",
         "verify": "Do NOT reinstate a per-day figure from a secondary source. Only a Quark booking confirmation or a firsthand end-of-voyage bill would establish a suggested amount.",
@@ -1789,7 +1811,19 @@
       },
       "wifi": {
         "included": true,
-        "note": "Limited polar"
+        "perDay": 0,
+        "baselineAccess": "messaging",
+        "limits": {
+          "browsing": false,
+          "messaging": true,
+          "streaming": false,
+          "upgradePaid": true,
+          "devices": null
+        },
+        "note": "INCLUDED under the narrow test — every guest gets access without a separate required purchase. But the free tier is messaging-only: Lindblad states it \"accommodates email, messaging and social media apps\", and web browsing needs the paid Enhanced plan, bought on board. Never present this as unrestricted service. Delivered fleet-wide over Speedcast and Starlink, so the older \"Limited polar\" note no longer describes it.",
+        "source": "expeditions.com/whats-included, rendered DOM 2026-09-01, verbatim: \"Complimentary Wi-Fi: Wireless internet is offered across the expedition fleet through Speedcast and Starlink. Enjoy a complimentary basic Wi-Fi plan that accommodates email, messaging and social media apps. Upgrades are also available: Enhanced Wi-Fi plan: accommodates web browsing, video conferencing and other functions that require increased bandwidth. Available for purchase on board.\"",
+        "verify": "Dec 2026. Lindblad publishes NO price for the Enhanced or Premium plans — both are stated as purchasable on board with no figure, so no Wi-Fi price is recorded.",
+        "verified": "2026-09-01"
       },
       "baseDrinks": "Beer, wine, cocktails, liquors and spirits are included in the fare across the fleet, EXCEPT aboard Sun Goddess, Oberoi Philae, Connect and Evolve, which include beer and wine only. Premium brands are sold separately.",
       "baseDrinksSource": "expeditions.com/whats-included, Pricing Includes, rendered DOM 2026-09-01. Verbatim: \"Beer, wine, cocktails, liquors and spirits aboard all ships, with the exception of Sun Goddess, Oberoi Philae, Connect and Evolve. We are also pleased to offer a selection of premium brands for purchase.\" The two carve-outs are stated separately on the same list: \"Beer and wine with meals aboard Oberoi Philae and Sun Goddess\" and \"Beer and wine aboard Connect and Evolve\". Evidence: docs/price-changes/2026-09-01-lindblad-base-drinks.md",
@@ -1863,7 +1897,10 @@
       "gratuities": {
         "included": false,
         "perDay": 0,
-        "note": "Optional — no auto-charge (Scandinavian norm)"
+        "chargeBasis": "discretionary",
+        "guidance": null,
+        "note": "Optional — no auto-charge (Scandinavian norm). Hurtigruten specifies NO amount, so nothing is shown as guidance and nothing is calculated. Do not import a figure from a sibling line or a secondary source to fill the gap.",
+        "verified": "2026-09-01"
       },
       "wifi": {
         "included": false,
@@ -2189,9 +2226,17 @@
       "wifi": {
         "included": true,
         "perDay": 0,
-        "note": "ONE HOUR per guest per day free, on both the luxury and the expedition ships, plus a personal on-board email account. Hapag-Lloyd publishes no price for use beyond that hour.",
+        "baselineAccess": "metered",
+        "limits": {
+          "freeHoursPerDay": 1,
+          "browsing": true,
+          "streaming": null,
+          "upgradePaid": null,
+          "devices": null
+        },
+        "note": "INCLUDED under the narrow test — every guest gets access without a separate required purchase. The baseline is METERED at one hour per guest per day, on both the luxury and the expedition ships, plus a personal on-board email account. Hapag-Lloyd publishes no price for use beyond that hour. Never present this as unrestricted service.",
         "source": "hl-cruises.com/service/faq/planning-your-cruise, rendered DOM 2026-09-01. Verbatim, expedition ships: \"Personal email account (including your own email address on board), Internet free of charge for one hour per guest and day; service depends on satellite positioning, especially in polar regions\". The EUROPA / EUROPA 2 list repeats it: \"internet (free of charge for one hour per guest per day)\".",
-        "verify": "OPEN QUESTION, deliberately not resolved here because it is the SAME question Lindblad raises and the two deserve one decision. meta.wifiConvention takes the headline as the cheapest UNLIMITED plan usable for general browsing. One free hour a day is not an unlimited plan, so included:true / perDay 0 arguably overstates what a normal user gets — but Hapag-Lloyd publishes no paid rate to put in its place, and flipping to included:false would publish a blank price, which the dataset convention reserves for \"not applicable\". Values left exactly as they published before this pass; the decision is Reint's.",
+        "verify": "RESOLVED 2026-09-01 by meta.wifiConvention2: included is a narrow test — access for every guest without a separate required purchase — and Hapag-Lloyd meets it. The metered hour is a LIMIT, recorded in `limits`, not a reason to flip the flag. Open only on price: no rate is published for use beyond the free hour.",
         "verified": "2026-09-01"
       },
       "dining": {

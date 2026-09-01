@@ -85,8 +85,27 @@ the JSON is plain UTF-8.
   Examples: no `wifi_range` when a line has a single Wi-Fi price; no
   `drinks_package_*` when no package is sold; no specialty-dining figures for a few
   expedition lines we don't track venue-by-venue.
-- **Wi-Fi headline** — the cheapest *unlimited* plan usable for general browsing;
-  social-media-only tiers are excluded.
+- **`gratuities_charge_basis`** — `automatic` means the gratuity is charged whether or
+  not you act, and it is included in `gratuities_per_day`. `discretionary` means
+  **nothing is charged**: `gratuities_per_day` is `0`, because a voluntary guideline is
+  not an unavoidable cost and must never be summed into a total as though it were.
+  Blank means gratuities are in the fare, so the question does not arise.
+- **`gratuities_guidance_low` / `_high` / `_currency`** — where a line *suggests* an
+  amount without charging it, the suggestion is published here **for display only**.
+  Never add it to a total. It carries its **own currency**, which may differ from the
+  row's `currency` — Ponant, for example, suggests €10–12 per passenger per day on a
+  row denominated in USD. Blank means the line publishes no suggested amount, which is
+  different from suggesting zero.
+- **`wifi_included`** — a deliberately **narrow** test: some internet access is
+  included for every guest without a separate required purchase. A line passes even if
+  the free tier is slow, metered, messaging-only or device-limited. **Included Wi-Fi is
+  not a promise of unrestricted service.** What the free tier can actually do is
+  recorded separately in `wifi_baseline_access` (`browsing`, `messaging` or `metered`)
+  and `wifi_free_hours_per_day`.
+- **Wi-Fi headline price** — where Wi-Fi is sold, the quoted figure is the cheapest
+  *unlimited* plan usable for general browsing; social-media-only tiers are excluded
+  from the **price**. (This governs which price is quoted, not the included/not
+  decision above.)
 - **Service charge** — `drinks_service_pct` is the % added to a drinks package;
   `drinks_service_in_price` says whether that's already inside the quoted price.
 - **`drinks_price_confidence`** — `verified` = a sourced figure; `approximate` = a
@@ -101,9 +120,17 @@ the JSON is plain UTF-8.
   (specialty cover then reads `$0`), `partial` (most dining included, some venues
   charge), or `no` (specialty restaurants carry the cover charge shown in
   `specialty_dining_*`).
-- **Included items read `$0`.** When an item is covered by the fare, its `*_included`
-  flag is `yes` and its per-day figure is `0` — meaning *no extra cost*, not missing
-  data. All-inclusive lines therefore show `0` across the cost columns. A **blank**
+- **`specialty_dining_status`** — `included` means unconditionally covered, so the `0`
+  in `specialty_dining_low`/`_high` is a true price. `included_with_limits` means
+  covered only up to an allowance, or with named venues that always charge — and in
+  that case **no figure is published at all**, because an unconditional `0` would be a
+  claim the line does not make. `charged` means the range is a real cover charge.
+- **Included items read `$0`.** When an item is covered by the fare *unconditionally*,
+  its `*_included` flag is `yes` and its per-day figure is `0` — meaning *no extra
+  cost*, not missing data. All-inclusive lines therefore show `0` across the cost
+  columns. Where an inclusion carries limits or exceptions, the figure is left **blank**
+  rather than `0`, and the status column says so — we do not represent a conditional or
+  unknown price with an unconditional zero. A **blank**
   cell means *not applicable* (e.g. no Wi-Fi price range, or no named package), never
   "unknown."
 
