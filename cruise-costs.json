@@ -1511,12 +1511,37 @@
       "name": "Crystal Cruises",
       "segment": "Luxury / Ultra-Luxury",
       "allInclusive": true,
+      "verify": "ALL-INCLUSIVE HOLDS ON DRINKS, GRATUITIES AND WI-FI, BUT NOT ON DINING — checked first-party 2026-09-01 and deliberately left as it published, because fixing it means turning off allInclusive and that cascades into four other fields. crystalcruises.com/faq (Food & Beverage), verbatim: \"Our restaurants are complimentary except for The Vintage Room. Beefbar... is also complimentary but requires reservations in the evening. Beefbar offers premium meat cuts such as Kobe & Wagyu at an additional cost. For our specialty restaurants, Umi Uma and Osteria d'Ovidio, guests are entitled to the following complimentary reservations for up to two people per voyage: Up to 11 nights: One complimentary reservation at each restaurant; 12 to 22 nights: Two...; 23 or more nights: Three...\" So The Vintage Room ALWAYS carries an upcharge and the two specialty rooms are complimentary only up to an allotment, while this record publishes specialty dining at 0. Secondary sources put extra reservations at USD 50 per person; that figure was NOT found on Crystal's own page and must not be stored until it is. Evidence: docs/price-changes/2026-09-01-luxury-all-inclusive-audit.md",
       "verified": "2026-06"
     },
     "ponant": {
       "name": "Ponant",
       "segment": "Luxury / Ultra-Luxury",
-      "allInclusive": true,
+      "allInclusive": false,
+      "gratuities": {
+        "included": false,
+        "perDay": 0,
+        "note": "NOT in the fare and NOT auto-charged: discretionary, collected by anonymous envelope left in the cabin and dropped into an urn at reception. perDay is 0 because nothing is added to the bill — the same treatment as Hurtigruten Coastal and Quark. UNLIKE those two, Ponant QUANTIFIES the expectation: it states an average of EUR 10-12 per day per passenger. That figure is deliberately not stored as perDay — it is euros on a record denominated in USD, and it is guidance rather than a charge.",
+        "source": "us.ponant.com/faq — \"Are tips mandatory?\" answered verbatim: \"The gratuity for the staff is part of the customs on board cruise ships and is left to your discretion. An anonymous envelope is placed in your cabin at the end of the cruise. You can then slip it into a designated urn at the reception. For informational purposes only, the average gratuity is 10 to 12 EUR per day per passenger.\" Rendered DOM 2026-09-01. Evidence: docs/price-changes/2026-09-01-luxury-all-inclusive-audit.md",
+        "verify": "OWNER DECISION OPEN: perDay 0 follows the Hurtigruten/Quark precedent (nothing is auto-charged), but it publishes 0 for a line whose own FAQ tells guests to budget EUR 10-12 a day. The alternative is to store the midpoint and accept a currency mismatch. Decide once, and apply the same rule to Hurtigruten Coastal and Quark.",
+        "verified": "2026-09-01"
+      },
+      "wifi": {
+        "included": true,
+        "perDay": 0,
+        "note": "Free 24/7 Wi-Fi. Ponant warns the connection \"may be slow, and eventually interrupted, depending on certain geographical areas\".",
+        "source": "us.ponant.com/faq, \"What is included in the all-inclusive package?\", rendered DOM 2026-09-01: \"free 24/7 Wi-Fi Internet access\".",
+        "verified": "2026-09-01"
+      },
+      "dining": {
+        "included": true,
+        "source": "us.ponant.com/faq — the all-inclusive package includes \"full board\". Rendered DOM 2026-09-01.",
+        "verified": "2026-09-01"
+      },
+      "baseDrinks": "Open Bar included from boarding and throughout the cruise: mineral water, soft drinks, wines, beer, champagne, spirits, coffee and tea, served freely at any time. Some premium alcoholic beverages listed on the menu are NOT included.",
+      "baseDrinksSource": "us.ponant.com/faq, \"What is included in the all-inclusive package?\", rendered DOM 2026-09-01, verbatim: \"The Open Bar: from boarding and throughout the cruise, a wide selection of drinks (mineral water, soft drinks, wines, beer, champagne, spirits, coffee, tea) is served freely and at any time of the day. Some premium alcoholic beverages listed on the menu are not included in the Open Bar.\"",
+      "baseDrinksVerified": "2026-09-01",
+      "verify": "NOTE WHAT THE ALL-INCLUSIVE LIST OMITS — that omission is the finding. Ponant enumerates its package as cabin accommodation, full board, the Open Bar, free 24/7 Wi-Fi, one activity at each stopover, and access to all common areas. Gratuities are absent from that list and are answered separately as discretionary. RETRIEVAL CAUTION for the next pass: ponant.com blocks automated search agents entirely, and us.ponant.com serves a Didomi consent wall whose inline CSS swamps a naive body-text read — strip style/script/#didomi-host before reading, and do NOT click the banner. The path /included-in-your-cruise renders navigation only; the FAQ at /faq is the page that carries the answers. NOT CHECKED: whether shore excursions beyond the one included stopover activity are chargeable, and no surcharge percentage was found.",
       "verified": "2026-06"
     },
     "explora": {
