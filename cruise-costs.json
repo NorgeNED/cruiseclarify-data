@@ -1863,8 +1863,14 @@
       },
       "drinksPackage": {
         "offered": true,
-        "perDay": 50,
-        "perDayBasis": "Classic package mid"
+        "name": "Classic drinks package",
+        "perDay": 49,
+        "onboardPerDay": 55,
+        "perDayBasis": "Pre-purchase price on cruises of 5-14 nights — the common band. P&O prices by voyage length AND by when you buy: standard GBP 55 (5-14 nights) / GBP 50 (15+), less 10% to GBP 49 / GBP 45 when bought at booking or via My P&O Cruises up to 3 days before sailing.",
+        "note": "Deluxe package, same shape: standard GBP 65 (5-14) / GBP 60 (15+), pre-purchase GBP 58 / GBP 54. Refresh GBP 16/day. Classic includes a complimentary Refresh package for children 17 and under, and 20% off drinks outside the package.",
+        "source": "pocruises.com/onboard-activities/bars-and-lounges/drinks-packages/classic-drinks-package and /deluxe-drinks-package, rendered DOM 2026-09-01. Verbatim: \"Price: GBP 55 (5-14 nights) | GBP 50 (15+ nights) per person per day* *10% off GBP 49 (5-14 nights) | GBP 45 (15+ nights) per person per day when purchased at the same time that you book your cruise or when purchased via My P&O Cruises up to 3 days before your holiday.\" Evidence: docs/price-changes/2026-09-01-po-drinks-packages.md",
+        "verify": "Dec 2026. WAS perDay 50, basis \"Classic package mid\", until 2026-09-01 — unsourced, and the GBP 50 turned out to match the 15+ night STANDARD price by coincidence, not the mid of anything. NOT STATED by P&O: any effective date, and any price for cruises under five nights (\"Prices shown below are for cruises of five nights or more\"). Onboard purchase is possible within the first two days of the cruise; the GBP 55 standard rate is what that costs. Do not average the two length bands into one figure — they are two published prices, not a range.",
+        "verified": "2026-09-01"
       },
       "specialtyDining": {
         "range": [
@@ -2190,10 +2196,35 @@
           45
         ]
       },
+      "packageTreatment": "bundle",
       "drinksPackage": {
         "offered": true,
-        "perDay": 95,
-        "perDayBasis": "Plus package mid"
+        "name": "Plus Beverage Package (standalone)",
+        "cap": 22,
+        "premierCap": 30,
+        "note": "Ceilings are the AUD figures Princess publishes alongside the USD ones: Plus AU$22, Premier AU$30. NO AUD price is recorded for the standalone beverage package — Princess prices Plus and Premier as fare packages in Australia and the AU terms do not name a standalone rate. NO dailyLimit is recorded either: the AU terms say Plus is \"Subject to daily limit on included alcoholic beverages\" without quantifying it, and borrowing the US record's 15 would be our inference presented as Princess's rule.",
+        "source": "Princess Plus & Princess Premier Terms & Conditions, Australian market, \"Updated 5 February 2026\", supplied by the owner 2026-09-01. Verbatim, Plus: \"cocktails, wine by the glass, beer, spirits, soda/soft drinks, and zero-alcohol cocktails priced up to [USD elided] /$22 AUD each\". Premier: \"priced up to [USD elided] /$30 AUD each\". Princess prints both currencies in one sentence; the USD ceilings are elided here because they belong to the `princess` record, which stores them, not to this one. Evidence: docs/price-changes/2026-09-01-princess-au-plus-premier.md",
+        "verify": "Dec 2026. WAS perDay 95, basis \"Plus package mid\", until 2026-09-01 — unsourced, and wrong in KIND as well as amount: it put a fare-bundle price in the standalone drinks field. The A$79 that replaced it sits on `bundle` below, where it belongs. STILL UNKNOWN: the AU price of the standalone Plus Beverage Package. The AU terms route to princess.com/en-au/cruise-dining/beverages for it, which is the page to read next. DAILY LIMIT ASYMMETRY, stated by Princess and easy to get wrong: Plus is \"Subject to daily limit on included alcoholic beverages\"; Premier on or after 22 Jul 2025 carries \"No daily limit on included alcoholic beverages\" — so dailyLimit must never be attached to Premier, exactly as on the US princess record.",
+        "verified": "2026-09-01"
+      },
+      "bundle": {
+        "name": "Princess Plus",
+        "perDay": 79,
+        "premierPerDay": 129,
+        "basis": "per_guest_per_night",
+        "sphereClassPerDay": 84,
+        "sphereClassPremierPerDay": 134,
+        "latePurchaseUpliftPerDay": 10,
+        "latePurchasePerDay": 89,
+        "latePurchasePremierPerDay": 139,
+        "appliesToFirstNGuests": 2,
+        "beyondFirstNMayOptIn": true,
+        "coversWifi": true,
+        "coversGratuities": false,
+        "note": "Pre-cruise price, bought at least 4 days and a full 96 hours before departure. A$84 Plus / A$134 Premier on Sun Princess and Star Princess. Buy later than that, or on board, and Princess adds A$10 per person per day: A$89 Plus / A$139 Premier. Plus covers one Wi-Fi device and 4 casual-dining meals per voyage; Premier covers four devices, unlimited casual dining, one specialty meal per mealtime, and a shore-excursion credit banded by voyage length — the bands are recorded once, on the princess record.",
+        "source": "Princess Plus & Princess Premier Terms & Conditions, Australian market, \"Updated 5 February 2026\", supplied by the owner 2026-09-01. Verbatim: \"the price was increased to $79 AUD per person, per day (and $84 AUD per person, per day for sailings onboard Sun Princess or Star Princess) when purchasing at least 4 days (96 hours) before the voyage's scheduled departure\"; and for Premier, \"the price was increased to $129 AUD per person, per day (and $134 AUD per person, per day for sailings onboard Sun Princess or Star Princess)\". Late purchase: \"guests will pay $10 AUD more per day/per person, total being ... AU$89 per day/per person for Princess Plus and AU$139 per day/per person for Princess Premier, if purchased on or after July 22, 2025.\"",
+        "verify": "Dec 2026. EFFECTIVE DATE IS STATED, unusually — the current prices took effect 22 July 2025, at 12:00am Australian Eastern Standard Time, and the document itself is dated 5 February 2026. GRANDFATHERING IS ALSO STATED and is not modelled here: packages bought before 22 Jul 2025 remain at AU$75 Plus / AU$110 Premier late-purchase totals, and packages bought before 15 Aug 2024 are an \"Original\" product with fewer benefits. Only the CURRENT tier is stored. Bar service charges are included in the package price, per the general terms. Drinking age on Australia and New Zealand sailings is 18, not 21 — under-age guests get the Zero-Alcohol package instead with no refund of the difference.",
+        "verified": "2026-09-01"
       },
       "specialtyDining": {
         "range": [
