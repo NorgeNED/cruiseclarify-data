@@ -18,7 +18,7 @@ silversea,Silversea,Luxury / Ultra-Luxury,USD,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,
 crystal,Crystal Cruises,Luxury / Ultra-Luxury,USD,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,yes,0,0,0,none — all-inclusive,,,,,,2026-06
 ponant,Ponant,Luxury / Ultra-Luxury,USD,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,yes,0,0,0,none — all-inclusive,,,,,,2026-06
 explora,Explora Journeys,Luxury / Ultra-Luxury,USD,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,yes,0,0,0,none — all-inclusive,,,,,,2026-06
-quark,Quark Expeditions,Expedition,USD,no,,no,16,no,25,20,30,no,yes,,50,,approximate,,,,,,15,approximate,,,,,,2026-06
+quark,Quark Expeditions,Expedition,USD,no,,no,0,no,25,20,30,partial,no,,,,,,,,,,15,approximate,,,,,,2026-09-01
 cunard,Cunard,Premium,USD,no,drinks_only,no,18,no,22,22,30,no,yes,Beverage Collection,76.5,,verified,18,yes,no,,,18,all food & beverage purchases in bars and restaurants (raised from 15% ~1 Jun 2026) — chargeable items only; fare-included main dining is not charged,no,continental,,,Britannia: per-item after 10am (~$2.50-6.50); breakfast to 10am free; charges began 1 Jun 2025; drinks packages do not cover room service.,2026-08-20
 lindblad,Lindblad / Nat Geo,Expedition,USD,no,,yes,0,yes,0,,,partial,no,,,,,,,,,,18,approximate,,,,,,2026-06
 hx,HX (Hurtigruten Expeditions),Expedition,USD,no,,yes,0,yes,0,,,partial,no,,,,,,,yes,0,0,15,approximate,,,,,,2026-06
@@ -33,6 +33,6 @@ hebridean,Hebridean Island Cruises,Luxury / Ultra-Luxury,GBP,yes,,yes,0,yes,0,,,
 costa,Costa Cruises,Mainstream,EUR,no,,no,11,no,12,12,20,no,yes,My Drinks (via Cruise Plus Drinks fares),,,,,,no,25,50,,"individual drinks — a service charge applies, but the CURRENT rate is not first-party verified (a 15% figure circulates in secondary sources only, Jul 2026), so no canonical percentage is recorded and the page shows ""Check sailing"" instead of a precise rate",,,,,,2026-07
 celestyal,Celestyal Cruises,Mainstream,EUR,no,,yes,0,yes,0,,,partial,no,,,,,,,,,,0,wallet model — no auto-surcharge,,,,,,2026-06
 hapagLloyd,Hapag-Lloyd Cruises,Luxury / Ultra-Luxury,EUR,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,yes,0,0,0,none — all-inclusive,,,,,,2026-06
-carnivalAu,Carnival Australia,Mainstream,AUD,no,,yes,0,no,25,20,30,no,yes,,90,,approximate,,,no,25,45,20,,,,,,,2026-06
+carnivalAu,Carnival Australia,Mainstream,AUD,no,,yes,0,no,25,20,30,no,yes,CHEERS!,111,,verified,,,no,25,45,20,,,,,,,2026-09-01
 royalAu,Royal Caribbean (AU),Mainstream,AUD,no,,yes,0,no,28,20,35,no,yes,,115,,approximate,,,no,40,65,18,,,,,,,2026-06
 princessAu,Princess Cruises (AU),Mainstream,AUD,no,,yes,0,no,35,25,45,no,yes,,95,,approximate,,,no,40,120,20,,,,,,,2026-06

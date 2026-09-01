@@ -1531,12 +1531,11 @@
       "segment": "Expedition",
       "gratuities": {
         "included": false,
-        "perDay": 16,
-        "range": [
-          15,
-          18
-        ],
-        "verified": "2026-06"
+        "perDay": 0,
+        "note": "Voluntary — Quark states \"Voluntary gratuity at the end of the voyage for expedition staff and shipboard crew\" and publishes NO amount. Same treatment as Hurtigruten Coastal. WAS perDay 16, range [15, 18] until 2026-09-01: that figure had no source on the record and none was found on Quark's pages.",
+        "source": "quarkexpeditions.com expedition pages (Antarctic Explorer; Svalbard in Summer), exclusions list, rendered DOM 2026-09-01",
+        "verify": "Do NOT reinstate a per-day figure from a secondary source. Only a Quark booking confirmation or a firsthand end-of-voyage bill would establish a suggested amount.",
+        "verified": "2026-09-01"
       },
       "wifi": {
         "included": false,
@@ -1548,15 +1547,18 @@
         "note": "Limited polar coverage",
         "verified": "2026-06"
       },
+      "baseDrinks": "Free beer, standard wines, spirits and cocktails during bar service hours and dinner; soft drinks and juices throughout. Premium items above that tier are chargeable.",
       "drinksPackage": {
-        "offered": true,
-        "perDay": 50,
-        "perDayBasis": "packages vary by voyage",
-        "verified": "2026-06"
+        "offered": false,
+        "note": "NO per-day drinks package found. Drinks are fare-included at the standard tier — see baseDrinks. WAS offered:true, perDay 50, basis \"packages vary by voyage\" until 2026-09-01; that package could not be found on any Quark surface and appears never to have been sourced.",
+        "source": "quarkexpeditions.com/expeditions/antarctic-explorer-discovering-the-7th-continent and /expeditions/svalbard-in-summer-tundra-whales-and-wildlife, Inclusions, rendered DOM 2026-09-01 — verbatim: \"Free beer, standard wines, spirits, and cocktails during bar service hours and dinner\". The strings \"beverage package\", \"drinks package\" and \"drink package\" return ZERO matches on both pages. Evidence: docs/price-changes/2026-09-01-quark-drinks-included.md",
+        "verify": "CONFLICT ON QUARK'S OWN PAGE, unresolved — the Svalbard inclusions list carries BOTH \"Free beer, standard wines, spirits, and cocktails during bar service hours and dinner\" AND the narrower \"Complimentary select beer, wines and cocktails during bar service hours and dinner\", which drops spirits. The site must state the narrower reading or the discrepancy, never the generous one alone. Also unestablished: where the free tier ends and what premium items cost; and whether the inclusion holds on Ultramarine and World Explorer (only Ocean Explorer and the Svalbard vessel were seen). SIBLING RISK, not yet checked: Lindblad, Aurora, Hebridean, Hapag-Lloyd and HX are all Expedition lines still stamped 2026-06 and may carry the same shape of error.",
+        "verified": "2026-09-01"
       },
       "surcharge": {
         "pct": 15,
-        "appliesTo": "approximate"
+        "appliesTo": "approximate",
+        "verify": "Sept 2026 — UNSOURCED and probably wrong in shape: appliesTo reads \"approximate\", which is not a description of what the charge applies to. With standard drinks fare-included, a 15% bar surcharge needs its own evidence. Not touched on the 2026-09-01 pass because nothing was read that bears on it."
       }
     },
     "cunard": {
@@ -2119,8 +2121,15 @@
       },
       "drinksPackage": {
         "offered": true,
-        "perDay": 90,
-        "perDayBasis": "Cheers! equivalent, service charge included"
+        "name": "CHEERS!",
+        "perDay": 111,
+        "cap": 25,
+        "dailyLimit": 15,
+        "perDayBasis": "Pre-purchase floor. Carnival publishes \"Starting at AUD $111.00 / Person Per Day\" — a floor, NOT a flat fleet rate.",
+        "note": "Pre-purchase price, from. Covers drinks up to AUD 25 each, limit 15 alcoholic drinks per 24 hours (9AM-3AM). Every adult in the stateroom must buy it; sailings of 7 days or longer only; pre-purchase closes 11:59 PM two days before embarkation.",
+        "source": "carnival.com.au/drink-packages/cheers-package/cheers-BTA and carnival.com.au/drink-packages, rendered DOM 2026-09-01 (the price is JS-rendered into the product tile and is not in the served HTML). Verbatim: \"Starting at AUD $111.00 / Person Per Day\"; \"at a value of up to $25 AUD per drink\"; \"Program allows for up to 15 alcoholic drinks per 24 hour period (9AM - 3AM)\". Evidence: docs/price-changes/2026-09-01-carnival-au-cheers-price.md",
+        "verify": "Dec 2026. PROVENANCE CORRECTION, NOT A PRICE RISE — was perDay 90, basis \"Cheers! equivalent, service charge included\", until 2026-09-01. That AUD 90 was the US CHEERS price converted; it had no first-party Australian source and no dated before-value exists, so this must never be written up as Carnival raising its AU price. Cap AUD 25 and dailyLimit 15 are new fields, not previously recorded. THREE SILENCES, do not fill them in: (1) Carnival publishes NO effective date for AUD 111; (2) the onboard price is NOT published — Carnival states only a per-day saving against it, so any onboard figure is our arithmetic and must never be stored as a Carnival figure (the saving is quoted verbatim in the evidence file, deliberately not here); (3) neither AU page mentions a service charge, so the old \"service charge included\" claim had no source. RETRIEVAL CAUTION: carnival.com.au mixes US and AU content — the CHEERS-BTA page says \"Must be 18 years or older\" while /drink-packages on the same domain says 21 and references Half Moon Cay. 18 is the Australian rule; treat non-price text on the index page as US content. Carnival's own terms also state \"Price adjustments (up or down), implemented on the day of sailing, replace any previously advertised price\".",
+        "verified": "2026-09-01"
       },
       "specialtyDining": {
         "range": [
@@ -2131,7 +2140,7 @@
       "surcharge": {
         "pct": 20
       },
-      "verified": "2026-06"
+      "verified": "2026-09-01"
     },
     "royalAu": {
       "name": "Royal Caribbean (AU)",
