@@ -25,13 +25,13 @@ hx,HX (Hurtigruten Expeditions),Expedition,USD,no,,yes,0,yes,0,,,yes,no,,,,,,,ye
 aurora,Aurora Expeditions,Expedition,USD,no,,no,15,yes,0,,,partial,no,,,,,,,,,,15,approximate,,,,,,2026-06
 hurtigrutenCoastal,Hurtigruten Coastal,Expedition,USD,no,,no,0,no,25,20,30,no,yes,Dinner drinks package,52,,approximate,,,no,20,45,0,"none — no auto service charge on drinks or dining; Norwegian prices include service, tipping not expected (first-party pages have no service-charge language, verified 13 Jul 2026)",,,,,,2026-06
 po,P&O Cruises (UK),Mainstream,GBP,no,,yes,0,no,17,15,20,no,yes,Classic drinks package,49,55,verified,,,no,20,45,0,none — no auto charges on drinks,,,,,,2026-06
-marella,Marella (TUI),Mainstream,GBP,no,,yes,0,no,14,10,18,yes,no,,,,,,,partial,15,35,0,,,,,,,2026-06
+marella,Marella (TUI),Mainstream,GBP,no,premium_fare,yes,0,no,14,10,18,yes,yes,Premium All Inclusive,,,,,,partial,15,35,0,,,,,,,2026-06
 ambassador,Ambassador Cruise Line,Mainstream,GBP,no,,no,6.5,no,12,10,15,no,yes,Pre-purchase drinks packages (tiered),42.95,,verified,0,yes,no,15,30,0,"none — flat daily gratuity model; no auto percentage on drinks or dining (the old ""~10%"" does not exist — verified Jul 2026)",,,,,,2026-07
 fredOlsen,Fred. Olsen Cruise Lines,Premium,GBP,no,,yes,0,no,9,9,12,no,yes,,40,,verified,,,no,20,25,0,"no first-party basis found for the old ""~12%"" claim — treated as none pending contrary evidence (Jul 2026)",,,,,,2026-07
 saga,Saga Cruises,Premium Plus,GBP,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,yes,0,0,0,none — all-inclusive,,,,,,2026-06
 hebridean,Hebridean Island Cruises,Luxury / Ultra-Luxury,GBP,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,yes,0,0,0,none — all-inclusive,,,,,,2026-06
 costa,Costa Cruises,Mainstream,EUR,no,,no,11,no,12,12,20,no,yes,My Drinks (via Cruise Plus Drinks fares),,,,,,no,25,50,,"individual drinks — a service charge applies, but the CURRENT rate is not first-party verified (a 15% figure circulates in secondary sources only, Jul 2026), so no canonical percentage is recorded and the page shows ""Check sailing"" instead of a precise rate",,,,,,2026-07
-celestyal,Celestyal Cruises,Mainstream,EUR,no,,yes,0,yes,0,,,partial,no,,,,,,,,,,0,wallet model — no auto-surcharge,,,,,,2026-06
+celestyal,Celestyal Cruises,Mainstream,EUR,no,,yes,0,yes,0,,,partial,no,,,,,,,,,,18,"all CelestyalPay purchases, including drinks and specialty-restaurant meals — deducted from the wallet balance at the time of purchase",,,,,,2026-06
 hapagLloyd,Hapag-Lloyd Cruises,Luxury / Ultra-Luxury,EUR,yes,,yes,0,yes,0,,,yes,no,,0,0,,,,yes,0,0,0,none — all-inclusive,,,,,,2026-06
 carnivalAu,Carnival Australia,Mainstream,AUD,no,,yes,0,no,25,20,30,no,yes,CHEERS!,111,,verified,,,no,25,45,20,,,,,,,2026-09-01
 royalAu,Royal Caribbean (AU),Mainstream,AUD,no,,yes,0,no,28,20,35,no,yes,,115,,approximate,,,no,40,65,18,,,,,,,2026-06

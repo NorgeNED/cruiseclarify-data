@@ -1926,11 +1926,19 @@
           18
         ]
       },
+      "packageTreatment": "premium_fare",
+      "drinksInclusionScope": "full",
       "drinksPackage": {
-        "offered": false,
-        "note": "Drinks included in fare"
+        "offered": true,
+        "name": "Premium All Inclusive",
+        "note": "A paid UPGRADE on an already drinks-inclusive fare, not a standalone package: it adds upgraded cocktails, premium gins, rums and tequilas, a wider whisky and brandy selection, canned soft drinks and most Coffee Port drinks. NO PRICE IS PUBLISHED on the All Inclusive page and none is recorded here. WAS offered:false until 2026-09-01, which said no drinks upgrade existed when one does.",
+        "source": "tui.co.uk/cruise/cruise-types/marella-all-inclusive, \"Standard vs Premium All Inclusive\", rendered DOM 2026-09-01. Verbatim, Standard: \"selected draught beers and ciders - plus bottles and cans - selected wines by the glass, standard spirits and aperitifs. Cocktails like Mai Tais and Long Island Iced Teas are on the menu, too, as well as soft drinks, including mocktails and fruit juices.\" Premium: \"you'll get upgraded cocktails, like mojitos and margaritas, premium gins, rums and tequilas, and a wider selection of whiskies and brandies. You'll also get canned soft drinks, and most drinks from The Coffee Port are included, too.\" Evidence: docs/price-changes/2026-09-01-uk-european-and-royal-au.md",
+        "verify": "Dec 2026. The Premium All Inclusive price is the open item — TUI publishes the inclusion split but no figure on this page. A booking-flow read or a TUI quote would settle it. Champagne is excluded from BOTH tiers.",
+        "verified": "2026-09-01"
       },
-      "baseDrinks": "Drinks included in the fare",
+      "baseDrinks": "Drinks included in the fare — the standard All Inclusive covers draught and bottled beers, ciders, wines by the glass, standard spirits, aperitifs, cocktails, mocktails, soft drinks and juices. Champagne is excluded from every tier.",
+      "baseDrinksSource": "tui.co.uk/cruise/cruise-types/marella-all-inclusive, rendered DOM 2026-09-01: \"All Inclusive as standard — Your meals, snacks, drinks and tips are all included as part of your package.\"",
+      "baseDrinksVerified": "2026-09-01",
       "specialtyDining": {
         "range": [
           15,
@@ -1941,6 +1949,7 @@
       "surcharge": {
         "pct": 0
       },
+      "verify": "CONFIRMED 2026-09-01, not changed: gratuities included (\"your meals, snacks, drinks and tips are all included\") and drinks included in the fare. allInclusive stays FALSE on purpose — the flag means everything is covered, and Marella still charges for Wi-Fi and specialty dining, so setting it would publish those as zero. STILL UNCHECKED: the Wi-Fi figures and the specialty range, both carried from the pre-SSOT table.",
       "verified": "2026-06"
     },
     "ambassador": {
@@ -2048,6 +2057,9 @@
       "segment": "Premium Plus",
       "currency": "GBP",
       "allInclusive": true,
+      "allInclusiveSource": "travel.saga.co.uk/cruises/ocean/the-saga-cruise-experience/inclusions.aspx — Saga states the fare covers all-inclusive drinks (wines, beers, cocktails and premium spirits), all on-board gratuities, Wi-Fi, speciality dining, a nationwide return chauffeur service, travel insurance with additional cancellation cover, and an excursion in every port. Checked 2026-09-01.",
+      "allInclusiveVerified": "2026-09-01",
+      "verify": "CONFIRMED CORRECT 2026-09-01 — the only record in the 2026-09-01 sweep that needed no change. allInclusive:true with no figures is the right shape: Saga charges for none of the categories this file tracks. Re-check only if Saga starts unbundling.",
       "verified": "2026-06"
     },
     "hebridean": {
@@ -2119,12 +2131,18 @@
       },
       "drinksPackage": {
         "offered": false,
-        "note": "Select drinks included with meals; cocktails & extras via the CelestyalPay wallet"
+        "note": "No drinks package is sold. Alcohol is charged to the room or prepaid through the CelestyalPay wallet, which carries a bonus on pre-payment.",
+        "verified": "2026-09-01"
       },
-      "baseDrinks": "Select drinks included with meals",
+      "baseDrinks": "Non-alcoholic only: filter coffee, tea, water and juice stations during main restaurant hours (about 6:30am-10:00pm), and unlimited free-pour sodas with meals in the main restaurants, excluding the Greek Deli. ALCOHOL IS NOT INCLUDED in the Celestyal One fare.",
+      "baseDrinksSource": "celestyal.com/gb/onboard/whats-included, rendered DOM 2026-09-01. Verbatim: \"access to filter coffee, tea, water and juice stations available during the day (during main restaurant opening times, usually 6:30am - 10:00pm). Unlimited free pour sodas in all main restaurants with meals (excludes Greek Deli).\" The same list carries \"All port fees and gratuities\".",
+      "baseDrinksVerified": "2026-09-01",
       "surcharge": {
-        "pct": 0,
-        "appliesTo": "wallet model — no auto-surcharge"
+        "pct": 18,
+        "appliesTo": "all CelestyalPay purchases, including drinks and specialty-restaurant meals — deducted from the wallet balance at the time of purchase",
+        "source": "celestyal.com/terms-and-conditions/celestyalpay-terms-and-conditions, section 4 \"Service fees\", rendered DOM 2026-09-01, verbatim: \"A 18% service fee will be applied to all purchases made using CelestyalPay, including drinks and meals at specialty restaurants. This service charge will be automatically deducted from the CelestyalPay balance at the time of purchase of the relevant goods.\"",
+        "verify": "Dec 2026. WAS pct 0, appliesTo \"wallet model — no auto-surcharge\", until 2026-09-01. That note named the exact mechanism that carries the charge and then denied the charge existed. NOT ESTABLISHED: whether the same 18% applies to drinks charged straight to the room rather than through CelestyalPay — the terms bind the fee to CelestyalPay purchases and say nothing about room charges. Do not extend it to room charges without evidence.",
+        "verified": "2026-09-01"
       },
       "verified": "2026-06"
     },
@@ -2194,7 +2212,8 @@
       "drinksPackage": {
         "offered": true,
         "perDay": 115,
-        "perDayBasis": "Deluxe Bev Pkg mid"
+        "perDayBasis": "Deluxe Bev Pkg mid — UNSOURCED, see verify",
+        "verify": "CANNOT REACH TIER 1, established 2026-09-01 rather than assumed. Royal's own Australian domain publishes NO AUD package price and NO AUD figures at all: royalcaribbean.com/aus/en/faq/questions/what-is-the-deluxe-beverage-package renders the US content unchanged on the /aus/en/ path — the $14 per-serving ceiling, the $4.99 Freestyle cup and the $100 wine thresholds all appear unprefixed and unconverted, identical to the US FAQ already recorded on the `royal` record. Royal prices the package dynamically per ship and sailing through Cruise Planner, so no national AUD rate exists as a published fact. The A$115 is a trade-sourced representative figure and stays flagged approximate. WHAT WOULD SETTLE IT, and nothing else will: a Cruise Planner read from a real AU booking, or a dated travel-advisor quote. Do not chase this with further page reads — the pages have been checked. ALSO UNRESOLVED, noted not fixed: this record carries gratuities included:true (\"Built into AU/NZ pricing\") alongside surcharge pct 18. Both may be right, but the 18% is the US beverage-package gratuity and has no AU source here."
       },
       "specialtyDining": {
         "range": [
