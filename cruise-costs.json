@@ -1829,8 +1829,14 @@
       },
       "drinksPackage": {
         "offered": true,
+        "name": "Dinner drinks package",
         "perDay": 52,
-        "perDayBasis": "approximate"
+        "coverageScope": "mealtime",
+        "perDayBasis": "APPROXIMATE PRICE, CONFIRMED SCOPE — the two are not the same claim. The USD 52 remains an unsourced ballpark; what is now settled is that it buys DINNER drinks, not all-day unlimited.",
+        "note": "Covers drinks with dinner. Not comparable like-for-like with an all-day package such as Carnival CHEERS! or Royal's Deluxe — a lower per-day figure buys a much narrower window.",
+        "source": "Scope confirmed firsthand by the owner, 2026-09-01, resolving the standing suspicion recorded on this record since 22 Jun 2026. Hurtigruten publishes no official 2026 per-day price for it; its own fare pages describe Platinum as including a dinner drink package, which is consistent. Evidence: docs/price-changes/2026-09-01-hurtigruten-dinner-package-scope.md",
+        "verify": "Dec 2026. The PRICE still has no first-party source and stays flagged approximate — do not read the confirmed scope as a verified figure. What would settle the number: a Hurtigruten booking confirmation, an onboard bar or dining bill, or a per-day price appearing on hurtigruten.com. CAUTION for whoever prices it: Hurtigruten also sells drinks through its FARE TIERS (Basic carries no drinks, Select adds water/tea/coffee, Platinum bundles a dinner drink package plus welcome champagne). A fare-tier difference is not this package's price and must not be substituted for it.",
+        "verified": "2026-09-01"
       },
       "specialtyDining": {
         "range": [
