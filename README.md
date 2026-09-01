@@ -22,13 +22,14 @@ configs:
 
 # Real All-In Cruise Costs — by CruiseClarify
 
-> ### 📅 This is a dated snapshot — verified **June 2026**
+> ### 📅 This is a dated snapshot — refreshed **September 2026**
 > Cruise prices change constantly. Every figure here is a **point-in-time value, not
-> live data**, accurate as of **June 2026**. The next quarterly refresh is due
-> **September 2026** — after that, treat this copy as **historical**.
+> live data**, accurate as of **September 2026**. The next quarterly refresh is due
+> **December 2026** — after that, treat this copy as **historical**.
 >
-> **If you are reading or reusing this a quarter or more after June 2026, the numbers
-> will have drifted.** Always pull the current version before quoting or republishing:
+> **If you are reading or reusing this a quarter or more after September 2026, the
+> numbers will have drifted.** Always pull the current version before quoting or
+> republishing:
 > - **Live figures:** https://cruiseclarify.com
 > - **Latest dataset:** https://github.com/NorgeNED/cruiseclarify-data
 >
@@ -108,6 +109,13 @@ the JSON is plain UTF-8.
   decision above.)
 - **Service charge** — `drinks_service_pct` is the % added to a drinks package;
   `drinks_service_in_price` says whether that's already inside the quoted price.
+- **`verified`** — the **most recent** verification date recorded for any published
+  figure on that line. It is *not* a claim that every figure in the row was checked on
+  that date: a line is a bundle of figures with their own vintages, and this column
+  surfaces the newest. **`cruise-costs.json` carries the per-figure dates** and is the
+  honest record if you need to know when a specific number was last confirmed. A
+  month-only stamp (`2026-06`) means "sometime that month" and sorts before any dated
+  day within it.
 - **`drinks_price_confidence`** — `verified` = a sourced figure; `approximate` = a
   ballpark (vague/unsourced basis — treat as indicative, not exact); blank = no priced
   package (all-inclusive, no package, or a credit model). So a number is never mistaken
@@ -148,22 +156,28 @@ prices are set and charged in those currencies. Convert at your own rate if need
 You may use, share, adapt and build on this data, including commercially, **as long
 as you credit CruiseClarify**. Suggested attribution:
 
-> Cruise cost data by **CruiseClarify** (https://cruiseclarify.com), June 2026 snapshot, CC BY 4.0.
+> Cruise cost data by **CruiseClarify** (https://cruiseclarify.com), September 2026 snapshot, CC BY 4.0.
 
 Keeping the **snapshot date** in your attribution protects everyone: it tells *your*
-readers how current the figures are, and it stops a June 2026 number being mistaken
+readers how current the figures are, and it stops a September 2026 number being mistaken
 for a live one later on.
 
 ## Accuracy & freshness
 
-**This release is a dated snapshot: verified June 2026, next refresh due September 2026.**
+**This release is a dated snapshot: refreshed September 2026, next refresh due
+December 2026.**
 
 Cruise pricing changes often, and every figure here is a *point-in-time* value, **not
 live data**. Each line carries its own `verified` date (and the JSON carries
-`last_refreshed` / `next_refresh_due`). Treat the numbers as accurate **as of June
+`last_refreshed` / `next_refresh_due`). Treat the numbers as accurate **as of September
 2026 only**.
 
-**If you are using this after September 2026, do not present these figures as
+The September 2026 refresh re-read every line that had not been checked since June
+against the cruise line's own published pages. Fourteen records were opened and eleven
+corrected — two of them cases where a gratuity we published as included is in fact
+charged. Per-figure evidence for each change is kept alongside the source data.
+
+**If you are using this after December 2026, do not present these figures as
 current** — fetch the latest release first:
 - Live figures: https://cruiseclarify.com
 - Latest dataset: https://github.com/NorgeNED/cruiseclarify-data
@@ -173,4 +187,4 @@ confirm the current price with the cruise line before booking.
 
 ## Citation
 
-> CruiseClarify (2026). *Real All-In Cruise Costs* (June 2026 snapshot). https://cruiseclarify.com
+> CruiseClarify (2026). *Real All-In Cruise Costs* (September 2026 snapshot). https://cruiseclarify.com

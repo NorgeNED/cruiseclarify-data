@@ -1471,6 +1471,8 @@
       "segment": "Luxury / Ultra-Luxury",
       "allInclusive": true,
       "note": "Even shore excursions included",
+      "allInclusiveSource": "rssc.com/experience/all-included, rendered DOM 2026-09-01. ALWAYS INCLUDED, verbatim: \"Unlimited shore excursions\", \"Unlimited beverages, fine wines, craft cocktails, speciality coffees & more\", \"Exquisite dining including all speciality restaurants at no added cost\", \"Unlimited WiFi\", \"Pre-paid gratuities\". Evidence: docs/price-changes/2026-09-01-luxury-all-inclusive-audit.md",
+      "allInclusiveVerified": "2026-09-01",
       "verified": "2026-06"
     },
     "seabourn": {
@@ -1488,6 +1490,8 @@
       "name": "Seabourn",
       "segment": "Luxury / Ultra-Luxury",
       "allInclusive": true,
+      "allInclusiveSource": "seabourn.com/en/us/seabourn-difference, rendered DOM 2026-09-01, verbatim: \"Complimentary premium spirits and fine wines available on board at all times\", \"All dining venues are complimentary, dine where, when and with whom you wish\", \"Tipping is neither required, nor expected\", \"Complimentary Wi-Fi packages with unlimited minutes powered by SpaceX's Starlink\". Optional Ventures shore excursions and spa services carry charges; neither is a category this file tracks. Evidence: docs/price-changes/2026-09-01-luxury-all-inclusive-audit.md",
+      "allInclusiveVerified": "2026-09-01",
       "verified": "2026-06"
     },
     "silversea": {
@@ -1505,6 +1509,9 @@
       "name": "Silversea",
       "segment": "Luxury / Ultra-Luxury",
       "allInclusive": true,
+      "allInclusiveSource": "silversea.com/best-luxury-cruise-deals/all-inclusive-fare.html, rendered DOM 2026-09-01, verbatim: \"Enjoy butler serviced suites, exceptional dining, unlimited wines and spirits, onboard gratuities, and Wi-Fi.\" Evidence: docs/price-changes/2026-09-01-luxury-all-inclusive-audit.md",
+      "allInclusiveVerified": "2026-09-01",
+      "verify": "CAUTION on scope, stated by Silversea itself: the All-Inclusive Fare is \"exclusively available on our Classic voyages\", and the page warns \"Some services may not be available or may be subject to variation. Please check each voyage for full details of the fare inclusions.\" The onboard inclusion set is the same on the port-to-port and door-to-door fares; what differs between them is air and transfers, which this file does not track.",
       "verified": "2026-06"
     },
     "crystal": {
@@ -1569,6 +1576,8 @@
       "segment": "Luxury / Ultra-Luxury",
       "allInclusive": true,
       "note": "MSC's luxury brand",
+      "allInclusiveSource": "explorajourneys.com/us/en/life-on-explora/inclusions, rendered DOM 2026-09-01. All Journeys Include, verbatim: \"Unlimited beverages including fine wines, champagne, premium spirits, specialty coffees, teas and soft drinks, available anytime, including in-suite\", \"Complimentary high-speed Wi-Fi throughout the ship\", \"Onboard gratuities\", plus nine culinary experiences including in-suite dining. Evidence: docs/price-changes/2026-09-01-luxury-all-inclusive-audit.md",
+      "allInclusiveVerified": "2026-09-01",
       "verified": "2026-06"
     },
     "quark": {
