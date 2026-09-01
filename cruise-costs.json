@@ -1766,11 +1766,14 @@
         "included": true,
         "note": "Limited polar"
       },
-      "baseDrinks": "Wine & beer with meals included; spirits extra",
+      "baseDrinks": "Beer, wine, cocktails, liquors and spirits are included in the fare across the fleet, EXCEPT aboard Sun Goddess, Oberoi Philae, Connect and Evolve, which include beer and wine only. Premium brands are sold separately.",
+      "baseDrinksSource": "expeditions.com/whats-included, Pricing Includes, rendered DOM 2026-09-01. Verbatim: \"Beer, wine, cocktails, liquors and spirits aboard all ships, with the exception of Sun Goddess, Oberoi Philae, Connect and Evolve. We are also pleased to offer a selection of premium brands for purchase.\" The two carve-outs are stated separately on the same list: \"Beer and wine with meals aboard Oberoi Philae and Sun Goddess\" and \"Beer and wine aboard Connect and Evolve\". Evidence: docs/price-changes/2026-09-01-lindblad-base-drinks.md",
+      "baseDrinksVerified": "2026-09-01",
       "surcharge": {
         "pct": 18,
         "appliesTo": "approximate"
       },
+      "verify": "TWO KNOWN ERRORS REMAIN ON THIS RECORD, both found 2026-09-01 and both deferred by decision, not oversight. (1) GRATUITIES ARE OVER-BROAD: this record says included:true unqualified, but Lindblad includes crew gratuities aboard a NAMED list of ships — Endurance, Resolution, Explorer, Orion, Sea Cloud II, Lord of the Glens, Oberoi Philae, Sun Goddess, Charaidew II, The Jahan, Aqua Blu, Connect, Evolve and Greg Mortimer — and eight National Geographic vessels are absent from it. (2) WI-FI CONFLICTS WITH OUR OWN CONVENTION: Lindblad's complimentary tier covers \"email, messaging and social media apps\" and browsing needs the paid Enhanced plan, while meta.wifiConvention excludes social-media-only tiers. The \"Limited polar\" note is stale too — Lindblad now advertises Starlink and Speedcast across the expedition fleet. The 18% surcharge is unsourced and its appliesTo reads \"approximate\", which is not a description of what it applies to. The line-level `verified` stays 2026-06 on purpose: only baseDrinks was checked on this pass.",
       "verified": "2026-06"
     },
     "hx": {
@@ -1796,9 +1799,18 @@
     "aurora": {
       "name": "Aurora Expeditions",
       "segment": "Expedition",
-      "currency": "AUD",
+      "currency": "USD",
       "gratuities": {
-        "included": true
+        "included": false,
+        "perDay": 15,
+        "range": [
+          15,
+          20
+        ],
+        "note": "Auto-added to the onboard account and removable, NOT in the fare. USD 15 per person per day on most voyages; some state USD 20 — Antarctica Complete and the Costa Rica & Panama Canal voyage both do. Included for SUITE guests as a Suite Benefit. WAS included:true until 2026-09-01, which was wrong and cost a reader the entire amount.",
+        "source": "aurora-expeditions.com/expedition/antarctica-complete, Inclusions & Exclusions, rendered DOM 2026-09-01. Verbatim: \"All items of a personal nature, including but not limited to on board gratuities*, laundry services, personal clothing, medical expenses or phone charges. Note: *A gratuity of USD $20 per person, per day for the crew and Expedition Team will be automatically added to your onboard account. You may remove or adjust this amount when settling your account. For suite guests, this gratuity is included as part of the Suite Benefits.\" Evidence: docs/price-changes/2026-09-01-aurora-gratuities.md",
+        "verify": "Dec 2026. AURORA CONTRADICTS ITSELF ON ONE PAGE, unresolved: the Antarctica Complete exclusions say 20 per person per day, while the suite cabin-inclusions block on the SAME page says a gratuity of 15 per person per day is included with each suite. perDay stores 15 as the common rate with range [15, 20]; do NOT collapse the range until the split is understood. It may be voyage-dependent — both voyages seen at 20 are long-haul — or the suite block may be a stale global template. What would settle it: read the exclusions note on three or four more voyages and see which figure is the default. STILL UNFIXED ON THIS RECORD, deferred by decision 2026-09-01: baseDrinks still reads \"spirits extra\", but Aurora's own inclusions page lists \"Premium spirits, cocktails, beer, wine and liqueurs\" daggered \"From Antarctica 2026/2027 Season onwards\", with bar hours from lunchtime on sea days and 3pm on excursion days. Not stored because it is not yet in force — same treatment as the announced Cunard and HAL forward prices. The wifi note \"Limited polar/remote\" is also stale: Aurora advertises \"Complimentary Starlink wifi onboard\".",
+        "verified": "2026-09-01"
       },
       "wifi": {
         "included": true,
