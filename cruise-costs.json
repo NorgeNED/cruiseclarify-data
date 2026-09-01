@@ -2315,7 +2315,10 @@
       "currency": "AUD",
       "gratuities": {
         "included": true,
-        "note": "Built into AU/NZ pricing"
+        "note": "CONFIRMED, not a change — daily service charges for stateroom attendants and dining staff are in the fare on Australia-departing sailings. Discretionary tipping stays possible. NOTE the carve-out in the same sentence: bar, spa and in-room dining purchases still attract an onboard service charge — see surcharge below.",
+        "source": "royalcaribbean.com/aus/en/faq/questions/tipping-policy, owner-supplied PDF capture 2026-09-01, verbatim: \"Service charges for stateroom attendants and dining room staff will now be included in the fare. Guests will simply pay one inclusive cruise fare... Whilst service charges are now included, you will still have the option to reward our crew for their exceptional service by choosing to provide a gratuity at your own discretion. Discretionary purchases such as bar, spa and in-room dining will continue to attract an onboard service charge.\" Evidence: docs/price-changes/2026-09-01-royal-au-market-rules.md",
+        "verify": "DO NOT \"correct\" this from royalcaribbean.com/aus/en/faq/questions/onboard-service-gratuity-expense, which sits on the SAME /aus/en/ path and states $21.00 USD per guest per day for suites and $18.50 USD for all other categories. That is Royal's GLOBAL policy served unlocalised on the Australian path — the figures are explicitly USD — and it governs Australians sailing from other countries, not Australia-departing sailings. The tipping-policy page is the Australia-specific instrument and it wins here. Those same USD figures independently corroborate the `royal` record, where they are correctly stored.",
+        "verified": "2026-09-01"
       },
       "wifi": {
         "included": false,
@@ -2323,22 +2326,32 @@
         "range": [
           20,
           35
-        ]
+        ],
+        "verify": "UNSOURCED and NOT REACHABLE from any page. Royal's AU VOOM FAQ (/aus/en/faq/questions/onboard-internet-wifi-device-policy) publishes no figure at all: \"The cost of VOOM varies by the number of devices and the service package purchased. We recommend that guests purchase VOOM pre-cruise to enjoy the biggest discount from onboard prices.\" Read from an owner-supplied PDF capture 2026-09-01. Only a Cruise Planner read from a real AU booking would settle it. Do not convert a USD VOOM price into A$ to fill the gap."
       },
       "drinksPackage": {
         "offered": true,
         "perDay": 115,
         "perDayBasis": "Deluxe Bev Pkg mid — UNSOURCED, see verify",
+        "serviceIncludedInPrice": true,
+        "serviceNote": "On Australia-departing sailings the package service charge is ALREADY IN the listed price, and Royal publishes no percentage for it on the AU pages. Do not add 18% on top for these sailings.",
+        "serviceSource": "royalcaribbean.com/aus/en/faq/questions/beverage-package-gratuities-policy, owner-supplied PDF capture 2026-09-01, verbatim: \"For sailings departing from Australia, any beverages packages purchased pre-cruise or onboard have service charges already included in the listed price. Guests will still have the option to reward crew for exceptional service by choosing to provide a gratuity at their own discretion. Sailings from other countries may have additional service charges added.\"",
+        "serviceVerified": "2026-09-01",
         "verify": "CANNOT REACH TIER 1, established 2026-09-01 rather than assumed. Royal's own Australian domain publishes NO AUD package price and NO AUD figures at all: royalcaribbean.com/aus/en/faq/questions/what-is-the-deluxe-beverage-package renders the US content unchanged on the /aus/en/ path — the $14 per-serving ceiling, the $4.99 Freestyle cup and the $100 wine thresholds all appear unprefixed and unconverted, identical to the US FAQ already recorded on the `royal` record. Royal prices the package dynamically per ship and sailing through Cruise Planner, so no national AUD rate exists as a published fact. The A$115 is a trade-sourced representative figure and stays flagged approximate. WHAT WOULD SETTLE IT, and nothing else will: a Cruise Planner read from a real AU booking, or a dated travel-advisor quote. Do not chase this with further page reads — the pages have been checked. ALSO UNRESOLVED, noted not fixed: this record carries gratuities included:true (\"Built into AU/NZ pricing\") alongside surcharge pct 18. Both may be right, but the 18% is the US beverage-package gratuity and has no AU source here."
       },
       "specialtyDining": {
         "range": [
           40,
           65
-        ]
+        ],
+        "verify": "UNSOURCED in A$. Royal's AU dining-packages page prices in US dollars even on the Australian path — it states children 6 to 12 dine at speciality restaurants \"for only USD 14.99\" — and publishes no per-venue Australian cover charge. Read from an owner-supplied PDF capture 2026-09-01. Do NOT convert USD covers into A$ to fill this range: a converted figure is our arithmetic, not Royal's price."
       },
       "surcharge": {
-        "pct": 18
+        "pct": null,
+        "appliesTo": "à-la-carte bar, spa and in-room dining purchases on Australia-departing sailings — a charge EXISTS but Royal publishes NO percentage for it on its Australian pages. WAS pct 18 until 2026-09-01, which was Royal's US figure applied to the Australian market without a source, and wrong twice over: the AU beverage-package page states package service charges are already inside the listed price, and no AU page states a rate for individual purchases.",
+        "source": "royalcaribbean.com/aus/en/faq/questions/tipping-policy (\"Discretionary purchases such as bar, spa and in-room dining will continue to attract an onboard service charge\") and /aus/en/faq/questions/beverage-package-gratuities-policy (packages: \"service charges already included in the listed price\"), both owner-supplied PDF captures 2026-09-01.",
+        "verify": "What would settle the rate: an Australian onboard bar bill or a Cruise Planner line item. Until then the charge is described and not quantified — better than publishing a US percentage the AU market does not use.",
+        "verified": "2026-09-01"
       },
       "verified": "2026-06"
     },
