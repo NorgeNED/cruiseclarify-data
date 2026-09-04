@@ -1949,7 +1949,12 @@
       "name": "Lindblad / Nat Geo",
       "segment": "Expedition",
       "gratuities": {
-        "included": true
+        "included": true,
+        "includedWithLimits": true,
+        "note": "INCLUDED ON NAMED SHIPS, and Lindblad states it that way. Its Pricing Includes list names the fourteen vessels crew gratuities are included aboard; it publishes no fleet-wide policy, and eight National Geographic vessels are absent from the list. WAS included:true unqualified until 2026-09-05, which asserted a fleet-wide inclusion Lindblad does not state. `includedWithLimits` exists so no surface can publish an unconditional fleet-wide answer — same device as crystal.specialtyDining.includedWithLimits. Do NOT infer the absent ships either way: absence from an inclusions list is not a statement that gratuities are charged there.",
+        "source": "expeditions.com/whats-included, Pricing Includes, rendered DOM 2026-09-01, verbatim: \"Crew gratuities aboard National Geographic Endurance, National Geographic Resolution, National Geographic Explorer, National Geographic Orion, Sea Cloud II, Lord of the Glens, Oberoi Philae, Sun Goddess, Charaidew II, The Jahan, Aqua Blu, Connect, Evolve and Greg Mortimer. Gratuities on land programs, unless otherwise indicated.\" Evidence: docs/price-changes/2026-09-05-lindblad-gratuities-scope.md",
+        "verify": "Dec 2026. WHAT IS UNKNOWN: what Lindblad charges aboard the National Geographic vessels absent from the inclusions list. Nothing read states a rate, a suggestion, or that gratuities are charged there at all. Resolve by a per-ship read or a booking confirmation for one of the absent vessels — not by inference from the list.",
+        "verified": "2026-09-01"
       },
       "wifi": {
         "included": true,
@@ -1974,7 +1979,7 @@
         "pct": 18,
         "appliesTo": "approximate"
       },
-      "verify": "TWO KNOWN ERRORS REMAIN ON THIS RECORD, both found 2026-09-01 and both deferred by decision, not oversight. (1) GRATUITIES ARE OVER-BROAD: this record says included:true unqualified, but Lindblad includes crew gratuities aboard a NAMED list of ships — Endurance, Resolution, Explorer, Orion, Sea Cloud II, Lord of the Glens, Oberoi Philae, Sun Goddess, Charaidew II, The Jahan, Aqua Blu, Connect, Evolve and Greg Mortimer — and eight National Geographic vessels are absent from it. (2) WI-FI CONFLICTS WITH OUR OWN CONVENTION: Lindblad's complimentary tier covers \"email, messaging and social media apps\" and browsing needs the paid Enhanced plan, while meta.wifiConvention excludes social-media-only tiers. The \"Limited polar\" note is stale too — Lindblad now advertises Starlink and Speedcast across the expedition fleet. The 18% surcharge is unsourced and its appliesTo reads \"approximate\", which is not a description of what it applies to. The line-level `verified` stays 2026-06 on purpose: only baseDrinks was checked on this pass.",
+      "verify": "ONE KNOWN ERROR REMAINS ON THIS RECORD. (1) GRATUITIES OVER-BROAD — FIXED 2026-09-05: the record said included:true unqualified; it now carries includedWithLimits with the named-ship list quoted on the gratuities record. (2) WI-FI CONFLICTS WITH OUR OWN CONVENTION: Lindblad's complimentary tier covers \"email, messaging and social media apps\" and browsing needs the paid Enhanced plan, while meta.wifiConvention excludes social-media-only tiers. The \"Limited polar\" note is stale too — Lindblad now advertises Starlink and Speedcast across the expedition fleet. The 18% surcharge is unsourced and its appliesTo reads \"approximate\", which is not a description of what it applies to. The line-level `verified` stays 2026-06 on purpose: only baseDrinks was checked on this pass.",
       "verified": "2026-06"
     },
     "hx": {
