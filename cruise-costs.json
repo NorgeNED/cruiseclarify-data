@@ -10,6 +10,15 @@
   "line_count": 37,
   "lines": {
     "carnival": {
+      "onboardCurrency": {
+        "default": "USD",
+        "byItinerary": null,
+        "overrides": "None. Carnival bills USD on European sailings too — its own Currency Exchange page tells guests to obtain euros ashore rather than on board, which only makes sense if the ship is not in euro.",
+        "source": "Two first-party surfaces, both rendered DOM, read 2026-09-04. (1) help.carnival.com a_id/1138 (Sail & Sign Onboard Account), verbatim: \"Guests must deposit cash (USD currency only) or Traveler's Checks (USD currency only) at Guest Services on the first day of the cruise\", with all recommended deposits and card holds stated in USD. (2) help.carnival.com a_id/1131 (Currency Exchange), verbatim: \"As a convenience for our Canadian guests, the onboard Guest Services Desk provides currency exchange for Canadian dollars to U.S dollars at the current exchange rate\", and for Europe cruises: \"We do not offer a currency exchange service on board.\"",
+        "conflict": null,
+        "notStated": "Carnival never writes the flat sentence \"the onboard currency is the US Dollar\" on either page read. USD is established by what the pages require and exchange, not by a declaration. Recorded as inference from first-party mechanics, which is why both surfaces are quoted. NOTE: Carnival Australia is the separate `carnivalAu` record and is NOT covered by this.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": false,
         "freeBreakfast": "continental",
@@ -114,6 +123,15 @@
       }
     },
     "royal": {
+      "onboardCurrency": {
+        "default": "USD",
+        "byItinerary": null,
+        "overrides": "None published. Royal states one currency with no regional qualifier.",
+        "source": "royalcaribbean.com/faq/questions/seapass-onboard-spending-account, rendered DOM read 2026-09-04. Verbatim: \"Please note all onboard prices are in USD.\"",
+        "conflict": null,
+        "notStated": "The sentence covers PRICES. Royal does not separately state the settlement currency for a cash account, nor whether a non-USD card is converted by Royal or by the issuer. Do not assert either.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": false,
         "freeBreakfast": "continental",
@@ -247,6 +265,15 @@
       }
     },
     "ncl": {
+      "onboardCurrency": {
+        "default": "USD",
+        "byItinerary": null,
+        "overrides": "None published, and the read was deliberately taken from a EUROPEAN market page rather than the US one: NCL states the same dollar answer to a French-market reader, so the currency does not follow the booking market the way MSC gratuities do.",
+        "source": "ncl.com/fr/en/cruise-faq/currency, rendered DOM read 2026-09-04. Verbatim: \"The currency used on board our ships is the U.S. dollar.\" Same page states cash deposits in US dollars (\"a suggested deposit for a 7-night cruise is US dollar 300 per person\").",
+        "conflict": null,
+        "notStated": "NCL does not say what happens to a non-USD card at settlement, nor whether it converts or the issuer does.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": false,
         "freeBreakfast": null,
@@ -420,6 +447,19 @@
       }
     },
     "msc": {
+      "onboardCurrency": {
+        "default": null,
+        "byItinerary": {
+          "Mediterranean, Northern Europe, Antilles, Dubai, the Emirates and Oman; Grand Voyages departing from Europe": "EUR",
+          "Caribbean, Bermuda, Canada & New England, South America, South Africa, China, Japan, Republic of Korea; Grand Voyages to Europe and Australia": "USD",
+          "Departures from Southampton": "GBP"
+        },
+        "overrides": "The Southampton line is an override, not an addition: Southampton sits inside \"Northern Europe\", and MSC states the port rule last and unqualified, so sterling beats euro for a Southampton departure.",
+        "source": "msccruises.co.uk/faq, \"How can I pay on board?\" block, rendered DOM read 2026-09-04. Verbatim: \"For cruises in the Mediterranean, Northern Europe, Antilles, Dubai, the Emirates and Oman, as well as MSC Grand Voyages departing from Europe, the onboard currency is the Euro (€). For cruises in the Caribbean, Bermuda, Canada & New England,South America ,South Africa, China, Japan and Republic of Korea as well as MSC Grand Voyages going to Europe and to Australia, the onboard currency is the US Dollar ($). The onboard currency for cruises departing from Southampton will be the British Pound (£).\"",
+        "conflict": "MSC CONTRADICTS ITSELF ON THIS PAGE. Three answers below the currency list, the cash-advance clause says it \"can only be done in the on board currency (euro or US dollars, depending on the itinerary)\" — two currencies, on the page that has just named three. Neither sentence qualifies the other, so a Southampton guest cannot tell from MSC whether a cash advance is open to them. Unresolved; do not paper over it.",
+        "notStated": "MSC publishes NO closed-loop / inter-porting exception. A claim that the currency reverts to euro when a Southampton sailing calls at a continental port and exchanges guests circulates widely in AI-generated answers citing agent pages; it is absent from MSC's own material. Do not repeat it, and consider saying so explicitly.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": false,
         "freeBreakfast": "continental",
@@ -442,15 +482,16 @@
         "officialName": "Hotel Service Charge",
         "officialNameSource": "msccruisesusa.com/manage-booking/before-you-go/service-charges — the page is headed \"HOTEL SERVICE CHARGE\" and the rate tables are labelled \"Hotel Service Charges\". Read from the rendered DOM 9 Aug 2026; the earlier 'Service charge' entry was our shorthand, not MSC's name for it.",
         "tiers": {
-          "Europe sailings": "€12 (€16 Yacht Club)",
+          "Europe sailings (adult 18+)": "€12 (€16 Yacht Club)",
+          "Europe sailings (child 2-17)": "€10 (€13 Yacht Club)",
           "Yacht Club (US sailings)": 23
         },
-        "note": "A3 resolved 10 Jun 2026: depends on BOOKING MARKET, not itinerary. US-market bookings: never included — €12/adult/night Europe, $17/night Caribbean/Alaska for cruises booked from May 11, 2026 ($23 YC). THE TRIGGER IS BOOKING DATE, NOT SAILING DATE: MSC heads the two tables \"For cruises booked from May 11, 2026\" and \"For cruises booked before May 11, 2026\", so a guest who booked earlier stays on the prior $16 ($20 Yacht Club) however late they sail — never write \"since May 11\" or \"sailings from May 11\". UK & Ireland-market bookings: service charge INCLUDED in the cruise fare, categorically — paid at booking, nothing added on board (msccruises.co.uk service-charges page, re-read 9 Aug 2026); other EU markets vary.",
+        "note": "A3 resolved 10 Jun 2026: depends on BOOKING MARKET, not itinerary. US-market bookings: never included — €12/adult/night Europe, $17/night Caribbean/Alaska for cruises booked from May 11, 2026 ($23 YC). THE TRIGGER IS BOOKING DATE, NOT SAILING DATE: MSC heads the two tables \"For cruises booked from May 11, 2026\" and \"For cruises booked before May 11, 2026\", so a guest who booked earlier stays on the prior $16 ($20 Yacht Club) however late they sail — never write \"since May 11\" or \"sailings from May 11\". UK & Ireland-market bookings: service charge INCLUDED in the cruise fare, categorically — paid at booking, nothing added on board (msccruises.co.uk service-charges page, re-read 4 Sep 2026 — it publishes NO rate table at all, so UK amounts must never be inferred from the Dutch or US tables). OTHER EU MARKETS, resolved 4 Sep 2026: the charge is neither hidden nor billed nightly — msccruises.nl states it is \"verplicht als geïntegreerd onderdeel van de totaalprijs\" (mandatory as an integrated part of the total price) since 1 April 2021, and publishes the full rate table. So three mechanics, one charge: UK folds it into the fare invisibly, EU shows it inside the advertised total, US bills it nightly to the onboard account. MARKET decides WHEN you pay and whether you can see it; ITINERARY decides HOW MUCH — both are true, and the A3 line above is about inclusion, not amount.",
         "verified": "2026-08-09",
         "child": {
           "freeUnderAge": 2,
-          "note": "US market: two tiers only — guests 2 and older pay the full rate, under-2s pay nothing. No reduced rate for older children. Confirmed on msccruisesusa.com Hotel Service Charge page (screenshot 10 Jul 2026). Non-US booking markets may reduce for children.",
-          "verified": "2026-07-30"
+          "note": "THE ADULT BAND IS NOT THE SAME EVERYWHERE, and this is the part that catches families. Caribbean/Alaska/Bermuda/Canada & New England: adult starts at 2 — a toddler pays the full $17 and there is no reduced rate for older children (msccruisesusa.com, screenshot 10 Jul 2026). Europe (Mediterranean, Canaries, Northern Europe, Antilles, Dubai/Abu Dhabi & Qatar, Egypt, MSC World Cruise): adult starts at 18, children 2-17 pay €10 (€13 Yacht Club), under-2s nothing — new bookings from 2 July 2026, and MSC says guests with bookings confirmed before that date are unaffected. South Africa and South America: adult starts at 12. Three thresholds — 2, 12 and 18 — published on one page. Read from the rendered DOM of msccruises.nl/beheer-uw-boeking/voordat-u-gaat/service-charges 4 Sep 2026, corroborated on the US site the same day; evidence docs/price-changes/2026-09-04-msc-europe-child-rate.md. NOT STATED by MSC: which date the age is taken on for European sailings (the Caribbean table says departure date; the European one is silent).",
+          "verified": "2026-09-04"
         }
       },
       "wifi": {
@@ -523,6 +564,15 @@
       }
     },
     "disney": {
+      "onboardCurrency": {
+        "default": "USD",
+        "byItinerary": null,
+        "overrides": "None. The three-currency choice applies to the cruise package, not to the onboard folio.",
+        "source": "disneycruise.disney.go.com/faq/booking-reservations/accepted-currencies/, rendered DOM read 2026-09-04. Verbatim: \"You can pay for your cruise package with U.S. dollars (USD), British pounds (GBP) or euros (EUR). Our website will automatically display cruise and transportation prices in the applicable currency based on your geographic location. All other purchases—including spa services, Port Adventures, premium dining and onboard shopping—are priced in US dollars. These charges will be billed to your onboard folio, which is payable in cash or with a major credit card.\"",
+        "conflict": null,
+        "notStated": "Disney does not say whether a UK or EU guest settling the folio is converted by Disney or by their card issuer. A guest who paid the fare in pounds still meets a dollar folio, and Disney does not flag that anywhere in the booking flow we can see.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": true,
         "freeBreakfast": "all",
@@ -592,6 +642,15 @@
       }
     },
     "celebrity": {
+      "onboardCurrency": {
+        "default": null,
+        "byItinerary": null,
+        "overrides": null,
+        "source": null,
+        "conflict": null,
+        "notPublished": "Three surfaces, 2026-09-04: /faqs/onboard-account and /faqs/onboard-experience both 404; the international all-FAQs page answers currency only for PORTS OF CALL, never for the account; /faqs/seapass-account renders and carries nothing but site-config currency codes. Notable because its RCG sibling Royal Caribbean states it plainly (\"all onboard prices are in USD\") — same group, one says it, one does not.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": false,
         "freeBreakfast": "continental",
@@ -697,6 +756,17 @@
       }
     },
     "princess": {
+      "onboardCurrency": {
+        "default": "USD",
+        "byItinerary": {
+          "Select Australian-based itineraries": "AUD"
+        },
+        "overrides": "Princess writes the rule as a default plus one exception, not as a table.",
+        "source": "princess.com/en-int/faq/onboard-experience, rendered DOM read 2026-09-04. Verbatim: \"Onboard Currency — Unless noted, onboard currency is in U.S. dollars. However, on select Australian-based itineraries, the onboard currency is in Australian dollars.\" Corroborated by a mechanic on the same page: the corkage fee is priced in two currencies with the parenthetical \"(depending on shipboard currency)\", which only makes sense if the account currency varies. Figures deliberately not quoted here — corkage is not a value this SSOT stores, and a number in a note nothing owns is how provenance prose goes stale.",
+        "conflict": null,
+        "notStated": "Princess does not name WHICH Australian-based itineraries, only \"select\" ones. The site must not turn that into \"all sailings from Australia\". Nothing is said about European itineraries, which fall under the default.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": false,
         "freeBreakfast": "continental",
@@ -859,6 +929,15 @@
       }
     },
     "hal": {
+      "onboardCurrency": {
+        "default": "USD",
+        "byItinerary": null,
+        "overrides": "None. HAL states one currency for pricing, charges AND settlement, with no regional carve-out — its sibling Princess publishes an Australian exception and HAL publishes none.",
+        "source": "hollandamerica.com/en/us/faq/onboard-cruise-experience/onboard-information/what-currency-is-used-on-board, rendered DOM read 2026-09-04. Verbatim: \"All onboard pricing, charges, and settlements are handled in U.S. dollars, so you do not need to carry multiple currencies for shipboard purchases.\" Same page: \"Foreign currencies cannot be accepted or exchanged by the Front Office.\"",
+        "conflict": null,
+        "notStated": "A 3% fee is stated for cash advances, but no exchange rate or spread is published for the onboard exchange service HAL offers on \"selected itineraries, including certain European and World Cruise programs\". Do not quantify the cost of that service.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": true,
         "freeBreakfast": "all",
@@ -995,6 +1074,15 @@
       }
     },
     "virgin": {
+      "onboardCurrency": {
+        "default": null,
+        "byItinerary": null,
+        "overrides": null,
+        "source": null,
+        "conflict": null,
+        "notPublished": "Two surfaces, 2026-09-04, and the second is a wall: virginvoyages.com/frequently-asked-questions is a JavaScript shell whose DOM carries only analytics config; help.virginvoyages.com redirects to a Salesforce login. A figure behind a sign-in does not enter this SSOT — we do not sign in to read one. What would settle it: a Virgin booking confirmation, or their pre-sailing guest material.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": false,
         "freeBreakfast": null,
@@ -1158,6 +1246,15 @@
       }
     },
     "viking": {
+      "onboardCurrency": {
+        "default": "USD",
+        "byItinerary": null,
+        "overrides": "None. Read off the UK-market site by geo-redirect, and the CMS item id is literally \"how-will-payments-on-board-be-handled-uk\" — so this is Viking answering a British guest, not an American one.",
+        "source": "vikingcruises.co.uk/oceans/frequently-asked-questions.html, rendered DOM read 2026-09-04. Verbatim: \"Although most services are included in your cruise fare, discretionary purchases will be charged to your shipboard account. These accounts, along with all prices and currency on board the ship, are in US dollars and may be settled in cash or with a major credit card before disembarking the ship.\"",
+        "conflict": null,
+        "notStated": "Nothing about conversion when a UK guest settles a dollar account with a sterling card.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": true,
         "freeBreakfast": "all",
@@ -1233,6 +1330,15 @@
       }
     },
     "oceania": {
+      "onboardCurrency": {
+        "default": "USD",
+        "byItinerary": null,
+        "overrides": "None published.",
+        "source": "oceaniacruises.com/legal/terms-conditions, rendered DOM read 2026-09-04. Oceania states no flat currency declaration; USD is established from the mechanic instead — every amount it posts to the shipboard account is denominated in US dollars, in the gratuities clause (\"automatically added to their shipboard account\") and in the beverage/spa service gratuity. Figures deliberately not quoted: those amounts are owned by `gratuities`, and repeating them in a provenance note is how the note goes stale after the next rise.",
+        "conflict": null,
+        "notStated": "Inference from a mechanic, not a declaration — recorded as such. A clause about foreign-currency transaction fees \"including transactions denominated in U.S. Dollars\" appears in Oceania's ticket-contract PDFs; NOT read first-hand, so it is named here and relied on for nothing.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": true,
         "freeBreakfast": "all",
@@ -1287,6 +1393,15 @@
       }
     },
     "azamara": {
+      "onboardCurrency": {
+        "default": null,
+        "byItinerary": null,
+        "overrides": null,
+        "source": null,
+        "conflict": null,
+        "notPublished": "Three surfaces, 2026-09-04: /faq 404s; /faqs renders in full and never states the account currency; /booked-guests/before-you-board/payment-cancellation is silent on it too. The one currency sentence on /faqs — \"The ship carries US Dollars and Euros\" — is about CASH THE SHIP HOLDS for guests going ashore on Grand Voyages, not the denomination of the account, and must not be used for this field. Consistent with the 20 Aug 2026 finding that Azamara prices privately.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": true,
         "freeBreakfast": "all",
@@ -1385,6 +1500,15 @@
       }
     },
     "windstar": {
+      "onboardCurrency": {
+        "default": null,
+        "byItinerary": null,
+        "overrides": null,
+        "source": null,
+        "conflict": null,
+        "notPublished": "Three surfaces, 2026-09-04, all silent on the onboard account: /faq/ and /frequently-asked-questions/ and /know-before-you-go/ all 404; /life-on-board/ renders and says nothing; /terms-conditions/ addresses FARES only (\"All fares mentioned are cruise only per person, in US dollars\"), which is the fare currency, not the account. The site header carries a USD/CAD/EUR/GBP/AUD switcher — that is the BOOKING SITE display currency and must not be read as the ship's.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": true,
         "freeBreakfast": "all",
@@ -1618,6 +1742,15 @@
       }
     },
     "cunard": {
+      "onboardCurrency": {
+        "default": "USD",
+        "byItinerary": null,
+        "overrides": "None published. Cunard states one currency for the whole fleet, with no regional or homeport variation — including Southampton departures.",
+        "source": "my.cunard.com/en-us/mycruise/articles/money-service (\"Money matters\"), rendered DOM read 2026-09-04, publicly reachable without sign-in. Verbatim: \"All transactions will be charged to your account in US dollars.\" And on cash: \"You may credit your account with any major currency, which will then be converted at the ship's current exchange rates into USD; this will then be applied to your account in USD.\"",
+        "conflict": null,
+        "notStated": "Cunard does not publish the exchange rate it applies to a cash deposit, only that it uses \"the ship's current exchange rates\". A UK guest therefore pays an unstated spread on top of their own card issuer's. Do not quantify it — Cunard publishes no figure.",
+        "verified": "2026-09-04"
+      },
       "roomService": {
         "included": false,
         "freeBreakfast": "continental",
@@ -2275,8 +2408,14 @@
       "segment": "Mainstream",
       "currency": "AUD",
       "gratuities": {
-        "included": true,
-        "note": "Not charged — tipping not expected"
+        "included": false,
+        "perDay": 0,
+        "chargeBasis": "discretionary",
+        "guidance": null,
+        "note": "Optional, and NOT stated to be in the fare. Carnival Australia says tipping is welcome but not required for Australian-departing cruises, and publishes NO amount, so nothing is shown as guidance and nothing is calculated. Same treatment as Quark and Hurtigruten Coastal. WAS included:true (rendering \"In the fare\") until 2026-09-04: that asserted the cruise fare covers gratuities, which Carnival does not say anywhere read. Whether crew cost sits inside the fare is commercially plausible and NOT established — do not restate it as an inclusion.",
+        "source": "help.carnival.com.au, Help Center > Gratuities (Tips), answer \"What about tipping?\", read 2026-09-04. Verbatim, as far as the result page displays it: \"For all cruises departing from an Australian port, you are welcome to reward our onboard crew for exceptional service, however, tipping/gratuities are not required.\" Captured as a full-window screenshot by the owner at 23:23 on 2026-09-04. Evidence: docs/price-changes/2026-09-04-carnival-au-gratuities.md",
+        "verify": "Dec 2026. SCOPE IS NOT SETTLED: the Help Centre answer continues \"For some cruises departing from...\" and the capture is truncated there, so what Carnival charges on NON-Australian departures of these ships is unread. This record covers Australian-departing cruises only, which is what the quotation establishes. Resolve by reading the full answer and recording its deep link — the capture carries the host (help.carnival.com.au) and the breadcrumb, not the answer URL. Do NOT import the US Carnival daily rate to fill the gap.",
+        "verified": "2026-09-04"
       },
       "wifi": {
         "included": false,

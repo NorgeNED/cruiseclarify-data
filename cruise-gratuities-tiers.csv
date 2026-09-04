@@ -6,7 +6,8 @@ royal,Royal Caribbean,Suites,21
 ncl,Norwegian (NCL),Standard / base,20
 ncl,Norwegian (NCL),Haven / Suites,25
 msc,MSC Cruises,Standard / base,17
-msc,MSC Cruises,Europe sailings,€12 (€16 Yacht Club)
+msc,MSC Cruises,Europe sailings (adult 18+),€12 (€16 Yacht Club)
+msc,MSC Cruises,Europe sailings (child 2-17),€10 (€13 Yacht Club)
 msc,MSC Cruises,Yacht Club (US sailings),23
 disney,Disney Cruise Line,Standard / base,16
 disney,Disney Cruise Line,Concierge,27.25
