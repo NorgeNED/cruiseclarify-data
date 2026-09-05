@@ -1736,9 +1736,11 @@
         "verified": "2026-09-01"
       },
       "surcharge": {
-        "pct": 15,
-        "appliesTo": "approximate",
-        "verify": "Sept 2026 — UNSOURCED and probably wrong in shape: appliesTo reads \"approximate\", which is not a description of what the charge applies to. With standard drinks fare-included, a 15% bar surcharge needs its own evidence. Not touched on the 2026-09-01 pass because nothing was read that bears on it."
+        "pct": null,
+        "appliesTo": "premium items above the fare-included standard tier — NO percentage is published. Null, never 0: nothing read states that Quark adds no service charge, only that it publishes none. WAS pct 15 with appliesTo \"approximate\" until 2026-09-05; \"approximate\" is a confidence marker, not a description of what a charge applies to, and the 15 carried no source.",
+        "source": "quarkexpeditions.com/expeditions/antarctic-explorer-discovering-the-7th-continent, inclusions and exclusions, read 2026-09-05. NO service charge, gratuity percentage or automatic percentage appears anywhere. The same read re-confirmed this record's own two claims: included \"Free beer, standard wines, spirits, and cocktails during bar service hours and dinner\", and the exclusion \"Voluntary gratuity at the end of the voyage for expedition staff and shipboard crew\". Evidence: docs/price-changes/2026-09-05-expedition-surcharges.md",
+        "verify": "Dec 2026. One expedition page saying nothing about a service charge is a negative finding on that page, not proof Quark adds nothing. Resolve by Quark's terms and conditions or a bar bill. Do NOT reinstate 15 from a sibling line.",
+        "verified": "2026-09-05"
       }
     },
     "cunard": {
@@ -2036,8 +2038,11 @@
       },
       "baseDrinks": "Wine & beer with meals included; spirits extra",
       "surcharge": {
-        "pct": 15,
-        "appliesTo": "approximate"
+        "pct": null,
+        "appliesTo": "items beyond the fare inclusions — NO percentage is published. Null, never 0: nothing read states that Aurora adds no service charge, only that it publishes none. WAS pct 15 with appliesTo \"approximate\" until 2026-09-05, unsourced. NOTE THE COINCIDENCE, because it is probably the origin: Aurora publishes a gratuity of USD 15 per person per day as a SUITE benefit, and a 15% surcharge looks like that figure copied into the wrong field and the wrong unit.",
+        "source": "aurora-expeditions.com/expedition/antarctica-complete, Inclusions and Exclusions, read 2026-09-05. The string \"service charge\" appears ZERO times on the page, and neither list carries any percentage. Evidence: docs/price-changes/2026-09-05-expedition-surcharges.md",
+        "verify": "Dec 2026. One expedition page is a negative finding on that page, not proof Aurora adds nothing. Do NOT reinstate 15 from a sibling line or from the suite gratuity figure.",
+        "verified": "2026-09-05"
       },
       "verified": "2026-06"
     },
