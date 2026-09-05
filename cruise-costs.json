@@ -1356,10 +1356,14 @@
       "drinksInclusionScope": "mealtime",
       "gratuities": {
         "included": true,
-        "note": "Included since Jan 2025"
+        "note": "In the fare for bookings made on or after 1 January 2024 — Oceania's own terms, quoted below. WAS \"Included since Jan 2025\" until 2026-09-05: the year was wrong and the basis (a BOOKING date, not a sailing date) was missing. The 20% service gratuity on beverages, spa and La Reserve is separate and lives on surcharge. Stamp added 2026-09-05 from evidence on file since 2026-08-20; no figure changed.",
+        "source": "oceaniacruises.com/legal/terms-conditions, Gratuities section, rendered DOM 2026-08-20, verbatim: \"For bookings made on or after 1 January 2024, gratuities are included in the cruise fare. This does not include service gratuities, which are additional. A 20% service gratuity will be automatically added to all beverage purchases, spa services and dining at La Reserve.\" Evidence: docs/price-changes/2026-08-20-oceania-service-gratuity.md",
+        "verify": "Dec 2026. The pre-2024 cohort (US$18 / US$23 per guest per day, auto-added) is historical and not modelled; nobody booking today falls into it.",
+        "verified": "2026-08-20"
       },
       "wifi": {
-        "included": true
+        "included": true,
+        "verify": "STILL UNSTAMPED after 2026-09-05, and not for want of trying: oceaniacruises.com returned 403 to WebFetch (as on 2026-08-20), to curl with a Safari user-agent, and the in-app browser refused the host outright. The only support on file is two audit conclusions — \"Free Internet amenity still excludes streaming\" (2026-08-20) and \"Wi-Fi ... remain fare-included\" (2026-08-18) — neither a quotation, so no stamp. Resolve with a real browser read of oceaniacruises.com (terms, or the inclusions page); expect a streaming limit to record in wifi.limits when it is."
       },
       "drinksPackage": {
         "offered": true,
@@ -1418,7 +1422,11 @@
       "packageTreatment": "premium_fare",
       "drinksInclusionScope": "full",
       "gratuities": {
-        "included": true
+        "included": true,
+        "note": "In the fare. Azamara lists \"Onboard Gratuities\" among the items it markets as always included, alongside beer, wine and spirits, dining venues, AzAmazing Evenings and self-service laundry. Stamp added 2026-09-05; the 2026-08-20 pass covered price, Wi-Fi and dining and never gratuities, so this record had no source until now. No figure changed.",
+        "source": "azamara.com home page, \"ALWAYS AZAMARA\" section, read 2026-09-05 (geo-served as the Norway locale, /no/home; the list is the brand's global inclusions claim). Verbatim list under the heading \"ALWAYS INCLUDED\": \"Variety of Dining Venues\"; \"Beer, Wine, and Spirits\"; \"Signature AzAmazing Evenings\"; \"Onboard Gratuities\"; \"Unlimited Self-Service Laundry\". Corroborated by azamara.com FAQs captured 2026-08-20 (docs/price-changes/2026-08-20-azamara-evidence/faqs.html): \"Along with standard inclusions like gratuities, AzAmazing Evenings®, and more\". Evidence: docs/price-changes/2026-09-05-azamara-oceania-stamps.md",
+        "verify": "Dec 2026. The section also carries a headline dollar value for the inclusions as a whole — \"OVER $4,500 IN VALUE\" — recorded here and not in source because it is a marketing valuation, not a price, and no field holds it. Read the US locale (/home) next time; the list is expected to be identical.",
+        "verified": "2026-09-05"
       },
       "wifi": {
         "included": false,
