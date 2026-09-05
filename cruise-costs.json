@@ -1365,6 +1365,10 @@
         "included": true,
         "perDay": 0,
         "premiumPerDay": 19.99,
+        "unitStatus": "unknown",
+        "unitStatusSource": "oceaniacruises.com/life-on-board?exp=stay-connected, Chrome, 2026-09-05. The free tier states its unit: \"A complimentary login per guest will be provided with a maximum of two free logins per suite or stateroom\". The streaming upgrade states only \"priced at $19.99 per day for voyages up to 29 days\" — no per-login, per-stateroom or per-device wording anywhere on the page or in the terms. Evidence: docs/price-changes/2026-09-05-oceania-wifi.md",
+        "unitStatusVerified": "2026-09-05",
+        "unitNote": "Streaming is priced per day; Oceania does not say whether that is per login or per stateroom. Two guests wanting to stream may or may not pay twice — check against your booking.",
         "baselineAccess": "full",
         "limits": {
           "browsing": true,
