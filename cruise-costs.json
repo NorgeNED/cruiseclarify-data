@@ -2030,7 +2030,10 @@
       },
       "wifi": {
         "included": true,
-        "note": "Limited polar/remote"
+        "note": "COMPLIMENTARY STARLINK, fleet-wide, with a reliability caveat and no access restriction. Aurora states no tier, no data cap, no device limit and no paid upgrade. WAS \"Limited polar/remote\" until 2026-09-05, which described a satellite era Aurora has left and read as a restricted tier rather than what it is — a warning that the connection can drop in remote regions.",
+        "source": "aurora-expeditions.com/about-us/general-inclusions, Onboard Inclusions, read 2026-09-05, verbatim: \"Complimentary Starlink wifi onboard\" — and nothing else on the page about browsing, streaming, messaging, device counts, data caps or paid upgrades. Corroborated the same day on the voyage pages, whose inclusions list reads \"Wi-Fi*\" with the footnote \"* Please note we travel to remote regions and therefore the connection can be unreliable.\" Evidence: docs/price-changes/2026-09-05-aurora-wifi-starlink.md",
+        "verify": "Dec 2026. Aurora publishes NO Wi-Fi price anywhere read, and no paid tier, so no figure is stored. If a paid upgrade ever appears, meta.wifiConvention governs which price is quoted, and the included flag does not change.",
+        "verified": "2026-09-05"
       },
       "baseDrinks": "Wine & beer with meals included; spirits extra",
       "surcharge": {
