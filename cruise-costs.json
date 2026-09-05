@@ -1363,7 +1363,20 @@
       },
       "wifi": {
         "included": true,
-        "verify": "STILL UNSTAMPED after 2026-09-05, and not for want of trying: oceaniacruises.com returned 403 to WebFetch (as on 2026-08-20), to curl with a Safari user-agent, and the in-app browser refused the host outright. The only support on file is two audit conclusions — \"Free Internet amenity still excludes streaming\" (2026-08-20) and \"Wi-Fi ... remain fare-included\" (2026-08-18) — neither a quotation, so no stamp. Resolve with a real browser read of oceaniacruises.com (terms, or the inclusions page); expect a streaming limit to record in wifi.limits when it is."
+        "perDay": 0,
+        "premiumPerDay": 19.99,
+        "baselineAccess": "full",
+        "limits": {
+          "browsing": true,
+          "messaging": true,
+          "streaming": false,
+          "upgradePaid": true,
+          "devices": 2
+        },
+        "note": "INCLUDED IN THE FARE, fleet-wide, over Starlink — Oceania says so in as many words, and it is not tied to a booking-window programme. Two free logins per suite or stateroom, each usable on one device at a time (a solo traveller gets one login for two devices). Streaming is NOT in the free tier: it is a paid upgrade, per day, held in premiumPerDay for voyages up to 29 days. WAS a bare included:true with no source or stamp until 2026-09-05; the 18 and 20 Aug passes had concluded it was included without quoting Oceania.",
+        "source": "oceaniacruises.com/life-on-board?exp=stay-connected (the page oceaniacruises.com/Internet redirects to), Stay Connected, rendered DOM in Chrome 2026-09-05, verbatim: \"Enjoy WiFi access throughout the entirety of the ship, including in all suites, staterooms, public rooms and outdoor decks. A complimentary login per guest will be provided with a maximum of two free logins per suite or stateroom (one login for Solo traveler with access to 2 devices), each of which can be used on one device at a time.\" and \"Starlink, has been completed on all ships, providing all guests with high-speed, complimentary WiFi included as part of the cruise fare.\" and \"In addition to receiving complimentary WiFi, you may also upgrade to Streaming to access music, movies and sporting events from your favorite apps.\" Corroborated the same day on oceaniacruises.com/legal/terms-conditions, three times: \"Free Internet amenity does not include streaming and includes a complimentary login for the first two devices per stateroom (one login for solo travelers), each of which can be used on one device at a time.\" RETRIEVAL: oceaniacruises.com returns 403 to WebFetch and to curl with a browser user-agent, and refuses the in-app browser; only a real Chrome session reads it. Evidence: docs/price-changes/2026-09-05-oceania-wifi.md",
+        "verify": "Dec 2026. Two more prices on the same page have no numeric field yet and are recorded here, not in source: \"Additional logins for 3rd and 4th guests in a suite or stateroom are available for purchase on board for $24.99 per day.\" and \"For voyages 30 days or longer, the streaming upgrade is $14.99 per day.\" And a bundle for the extra guests: \"Purchase an additional login for 3rd and 4th guests in a suite or stateroom and enjoy complimentary WiFi, plus an upgrade to video and audio streaming for $39.98 per day for voyages up to 29 days. For voyages 30 days or longer, the upgrade is $34.99 per day.\" premiumPerDay holds the up-to-29-day streaming rate of $19.99. Nothing else open.",
+        "verified": "2026-09-05"
       },
       "drinksPackage": {
         "offered": true,
