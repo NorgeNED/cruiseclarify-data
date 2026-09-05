@@ -995,8 +995,10 @@
       "drinksPackage": {
         "offered": true,
         "name": "Signature Beverage Package",
-        "perDay": 61.14,
-        "perDayBasis": "$50.95 + 20% service = $61.14 (official page, Jun 2026)",
+        "perDay": 67.14,
+        "perDayBasis": "$55.95 pre-cruise + 20% service charge = $67.14 all-in, from HAL's own beverage-packages page read 2026-09-05. WAS 61.14 = $50.95 + 20% from the same page as read in June 2026: the base moved on HAL's own surface, so this is a price rise by HAL, not a correction of ours.",
+        "source": "hollandamerica.com/en/us/onboard-packages/beverage-packages, read 2026-09-05, verbatim: \"Signature Beverage Package — US$55.95 Per Person, Per Day\"; \"Elite Beverage Package — US$60.95 Per Person, Per Day\"; \"Quench — Starts at US $17.95 Per Person, Per Day\"; \"Prices are Pre-Cruise in USD and subject to change.\"; \"An 20% Service Charge is automatically applied to all Beverage Purchases, Bar Retail Items, Specialty Restaurant Cover Charges and all For Purchase A La Carte Menu Items.\"; \"All adults of legal drinking age for the respective itinerary that are booked in the same stateroom must also purchase the package.\" Evidence: docs/price-changes/2026-09-05-hal-signature-price.md",
+        "wholeCabinRequired": true,
         "servicePct": 20,
         "serviceIncludedInPrice": true,
         "cap": 12,
@@ -1005,8 +1007,8 @@
         "capVerified": "2026-08-19",
         "exclusionsSource": "hollandamerica.com/en/us/cruise-deals/terms#haveitall, verbatim: \"Package excludes purchases made in The Shops, from the mini-bar, through 24-hour room service, or on RelaxAway, Half Moon Cay.\" Read 2026-08-19 (US terms, captured to PDF).",
         "exclusionsVerified": "2026-08-19",
-        "verify": "Sept: confirm Signature base in booking flow ($50.95 official vs $54.95-60.95 third-party); 20% service charge effective spring 2026 (sources conflict Apr 6 vs Jun 1)",
-        "verified": "2026-06"
+        "verify": "RESOLVED 2026-09-05: the Signature base is $55.95 on HAL's own page, pre-cruise; the old \"third-party $54.95-60.95\" band was nearer the truth than our June $50.95, which HAL has since raised. The same page also lists \"Have It All Package — US$65 Per Person, Per Day\", a per-day form of HIA; see bundle.verify. Elite at $60.95 pre-cruise is not stored — Signature is the headline package. Open: the effective date of the rise (HAL states none).",
+        "verified": "2026-09-05"
       },
       "bundle": {
         "name": "Have It All",
@@ -1016,7 +1018,7 @@
         "earlyBookingBonusScope": "NOT MODELLED, by decision (19 Aug 2026). A separate promotional offer — \"Everything in Have It All. Plus More\" — upgrading Signature to the Elite package (US$16 ceiling), Surf to Premium Wi-Fi, and ADDING free prepaid Crew Appreciation. Standard Have It All prepays no gratuities and the calculator charges them; that is correct and first-party confirmed. Promotional offers are out of scope by standing policy.",
         "minNights": 4,
         "appliesToFirstNGuests": 2,
-        "verify": "Summer 2027: Have It All rises to $65 per guest/night. HAL has published no precise effective departure date — re-read hollandamerica.com/en/us/cruise-deals/have-it-all/have-it-all-upgrade each quarter and set perDay to 65 when the date is known. Recorded 2026-08-01.",
+        "verify": "NEW 2026-09-05: hollandamerica.com/en/us/onboard-packages/beverage-packages now prints \"Have It All Package — US$65 Per Person, Per Day\" with NO date qualifier, under \"Prices are Pre-Cruise in USD and subject to change.\" That may mean the announced rise is already in force for purchases, or that the page lists the forward price. Not moved: the HIA fare-bundle page is the governing surface for perDay and was not re-read today. Read it before December; if it says $65 too, move perDay and sweep the Have It All article, which says $60 in its title. ORIGINAL: Summer 2027: Have It All rises to $65 per guest/night. HAL has published no precise effective departure date — re-read hollandamerica.com/en/us/cruise-deals/have-it-all/have-it-all-upgrade each quarter and set perDay to 65 when the date is known. Recorded 2026-08-01.",
         "note": "perDay is the pre-cruise price; onboardPerDay ($70) is informational only and never enters a calculation. Includes drinks + Surf Wi-Fi + a specialty-dining credit + a shore-excursion credit. Gratuities NOT included.",
         "credits": {
           "shoreExcursion": {
@@ -2123,12 +2125,16 @@
         "verified": "2026-09-01"
       },
       "wifi": {
-        "included": false,
-        "perDay": 25,
-        "range": [
-          20,
-          30
-        ]
+        "included": true,
+        "perDay": 0,
+        "baselineAccess": "full",
+        "unitStatus": "unknown",
+        "unitStatusSource": "Nothing is sold: Hurtigruten states free Wi-Fi on all ships and names no plan, price or unit. hurtigruten.com/nb-no/hjelp/livet-om-bord, read 2026-09-05. Evidence: docs/price-changes/2026-09-05-withheld-figures-sweep.md",
+        "unitStatusVerified": "2026-09-05",
+        "note": "INCLUDED under meta.wifiConvention2 — free on every ship, with a speed caveat (\"dårlig egnet for strømming\", poorly suited to streaming), not a tier. ONE CONDITION, recorded rather than hidden: guests on the Basic fare or a port-to-port ticket must be enrolled in the free 1893 Ambassador loyalty programme to use it. Enrolment is free, so it is still no separate required purchase. WAS included:false, perDay 25, range [20, 30] — unsourced since the record was created, and withheld from the Index for that reason — until 2026-09-05.",
+        "source": "hurtigruten.com/nb-no/hjelp/livet-om-bord (the site geo-serves Norwegian), \"Er det Wi-Fi om bord?\", read 2026-09-05, verbatim: \"Vi tilbyr gratis Wi-Fi på alle skipene våre, men signalstyrken kan variere. Vi seiler gjennom avsidesliggende områder langs norskekysten, så hastigheten kan være lavere og dårlig egnet for strømming.\" and \"Har du bestilt Basic-pris eller en havn-til-havn-reise, må du være registrert i lojalitetsprogrammet vårt, 1893 Ambassador for å få tilgang til gratis Wi-Fi.\" Evidence: docs/price-changes/2026-09-05-withheld-figures-sweep.md",
+        "verify": "Dec 2026. Streaming is described as poorly suited, not excluded and not sold — so limits.streaming is deliberately not set. Read the English locale (hurtigruten.com/en-gb or /en-us) once to confirm the wording matches; the Norwegian site is the parent.",
+        "verified": "2026-09-05"
       },
       "drinksPackage": {
         "offered": true,
@@ -2170,7 +2176,9 @@
         "range": [
           15,
           20
-        ]
+        ],
+        "source": "pocruises.com/frequently-asked-questions, \"Do cruise ships have WiFi on board?\", Chrome, 2026-09-05, verbatim: \"All our ships offer Wi-Fi so you can access the internet on your own devices. Satellite internet packages are available to buy before your holiday on My P&O Cruises or once you're on board.\" This settles that Wi-Fi is SOLD, not included — included:false is first-party. It does not settle the price. Evidence: docs/price-changes/2026-09-05-withheld-figures-sweep.md",
+        "verify": "STILL NO PUBLISHED PRICE after 2026-09-05, and withheld from the Index on that basis. Thirty-one P&O FAQ entries mentioning Wi-Fi, internet or plans were read and none names a price; the purchase page internet.pocruises.com is reachable only on board. The £17 stays a third-party figure. What would settle it: a My P&O Cruises pre-cruise purchase screen, or an onboard plan-selection page."
       },
       "drinksPackage": {
         "offered": true,
@@ -2211,7 +2219,8 @@
         "range": [
           10,
           18
-        ]
+        ],
+        "verify": "STILL UNSOURCED after 2026-09-05, and withheld from the Index on that basis. Four TUI surfaces read that day and none states a Marella Wi-Fi price or inclusion: tui.co.uk/cruise (500 on first fetch, then read), /cruise/marella-cruises, /cruise/onboard-experience, /destinations/faq. The £14 stays a third-party figure. What would settle it: a My TUI booking screen, an onboard price card, or a Marella FAQ answer that names a price."
       },
       "packageTreatment": "premium_fare",
       "drinksInclusionScope": "full",
@@ -2255,14 +2264,24 @@
       },
       "wifi": {
         "included": false,
-        "perDay": 12,
+        "perDay": 10,
         "range": [
-          10,
-          15
+          8,
+          17
         ],
-        "note": "Approximately £10–£15/day (perDay = mid-range representative); exact plan tiers not pinned down first-party. Verified Jul 2026 investigation.",
-        "verify": "Sept: plan tiers and exact daily prices",
-        "verified": "2026-07"
+        "tiers": {
+          "Basic": 8,
+          "Premium": 15
+        },
+        "plans": "Whole sailing, 5-29 nights: Basic £8 · Value £10 · Premium £15 per day; 1-4 nights: £10 · £12 · £17; 30-69 nights: £6 · £8 · £13; 70+ nights: £5 · £6 · £11. One-day plans £11.99 · £13.99 · £19.99. Data bundles: 1GB £19.95, 5GB £59.95.",
+        "perDayBasis": "Value plan, whole sailing, standard cruise of 5-29 nights — the cheapest tier that includes Browsing, which is what meta.wifiConvention quotes; Basic covers email and messaging only. Ambassador prices by voyage length, so a 1-4 night cruise is £12 per day on the same plan.",
+        "unitStatus": "unknown",
+        "unitStatusSource": "ambassadorcruiseline.com/on-board-experience/whats-on-board/wifi-packages, read 2026-09-05: the price grid states no per-device or per-cabin basis, and the FAQ \"Can I connect multiple devices to the onboard Wi-Fi?\" on the same page was not expanded on this read. Declared unknown rather than assumed.",
+        "unitStatusVerified": "2026-09-05",
+        "note": "SOLD, not included; bought on board. Three tiers on Starlink — Basic (email, messaging), Value (adds browsing and social media), Premium — priced per day by voyage length. WAS perDay 12, range [10, 18], \"approximately £10-£15/day\", with no source, until 2026-09-05; withheld from the Index for that reason. Whole-voyage plans are the norm; one-day plans cost roughly the price of a standard-cruise day plus a premium.",
+        "source": "ambassadorcruiseline.com/on-board-experience/whats-on-board/wifi-packages, Chrome, 2026-09-05, verbatim: \"These include our Basic, Value and Premium packages.\"; \"Whole sailing starting from £10 per day £12 per day £17 per day\"; \"Short Cruise (1-4 Nights) £10 per day £12 per day £17 per day Standard Cruise (5-29 Nights) £8 per day £10 per day £15 per day Longer Cruise (30-69 Nights) £6 per day £8 per day £13 per day Longer Cruise (70+ Nights) £5 per day £6 per day £11 per day\"; \"1 Day £11.99 £13.99 £19.99\"; and the feature grid \"Package Basic Value Premium — Emails ✔ ✔ ✔ — Messaging (WhatsApp, Messenger) ✔ ✔ ✔ — Browsing ✔ ✔\". Corroborated by ambassadorcruiseline.com/faqs, \"Is there internet access or Wi-Fi onboard?\": \"Wi-Fi packages will be available to purchase once on board.\" Evidence: docs/price-changes/2026-09-05-withheld-figures-sweep.md",
+        "verify": "Dec 2026. Whether the whole-sailing price is per device or per cabin (the multi-device FAQ), and whether packages can be bought pre-cruise at the same price. \"Complimentary Wi-Fi as part of my booking\" exists for some fares — not modelled.",
+        "verified": "2026-09-05"
       },
       "drinksPackage": {
         "offered": true,
@@ -2508,11 +2527,24 @@
       },
       "wifi": {
         "included": false,
-        "perDay": 25,
+        "perDay": 27.2,
         "range": [
-          20,
-          30
-        ]
+          21.25,
+          29.75
+        ],
+        "tiers": {
+          "Social": 21.25,
+          "Premium": 29.75
+        },
+        "plans": "Social A$21.25 · Value A$27.20 · Premium A$29.75 per person per day; Multi-Device Premium A$105.00 per day, up to 4 devices. \"Starting at\" prices from the Australian shop page.",
+        "perDayBasis": "Value plan, \"Starting At AUD $27.20 /person per day\" — the cheapest tier usable for general browsing, which is what meta.wifiConvention quotes; the Social plan is social-media-only and does not count as the headline, by the 10 Jun 2026 convention. Cruise-long plan.",
+        "unitStatus": "unknown",
+        "unitStatusSource": "carnival.com.au/internet-plans, read 2026-09-05: each tile says \"/person per day\", but the US `carnival` record established on 2026-08-21 that Carnival sells Wi-Fi per device and per booking, and the same AU page carries the US \"More Details\" copy unchanged (USD pre-cruise and onboard figures, \"up to 4 devices\"). The tile wording and the investigated basis disagree, so the unit is declared unknown rather than read off the tile. Evidence: docs/price-changes/2026-09-05-withheld-figures-sweep.md",
+        "unitStatusVerified": "2026-09-05",
+        "note": "SOLD in AUD on Carnival's Australian shop page. WAS perDay 25, range [20, 30], with no source, until 2026-09-05; withheld from the Index for that reason. RETRIEVAL CAUTION, same as the drinks record: carnival.com.au mixes US and AU content — the tiles are AUD, the \"More Details\" text under them is the US page (USD pre-cruise $20.40/$23.80/$25.50, onboard $22/$26/$28, \"Onboard 24 hour plan\"). Only the AUD tile prices are stored; the USD copy is not Australian pricing and must not be converted or quoted as such.",
+        "source": "carnival.com.au/internet-plans, \"Internet Plans | Wi-Fi Plans & Prices\", Chrome, 2026-09-05, verbatim tiles: \"Social Wi-Fi Plan Starting At AUD $21.25 /person per day\"; \"Value Wi-Fi Plan Starting At AUD $27.20 /person per day\"; \"Premium Wi-Fi Plan Starting At AUD $29.75 /person per day\"; \"Multi-Device Premium Wi-Fi Plan - Up to 4 Devices Starting At AUD $105.00 /per day up to 4 devices\". Reached from carnival.com.au/onboard/onboard-internet (\"three WiFi plans to choose from\", \"Cost: Additional\") via its \"WiFi Packages\" link. Evidence: docs/price-changes/2026-09-05-withheld-figures-sweep.md",
+        "verify": "Dec 2026. \"Starting at\" implies the price varies by sailing — read one AU sailing's cart to see whether A$27.20 is the floor or the norm. Reconcile the per-person tile wording with the US per-device finding. Whether an onboard AUD price exists (the tiles show pre-purchase only).",
+        "verified": "2026-09-05"
       },
       "drinksPackage": {
         "offered": true,
@@ -2605,7 +2637,8 @@
         "range": [
           25,
           45
-        ]
+        ],
+        "verify": "STILL NO AUD FIGURE after 2026-09-05, and withheld from the Index on that basis. The page princess.com/en-au/faq/onboard-experience redirects to /en-int/ (country selector on Australia) and prices MedallionNet in USD only, verbatim: \"MedallionNet Wi-Fi is also available for purchase in the MedallionClass® app starting at $24.99 USD pre-cruise for a single-device.\" and \"Platinum and Elite Captain's Circle members receive a 50% discount on their MedallionNet purchase.\" No AUD amount and no \"equivalent\" sentence for Wi-Fi as there is for crew appreciation. The A$35 stays a third-party figure. Do NOT convert the USD 24.99. Same read corroborates the US `princess` record's Wi-Fi at ~$25 pre-cruise single-device — stamp that record in December from this quotation."
       },
       "packageTreatment": "bundle",
       "drinksPackage": {
