@@ -620,6 +620,9 @@
       },
       "drinksPackage": {
         "offered": false,
+        "source": "disneycruise.disney.go.com/en-eu/faq/dining-food-beverages/drinks-included/, \"Are soft drinks or alcoholic beverages included with the cost of my cruise?\", Chrome, 2026-09-05, verbatim: \"Soft drinks are included at no extra cost with meals, while additional charges apply for bar drinks, beer, wine and bottled water.\" and \"There is an extra charge for sodas, as well as alcoholic beverages at the bars and lounges on board.\" RECORDED NEGATIVE FINDING: Disney's own beverage FAQ describes alcohol as charged per purchase and names NO package, plan or unlimited option anywhere in the Dining, Food & Beverages category — the same shape of evidence that settled Carnival Australia's surcharge on 2026-09-03. Evidence: docs/price-changes/2026-09-05-partly-verified-sweep.md",
+        "verify": "Dec 2026. A FAQ that names no package is a negative finding on that FAQ, not proof one can never be bought on board. Resolve by an onboard bar menu or a booking; do not infer a package from third-party sites.",
+        "verified": "2026-09-05",
         "note": "No unlimited drinks package — alcohol paid per drink. PAYG field stays blank (Personal); ~$60-80/day is editorial context only — never prefill the calculator value (AO-016)."
       },
       "dining": {
@@ -1283,7 +1286,16 @@
         }
       },
       "wifi": {
-        "included": true
+        "included": true,
+        "perDay": 0,
+        "unitStatus": "unknown",
+        "unitStatusSource": "vikingcruises.co.uk/oceans/frequently-asked-questions.html, Chrome, 2026-09-05: the FAQ states free Wi-Fi on all ships and names no paid plan, no price and no charging unit. There is no product to attach a unit to. Evidence: docs/price-changes/2026-09-05-partly-verified-sweep.md",
+        "unitStatusVerified": "2026-09-05",
+        "baselineAccess": "full",
+        "note": "INCLUDED under meta.wifiConvention2 — free on every ship, usable for browsing, with a fair-use caveat rather than a tier: Viking reserves the right to throttle heavy-bandwidth use and asks guests to limit large transfers and live streaming. No paid upgrade, no device limit and no price are published, so no `limits` are recorded beyond what Viking states. WAS a bare included:true with no source or stamp until 2026-09-05; the 21 Aug charging-unit pass had concluded \"Viking and Oceania sell no Wi-Fi\" without quoting Viking.",
+        "source": "vikingcruises.co.uk/oceans/frequently-asked-questions.html, \"Is there internet access on board the ship? Are there computers, or should I bring my laptop?\", Chrome, 2026-09-05, verbatim: \"All our ships offer free Wi-Fi. You may use your personal device or one of the ship's computers in our Business Center on Deck 1. Our connection relies on a VSAT satellite terminal — the best possible solution for voyages at sea. Due to the nature of data bandwidth and latency, as well as potential interruptions in satellite signals based on terrain and weather, you may experience slower online connections than you are accustomed to at home. In order to ensure fair usage for all, we reserve the right to limit heavy-bandwidth applications, downloads or software upgrades so that all our guests have access to Wi-Fi. We suggest that guests limit large uploads/downloads and live streaming. Please download your content prior to your journey, as bandwidth will affect your service and cannot be guaranteed.\" Evidence: docs/price-changes/2026-09-05-partly-verified-sweep.md",
+        "verify": "Dec 2026. Viking's FAQ describes streaming as discouraged under fair use, not excluded and not sold as an upgrade — so limits.streaming is deliberately NOT set false. If Viking ever publishes a streaming tier or a price, record it then. Note the FAQ is the UK site; the US site (vikingcruises.com/oceans) redirects there.",
+        "verified": "2026-09-05"
       },
       "drinksPackage": {
         "offered": true,
@@ -2399,11 +2411,17 @@
       "currency": "EUR",
       "gratuities": {
         "included": true,
-        "note": "Port fees & gratuities in Celestyal One fare"
+        "note": "In the fare: Celestyal lists \"All port fees and gratuities\" among its inclusions. WAS an unsourced \"Port fees & gratuities in Celestyal One fare\" until 2026-09-05; stamp added from evidence on file since the 2026-09-01 UK/European pass. No figure changed.",
+        "source": "celestyal.com/gb/onboard/whats-included, rendered DOM 2026-09-01, verbatim inclusion line: \"All port fees and gratuities\". Evidence: docs/price-changes/2026-09-01-uk-european-and-royal-au.md",
+        "verified": "2026-09-01"
       },
       "wifi": {
         "included": true,
-        "note": "Essential Wi-Fi in all fares"
+        "perDay": 0,
+        "note": "INCLUDED under meta.wifiConvention2: \"Essential WiFi\" is complimentary for every guest and Celestyal says it covers browsing, email and select messaging apps. The inclusion line carries an asterisk whose footnote was not captured on the 2026-09-01 read — see verify. WAS an unsourced \"Essential Wi-Fi in all fares\" until 2026-09-05; stamp added from evidence on file. No figure changed.",
+        "source": "celestyal.com/gb/onboard/whats-included, rendered DOM 2026-09-01, verbatim: \"Complimentary Essential WiFi*, allowing you to browse the web, send emails, and text via select messaging apps.\" Evidence: docs/price-changes/2026-09-01-uk-european-and-royal-au.md",
+        "verify": "Dec 2026. Read the asterisk footnote on the whats-included page: it may state a data cap, a device limit or a paid tier above Essential, any of which belongs in wifi.limits. Celestyal publishes no Wi-Fi price on the surfaces read.",
+        "verified": "2026-09-01"
       },
       "drinksPackage": {
         "offered": false,
@@ -2571,8 +2589,13 @@
       "segment": "Mainstream",
       "currency": "AUD",
       "gratuities": {
-        "included": true,
-        "note": "Not charged on AU homeport sailings"
+        "included": false,
+        "chargeBasis": "automatic",
+        "unpricedInCurrency": true,
+        "note": "CHARGED, not in the fare — automatically added to the onboard account daily, adjustable on board. WAS included:true, \"Not charged on AU homeport sailings\", until 2026-09-05: unsourced, and contradicted by Princess's own FAQ, which names no Australian carve-out and says AUD-operating ships pay the USD amounts' equivalent. Princess publishes the daily rate in USD by stateroom category and NO AUD figure; the USD figures are recorded in verify, not here.",
+        "source": "princess.com/en-int/faq/onboard-experience, \"Crew Appreciation\", Chrome, 2026-09-05 — the page princess.com/en-au/faq/onboard-experience redirects to, with the country selector showing Australia. Verbatim: \"Crew appreciation is a daily amount for each guest that will be automatically added to a guest's onboard account. The amount of the Crew Incentive will be based on stateroom category\" and \"Amounts shown above are in USD. For ships operating in AUD, guests will pay the equivalent of the USD amounts above.\" and \"Guests have complete discretion to adjust these crew appreciation while onboard; however, crew appreciation may only be adjusted prior to disembarking the ship\". Evidence: docs/price-changes/2026-09-05-princess-au-crew-appreciation.md",
+        "verify": "OWNER DECISION OPEN, set 2026-09-05: how to carry a charge Princess states only as a USD equivalent on an AUD-denominated record. The USD table, verbatim from the same page: \"Suites $20 USD per person per day; Mini Suites, Cabanas, and Club Class $19 USD per person per day; All other stateroom types $18 USD per person per day\" and \"Pre-pay your Crew Appreciation before March 8, 2026, and pay $1 USD less per person per day.\" Options: (a) leave the cell as \"charged, no AUD figure\" until an AUD amount appears on a Princess AU surface or a booking; (b) store the USD rates with currency USD on this record, as ponant does for a EUR guidance figure. Do NOT convert. Also re-read princess.com/en-au booking terms for any Australia-specific carve-out — none was found on the FAQ.",
+        "verified": "2026-09-05"
       },
       "wifi": {
         "included": false,
