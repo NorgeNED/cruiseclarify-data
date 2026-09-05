@@ -2160,7 +2160,9 @@
       "currency": "GBP",
       "gratuities": {
         "included": true,
-        "note": "Auto service charges removed since 2019 — included in fare"
+        "note": "In the fare: P&O lists tips under the extras included in the price and says nothing is charged. WAS \"Auto service charges removed since 2019 — included in fare\" with no source until 2026-09-05; the 2019 date is not on the page read and is not carried forward. The 1 Sept drinks pass had only noted \"no auto service charge, nothing on either page contradicting\", a conclusion rather than a quotation. No figure changed.",
+        "source": "pocruises.com/new-to-cruising/whats-included, \"Included extras — Enjoy these added extras included in the price\", Chrome, 2026-09-05, verbatim: \"Tips: Tipping isn't needed on our ships, so you can relax knowing you won't be charged extra for guaranteed great service.\" Evidence: docs/price-changes/2026-09-05-partly-verified-sweep.md",
+        "verified": "2026-09-05"
       },
       "wifi": {
         "included": false,
