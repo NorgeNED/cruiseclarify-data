@@ -520,7 +520,7 @@
         "offered": true,
         "name": "Premium Extra",
         "perDay": 85,
-        "perDayBasis": "LENGTH BASIS (settled 9 Aug 2026): the pre-cruise price is ~$85/guest/day on sailings of 4 nights and longer, ~$95 on 3-night sailings — so perDay 85 is the 4+-night figure and every surface must say \"4+ nights\", never \"7+\". 18% beverage service folded into price. MSC publishes NO drinks price publicly (prices appear only inside a logged-in MyMSC booking), so 85 is third-party, not first-party — see verify. Easy/Easy Plus retired: North America 18 Dec 2024, worldwide Aug 2025",
+        "perDayBasis": "LENGTH BASIS (settled 9 Aug 2026): the pre-cruise price is ~$85/guest/day on sailings of 4 nights and longer, ~$95 on 3-night sailings — so perDay 85 is the 4+-night figure and every surface must say \"4+ nights\", never \"7+\". 18% beverage service folded into price. MSC publishes NO drinks price publicly (prices appear only inside a logged-in MyMSC booking), so 85 is third-party, not first-party — see verify. Easy/Easy Plus withdrawn in North America 18 Dec 2024; Easy Plus retired worldwide Aug 2025. Easy itself is NOT retired worldwide — corrected 7 Sep 2026 after reading both MSC sites in a browser: msccruises.co.uk lists Easy among the available packages, msccruisesusa.com lists only Premium Extra, Alcohol-Free and Minors. MSC 403s every fetch tool but loads fine in a browser — do not fall back to third-party sources for this line",
         "servicePct": 18,
         "serviceIncludedInPrice": true,
         "includedByCabin": [
