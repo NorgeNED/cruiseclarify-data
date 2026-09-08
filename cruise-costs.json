@@ -2558,6 +2558,27 @@
         "verify": "Dec 2026. PROVENANCE CORRECTION, NOT A PRICE RISE — was perDay 90, basis \"Cheers! equivalent, service charge included\", until 2026-09-01. That AUD 90 was the US CHEERS price converted; it had no first-party Australian source and no dated before-value exists, so this must never be written up as Carnival raising its AU price. Cap AUD 25 and dailyLimit 15 are new fields, not previously recorded. THREE SILENCES, do not fill them in: (1) Carnival publishes NO effective date for AUD 111; (2) the onboard price is NOT published — Carnival states only a per-day saving against it, so any onboard figure is our arithmetic and must never be stored as a Carnival figure (the saving is quoted verbatim in the evidence file, deliberately not here); (3) neither AU page mentions a service charge, so the old \"service charge included\" claim had no source. RETRIEVAL CAUTION: carnival.com.au mixes US and AU content — the CHEERS-BTA page says \"Must be 18 years or older\" while /drink-packages on the same domain says 21 and references Half Moon Cay. 18 is the Australian rule; treat non-price text on the index page as US content. Carnival's own terms also state \"Price adjustments (up or down), implemented on the day of sailing, replace any previously advertised price\".",
         "verified": "2026-09-01"
       },
+      "zeroProofPackage": {
+        "offered": true,
+        "name": "CHEERS! Zero Proof",
+        "perDay": 39.99,
+        "perDayBasis": "Pre-purchase floor, per person per day. Carnival publishes \"Starting at\" against it, so it is a floor and NOT a flat fleet rate — same treatment as drinksPackage.perDay.",
+        "note": "Carnival's non-alcoholic package on the Australian shop, sold alongside CHEERS! and Bottomless Bubbles. Distinct from sodaPackage: Bottomless Bubbles is unlimited soft drinks, Zero Proof is the premium zero-alcohol range. Both exist on the AU page at once and must never be merged.",
+        "source": "carnival.com.au/drink-packages, rendered DOM 2026-09-07 (the price is JS-rendered into the product tile and is not in the served HTML — a fetch of this URL returns no figure). Verbatim tile: \"Cheers! Zero Proof ... Starting at AUD $39.99 AUD $39.99 / Person per Day\".",
+        "verify": "Dec 2026. No effective date is published, and no onboard price is published — Carnival states a per-day saving against onboard for CHEERS! only, not for this package. Do not derive one. Whether the every-adult-in-the-stateroom rule that binds CHEERS! also binds this package is NOT stated on the tile and must not be assumed.",
+        "verified": "2026-09-07"
+      },
+      "sodaPackage": {
+        "offered": true,
+        "name": "Bottomless Bubbles",
+        "adultPerDay": 15.99,
+        "childPerDay": 10.95,
+        "perDayBasis": "Pre-purchase floors, per person per day, split by adult and child. \"Starting at\" — floors, not flat rates.",
+        "note": "Unlimited soft drinks. The AUD figures are the Australian shop's own; the US `carnival` record carries its own separate USD pair and the two must never be synced or converted into each other.",
+        "source": "carnival.com.au/drink-packages, rendered DOM 2026-09-07. Verbatim tile: \"Bottomless Bubbles ... Starting at AUD $10.95 / Child Per Day AUD $15.99 / Adult Per Day\".",
+        "verify": "Dec 2026. No effective date published; no onboard AUD price published. The age boundary between child and adult is NOT stated on the tile — do not import the US definition to fill it.",
+        "verified": "2026-09-07"
+      },
       "specialtyDining": {
         "range": [
           25,
