@@ -19,6 +19,118 @@
         "notStated": "Carnival never writes the flat sentence \"the onboard currency is the US Dollar\" on either page read. USD is established by what the pages require and exchange, not by a declaration. Recorded as inference from first-party mechanics, which is why both surfaces are quoted. NOTE: Carnival Australia is the separate `carnivalAu` record and is NOT covered by this.",
         "verified": "2026-09-04"
       },
+      "onboardAccount": {
+        "market": "US",
+        "initialHold": {
+          "basis": "per stateroom, per card",
+          "lengthUnit": "days",
+          "bands": [
+            {
+              "from": 2,
+              "to": 6,
+              "usd": 100
+            },
+            {
+              "from": 7,
+              "to": null,
+              "usd": 200
+            }
+          ]
+        },
+        "laterHolds": "Additional holds as money is spent; several amounts can be held at once.",
+        "settlement": "Settled with the bank on the day the cruise returns.",
+        "releaseUpToDays": null,
+        "releaseNote": "Holds stay one or more days after the cruise under the issuing bank's policy. Carnival says it cannot expedite a release.",
+        "debitCard": "accepted",
+        "debitCardNote": "A debit card must be a registered Mastercard or Visa. The hold restricts the cash available in the checking account.",
+        "cashDeposit": {
+          "kind": "recommended minimum, per person",
+          "lengthUnit": "days",
+          "bands": [
+            {
+              "from": 2,
+              "to": 4,
+              "usd": 100
+            },
+            {
+              "from": 5,
+              "to": 8,
+              "usd": 200
+            },
+            {
+              "from": 9,
+              "to": null,
+              "usd": 350
+            }
+          ]
+        },
+        "spendingLimit": "The account owner can set spending limits or remove charging privileges.",
+        "holdSource": "help.carnival.com/app/answers/detail/a_id/1138/kw/credit%20card%20hold (Sail & Sign Onboard Account), rendered DOM read 2026-09-10. The bare a_id/1138 URL bounces via /app/pre_page_check/redirect/; the search-result URL renders. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "notStated": "The size of the additional holds during the cruise. Any ceiling on how long a hold may last. Whether a cash account can be capped below the deposit.",
+        "verified": "2026-09-10"
+      },
+      "bookingPayment": {
+        "market": "US",
+        "lengthUnit": "days",
+        "appliesTo": "Cruises booked on or after 12 Nov 2019",
+        "finalPayment": [
+          {
+            "from": 2,
+            "to": 5,
+            "days": 76
+          },
+          {
+            "from": 6,
+            "to": null,
+            "days": 91
+          }
+        ],
+        "deposit": [
+          {
+            "from": 2,
+            "to": 3,
+            "usd": 100
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "usd": 150
+          },
+          {
+            "from": 6,
+            "to": 9,
+            "usd": 250
+          },
+          {
+            "from": 10,
+            "to": null,
+            "usd": 400
+          }
+        ],
+        "regionOverride": {
+          "regions": [
+            "Alaska",
+            "Europe",
+            "Panama Canal",
+            "Transatlantic",
+            "Transpacific"
+          ],
+          "finalPaymentDays": 91,
+          "depositUSD": 400
+        },
+        "singleOccupancyDepositPct": 200,
+        "nonRefundableDeposit": [
+          "Early Saver",
+          "Super Saver",
+          "Casino offers"
+        ],
+        "nonRefundableTotalFare": [
+          "Pack & Go"
+        ],
+        "paymentSource": "help.carnival.com/app/answers/detail/a_id/481 (Deposit and Final Payment Requirements), opened by clicking the site's own link, rendered DOM read 2026-09-10. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "notStated": "An update date for the table. How a one-day sailing is treated, since the table starts at two days.",
+        "verified": "2026-09-10"
+      },
       "roomService": {
         "included": false,
         "freeBreakfast": "continental",
@@ -131,6 +243,77 @@
         "conflict": null,
         "notStated": "The sentence covers PRICES. Royal does not separately state the settlement currency for a cash account, nor whether a non-USD card is converted by Royal or by the issuer. Do not assert either.",
         "verified": "2026-09-04"
+      },
+      "onboardAccount": {
+        "market": "US",
+        "initialHold": {
+          "basis": "not stated",
+          "lengthUnit": null,
+          "usd": 100
+        },
+        "laterHolds": "Purchases above the initial amount generate additional holds; daily authorizations throughout the cruise.",
+        "settlement": "The final charge posts to the card on file shortly after disembarkation.",
+        "releaseUpToDays": 30,
+        "releaseNote": "Royal Caribbean says the bank decides how long a hold lasts. It gives two different typical timings on two pages; quote the ceiling, never either \"most\".",
+        "debitCard": "accepted",
+        "debitCardNote": "A credit or debit card is required at online check-in. No separate debit rule is published.",
+        "cashDeposit": null,
+        "cashAccount": "A cash-backed account is set up with the terminal agent at check-in and settled on board before disembarking.",
+        "holdSource": "royalcaribbean.com/faq/questions/seapass-onboard-spending-account and /seapass-copy-request (US, footer \"United States\"), rendered DOM read 2026-09-10. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "conflictNote": "Two typical release timings on Royal Caribbean's own US site: \"by the time your cruise ends\" (seapass-onboard-spending-account) and \"within 3 to 5 business days\" (seapass-copy-request). Both end at the same 30-day ceiling and bank control.",
+        "notStated": "Whether the initial hold is per card, per person or per stateroom. Any cash-deposit amount on a US page.",
+        "verify": "Cash deposit: the question exists only on the Australian site (/aus/en/faq/questions/how-much-money-should-i-put-as-a-deposit); the US path returns Page Not Found. One failed route plus one foreign page, so not yet proof that no US figure exists — a second US surface (app or booking flow) settles it. ALSO OPEN: why-cruisers-overspend-onboard says Royal Caribbean \"limits cash accounts to $500 on sailings of seven nights or more\"; no US page read on 10 Sept 2026 supports it and it has no evidence file. Logged in docs/TASKS.md for Reint.",
+        "verified": "2026-09-10"
+      },
+      "bookingPayment": {
+        "market": "US",
+        "lengthUnit": "nights",
+        "finalPayment": [
+          {
+            "from": 1,
+            "to": 4,
+            "days": 75
+          },
+          {
+            "from": 5,
+            "to": 14,
+            "days": 90
+          },
+          {
+            "from": 15,
+            "to": null,
+            "days": 120
+          }
+        ],
+        "finalPaymentNote": "The same schedule applies to holiday sailings. Group bookings follow a different schedule.",
+        "deposit": [
+          {
+            "from": 1,
+            "to": 5,
+            "usd": 100
+          },
+          {
+            "from": 6,
+            "to": 9,
+            "usd": 250
+          },
+          {
+            "from": 10,
+            "to": 14,
+            "usd": 450
+          },
+          {
+            "from": 15,
+            "to": null,
+            "usd": 500
+          }
+        ],
+        "bermudaDepositUSD": 250,
+        "suiteDepositPctOfFare": 10,
+        "suiteDepositRule": "Suites pay a percentage of the cruise fare or the standard deposit, whichever is higher.",
+        "paymentSource": "royalcaribbean.com/faq/questions/final-payment-schedule-policy and /deposit-requirements (US), rendered DOM read 2026-09-10. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "notStated": "The group schedule itself.",
+        "verified": "2026-09-10"
       },
       "roomService": {
         "included": false,
@@ -273,6 +456,78 @@
         "conflict": null,
         "notStated": "NCL does not say what happens to a non-USD card at settlement, nor whether it converts or the issuer does.",
         "verified": "2026-09-04"
+      },
+      "onboardAccount": {
+        "market": "US",
+        "initialHold": {
+          "basis": "not stated",
+          "lengthUnit": null,
+          "usd": 300,
+          "isMaximum": true
+        },
+        "laterHolds": "Multiple holds based on onboard purchases.",
+        "settlement": "The onboard account is charged once, at the end of the cruise.",
+        "releaseUpToDays": 30,
+        "releaseNote": "Debit-card holds may remain up to 30 days after the cruise ends; NCL says some banks hold the funds that long. It takes no responsibility for overdraft charges caused by holds.",
+        "debitCard": "accepted, not recommended",
+        "debitCardNote": "US wording. The European English edition says debit cards are not accepted on board: a market difference, and that wording must never reach the US site.",
+        "cashDeposit": {
+          "kind": "deposit per person",
+          "lengthUnit": "days",
+          "bands": [
+            {
+              "from": null,
+              "to": 6,
+              "usd": 150
+            },
+            {
+              "from": 7,
+              "to": 7,
+              "usd": 300
+            },
+            {
+              "from": 8,
+              "to": null,
+              "usd": 450
+            }
+          ]
+        },
+        "cashAccount": "Once the deposit is used up the account closes to further charges; more can be deposited at any time, and any excess is refunded on disembarkation day.",
+        "holdSource": "ncl.com/faq/onboard-expenses (US; header phone 1-866-234-7350), captured by Reint's screenshot in Chrome on a US VPN, 2026-09-10 19:43 CEST. The Claude browsers could not load the US path, so this is an owner capture, the same standard as the owner-supplied NCL PDF of 2026-08-23. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "notStated": "Whether the initial pre-authorization is per card, per person or per stateroom. Whether a seven-day cruise in the cash table means seven days or a seven-night sailing; the bands store the line's words as days.",
+        "verify": "The European edition (ncl.com/fr/en/cruise-faq/pay, read 2026-09-10) words the same cash table as \"US dollar 300 per person\" for a 7-day cruise, \"US dollar 150\" up to 6 days and \"US dollar 450\" for 8 days and more, \"subject to change\" — which supports reading the US bands as up to 6 / 7 / 8 and over.",
+        "verified": "2026-09-10"
+      },
+      "bookingPayment": {
+        "market": "US",
+        "lengthUnit": "days",
+        "appliesTo": "Sailings departing 15 Aug 2022 and later",
+        "finalPayment": [
+          {
+            "from": 1,
+            "to": null,
+            "days": 120
+          }
+        ],
+        "finalPaymentNote": "One deadline for every cruise length, holiday sailings included.",
+        "deposit": [
+          {
+            "from": 1,
+            "to": 6,
+            "usd": 100
+          },
+          {
+            "from": 7,
+            "to": null,
+            "usd": 250
+          }
+        ],
+        "suiteDepositPctOfFare": 10,
+        "suiteDepositRule": "The Haven, suites and Garden Villa pay a percentage of the voyage fare instead of the flat deposit.",
+        "holidayDeposit": "An additional deposit may be required for holiday sailings.",
+        "paymentSource": "ncl.com/terms (US), printed to PDF by Reint 2026-09-10 19:23 on a US VPN: docs/price-changes/2026-09-10-holds-evidence/Norwegian Cruise Line Terms and Conditions (US, ncl.com-terms).pdf, pp. 52-53. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "notStated": "What the footnote marks in the table say; they did not survive the print. The group schedule.",
+        "verified": "2026-09-10"
       },
       "roomService": {
         "included": false,
@@ -460,6 +715,70 @@
         "notStated": "MSC publishes NO closed-loop / inter-porting exception. A claim that the currency reverts to euro when a Southampton sailing calls at a continental port and exchanges guests circulates widely in AI-generated answers citing agent pages; it is absent from MSC's own material. Do not repeat it, and consider saying so explicitly.",
         "verified": "2026-09-04"
       },
+      "onboardAccount": {
+        "market": "US",
+        "initialHold": null,
+        "notPublished": "MSC publishes no hold amount. Checked on two US surfaces: msccruisesusa.com/faq/onboard-payment and /manage-booking/before-you-go/on-board-payment.",
+        "laterHolds": "Pre-authorizations on a registered credit card.",
+        "releaseUpToDays": null,
+        "releaseNote": "Usually released after the final bill is settled at disembarkation; MSC says it does not control how long a hold lasts and cannot expedite a release.",
+        "debitCard": "accepted",
+        "debitCardNote": "Maestro, Visa Debit, Visa Electron and MasterCard debit are named. Money taken from a debit card and not spent is refunded in cash on the final morning.",
+        "cashDeposit": null,
+        "cashAccount": "A cash deposit is left at Reception after embarkation; the unspent amount is refunded in cash on the final morning.",
+        "holdSource": "msccruisesusa.com/manage-booking/before-you-go/on-board-payment and /faq/onboard-payment, rendered DOM read 2026-09-10. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "notStated": "Whether a debit card is held or charged up front; the refund wording reads like a charge, but the site must not assert it. Any cash-deposit amount.",
+        "verified": "2026-09-10"
+      },
+      "bookingPayment": {
+        "market": "US",
+        "lengthUnit": "nights",
+        "finalPayment": [
+          {
+            "from": null,
+            "to": 4,
+            "days": 75
+          },
+          {
+            "from": 5,
+            "to": 14,
+            "days": 90
+          },
+          {
+            "from": 15,
+            "to": null,
+            "days": 110
+          }
+        ],
+        "worldCruiseFinalPaymentDays": 120,
+        "finalPaymentNote": "Calendar days before departure. A booking made inside the window pays in full at booking.",
+        "deposit": [
+          {
+            "from": null,
+            "to": 4,
+            "usd": 99
+          },
+          {
+            "from": 5,
+            "to": 14,
+            "usd": 199
+          },
+          {
+            "from": 15,
+            "to": null,
+            "usd": 300
+          }
+        ],
+        "yachtClubDepositNonRefundable": true,
+        "worldCruiseDepositPct": 15,
+        "priceFreeze": {
+          "daysBeforeDeparture": 20,
+          "rule": "No change to the cruise price inside that window or once full payment is received, whichever comes first — except government fees, taxes and port expenses, which may still rise."
+        },
+        "paymentSource": "MSC USA Standard Booking Terms and Conditions (msccruisesusa.com/-/media/US/Documents/booking-terms-and-conditions), PDF saved by Reint 2026-09-10: docs/price-changes/2026-09-10-holds-evidence/MSC USA Standard Booking Terms and Conditions.pdf, pp. 3-4. No edition date; names World Cruise 2026, 2027 and 2028. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "notStated": "An edition or effective date for the terms.",
+        "verified": "2026-09-10"
+      },
       "roomService": {
         "included": false,
         "freeBreakfast": "continental",
@@ -573,6 +892,52 @@
         "notStated": "Disney does not say whether a UK or EU guest settling the folio is converted by Disney or by their card issuer. A guest who paid the fare in pounds still meets a dollar folio, and Disney does not flag that anywhere in the booking flow we can see.",
         "verified": "2026-09-04"
       },
+      "onboardAccount": {
+        "market": "Disney's currency and credit-card FAQ as Disney serves it: the /en-eu/ edition, returned to every route tried on 2026-09-10 — Claude's browser, Reint's browser on a US VPN (two prints), and a fetch of the bare US path, which also redirected. No separate US edition could be reached. Accepted as the page US guests are given, on Reint's decision of 2026-09-10, with a US-facing corroboration (holdSource).",
+        "holdModel": "interim charges",
+        "initialHold": null,
+        "interimCharges": {
+          "basis": "credit card on file",
+          "lengthUnit": "nights",
+          "bands": [
+            {
+              "from": 2,
+              "to": 5,
+              "usd": 300
+            },
+            {
+              "from": 6,
+              "to": 9,
+              "usd": 500
+            },
+            {
+              "from": 10,
+              "to": null,
+              "usd": 700
+            }
+          ]
+        },
+        "interimChargesNote": "Disney places no hold. It charges the credit card on file each time the account balance reaches the band amount, so money leaves during the cruise as real payments, not holds that drop off later.",
+        "releaseUpToDays": null,
+        "debitCard": "accepted, credit card recommended",
+        "debitCardNote": "The FAQ lists debit cards among the ways to settle the account, and recommends a credit card over a debit card to avoid temporary holds the card issuer may place on a debit account.",
+        "cashDeposit": null,
+        "cashAccount": "Onboard charges may be settled in US dollar cash; guests paying cash visit Guest Services when the balance reaches the spending limit.",
+        "holdSource": "disneycruise.disney.go.com/en-eu/faq/preparing-for-cruise/currency-credit-cards/, rendered DOM read 2026-09-10 and printed to PDF by Reint 23:15 and 23:24 (docs/price-changes/2026-09-10-holds-evidence/Disney Accepted Currency and Credit Cards (en-eu).pdf). Corroborated for a US guest by planDisney (question of Oct 8, 2024; a panelist relaying a Disney Cruise Line agent: no hold, card charged at $300 on a 5-night cruise). Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "notStated": "How a one-night sailing is treated, since the bands start at two nights. Whether a debit card can be the card on file for the interim charges; the FAQ lists credit cards for Online Check-In. Any cash-deposit amount.",
+        "verify": "Accepted 2026-09-10 on the European-edition FAQ plus planDisney corroboration, because no US edition could be reached by any route. If Disney ever serves a US edition of this FAQ, read it and confirm the bands. Lesson recorded in the evidence file: the first read filtered this page for \"hold\" and \"debit\" and missed the interim-charge paragraph — read whole answers.",
+        "verified": "2026-09-10"
+      },
+      "bookingPayment": {
+        "market": "US",
+        "lengthUnit": null,
+        "finalPayment": null,
+        "deposit": null,
+        "notPublished": "Disney publishes no deposit amount and no final-payment day count: both are set at booking (US terms). The final-payment FAQ page no longer exists.",
+        "priceGuarantee": "Timely final payment protects the booking from price changes, except increases in taxes, fees and port expenses.",
+        "paymentSource": "disneycruise.disney.go.com/contracts-terms-safety/terms-conditions/united-states/ (Terms and Conditions for Residents of the United States), rendered DOM read 2026-09-10. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "verified": "2026-09-10"
+      },
       "roomService": {
         "included": true,
         "freeBreakfast": "all",
@@ -653,6 +1018,33 @@
         "conflict": null,
         "notPublished": "Three surfaces, 2026-09-04: /faqs/onboard-account and /faqs/onboard-experience both 404; the international all-FAQs page answers currency only for PORTS OF CALL, never for the account; /faqs/seapass-account renders and carries nothing but site-config currency codes. Notable because its RCG sibling Royal Caribbean states it plainly (\"all onboard prices are in USD\") — same group, one says it, one does not.",
         "verified": "2026-09-04"
+      },
+      "onboardAccount": {
+        "market": "US",
+        "initialHold": {
+          "basis": "not stated",
+          "lengthUnit": null,
+          "usd": 100
+        },
+        "laterHolds": "Purchases above the initial amount generate additional holds.",
+        "releaseUpToDays": 30,
+        "releaseNote": "Celebrity says the bank decides how long a hold lasts. Like its sibling Royal Caribbean, it gives two typical timings on two pages; quote the ceiling.",
+        "debitCard": "named, no rule stated",
+        "debitCardNote": "The SeaPass page mentions holds on a credit or debit card; Celebrity publishes no acceptance rule for debit cards.",
+        "cashDeposit": null,
+        "holdSource": "celebritycruises.com/faqs/onboard-purchases and /faqs/seapass-account (US; US phone numbers on page), rendered DOM read 2026-09-10. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "conflictNote": "Two typical release timings, the same pattern as Royal Caribbean: \"by the time your cruise ends\" (onboard-purchases) and \"normally fall off within 3-5 business days\" (seapass-account). Keep the two lines in step: a wording change on one should prompt a read of the other.",
+        "notStated": "Whether debit cards are accepted as a rule. Any cash-deposit amount or cash-account rule. Whether the initial hold is per card, per person or per stateroom.",
+        "verified": "2026-09-10"
+      },
+      "bookingPayment": {
+        "market": "US",
+        "lengthUnit": null,
+        "finalPayment": null,
+        "deposit": null,
+        "notPublished": "Celebrity publishes no final-payment day count and no deposit table: the balance due date is given at booking. Three surfaces checked — the manage-plan FAQ, the cancellation-policy FAQ and the US ticket contract. Search-engine summaries claiming a day count appear on none of them and are not used.",
+        "paymentSource": "celebritycruises.com/faqs/manage-plan (#pay-my-balance-due), rendered DOM read 2026-09-10. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "verified": "2026-09-10"
       },
       "roomService": {
         "included": false,
@@ -769,6 +1161,54 @@
         "conflict": null,
         "notStated": "Princess does not name WHICH Australian-based itineraries, only \"select\" ones. The site must not turn that into \"all sailings from Australia\". Nothing is said about European itineraries, which fall under the default.",
         "verified": "2026-09-04"
+      },
+      "onboardAccount": {
+        "market": "US",
+        "initialHold": {
+          "basis": "per credit card on file",
+          "lengthUnit": null,
+          "usd": 100
+        },
+        "laterHolds": "Daily charges are authorized throughout the day with the card provider.",
+        "settlement": "Onboard spend is charged in one transaction at the end of the cruise, then the issuing bank releases the holds.",
+        "releaseUpToDays": 30,
+        "longVoyageSettlementDays": 30,
+        "releaseNote": "Because authorizations can last up to 30 days, a card on a voyage longer than that is settled at or before the 30-day mark and authorized again.",
+        "debitCard": "accepted",
+        "debitCardNote": "Princess pre-authorizes credit and debit cards alike, and warns that some banks hold pre-authorized funds for up to 30 days.",
+        "cashDeposit": null,
+        "cashAccount": "Guests paying by cash or traveler's checks leave a cash deposit with Guest Services at the start of the cruise.",
+        "holdSource": "princess.com/faq/pre-cruise, Cashless Cruising (US; phone 1-800-774-6237), rendered DOM read in Reint's Chrome on a US VPN, 2026-09-10; identical word for word to the /en-int/ edition read earlier that day. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "notStated": "Any cash-deposit amount. The hold wording for a debit card on file as distinct from a credit card.",
+        "verify": "Princess served its Australian edition to a US VPN until the US site was forced. Check any Princess read for /en-au/ in the URL and a 1300 phone number before treating it as US.",
+        "verified": "2026-09-10"
+      },
+      "bookingPayment": {
+        "market": "US",
+        "lengthUnit": "days",
+        "finalPayment": [
+          {
+            "from": 1,
+            "to": 13,
+            "days": 90
+          },
+          {
+            "from": 14,
+            "to": null,
+            "days": 120
+          }
+        ],
+        "finalPaymentNote": "World Cruise and Circle Pacific segments follow the same bands. The booking confirmation states the terms that apply to a given booking.",
+        "deposit": null,
+        "notPublished": "Princess publishes no standard deposit amount on the cancellation policy; the deposit is whatever the booking confirmation states.",
+        "longVoyageDeposit": {
+          "fromDays": 45,
+          "initialPct": 10,
+          "additionalPct": 20,
+          "additionalDueDays": 320
+        },
+        "paymentSource": "princess.com/plan/standard-cancellation-refund-policy (US; phone 1-800-774-6237), printed to PDF by Reint 2026-09-10 19:48 on a US VPN: docs/price-changes/2026-09-10-holds-evidence/Princess Cancellation and Refund Policy (US).pdf; identical to the /en-int/ edition. Verbatim quotations: docs/price-changes/2026-09-10-onboard-holds-and-payment-deadlines.md.",
+        "verified": "2026-09-10"
       },
       "roomService": {
         "included": false,
