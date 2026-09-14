@@ -204,6 +204,12 @@
         "minNightsSource": "carnival.com/help?topicid=6005 (rendered DOM) — \"CHEERS! is not offered on 2-day cruises, charter cruises and beverage purchases made at Celebration Key, Half Moon Cay and Princess Cays in The Bahamas\". Carnival states the exclusion, not a minimum; 3 is that exclusion in this field's terms (2 nights or fewer = not sold). Evidence on file",
         "minNightsVerifiedOn": "2026-08-04",
         "note": "Carnival quotes $69.95 pre / $74.95 onboard + 20% = $83.94 / $89.94 all-in (verified). NOT honoured at Celebration Key, Half Moon Cay or Princess Cays — confirmed verbatim 4 Aug 2026 (\"Beverages purchased off the ship at any port of call, including Celebration Key, Half Moon Cay and Princess Cays\"). Not sold on 2-day cruises or charters.",
+        "underAgeGuests": {
+          "charged": false,
+          "minAge": 21,
+          "source": "carnival.com/drink-packages/cheers-package, read 2026-09-14, verbatim: \"Guests must be 21 years or older to purchase and agree not to give to minors\"; \"Each adult assigned to the same stateroom must purchase the program\"; \"CHEERS! does not replace the Bottomless Bubbles soda program which continues to be available to children and adults\". Second Carnival surface, carnival.com/onboard/cheers, read 2026-09-14: \"21+\". No surface read requires a guest under 21 to buy any package. Evidence on file",
+          "verified": "2026-09-14"
+        },
         "verified": "2026-06"
       },
       "sodaPackage": {
@@ -396,6 +402,12 @@
         "overCapSource": "royalcaribbean.com/faq/questions/do-all-guests-in-a-star-suite-receive-the-deluxe-beverage-package — \"If a Star guest purchases a drink that is more than the value of the call or premium drink ordered, the Star guest will be charged the difference. The difference will have to be paid on call and premium cocktails over $14 and on premium wine by the glass over $14. For example, if a guest orders a $20 glass of wine, they will be charged $6 on their account.\" SCOPE, stated plainly: the page answers a Star-suite question, and it is the only Royal page that publishes the mechanic. It is read as the PACKAGE's mechanic because the product it describes IS the Deluxe Beverage Package (\"one beverage package per person ... is included\") and the threshold is the package's own published $14, not a suite figure. Corroborated by the official package terms (PDF, ©2025 US.0825): \"Package does not include ... super premium category beverages above $14.\" Read 2026-08-19, rendered DOM + PDFKit text extraction. Evidence on file",
         "overCapVerified": "2026-08-19",
         "verify": "Sept: re-check fleet median (rule: move only if median shifts >$5/day, two sources agree). Unresolved: Royal’s beverage-package gratuity FAQ carries the \"modified in the guest’s sole discretion\" sentence — see the evidence file conflict note.",
+        "underAgeGuests": {
+          "charged": false,
+          "minAge": 21,
+          "source": "Deluxe Beverage Package terms, royalcaribbean.com/content/dam/royal/resources/pdf/beverage-packages/deluxe-beverage-packages-cruises.pdf (stamped US.0825), text read 2026-09-14, verbatim: \"All guests of legal drinking age in the same stateroom and under the same stateroom booking number are required to purchase the same alcoholic beverage package.\" Same rule on royalcaribbean.com/faq/questions/does-everyone-need-to-buy-the-deluxe-beverage-package, read 2026-09-14: \"The Deluxe Beverage Package policy requires all guests wishing to purchase the Deluxe Beverage Package to do so for ALL guests of legal drinking age in the same stateroom.\" Neither surface requires a guest under the legal drinking age to buy any package. Soft-drink packages for minors are a separate, optional purchase: Royal's Cruise Planner sells the Classic Soda Package and the Refreshment Package per guest per day, and neither product page, the FAQ, nor the package menu (0812.pdf, stamped US.0326) requires a guest under 21 to buy one — read 2026-09-14. Children's packages are out of scope by owner ruling (14 Sept 2026) and are not priced here. Legal drinking age is 21 on US sailings and 18 where local law allows; minAge is the US figure. Evidence on file",
+          "verified": "2026-09-14"
+        },
         "verified": "2026-07"
       },
       "dining": {
@@ -665,6 +677,13 @@
             "source": "ncl.com/cruise-deals/free-at-sea",
             "verified_on": "2026-08-03"
           }
+        },
+        "underAgeGuests": {
+          "charged": false,
+          "minAge": 21,
+          "fromGuest": 3,
+          "source": "NCL MIAMI Free at Sea promotional terms, transcribed in the source document, verbatim: \"Applicable to guests 1-8 on the reservation for the entire length of the sailing. If 3-8 guest is under 21 years of age, Free at Sea™ Beverage Package does not apply, and Pop Package will not be given as a substitution.\"; \"Guest 1-2 must be at least 21 years of age at time of sailing to qualify for the Free at Sea™ Beverage\"; \"Guest 1-2 under 21 years of age will receive the Pop Package.\" So an under-21 guest 3-8 carries no beverage package and no charge for one (fromGuest: 3). An under-21 guest 1 or 2 receives the Pop Package, and what a Free at Sea booking is charged for it is NOT ESTABLISHED; the calculator keeps charging that guest the full package rate, which errs high. Evidence on file",
+          "verified": "2026-09-14"
         },
         "servicePct": 20,
         "serviceIncludedInPrice": true,
