@@ -62,9 +62,9 @@ cost research. Refreshed quarterly.
 
 | File | Grain | What it is |
 |------|-------|------------|
-| `cruise-costs.csv`            | one row per line    | Flattened headline figures — opens in Excel / Numbers / Google Sheets. |
+| `cruise-costs.csv`            | one row per line, with one exception (see `row_note`) | Flattened headline figures — opens in Excel / Numbers / Google Sheets. |
 | `cruise-packages.csv`         | one row per package | Every drinks package, bundle, upgrade and credit, with `type` and `covers_*` flags so bundles are never confused with standalone drinks packages. |
-| `cruise-gratuities-tiers.csv` | one row per cabin tier | Daily gratuities by cabin grade (standard, suite, Grills, Haven, Yacht Club…). |
+| `cruise-gratuities-tiers.csv` | one row per cabin tier | Daily gratuities by cabin grade (standard, suite, Grills, Haven, Yacht Club…), with the `currency` each amount is stated in. |
 | `cruise-costs.json`           | nested              | Full-fidelity structured data — keeps every tier, range, and source note. |
 
 `cruise-costs.csv` is the quick-look table; the package and tier tables hold the
@@ -116,6 +116,20 @@ the JSON is plain UTF-8.
   honest record if you need to know when a specific number was last confirmed. A
   month-only stamp (`2026-06`) means "sometime that month" and sorts before any dated
   day within it.
+- **`gratuities_currency`** — blank on almost every row, meaning `gratuities_per_day` is in
+  the row's `currency`. Filled where the line states its gratuity in a **different**
+  currency and publishes no amount in the row's own: Princess Cruises (AU) states its crew
+  appreciation in `USD` on an `AUD` row. We never convert it, so do not add it to the row's
+  AUD figures without converting at your own rate. `cruise-gratuities-tiers.csv` carries the
+  same information in its `currency` column.
+- **`row_note`** — blank on almost every row. Where a line's gratuities rule gives
+  **different answers to different bookings on the same sailing**, the line is published as
+  more than one row, and this column says who each row applies to. Today that is one line,
+  **Princess Cruises (AU)**: row `princessAu` covers every booking not made and paid in
+  Australia or New Zealand, which is charged crew appreciation; row
+  `princessAu-anz-bookings` covers bookings made and paid in Australia or New Zealand, where
+  it is in the fare. Both rows share every other figure. `cruise-costs.json` keeps a single
+  `princessAu` record; its `line_count` counts lines and `row_count` counts CSV rows.
 - **`drinks_price_confidence`** — `verified` = a sourced figure; `approximate` = a
   ballpark (vague/unsourced basis — treat as indicative, not exact); blank = no priced
   package (all-inclusive, no package, or a credit model). So a number is never mistaken

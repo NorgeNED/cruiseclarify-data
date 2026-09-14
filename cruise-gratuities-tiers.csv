@@ -1,44 +1,47 @@
-﻿line_key,line_name,cabin_tier,gratuities_per_day
-carnival,Carnival,Standard / base,17
-carnival,Carnival,Suites,19
-royal,Royal Caribbean,Standard / base,18.5
-royal,Royal Caribbean,Suites,21
-ncl,Norwegian (NCL),Standard / base,20
-ncl,Norwegian (NCL),Haven / Suites,25
-msc,MSC Cruises,Standard / base,17
-msc,MSC Cruises,Europe sailings (adult 18+),€12 (€16 Yacht Club)
-msc,MSC Cruises,Europe sailings (child 2-17),€10 (€13 Yacht Club)
-msc,MSC Cruises,Yacht Club (US sailings),23
-disney,Disney Cruise Line,Standard / base,16
-disney,Disney Cruise Line,Concierge,27.25
-celebrity,Celebrity Cruises,Standard / base,19.5
-celebrity,Celebrity Cruises,Concierge / AquaClass,20.5
-celebrity,Celebrity Cruises,The Retreat,24.5
-princess,Princess Cruises,Standard / base,18
-princess,Princess Cruises,Mini-Suite,19
-princess,Princess Cruises,Suites,20
-hal,Holland America,Standard / base,18
-hal,Holland America,Suites,20
-virgin,Virgin Voyages,Standard / base,20
-viking,Viking Ocean,Standard / base,20
-oceania,Oceania Cruises,Standard / base,0
-azamara,Azamara,Standard / base,0
-windstar,Windstar,Standard / base,16
-ponant,Ponant,Standard / base,0
-quark,Quark Expeditions,Standard / base,0
-cunard,Cunard,Standard / base,18
-cunard,Cunard,Grill Suites,19
-lindblad,Lindblad / Nat Geo,Standard / base,0
-hx,HX (Hurtigruten Expeditions),Standard / base,0
-aurora,Aurora Expeditions,Standard / base,20
-hurtigrutenCoastal,Hurtigruten Coastal,Standard / base,0
-po,P&O Cruises (UK),Standard / base,0
-marella,Marella (TUI),Standard / base,0
-ambassador,Ambassador Cruise Line,Standard / base,6.5
-fredOlsen,Fred. Olsen Cruise Lines,Standard / base,0
-costa,Costa Cruises,Standard / base,11
-costa,Costa Cruises,Dec 2026+ departures booked after Jun 2025,12
-celestyal,Celestyal Cruises,Standard / base,0
-hapagLloyd,Hapag-Lloyd Cruises,Standard / base,0
-carnivalAu,Carnival Australia,Standard / base,0
-royalAu,Royal Caribbean (AU),Standard / base,0
+﻿line_key,line_name,cabin_tier,gratuities_per_day,currency
+carnival,Carnival,Standard / base,17,USD
+carnival,Carnival,Suites,19,USD
+royal,Royal Caribbean,Standard / base,18.5,USD
+royal,Royal Caribbean,Suites,21,USD
+ncl,Norwegian (NCL),Standard / base,20,USD
+ncl,Norwegian (NCL),Haven / Suites,25,USD
+msc,MSC Cruises,Standard / base,17,USD
+msc,MSC Cruises,Europe sailings (adult 18+),€12 (€16 Yacht Club),USD
+msc,MSC Cruises,Europe sailings (child 2-17),€10 (€13 Yacht Club),USD
+msc,MSC Cruises,Yacht Club (US sailings),23,USD
+disney,Disney Cruise Line,Standard / base,16,USD
+disney,Disney Cruise Line,Concierge,27.25,USD
+celebrity,Celebrity Cruises,Standard / base,19.5,USD
+celebrity,Celebrity Cruises,Concierge / AquaClass,20.5,USD
+celebrity,Celebrity Cruises,The Retreat,24.5,USD
+princess,Princess Cruises,Standard / base,18,USD
+princess,Princess Cruises,Mini-Suite,19,USD
+princess,Princess Cruises,Suites,20,USD
+hal,Holland America,Standard / base,18,USD
+hal,Holland America,Suites,20,USD
+virgin,Virgin Voyages,Standard / base,20,USD
+viking,Viking Ocean,Standard / base,20,USD
+oceania,Oceania Cruises,Standard / base,0,USD
+azamara,Azamara,Standard / base,0,USD
+windstar,Windstar,Standard / base,16,USD
+ponant,Ponant,Standard / base,0,USD
+quark,Quark Expeditions,Standard / base,0,USD
+cunard,Cunard,Standard / base,18,USD
+cunard,Cunard,Grill Suites,19,USD
+lindblad,Lindblad / Nat Geo,Standard / base,0,USD
+hx,HX (Hurtigruten Expeditions),Standard / base,0,USD
+aurora,Aurora Expeditions,Standard / base,20,USD
+hurtigrutenCoastal,Hurtigruten Coastal,Standard / base,0,USD
+po,P&O Cruises (UK),Standard / base,0,GBP
+marella,Marella (TUI),Standard / base,0,GBP
+ambassador,Ambassador Cruise Line,Standard / base,6.5,GBP
+fredOlsen,Fred. Olsen Cruise Lines,Standard / base,0,GBP
+costa,Costa Cruises,Standard / base,11,EUR
+costa,Costa Cruises,Dec 2026+ departures booked after Jun 2025,12,EUR
+celestyal,Celestyal Cruises,Standard / base,0,EUR
+hapagLloyd,Hapag-Lloyd Cruises,Standard / base,0,EUR
+carnivalAu,Carnival Australia,Standard / base,0,AUD
+royalAu,Royal Caribbean (AU),Standard / base,0,AUD
+princessAu,Princess Cruises (AU),Standard / base,18,USD
+princessAu,Princess Cruises (AU),Mini-Suite,19,USD
+princessAu,Princess Cruises (AU),Suites,20,USD
