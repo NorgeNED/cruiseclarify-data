@@ -1150,6 +1150,12 @@
         "nonAlcoholic": "A third package (Non-Alcoholic — premium waters, specialty coffees/teas, juices, sodas, mocktails) is offered but is OUT of the calculator, matching the drinks-decision scope used for NCL / RC Refreshment.",
         "note": "Pricing model corrected fixed -> DYNAMIC 7 Jul 2026 (verification vs celebritycruises.com); 20% package gratuity confirmed official. Prior fixed figures were treated as fixed; now prefilled DEFAULTS. Classic held at $90 (was already recorded) to match the widely-reported ~$20 Classic->Premium upgrade gap; Premium added at $110. Retreat inclusions: product ruling 17 Jul 2026.",
         "verify": "Sept: reconfirm dynamic base medians — Celebrity publishes no single standard per-day price, so these rest partly on secondary sources (Points Guy, RoyalCaribbeanBlog, eatsleepcruise). One source cites a Classic fleet median nearer ~$72; reconcile against the ~$20 upgrade gap then, and sync are-cruise-drink-packages-worth-it.html if the median moves. ADDED 27 Jul 2026: (a) Premium observed range here is 105-120 but iCruise showed 109-149 — widen or confirm the upper bound; (b) source a EUROPE Classic price — celebrity-all-included.html carried an unverified $54.99 Europe figure (below this record's own ~$58 floor); it was REMOVED rather than guessed, and the article now teaches the sum instead of quoting a European price; (c) decide whether the Non-Alcoholic package earns a price field — the article quoted $39.99 with nothing backing it, also removed.",
+        "underAgeGuests": {
+          "charged": false,
+          "minAge": 21,
+          "source": "Celebrity beverage package flyer, celebritycruises.com/content/dam/celebrity/pdf/web-beverage-package-2025.pdf, text read 2026-09-14, verbatim: \"All guests of legal drinking age in the same stateroom and under the same stateroom booking number are required to purchase the same alcoholic beverage package. Guests can contact call centers or notify onboard staff to request a modification to the Non-Alcoholic package instead.\" Same rule on celebritycruises.com/faqs/beverage-packages, read 2026-09-14: \"The Drink Package Policy requires all guests wishing to purchase a Drink Package to do so for ALL guests of legal drinking age in the same stateroom purchasing the same package.\" No surface read requires a guest under 21 to buy any package. The flyer sets the age by departure port; minAge is the US figure. Evidence on file",
+          "verified": "2026-09-14"
+        },
         "verified": "2026-07"
       },
       "packageComponents": {
