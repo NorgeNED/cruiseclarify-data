@@ -43,8 +43,17 @@ Most published cruise figures are list prices buried in marketing pages or locke
 inside calculators. This dataset is the opposite: one tidy table, every figure on
 the same footing, sourced and dated, free to reuse with credit.
 
-**Maintained by [CruiseClarify](https://cruiseclarify.com)** — independent cruise
-cost research. Refreshed quarterly.
+**Maintained by [CruiseClarify](https://cruiseclarify.com)** — independent, affiliate-free
+cruise cost research. This dataset is the raw table behind the website, which also has:
+
+- a free **all-in cost calculator** that turns these figures into a trip total — https://cruiseclarify.com
+- a **side-by-side comparison** of two cruises on their real all-in cost — https://cruiseclarify.com/compare-all-in
+- plain-English **guides** to each major line's gratuities, drinks packages and Wi-Fi — https://cruiseclarify.com/research
+- a **change log** of every figure updated since July 2026 — https://cruiseclarify.com/what-changed
+
+Every figure is reviewed on a fixed quarterly cycle. When a line changes a price in between,
+the website is corrected when the change is found and it is logged on the change log; this
+dataset follows, at the latest at the next quarterly refresh.
 
 ## What's in it
 
