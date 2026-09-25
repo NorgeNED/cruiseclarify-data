@@ -7,6 +7,7 @@ INTERNATIONAL-BACKLOG.md
 # Rebuild command is now:  osascript -l JavaScript ../site/scripts/build-dataset.js
 build-dataset.js
 .DS_Store
+__pycache__/
 
 # Public set (for reference — these ARE published):
 #   cruise-costs.csv
