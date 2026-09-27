@@ -196,9 +196,11 @@ live data**. Each line carries its own `verified` date (and the JSON carries
 2026 only**.
 
 The September 2026 refresh re-read every line that had not been checked since June
-against the cruise line's own published pages. Fourteen records were opened and eleven
-corrected — two of them cases where a gratuity we published as included is in fact
-charged. Per-figure evidence for each change is kept alongside the source data.
+against the cruise line's own published pages. Twenty-one records were opened and
+thirteen corrected. Five of the corrections changed what a guest would pay, and they
+ran both ways: Aurora Expeditions, Ponant, Hapag-Lloyd and Celestyal were understated,
+while Royal Caribbean's Australian record was overstated. Per-figure evidence for each
+change is kept alongside the source data.
 
 **If you are using this after December 2026, do not present these figures as
 current** — fetch the latest release first:
