@@ -1757,9 +1757,10 @@
       "gratuities": {
         "included": false,
         "perDay": 20,
-        "note": "+15% on bar tabs beyond inclusions",
-        "verified": "2026-06",
-        "verify": "Sept 2026 — the $20/day has NO first-party source on this record and cannot get one from here: the reachable Viking market (UK) publishes \"Gratuities are included on board\" and no daily rate at all. Needs a US-locale read or a captured US document, exactly as HAL's terms PDF. Do not \"correct\" it against a UK page.",
+        "note": "Bar and drink menu prices already include gratuity — nothing is added on top (see surcharge).",
+        "verified": "2026-09-27",
+        "source": "vikingcruises.com/oceans/frequently-asked-questions.html, \"What is the tipping policy?\" (CMS item `what-is-the-tipping-policy`, the US item; the UK one is `-au-uk`), rendered DOM 2026-09-27, US market (sibling items suffixed -us / -us-ca; \"All prices are in US dollars and for US residents only\"). Verbatim: \"based on our standard recommended gratuity rate of $20 USD per person, per night. You can either pre-purchase gratuities at our standard recommended rate in your My Viking Journey account, or if you have not pre-purchased gratuities before your departure, we will automatically add them at the same recommended rate of $20 USD per person, per night to your shipboard account\" and \"Should you wish to make changes to the gratuity amounts or pay in cash, visit Guest Services at any time.\" Viking says change, not remove. No effective date, no suite tier. Evidence on file",
+        "verify": "RESOLVED 2026-09-27 — the $20 now has its first-party US source (see source). The 19 Aug claim that no US read was possible from here was about egress, not Viking, and failed on 27 Sep: vikingcruises.com loaded without redirecting. CHECK location.href AFTER EVERY VIKING NAVIGATION — a .co.uk page still cannot correct a US figure. Travel Market Report's $17/day (cited by Perplexity, 27 Sep) is contradicted by Viking's own US page. Re-read Dec 2026.",
         "child": {
           "adultsOnly": true,
           "note": "Viking Ocean is 18+ — no children aboard, so no child gratuity applies.",
@@ -1775,7 +1776,7 @@
         "baselineAccess": "full",
         "note": "INCLUDED under meta.wifiConvention2 — free on every ship, usable for browsing, with a fair-use caveat rather than a tier: Viking reserves the right to throttle heavy-bandwidth use and asks guests to limit large transfers and live streaming. No paid upgrade, no device limit and no price are published, so no `limits` are recorded beyond what Viking states. WAS a bare included:true with no source or stamp until 2026-09-05; the 21 Aug charging-unit pass had concluded \"Viking and Oceania sell no Wi-Fi\" without quoting Viking.",
         "source": "vikingcruises.co.uk/oceans/frequently-asked-questions.html, \"Is there internet access on board the ship? Are there computers, or should I bring my laptop?\", read 2026-09-05, verbatim: \"All our ships offer free Wi-Fi. You may use your personal device or one of the ship's computers in our Business Center on Deck 1. Our connection relies on a VSAT satellite terminal — the best possible solution for voyages at sea. Due to the nature of data bandwidth and latency, as well as potential interruptions in satellite signals based on terrain and weather, you may experience slower online connections than you are accustomed to at home. In order to ensure fair usage for all, we reserve the right to limit heavy-bandwidth applications, downloads or software upgrades so that all our guests have access to Wi-Fi. We suggest that guests limit large uploads/downloads and live streaming. Please download your content prior to your journey, as bandwidth will affect your service and cannot be guaranteed.\" Evidence on file",
-        "verify": "Dec 2026. Viking's FAQ describes streaming as discouraged under fair use, not excluded and not sold as an upgrade — so limits.streaming is deliberately NOT set false. If Viking ever publishes a streaming tier or a price, record it then. Note the FAQ is the UK site; the US site (vikingcruises.com/oceans) redirects there.",
+        "verify": "Dec 2026. Viking's FAQ describes streaming as discouraged under fair use, not excluded and not sold as an upgrade — so limits.streaming is deliberately NOT set false. If Viking ever publishes a streaming tier or a price, record it then. Market note: the 5 Sep read was the UK site, because vikingcruises.com redirected there from Norway then. On 2026-09-27 the US FAQ (vikingcruises.com/oceans/frequently-asked-questions.html) loaded without redirecting and carries the same free-Wi-Fi answer — so both markets agree.",
         "verified": "2026-09-05"
       },
       "drinksPackage": {
@@ -1799,8 +1800,11 @@
         "serviceIncludedInPrice": true,
         "servicePctSource": "Same page, footnote *, verbatim: \"A 15% service charge per person is included with the price.\" This is the charge folded into the PACKAGE price. It is NOT evidence for `surcharge.pct` below, which is a different fact about à-la-carte bar tabs. Read 2026-08-19, rendered DOM.",
         "servicePctVerified": "2026-08-19",
-        "verified": "2026-06",
-        "verify": "Sept 2026 — the $27/day is a US figure with NO first-party source. The only reachable Viking market publishes the UK price (£21 GBP per day, stated twice: the Silver Spirits page and the ocean FAQ), and a GBP figure cannot confirm or refute a USD one. Needs a US-locale read or a captured US document. Everything else on this record was settled first-party 19 Aug 2026."
+        "alaCarteServicePct": 0,
+        "alaCarteServicePctSource": "Same authority as surcharge.source — Viking's onboard beverage menu for ocean ships, page 1: \"All prices include gratuity.\"",
+        "verified": "2026-09-27",
+        "perDaySource": "vikingcruises.com/oceans/my-trip/silver-spirits-beverage-package/ (reach it by the site's own nav link; the bare path without the trailing slash 404s on the US site), rendered DOM 2026-09-27, US market, verbatim: \"we offer our Silver Spirits Beverage Package for a flat fee per guest: $27 USD per day.\" and \"A 15% service charge per person is included with the price.\" Corroborated the same day on the US ocean FAQ, \"Can I upgrade the complimentary beverages?\": \"For only $27 USD per night\". Cap, whole-cabin rule and age re-read there unchanged. Evidence on file",
+        "verify": "RESOLVED 2026-09-27 — $27 read first-party on two US surfaces (see perDaySource). The UK site prices the same package at £21 GBP per day; that is the UK market, not a conflict. Re-read Dec 2026."
       },
       "baseDrinks": "House wine, beer, soft drinks with lunch & dinner included; bar drinks between meals are NOT. Coffees, hot teas, juices and bottled water are complimentary 24 hours a day, all voyage.",
       "baseDrinksSource": "vikingcruises.co.uk/oceans/my-trip/silver-spirits-beverage-package, verbatim: \"beyond our complimentary house beers, wines and soft drinks (available with onboard lunches and dinners), and all-day coffees and hot teas\"; its inclusion table also shows \"Selection of coffees, teas, juices; bottled water\" already in the fare. The ocean FAQ says \"assorted hot teas and coffees that are available 24 hours a day.\" Read 2026-08-19, rendered DOM.",
@@ -1809,9 +1813,10 @@
         "included": true
       },
       "surcharge": {
-        "pct": 15,
-        "appliesTo": "bar tabs beyond inclusion",
-        "verify": "Sept 2026 — needs a US-market source. The 15% here may be the package's own service charge generalised to bar tabs; that inference has never been checked. Decide in the same pass whether the calculator should keep applying it silently or state it (drinks.barCharge)."
+        "pct": 0,
+        "appliesTo": "none — Viking bar and drink menu prices already include gratuity",
+        "source": "docs.vikingcruises.com/MVJ/onboardbeveragemenu_oceans.pdf — Viking's onboard beverage menu, ocean ships, fetched 2026-09-27 (Last-Modified 17 Mar 2026; created 9 Jan 2026; md5 fbbc5903ba6434778c6cbea18a3dc5fe), page 1 verbatim: \"All prices include gratuity.\" Prices on the menu are in US dollars. Corroborated by a guest's photographs of the Viking Vela Living Room Bar menu (Facebook, Viking Vela Class Cruise Passengers group, dated 23 Jan). Spa: not stated.",
+        "verified": "2026-09-27"
       },
       "corkage": {
         "cabinFree": true,
@@ -1951,7 +1956,7 @@
         "unitStatus": "unknown",
         "unitStatusSource": "Same surfaces as the rate, same result — see `verify` on this record: azamara.com/booked-guests/onboard-packages says only \"choose from full-cruise or daily packages\" available \"for purchase onboard\", and /booked-guests/before-you-board/stay-connected prices CARRIER plans, not Azamara products. Neither states a charging unit. RESOLVE BY: the Voyage Planner read already required for the rate. Evidence on file",
         "unitStatusVerified": "2026-08-21",
-        "note": "Not in standard fare (~$18–$25/day). Included for suite guests and loyalty members — calculator locks $0 on Suite cabin. B04 Pass 4, 17 Jul 2026.",
+        "note": "Not in standard fare (~$18–$25/day). Included for suite guests and loyalty members — the calculator shows Wi-Fi as included (no charge) on the Suite cabin. B04 Pass 4, 17 Jul 2026.",
         "verify": "SAME SHAPE AS THE DRINKS PRICE, found on the same 2026-08-20 pass: the $22/day and the $18–25 range are THIRD-PARTY only and are not page-readable. Azamara sells Wi-Fi but publishes no rate — /booked-guests/onboard-packages says only \"choose from full-cruise or daily packages\" available \"for purchase onboard\", and /booked-guests/before-you-board/stay-connected (US market) says \"For heavier internet use, onboard Wi-Fi packages are available\" and then prices only the CARRIER plans, which are not Azamara products and must never be read as Wi-Fi rates: AT&T Cruise Plus $100 / Cruise Basic $60 per cruise, Verizon Cruise Daily Pass $30 a day ($1.99/min overage). Do not promote any of those three into wifi.perDay. Not acted on this pass — recorded so the next Azamara pass starts from evidence.",
         "verified": "2026-07"
       },
@@ -1982,6 +1987,24 @@
         "servicePct": 0,
         "serviceIncludedInPrice": true,
         "note": "No service charge on drinks or packages — gratuities in fare; 18% applies to spa/salon only (matches surcharge, D6). Was wrongly 18 until 11 Jun 2026 (inert — never used in a displayed figure).",
+        "includedForSuiteGrades": {
+          "package": "Ultimate",
+          "grades": [
+            "World Owner's Suite",
+            "Ocean Suite",
+            "Spa Suite",
+            "Panorama Suite"
+          ],
+          "notIncludedGrades": [
+            "Continent Suite",
+            "Grandview Suite"
+          ],
+          "notIncludedGradesGet": "In-room bottles, not the package: premium spirits and sparkling wine in a Continent Suite, premium spirits and champagne in a Grandview Suite (per-suite amenity lists, corrected 2026-09-27 at the cc-audit pass).",
+          "effective": "Sailings departing on or after 2026-04-01.",
+          "source": "azamara.com/our-ships/suites, US locale (read from a US IP), 2026-09-27. Per-suite \"Included Amenities\" lists \"Ultimate Beverage Package\" for Panorama, World Owner's, Ocean and Spa Suites; Grandview and Continent list \"In-room premium spirits and champagne/sparkling wine\" and no package. The page FAQ \"What are the new inclusions for World Owner's, Ocean, and Spa Suites?\" lists \"Ultimate Beverage Package\" first; the per-guest onboard credit those suites had is withdrawn from the same date (Azamara's wording and its valuation of the new inclusions are in the evidence file). Evidence on file.",
+          "conflict": "Azamara states the booking-date rule two ways on the same page: \"All enhancements will apply to cruise departing on or after April 1, 2026, regardless of when the booking was made\" and \"Only NEW bookings on cruises after April 1, 2026 ... Earlier sailings or sailings booked before August 1, 2025, will continue with the current suite benefits.\" Which governs a pre-August-2025 booking sailing after 1 April 2026 is NOT ESTABLISHED.",
+          "verified": "2026-09-27"
+        },
         "verified": "2026-09-16"
       },
       "baseDrinks": "Standard spirits, beer, wine by glass, cocktails included ALL DAY at bars — firsthand-verified",
@@ -1995,7 +2018,7 @@
           "verandaPlus"
         ],
         "oneMealCredit": 49.95,
-        "note": "Main dining in fare. Suites: specialty dining included. Veranda Plus: one specialty visit included (~$49.95) — not full dining $0 (B04 Pass 4, 17 Jul 2026)."
+        "note": "Main dining in fare. Suites: specialty dining included. Veranda Plus: one specialty visit included (~$49.95) — not full dining $0 (B04 Pass 4, 17 Jul 2026). Firsthand, confirmed 2026-09-27: one included specialty dinner in Veranda Plus on CruiseClarify's own October 2023 and March 2026 sailings; Azamara's own pages read so far do not state it."
       },
       "specialtyDining": {
         "range": [
