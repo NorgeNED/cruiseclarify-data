@@ -871,7 +871,7 @@
         "offered": true,
         "name": "Premium Extra",
         "perDay": 85,
-        "perDayBasis": "LENGTH BASIS (settled 9 Aug 2026): the pre-cruise price is ~$85/guest/day on sailings of 4 nights and longer, ~$95 on 3-night sailings — so perDay 85 is the 4+-night figure and every surface must say \"4+ nights\", never \"7+\". 18% beverage service folded into price. MSC publishes NO drinks price publicly (prices appear only inside a logged-in MyMSC booking), so 85 is third-party, not first-party — see verify. Easy/Easy Plus withdrawn in North America 18 Dec 2024; Easy Plus retired worldwide Aug 2025. Easy itself is NOT retired worldwide — corrected 7 Sep 2026 after reading both MSC sites in a browser: msccruises.co.uk lists Easy among the available packages, msccruisesusa.com lists only Premium Extra, Alcohol-Free and Minors. MSC 403s every fetch tool but loads fine in a browser — do not fall back to third-party sources for this line",
+        "perDayBasis": "LENGTH BASIS (settled 9 Aug 2026): the pre-cruise price is ~$85/guest/day on sailings of 4 nights and longer, ~$95 on 3-night sailings — so perDay 85 is the 4+-night figure and every surface must say \"4+ nights\", never \"7+\". 18% beverage service folded into price. MSC publishes NO drinks price publicly (prices appear only inside a logged-in MyMSC booking), so 85 is third-party, not first-party — see verify. Easy/Easy Plus withdrawn in North America 18 Dec 2024; Easy Plus retired worldwide Aug 2025. Easy itself is NOT retired worldwide — corrected 7 Sep 2026 after reading both MSC sites in a browser: msccruises.co.uk lists Easy among the available packages, msccruisesusa.com lists only Premium Extra, Alcohol-Free and Minors. UPDATED 28 Sep 2026: Easy is now onboard-purchase only outside North America — msccruises.co.uk, rendered DOM 2026-09-28: \"Easy Package is available for purchase onboard only\" and \"For cruises to the Caribbean, North America, and Alaska, the Easy package is no longer available for purchase\"; effective 14 Sep 2026 per iglucruise.com (MSC states no date). Evidence on file. MSC 403s every fetch tool but loads fine in a browser — do not fall back to third-party sources for this line",
         "servicePct": 18,
         "serviceIncludedInPrice": true,
         "includedByCabin": [
@@ -1227,6 +1227,14 @@
         "finalPayment": [
           {
             "from": 1,
+            "to": null,
+            "days": 120
+          }
+        ],
+        "finalPaymentBookedFrom": "2026-09-02",
+        "finalPaymentEarlierBookings": [
+          {
+            "from": 1,
             "to": 13,
             "days": 90
           },
@@ -1236,7 +1244,7 @@
             "days": 120
           }
         ],
-        "finalPaymentNote": "World Cruise and Circle Pacific segments follow the same bands. The booking confirmation states the terms that apply to a given booking.",
+        "finalPaymentNote": "finalPayment applies to bookings made on or after finalPaymentBookedFrom; finalPaymentEarlierBookings to bookings made before it. The contract keys the change on BOOKING date only: it says nothing about sailing dates, so the \"sailings from 1 January 2027\" condition in news reports is not recorded. World Cruise and Circle Pacific segments follow the same bands. The booking confirmation states the terms that apply to a given booking. Changed 2026-09-28: 1-13 day cruises 90 -> 120 days for new bookings.",
         "deposit": null,
         "notPublished": "Princess publishes no standard deposit amount on the cancellation policy; the deposit is whatever the booking confirmation states.",
         "longVoyageDeposit": {
@@ -1245,8 +1253,8 @@
           "additionalPct": 20,
           "additionalDueDays": 320
         },
-        "paymentSource": "princess.com/plan/standard-cancellation-refund-policy (US; phone 1-800-774-6237), saved as PDF from the US site, 2026-09-10; identical to the /en-int/ edition. Verbatim quotations on file.",
-        "verified": "2026-09-10"
+        "paymentSource": "princess.com/legal/passage-contract: /en-int/ edition read rendered DOM 2026-09-28; US edition (no locale, no redirect) fetched from a US exit the same day, same wording: \"For bookings made on or after September 2, 2026: Cruises up to 44 days (including World Cruise or Circle Pacific Segments) Final Payment is due 120 days prior to departure\". Princess's /plan/standard-cancellation-refund-policy page (the 2026-09-10 source) still shows only the older 90/120 bands on 2026-09-28: it lags the contract, which governs. Verbatim quotations on file.",
+        "verified": "2026-09-28"
       },
       "roomService": {
         "included": false,
