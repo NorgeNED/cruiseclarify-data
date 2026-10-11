@@ -65,6 +65,7 @@
             }
           ]
         },
+        "cashAccount": "Cash or traveler’s checks, in US dollars only, are deposited at Guest Services on the first day of the cruise.",
         "spendingLimit": "The account owner can set spending limits or remove charging privileges.",
         "holdSource": "help.carnival.com/app/answers/detail/a_id/1138/kw/credit%20card%20hold (Sail & Sign Onboard Account), rendered DOM read 2026-09-10. The bare a_id/1138 URL bounces via /app/pre_page_check/redirect/; the search-result URL renders. Verbatim quotations on file.",
         "notStated": "The size of the additional holds during the cruise. Any ceiling on how long a hold may last. Whether a cash account can be capped below the deposit.",
@@ -72,6 +73,7 @@
         "credits": [
           {
             "kind": "cruise-cash-bought",
+            "category": "onboard",
             "label": "Cruise Cash you buy",
             "unused": "forfeited",
             "refundable": false,
@@ -81,7 +83,22 @@
             "verified": "2026-10-10"
           },
           {
+            "kind": "fcc-cancellation-before-final-payment",
+            "category": "future-cruise",
+            "origin": "cancellation",
+            "label": "Future cruise credit from a cancellation before final payment",
+            "unused": "expires-no-refund",
+            "refundable": false,
+            "usedFor": "the price of a new Carnival cruise booked in US dollars; it can only be applied to the price of the future cruise",
+            "validForMonths": 12,
+            "serviceFeeUSDPerPerson": 50,
+            "note": "The credit equals the deposit less a service fee. It is non-refundable and non-transferable, and must be used for a new reservation made within 12 months of the cancellation. Any unused portion is forfeited. The contract states this directly after the Early Saver deposit rule, so whether it covers every fare is not clear from its wording.",
+            "source": "carnival.com/popups/bookingengine/reservation-terms-and-conditions (Terms and Conditions of Ticket Contract, section 7), rendered DOM read 2026-10-11. Verbatim quotation.",
+            "verified": "2026-10-11"
+          },
+          {
             "kind": "excursion-refund-credit",
+            "category": "onboard",
             "label": "Credit from a refunded shore excursion",
             "unused": "refunded-by-check",
             "refundable": true,
@@ -92,6 +109,84 @@
         ]
       },
       "bookingPayment": {
+        "guideSources": [
+          {
+            "label": "Deposit and Final Payment Requirements",
+            "url": "https://help.carnival.com/app/answers/detail/a_id/481",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "Sail & Sign Onboard Account",
+            "url": "https://help.carnival.com/app/answers/detail/a_id/1138",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "Name Changes",
+            "url": "https://help.carnival.com/app/answers/detail/a_id/3527",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Cruise Cash Program",
+            "url": "https://help.carnival.com/app/answers/detail/a_id/3602",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Shore excursion terms",
+            "url": "https://www.carnival.com/legal/shore-excursions-terms",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Terms and Conditions of Ticket Contract",
+            "url": "https://www.carnival.com/popups/bookingengine/reservation-terms-and-conditions",
+            "read": "2026-10-11",
+            "covers": "changes"
+          },
+          {
+            "label": "Specials terms and conditions (Lowest Price Guarantee, Early Saver)",
+            "url": "https://www.carnival.com/legal/specials-terms-conditions",
+            "read": "2026-10-11",
+            "covers": "changes"
+          },
+          {
+            "label": "Early Saver price protection form",
+            "url": "https://www.carnival.com/request-forms/price-protection",
+            "read": "2026-10-11",
+            "covers": "changes"
+          }
+        ],
+        "priceAfterFinalPayment": {
+          "fareLock": "not-stated",
+          "fareNote": "Carnival reserves the right to increase published fares.",
+          "summary": "Increases in government taxes and fees can be passed on “even if the Cruise Fare has already been paid in full.”",
+          "governmentChargesAfterFullPayment": true,
+          "fuelSupplement": null,
+          "fuelNote": "The ticket contract text reviewed does not mention a fuel supplement.",
+          "lowerPrice": {
+            "items": [
+              {
+                "label": "Lowest Price Guarantee",
+                "text": "Claim within 48 hours of booking if you find a lower Carnival-advertised price. Carnival gives 110% of the difference as onboard credit, which is non-refundable and has no cash value. Carnival can discontinue or change the program."
+              },
+              {
+                "label": "Early Saver price protection",
+                "text": "Only bookings made with an Early Saver promotion qualify. Carnival’s terms let you adjust your total cruise price to the best current advertised price for a like stateroom category, and its claim form offers an upgrade or a non-refundable onboard credit for the fare difference. Prepaid extras such as vacation protection, air, transfers and prepaid gratuities are not covered."
+              }
+            ],
+            "unknown": "How Early Saver price protection is paid on a booking you have already paid in full, and the last date to request it.",
+            "ask": "whether your fare is an Early Saver fare, what you would receive (a lower fare, an upgrade or onboard credit), and by when you must ask."
+          },
+          "researchNotes": [
+            "Carnival’s help page on Early Saver price protection could not be read: help.carnival.com blocks automated reading, and the block was not worked around. Carnival’s specials terms and its claim form were read instead.",
+            "Whether Carnival publishes a fuel supplement outside its ticket contract is not established."
+          ],
+          "source": "carnival.com/popups/bookingengine/reservation-terms-and-conditions (Terms and Conditions of Ticket Contract, section 8), rendered DOM read 2026-10-11. Verbatim quotations on file.",
+          "verified": "2026-10-11"
+        },
         "market": "US",
         "lengthUnit": "days",
         "appliesTo": "Cruises booked on or after 12 Nov 2019",
@@ -171,6 +266,7 @@
           "correction": {
             "treatment": "not-stated"
           },
+          "confirm": "Confirm your fare type before asking for a swap: restricted fares may not allow one, and a booking with Carnival-booked air is treated differently.",
           "source": "help.carnival.com/app/answers/detail/a_id/3527 (Name Changes), read 2026-10-10. Verbatim quotations on file.",
           "notStated": "A fee for correcting a misspelled name on the cruise itself. Any amount for a restricted fare.",
           "verified": "2026-10-10"
@@ -311,7 +407,7 @@
         "releaseUpToDays": 30,
         "releaseNote": "Royal Caribbean says the bank decides how long a hold lasts. It gives two different typical timings on two pages; quote the ceiling, never either \"most\".",
         "debitCard": "accepted",
-        "debitCardNote": "A credit or debit card is required at online check-in. No separate debit rule is published.",
+        "debitCardNote": "A credit or debit card is required at online check-in. The US pages reviewed state no separate debit rule.",
         "cashDeposit": null,
         "cashAccount": "A cash-backed account is set up with the terminal agent at check-in and settled on board before disembarking.",
         "cashAccountVoyageLimitUsd": {
@@ -330,6 +426,7 @@
         "credits": [
           {
             "kind": "itinerary-change-credit",
+            "category": "onboard",
             "label": "Credit for an itinerary change or service recovery",
             "unused": "not-stated",
             "refundable": null,
@@ -339,6 +436,7 @@
           },
           {
             "kind": "other-onboard-credit",
+            "category": "onboard",
             "label": "Other onboard credit",
             "unused": "not-stated",
             "refundable": null,
@@ -349,6 +447,94 @@
         ]
       },
       "bookingPayment": {
+        "guideSources": [
+          {
+            "label": "Final payment schedule",
+            "url": "https://www.royalcaribbean.com/faq/questions/final-payment-schedule-policy",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "Deposit requirements",
+            "url": "https://www.royalcaribbean.com/faq/questions/deposit-requirements",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "SeaPass onboard spending account",
+            "url": "https://www.royalcaribbean.com/faq/questions/seapass-onboard-spending-account",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "SeaPass copy request",
+            "url": "https://www.royalcaribbean.com/faq/questions/seapass-copy-request",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "US cruise ticket contract",
+            "url": "https://www.royalcaribbean.com/guest-terms/us/united-states-english/",
+            "read": "2026-10-11",
+            "covers": "changes"
+          },
+          {
+            "label": "How can I modify my reservation after booking?",
+            "url": "https://www.royalcaribbean.com/faq/questions/how-can-i-modify-my-reservation-after-booking",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Can the price of a cruise change?",
+            "url": "https://www.royalcaribbean.com/faq/questions/price-change-information",
+            "read": "2026-10-11",
+            "covers": "changes"
+          },
+          {
+            "label": "Best Price Guarantee",
+            "url": "https://www.royalcaribbean.com/faq/questions/best-price-guarantee-policy",
+            "read": "2026-10-11",
+            "covers": "changes"
+          },
+          {
+            "label": "How are onboard credits and future cruise credits calculated?",
+            "url": "https://www.royalcaribbean.com/faq/questions/how-are-onboard-credits-and-future-cruise-credits-calculated",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Onboard credit guide",
+            "url": "https://www.royalcaribbean.com/guides/onboard-credit-and-how-to-spend-it",
+            "read": "2026-10-10",
+            "covers": "changes"
+          }
+        ],
+        "priceAfterFinalPayment": {
+          "fareLock": "not-stated",
+          "summary": "Taxes and fees can be passed on at any time after booking.",
+          "governmentChargesAfterFullPayment": true,
+          "fuelSupplement": {
+            "maxUSDPerPersonPerDay": 12,
+            "wtiAboveUSDPerBarrel": 65,
+            "henryHubAboveUSDPerMMBtu": 3,
+            "appliesToPaidInFull": true
+          },
+          "lowerPrice": {
+            "items": [
+              {
+                "label": "Best Price Guarantee",
+                "text": "You can ask for a price match any time before final payment, or within 24 hours of booking. After that the page names no price match. If the price of the same cabin class is lower, Royal Caribbean adjusts your fare and refunds the difference if you have already paid. If a higher cabin class costs less than you paid, you may be eligible for a free upgrade instead, subject to availability. The program is not available in all countries or for all reservations."
+              }
+            ],
+            "unknown": "Which reservations the guarantee excludes: Royal Caribbean says it is not available in all countries or for all reservations.",
+            "ask": "before final payment whether your reservation qualifies."
+          },
+          "researchNotes": [
+            "Royal Caribbean’s international booking conditions cap a name-change fee at US$100 per name change per booking, up to 7 days before sailing. Its US documents do not say whether that applies to US bookings, so this guide does not use it."
+          ],
+          "source": "royalcaribbean.com/guest-terms/us/united-states-english/ (US ticket contract, section 3) and royalcaribbean.com/faq/questions/price-change-information (\"whether paid in full or not\"), rendered DOM read 2026-10-11. Verbatim quotations on file.",
+          "verified": "2026-10-11"
+        },
         "market": "US",
         "lengthUnit": "nights",
         "finalPayment": [
@@ -410,7 +596,9 @@
             "treatment": "locked-online",
             "note": "Names and dates of birth lock online once completed; further corrections go through the call center."
           },
+          "internationalNote": "Royal Caribbean’s international booking conditions cap a name-change fee at US$100 per name change per booking, up to 7 days before sailing. Its US documents do not say whether that applies to US bookings.",
           "notPublished": "A name-change fee for US bookings, in the US cruise ticket contract and on two US FAQ pages.",
+          "confirm": "Ask Royal Caribbean what it would charge for a swap on your booking, before the final manifest date, because no US fee is stated.",
           "source": "royalcaribbean.com/faq/questions (How can I modify my reservation after booking; How do I update guest information on my booking?) and royalcaribbean.com/guest-terms/us/united-states-english/ (US cruise ticket contract, which has no name-change clause), read 2026-10-10. Verbatim quotations on file.",
           "verify": "The international booking conditions cap a name-change fee at US$100 per name change per booking, up to 7 days before sailing. Whether that applies to US bookings is not stated.",
           "verified": "2026-10-10"
@@ -576,8 +764,9 @@
         "settlement": "The onboard account is charged once, at the end of the cruise.",
         "releaseUpToDays": 30,
         "releaseNote": "Debit-card holds may remain up to 30 days after the cruise ends; NCL says some banks hold the funds that long. It takes no responsibility for overdraft charges caused by holds.",
+        "releaseScope": "debit card",
         "debitCard": "accepted, not recommended",
-        "debitCardNote": "US wording. The European English edition says debit cards are not accepted on board: a market difference, and that wording must never reach the US site.",
+        "debitCardNote": "Debit cards are accepted, but Norwegian does not recommend them and takes no responsibility for overdraft charges caused by holds.",
         "cashDeposit": {
           "kind": "deposit per person",
           "lengthUnit": "days",
@@ -607,6 +796,8 @@
         "credits": [
           {
             "kind": "cruisenext-credit-bought",
+            "category": "future-cruise",
+            "origin": "purchased",
             "label": "CruiseNext credits you buy",
             "unused": "refundable-within-days",
             "refundable": true,
@@ -618,6 +809,7 @@
           },
           {
             "kind": "excursion-refund-credit",
+            "category": "onboard",
             "label": "Credit from a refunded shore excursion",
             "unused": "refunded-by-check",
             "refundable": true,
@@ -627,6 +819,7 @@
           },
           {
             "kind": "promotional-onboard-credit",
+            "category": "onboard",
             "label": "Promotional onboard credit",
             "unused": "not-stated",
             "refundable": null,
@@ -637,6 +830,71 @@
         ]
       },
       "bookingPayment": {
+        "guideSources": [
+          {
+            "label": "US terms and conditions",
+            "url": "https://www.ncl.com/terms",
+            "read": "2026-10-11",
+            "covers": "payments"
+          },
+          {
+            "label": "Onboard expenses FAQ",
+            "url": "https://www.ncl.com/faq/onboard-expenses",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "US terms and conditions",
+            "url": "https://www.ncl.com/terms",
+            "read": "2026-10-11",
+            "covers": "changes"
+          },
+          {
+            "label": "Can I remove or replace a guest on my reservation?",
+            "url": "https://www.ncl.com/cruise-faq/can-i-remove-or-replace-guest-my-reservation",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Promotional terms and conditions (CruiseNext)",
+            "url": "https://www.ncl.com/cruise-deals/promotion-terms",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Re-priced reservations FAQ",
+            "url": "https://www.ncl.com/cruise-faq/what-happens-if-i-made-my-reservation-prior-november-5-2025-and-then-my-reservation-re-priced-du",
+            "read": "2026-10-11",
+            "covers": "changes"
+          }
+        ],
+        "priceAfterFinalPayment": {
+          "fareLock": "fixed-with-exceptions",
+          "lockLead": "Rate secure once it has your deposit or full payment, except for substantial increases in operating costs, tariffs or taxes.",
+          "summary": "Government fees and taxes can still be added, whether you have a deposit down or have paid in full.",
+          "governmentChargesAfterFullPayment": true,
+          "fuelSupplement": {
+            "maxUSDPerPersonPerDay": 10,
+            "wtiAboveUSDPerBarrel": 65,
+            "henryHubAboveUSDPerMMBtu": null,
+            "appliesToPaidInFull": true
+          },
+          "lowerPrice": {
+            "items": [
+              {
+                "label": "Re-pricing",
+                "text": "Norwegian’s US FAQs confirm that a reservation can be re-priced for a new offer or a lower price, and that guests who re-price or upgrade their stateroom after 5 November 2025 are subject to the new amenities and terms of Free at Sea."
+              }
+            ],
+            "unknown": "Who qualifies for a price drop, the deadline, and how a price drop is paid.",
+            "ask": "before final payment whether your sailing qualifies and how a price drop would be paid. If you re-price, ask which amenities and terms would then apply."
+          },
+          "researchNotes": [
+            "Norwegian’s best-price page returns to its home page on the US site. The price-drop conditions we could find are on Norwegian’s Canadian and Australian pages, which are not US terms, so this guide does not use them."
+          ],
+          "source": "ncl.com/terms (US terms, section Guarantee and Rate), rendered DOM read 2026-10-11. Verbatim quotations on file.",
+          "verified": "2026-10-11"
+        },
         "market": "US",
         "lengthUnit": "days",
         "appliesTo": "Sailings departing 15 Aug 2022 and later",
@@ -670,16 +928,68 @@
           "market": "US",
           "swap": {
             "treatment": "cancellation",
-            "note": "Name substitutions are considered cancellations and are subject to cancellation fees."
+            "note": "Name substitutions are considered cancellations and are subject to cancellation fees.",
+            "cancellationSchedule": {
+              "standard": [
+                {
+                  "fromDays": 119,
+                  "toDays": 91,
+                  "pct": 25
+                },
+                {
+                  "fromDays": 90,
+                  "toDays": 61,
+                  "pct": 50
+                },
+                {
+                  "fromDays": 60,
+                  "toDays": 31,
+                  "pct": 75
+                },
+                {
+                  "fromDays": 30,
+                  "toDays": 0,
+                  "pct": 100
+                }
+              ],
+              "suites": [
+                {
+                  "fromDays": 119,
+                  "toDays": 106,
+                  "pct": 25
+                },
+                {
+                  "fromDays": 105,
+                  "toDays": 91,
+                  "pct": 50
+                },
+                {
+                  "fromDays": 90,
+                  "toDays": 61,
+                  "pct": 75
+                },
+                {
+                  "fromDays": 60,
+                  "toDays": 0,
+                  "pct": 100
+                }
+              ],
+              "standardLabel": "Club Balcony Suites and below",
+              "suitesLabel": "The Haven, suites and Garden Villas",
+              "allGuests": "The terms say cancellation fees apply to all guests on the reservation; they do not say how that works for a one-guest swap.",
+              "note": "From the cancellation policy in the US terms, read 2026-10-11. The terms state the fee as a percentage and say name changes for cruise, air, land and other add-ons are considered cancellations."
+            }
           },
           "correction": {
             "treatment": "may-be-cancellation",
             "note": "Spelling corrections may be considered cancellations.",
             "legalNameFeeUSD": 150,
-            "legalNameFeeNote": "A non-refundable change fee applies if a correct complete legal name is not provided before final payment. It sits in the air section of the terms and refers to the cruise or flight confirmation."
+            "legalNameFeeScope": "air",
+            "legalNameFeeNote": "Those terms cover guests who book Norwegian’s air (the Air promotion and Air Choice). They do not say the fee applies to a cruise-only booking."
           },
+          "confirm": "Before asking for a swap, ask Norwegian what fee would apply on your sailing date and to whom, and say whether your booking includes Norwegian air.",
           "source": "ncl.com/terms (US terms and conditions, saved 2026-09-10 and re-read 2026-10-10) and ncl.com/cruise-faq/can-i-remove-or-replace-guest-my-reservation (US edition, page captured by screenshot 2026-10-10). Verbatim quotations on file.",
-          "notStated": "Whether the legal-name fee applies to a cruise-only booking. Any cancellation-fee amount for a swap, which depends on the timing.",
+          "notStated": "Whether the legal-name fee applies to a cruise-only booking.",
           "verified": "2026-10-10"
         }
       },
@@ -881,10 +1191,11 @@
         "initialHold": null,
         "notPublished": "MSC publishes no hold amount. Checked on two US surfaces: msccruisesusa.com/faq/onboard-payment and /manage-booking/before-you-go/on-board-payment.",
         "laterHolds": "Pre-authorizations on a registered credit card.",
+        "settlement": "The final bill is settled at disembarkation.",
         "releaseUpToDays": null,
         "releaseNote": "Usually released after the final bill is settled at disembarkation; MSC says it does not control how long a hold lasts and cannot expedite a release.",
         "debitCard": "accepted",
-        "debitCardNote": "Maestro, Visa Debit, Visa Electron and MasterCard debit are named. Money taken from a debit card and not spent is refunded in cash on the final morning.",
+        "debitCardNote": "Maestro, Visa Debit, Visa Electron and Mastercard debit are named. MSC says any amount “debited to your card” and not spent is reimbursed in cash on the final morning. The US pages reviewed do not say whether a debit card is held or charged up front.",
         "cashDeposit": null,
         "cashAccount": "A cash deposit is left at Reception after embarkation; the unspent amount is refunded in cash on the final morning.",
         "holdSource": "msccruisesusa.com/manage-booking/before-you-go/on-board-payment and /faq/onboard-payment, rendered DOM read 2026-09-10. Verbatim quotations on file.",
@@ -893,6 +1204,8 @@
         "credits": [
           {
             "kind": "future-cruise-credit",
+            "category": "future-cruise",
+            "origin": "issued-by-line",
             "label": "Future Cruise Credit",
             "unused": "future-use-only",
             "refundable": false,
@@ -904,6 +1217,7 @@
           },
           {
             "kind": "onboard-credit-certificate",
+            "category": "onboard",
             "label": "Onboard Credit certificate",
             "unused": "future-use-only",
             "refundable": false,
@@ -916,6 +1230,69 @@
         ]
       },
       "bookingPayment": {
+        "guideSources": [
+          {
+            "label": "US standard booking terms and conditions",
+            "url": "https://www.msccruisesusa.com/-/media/US/Documents/booking-terms-and-conditions",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "On-board payment",
+            "url": "https://www.msccruisesusa.com/manage-booking/before-you-go/on-board-payment",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "On-board payment FAQ",
+            "url": "https://www.msccruisesusa.com/faq/onboard-payment",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "US standard booking terms and conditions",
+            "url": "https://www.msccruisesusa.com/-/media/US/Documents/booking-terms-and-conditions",
+            "read": "2026-09-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Terms and conditions",
+            "url": "https://www.msccruisesusa.com/terms-conditions",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Future cruise and onboard credits",
+            "url": "https://www.msccruisesusa.com/future-cruise-onboard-credits",
+            "read": "2026-10-10",
+            "covers": "changes"
+          }
+        ],
+        "priceAfterFinalPayment": {
+          "fareLock": "fixed-with-exceptions",
+          "lockFrom": "priceFreeze",
+          "summary": "Government taxes, fees and port expenses can still rise.",
+          "governmentChargesAfterFullPayment": true,
+          "fuelSupplement": null,
+          "lowerPrice": {
+            "adjustments": [
+              {
+                "label": "Contract price adjustments",
+                "text": "Before full payment, or 20 days before departure if that comes first, MSC can change the price for air, fuel and exchange-rate variations, up or down. For fuel, its terms set the change at 0.33% of the cruise price for every dollar of increase in the fuel price per barrel (NYMEX index)."
+              },
+              {
+                "label": "Changing to a cheaper package",
+                "text": "If you change to a cruise package that costs less than your original, MSC’s terms say no refund is due."
+              }
+            ],
+            "unknownLabel": "Lower advertised fare",
+            "unknown": "MSC’s booking terms name no way to claim a lower advertised fare after you book. Whether MSC will apply one on request is not established.",
+            "ask": "whether a lower fare can be applied before you pay in full."
+          },
+          "researchNotes": [],
+          "source": "Same document as priceFreeze (MSC USA Standard Booking Terms and Conditions), read 2026-09-10.",
+          "verified": "2026-09-10"
+        },
         "market": "US",
         "lengthUnit": "nights",
         "finalPayment": [
@@ -976,6 +1353,7 @@
           "correction": {
             "treatment": "not-stated"
           },
+          "confirm": "Check that your booking has no airfare, and ask at least 7 days before departure.",
           "source": "msccruisesusa.com US Standard Booking Terms and Conditions (page 14, read 2026-09-10) and msccruisesusa.com/terms-conditions (read 2026-10-10). Verbatim quotations on file.",
           "notStated": "Whether a spelling correction counts as a name change under this clause.",
           "verify": "An older US booking-terms document was reported at a higher fee. The live US terms page labels its booking terms valid from 2025-01-01, but the linked PDF was not opened on 2026-10-10.",
@@ -1096,7 +1474,8 @@
         "verified": "2026-09-04"
       },
       "onboardAccount": {
-        "market": "Disney's currency and credit-card FAQ as Disney serves it: the /en-eu/ edition, returned to every route tried on 2026-09-10, including from the US; the bare US path also redirected. No separate US edition could be reached. Accepted as the page US guests are given, by decision of 2026-09-10, with a US-facing corroboration (holdSource).",
+        "market": "US",
+        "marketNote": "Read on the US edition of Disney’s currency and credit-card FAQ on 2026-10-11 (page language en-us). The read of 2026-09-10 could reach only the /en-eu/ edition; the interim-charge amounts are identical.",
         "holdModel": "interim charges",
         "initialHold": null,
         "interimCharges": {
@@ -1123,16 +1502,18 @@
         "interimChargesNote": "Disney places no hold. It charges the credit card on file each time the account balance reaches the band amount, so money leaves during the cruise as real payments, not holds that drop off later.",
         "releaseUpToDays": null,
         "debitCard": "accepted, credit card recommended",
-        "debitCardNote": "The FAQ lists debit cards among the ways to settle the account, and recommends a credit card over a debit card to avoid temporary holds the card issuer may place on a debit account.",
+        "debitCardNote": "Disney lists debit cards among the ways to settle the account and recommends a credit card instead, to avoid temporary holds the card issuer may place on a debit account.",
         "cashDeposit": null,
-        "cashAccount": "Onboard charges may be settled in US dollar cash; guests paying cash visit Guest Services when the balance reaches the spending limit.",
-        "holdSource": "disneycruise.disney.go.com/en-eu/faq/preparing-for-cruise/currency-credit-cards/, rendered DOM read 2026-09-10 and printed to PDF. Corroborated for a US guest by planDisney (question of Oct 8, 2024; a panelist relaying a Disney Cruise Line agent: no hold, card charged at $300 on a 5-night cruise). Verbatim quotations on file.",
-        "notStated": "How a one-night sailing is treated, since the bands start at two nights. Whether a debit card can be the card on file for the interim charges; the FAQ lists credit cards for Online Check-In. Any cash-deposit amount.",
-        "verify": "Accepted 2026-09-10 on the European-edition FAQ plus planDisney corroboration, because no US edition could be reached by any route. If Disney ever serves a US edition of this FAQ, read it and confirm the bands. Lesson recorded in the evidence file: the first read filtered this page for \"hold\" and \"debit\" and missed the interim-charge paragraph — read whole answers.",
-        "verified": "2026-09-10",
+        "cashAccount": "Cash is accepted. All charges must be settled in US dollars before leaving the ship, and cash payments are rounded up to the nearest dollar. Select major currencies (euro, British pound and Singapore dollar) can be exchanged to US dollars on board, and Disney recommends exchanging before the voyage. No cash deposit is stated.",
+        "settlement": "All charges must be settled before leaving the ship. A card on file is charged automatically and no visit to Guest Services is needed.",
+        "holdSource": "disneycruise.disney.go.com/faq/preparing-for-cruise/currency-credit-cards/ (US edition, page language en-us), rendered DOM read 2026-10-11. Earlier read 2026-09-10 on the /en-eu/ edition, with the same interim-charge amounts and corroborated for a US guest by planDisney (question of Oct 8, 2024). Verbatim quotations on file.",
+        "notStated": "How a one-night sailing is treated, since the bands start at two nights. Whether a debit card can be the card on file for the interim charges; the FAQ lists credit cards for Online Check-In.",
+        "verify": "The US edition of the FAQ was read on 2026-10-11 and confirms the amounts. Lesson from the first read, kept: read whole answers, not pages filtered for a word.",
+        "verified": "2026-10-11",
         "credits": [
           {
             "kind": "onboard-booking-offer-credit",
+            "category": "onboard",
             "label": "Onboard credit from the Onboard Booking Offer",
             "unused": "not-stated",
             "refundable": false,
@@ -1142,6 +1523,7 @@
           },
           {
             "kind": "other-onboard-credit",
+            "category": "onboard",
             "label": "Other onboard credit",
             "unused": "not-stated",
             "refundable": null,
@@ -1152,6 +1534,55 @@
         ]
       },
       "bookingPayment": {
+        "guideSources": [
+          {
+            "label": "Terms and conditions for residents of the United States",
+            "url": "https://disneycruise.disney.go.com/contracts-terms-safety/terms-conditions/united-states/",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "Currency and credit cards FAQ (US edition)",
+            "url": "https://disneycruise.disney.go.com/faq/preparing-for-cruise/currency-credit-cards/",
+            "read": "2026-10-11",
+            "covers": "payments"
+          },
+          {
+            "label": "Terms and conditions for residents of the United States",
+            "url": "https://disneycruise.disney.go.com/contracts-terms-safety/terms-conditions/united-states/",
+            "read": "2026-09-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Onboard Booking Offer terms",
+            "url": "https://disneycruise.disney.go.com/contracts-terms-safety/onboard-booking-offer-terms-conditions/",
+            "read": "2026-10-10",
+            "covers": "changes"
+          }
+        ],
+        "priceAfterFinalPayment": {
+          "fareLock": "fixed-with-exceptions",
+          "lockLead": "Price changes won’t affect a booking with timely final payment.",
+          "summary": "Government taxes, fees and port expenses can still rise.",
+          "governmentChargesAfterFullPayment": true,
+          "fuelSupplement": null,
+          "fuelNote": "Disney’s US terms list fuel supplements among the items the cruise fare does not include. They state no amount or trigger.",
+          "lowerPrice": {
+            "items": [
+              {
+                "label": "Lower fare",
+                "text": "Disney’s US terms describe no way to claim a lower fare on an existing booking. Separately, they say a change in party size may change the rate."
+              }
+            ],
+            "unknown": "Whether Disney will apply a lower fare to an existing booking, before or after final payment. The terms are silent, which is not a refusal.",
+            "ask": "whether it can be applied to your booking, and whether final payment affects that."
+          },
+          "researchNotes": [
+            "Disney’s terms and conditions were read from a copy saved on 10 September 2026; its Onboard Booking Offer terms were read on 10 October 2026."
+          ],
+          "source": "disneycruise.disney.go.com/contracts-terms-safety/terms-conditions/united-states/ (US Terms and Conditions, Terms Subject to Change), saved PDF 2026-09-10. Verbatim quotation.",
+          "verified": "2026-09-10"
+        },
         "market": "US",
         "lengthUnit": null,
         "finalPayment": null,
@@ -1171,6 +1602,7 @@
             "airNote": "Name change and correction are listed among the changes that trigger airline and Disney change or cancellation fees on bookings with air."
           },
           "notPublished": "A separate name-change fee.",
+          "confirm": "Check the cancellation schedule for your cabin category and cruise length in your booking terms before asking for a swap.",
           "source": "disneycruise.disney.go.com Terms and Conditions for Residents of the United States (saved 2026-09-10). Verbatim quotations on file.",
           "verified": "2026-09-10"
         }
@@ -1263,12 +1695,14 @@
           "lengthUnit": null,
           "usd": 100
         },
-        "laterHolds": "Purchases above the initial amount generate additional holds.",
+        "laterHolds": "Purchases above the initial amount generate additional holds. The card tied to the booking may be authorized for large amounts while you are on board.",
+        "settlement": "The credit card tied to the booking is charged at the end of the cruise.",
         "releaseUpToDays": 30,
         "releaseNote": "Celebrity says the bank decides how long a hold lasts. Like its sibling Royal Caribbean, it gives two typical timings on two pages; quote the ceiling.",
         "debitCard": "named, no rule stated",
-        "debitCardNote": "The SeaPass page mentions holds on a credit or debit card; Celebrity publishes no acceptance rule for debit cards.",
+        "debitCardNote": "The SeaPass page mentions holds on a credit or debit card. The US pages reviewed state no rule on whether debit cards are accepted.",
         "cashDeposit": null,
+        "cashNote": "The on-board FAQ describes the SeaPass as associated with the credit or debit card on file in the Onboard Account, and mentions changing to cash only in passing.",
         "holdSource": "celebritycruises.com/faqs/onboard-purchases and /faqs/seapass-account (US; US phone numbers on page), rendered DOM read 2026-09-10. Verbatim quotations on file.",
         "conflictNote": "Two typical release timings, the same pattern as Royal Caribbean: \"by the time your cruise ends\" (onboard-purchases) and \"normally fall off within 3-5 business days\" (seapass-account). Keep the two lines in step: a wording change on one should prompt a read of the other.",
         "notStated": "Whether debit cards are accepted as a rule. Any cash-deposit amount or cash-account rule. Whether the initial hold is per card, per person or per stateroom.",
@@ -1276,6 +1710,7 @@
         "credits": [
           {
             "kind": "complimentary",
+            "category": "onboard",
             "label": "Complimentary onboard credit",
             "unused": "expires-last-night",
             "refundable": false,
@@ -1286,6 +1721,7 @@
           },
           {
             "kind": "purchased",
+            "category": "onboard",
             "label": "Onboard credit you buy",
             "unused": "refundable-before-disembark",
             "refundable": true,
@@ -1296,6 +1732,88 @@
         ]
       },
       "bookingPayment": {
+        "guideSources": [
+          {
+            "label": "Managing and planning your cruise FAQs",
+            "url": "https://www.celebritycruises.com/faqs/manage-plan",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "Onboard purchases FAQ",
+            "url": "https://www.celebritycruises.com/faqs/onboard-purchases",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "SeaPass account FAQ",
+            "url": "https://www.celebritycruises.com/faqs/seapass-account",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "On board a cruise FAQs",
+            "url": "https://www.celebritycruises.com/faqs/while-on-board",
+            "read": "2026-10-11",
+            "covers": "payments"
+          },
+          {
+            "label": "US cruise ticket contract",
+            "url": "https://www.celebritycruises.com/guest-terms/united-states-english/",
+            "read": "2026-10-11",
+            "covers": "changes"
+          },
+          {
+            "label": "Managing and planning your cruise FAQs",
+            "url": "https://www.celebritycruises.com/faqs/manage-plan",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Best Price Guarantee",
+            "url": "https://www.celebritycruises.com/company/customer-support/best-price-guarantee",
+            "read": "2026-10-11",
+            "covers": "changes"
+          },
+          {
+            "label": "Ways to spend onboard credit",
+            "url": "https://www.celebritycruises.com/ways-to-spend-onboard-credit",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "On board a cruise FAQs",
+            "url": "https://www.celebritycruises.com/faqs/while-on-board",
+            "read": "2026-10-11",
+            "covers": "changes"
+          }
+        ],
+        "priceAfterFinalPayment": {
+          "fareLock": "not-stated",
+          "summary": "Taxes and fees can be passed on at any time after booking.",
+          "governmentChargesAfterFullPayment": true,
+          "fuelSupplement": {
+            "maxUSDPerPersonPerDay": 12,
+            "wtiAboveUSDPerBarrel": 65,
+            "henryHubAboveUSDPerMMBtu": 3,
+            "appliesToPaidInFull": null
+          },
+          "lowerPrice": {
+            "items": [
+              {
+                "label": "Best Price Guarantee",
+                "text": "Before final payment you can receive a complimentary stateroom upgrade or a price adjustment, with a refund if you have paid in full. After final payment, a booking made within the last 24 hours gets the same. After final payment, a booking made more than 24 hours ago may be eligible for a complimentary upgrade, subject to availability. You request it by phone. Certain promotions are excluded, and Celebrity can change or cancel the guarantee at any time without notice."
+              }
+            ],
+            "unknown": "Which promotions the guarantee excludes: the page says certain promotions are excluded without naming them. Also, how late a fuel supplement can be imposed, and whether one is in force on any sailing.",
+            "ask": "before relying on a price adjustment whether your fare or promotion is excluded, and whether a fuel supplement applies to your sailing."
+          },
+          "researchNotes": [
+            "The sentence in Celebrity’s ticket contract that says how late a fuel supplement can be imposed did not render in full when the contract was read, so no latest date is given."
+          ],
+          "source": "celebritycruises.com/guest-terms/united-states-english/ (US ticket contract, section 3), rendered DOM read 2026-10-11. Verbatim quotations on file.",
+          "verified": "2026-10-11"
+        },
         "market": "US",
         "lengthUnit": null,
         "finalPayment": null,
@@ -1311,10 +1829,15 @@
             "nonRefundableDepositNote": "Change fees apply to bookings with a non-refundable deposit; the amount is not stated."
           },
           "correction": {
-            "treatment": "tba-names-editable-on-hold",
-            "note": "On a booking on courtesy hold, secondary guests set up as TBA can have their name and date of birth filled in; other held bookings cannot be amended."
+            "treatment": "not-stated"
+          },
+          "tbaNames": {
+            "treatment": "editable-on-courtesy-hold",
+            "note": "A booking on courtesy hold cannot be amended. A secondary guest created as TBA or TBD through express checkout can still have their name, last name and date of birth edited while the booking is on hold."
           },
           "notPublished": "A rule for swapping a guest, and a name-change fee, in the US cruise ticket contract and the US FAQ.",
+          "notStated": "A rule for correcting a misspelled name on a confirmed booking.",
+          "confirm": "Ask Celebrity before you plan a swap or a correction, because neither is described for a confirmed booking.",
           "source": "celebritycruises.com/faqs/manage-plan and celebritycruises.com/guest-terms/united-states-english/ (US cruise ticket contract, which has no name-change clause), read 2026-10-10. Verbatim quotations on file.",
           "verified": "2026-10-10"
         }
@@ -1453,6 +1976,7 @@
         "releaseUpToDays": 30,
         "longVoyageSettlementDays": 30,
         "releaseNote": "Because authorizations can last up to 30 days, a card on a voyage longer than that is settled at or before the 30-day mark and authorized again.",
+        "releaseExtra": "Authorizations can last up to 30 days, so on a voyage longer than that the card is settled at or before the 30-day mark and authorized again.",
         "debitCard": "accepted",
         "debitCardNote": "Princess pre-authorizes credit and debit cards alike, and warns that some banks hold pre-authorized funds for up to 30 days.",
         "cashDeposit": null,
@@ -1464,6 +1988,8 @@
         "credits": [
           {
             "kind": "fcc-in-lieu-of-refund",
+            "category": "future-cruise",
+            "origin": "cancellation-or-refund-alternative",
             "label": "Future Cruise Credit issued in place of a refund",
             "unused": "cash-value-refunded",
             "refundable": true,
@@ -1474,6 +2000,8 @@
           },
           {
             "kind": "fcc-other",
+            "category": "future-cruise",
+            "origin": "other",
             "label": "Other Future Cruise Credits",
             "unused": "expires-no-refund",
             "refundable": false,
@@ -1483,6 +2011,7 @@
           },
           {
             "kind": "premier-excursion-credit",
+            "category": "onboard",
             "label": "Premier package shore excursion credit",
             "unused": "forfeited",
             "refundable": false,
@@ -1492,6 +2021,7 @@
           },
           {
             "kind": "other-onboard-credit",
+            "category": "onboard",
             "label": "Other onboard credit",
             "unused": "not-stated",
             "refundable": null,
@@ -1502,6 +2032,70 @@
         ]
       },
       "bookingPayment": {
+        "guideSources": [
+          {
+            "label": "Passage contract",
+            "url": "https://www.princess.com/legal/passage-contract/plc",
+            "read": "2026-09-28",
+            "covers": "payments"
+          },
+          {
+            "label": "Cashless cruising FAQ",
+            "url": "https://www.princess.com/faq/pre-cruise",
+            "read": "2026-09-10",
+            "covers": "payments"
+          },
+          {
+            "label": "Passage contract",
+            "url": "https://www.princess.com/legal/passage-contract/plc",
+            "read": "2026-10-11",
+            "covers": "changes"
+          },
+          {
+            "label": "Standard cancellation and refund policy",
+            "url": "https://www.princess.com/plan/standard-cancellation-refund-policy",
+            "read": "2026-09-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Future Cruise Credit and onboard cruise credits",
+            "url": "https://www.princess.com/plan/fcc-onboard-cruise-credits",
+            "read": "2026-10-10",
+            "covers": "changes"
+          },
+          {
+            "label": "Better Than Best Price Guarantee",
+            "url": "https://www.princess.com/plan/best-price-guarantee",
+            "read": "2026-10-11",
+            "covers": "changes"
+          },
+          {
+            "label": "Princess Plus and Premier terms",
+            "url": "https://www.princess.com/cruise-deals-promotions/plus-premier-cruise-packages/terms-and-conditions",
+            "read": "2026-10-10",
+            "covers": "changes"
+          }
+        ],
+        "priceAfterFinalPayment": {
+          "fareLock": "not-stated",
+          "summary": "Increases in government taxes and fees can be passed on even after full payment.",
+          "governmentChargesAfterFullPayment": true,
+          "fuelSupplement": null,
+          "fuelNote": "The passage contract text reviewed does not mention a fuel supplement.",
+          "lowerPrice": {
+            "items": [
+              {
+                "label": "Better Than Best Price Guarantee",
+                "text": "Covers only bookings made between 16 December 2024 and 15 December 2025, for cruises departing in 2025, 2026 or 2027. For those bookings, a lower fare found on Princess.com before final payment earned onboard credit worth 120% of the difference, up to $2,000, to use on the original cruise."
+              }
+            ],
+            "unknown": "Whether Princess has any price-adjustment policy for bookings made after 15 December 2025.",
+            "ask": "before final payment whether any price adjustment applies to your booking."
+          },
+          "researchNotes": [],
+          "source": "princess.com/legal/passage-contract/plc (US passage contract), rendered DOM read 2026-10-11. Verbatim quotations on file.",
+          "verified": "2026-10-11"
+        },
         "market": "US",
         "lengthUnit": "days",
         "finalPayment": [
@@ -1545,6 +2139,7 @@
             "treatment": "not-stated"
           },
           "notPublished": "A name-change fee amount, in the US documents. The US pre-cruise FAQ mentions name changes for flights only.",
+          "confirm": "Princess says your booking confirmation holds the cancellation schedule that applies to you. Check it, and ask for Princess’s approval, before requesting a swap.",
           "source": "princess.com/legal/passage-contract/plc (read 2026-10-10) and the US Cancellation & Refund Policy (saved 2026-09-10). Verbatim quotations on file.",
           "verified": "2026-10-10"
         }
