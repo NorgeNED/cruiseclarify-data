@@ -2234,7 +2234,7 @@
         "beyondFirstNMayOptIn": true,
         "appliesToFirstNGuestsSource": "princess.com/cruise-deals-promotions/plus-premier-cruise-packages — verbatim: \"guests 1 and 2 on the reservation and must be purchased 4 days (or 96 hours) prior to departure for lower price.\" The opt-in half, same source: \"Third and fourth guests are not required to purchase or defaulted to the selected package of first and second guests in a stateroom. Should 3rd and 4th guests want to opt in to purchase a package, you will need to contact Princess or your Travel Advisor to have it applied to the booking.\" Rendered DOM read 2026-08-21. NOTE the separate under-age rule, recorded here because it is the one that stops \"guests 3-4 are children so it is cheaper\" being assumed: a guest under the local drinking age who IS on the package pays the SAME price and receives the Zero-Alcohol Drink Package \"in lieu\", with no refund for the difference (same site, Plus/Premier terms and conditions, General Terms). So a package guest is a package guest at full price whatever their age.",
         "appliesToFirstNGuestsVerified": "2026-08-21",
-        "note": "Plus $70/day pre-booked ($75 onboard); $75/day on Sun & Star (onboard is $5 more). Includes drinks, Wi-Fi, crew appreciation, 4 casual meals. Premier $105/day pre-booked ($110 onboard); $110/day on Sun & Star (onboard is $5 more) — adds unlimited casual + specialty dining, 4-device Wi-Fi, a length-based shore-excursion credit ($100/$200/$300) and more. REPORTED, NOT YET ON PRINCESS'S OWN PAGE: +$5/day on both for sailings departing on or after 13 Oct 2026 (Plus was 65, Premier 100); Cruise Hive, TravelPulse, Cruise Critic, Open Jaw quoting a Princess statement. princess.com plus-premier page and its terms page still showed the old rates on 12 Oct 2026. Re-read both after 13 Oct. Evidence on file.",
+        "note": "Plus $70/day pre-booked ($75 onboard); $75/day on Sun & Star (onboard is $5 more). Includes drinks, Wi-Fi, crew appreciation, 4 casual meals. Premier $105/day pre-booked ($110 onboard); $110/day on Sun & Star (onboard is $5 more) — adds unlimited casual + specialty dining, 4-device Wi-Fi, a length-based shore-excursion credit ($100/$200/$300) and more. CONFIRMED ON PRINCESS'S OWN PAGE: +$5/day on both from 13 Oct 2026 (Plus was 65, Premier 100). Read 2026-10-14 in a browser from a US connection, rendered DOM, en-US page, no euro: standard ships Premier pre-cruise $105 / onboard $110, Plus $70 / $75; Sun and Star Princess carry $5 more on each (strings quoted in the evidence file); FAQ says a Plus or Premier package bought before 13 Oct 2026 is honored. The terms-and-conditions page was NOT updated when read 13 Oct 2026 (latest entry July 2025). Not stated by Princess: how long the old prices applied to new bookings made earlier on 13 Oct. Evidence on file.",
         "credits": {
           "casualDining": {
             "tier": "plus",
@@ -2277,7 +2277,7 @@
             "verified_on": "2026-08-01"
           }
         },
-        "verified": "2026-10-12"
+        "verified": "2026-10-14"
       },
       "packageComponents": {
         "wifiPerDay": 25,
