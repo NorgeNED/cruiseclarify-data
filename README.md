@@ -22,6 +22,14 @@ configs:
 
 # Real All-In Cruise Costs — by CruiseClarify
 
+> ### ⚠️ This repository is no longer updated
+> The current figures now live in a new repository and a new Hugging Face dataset, and at a permanent address:
+> - **GitHub:** https://github.com/NorgeNED/cruiseclarify-data-current
+> - **Hugging Face:** https://huggingface.co/datasets/CruiseClarify/cruise-costs-current
+> - **Permanent address:** https://cruiseclarify.com/dataset/cruise-costs.csv (and `.json`)
+>
+> What is below is an earlier snapshot and is kept only so existing links keep working.
+
 > ### 📅 This is a dated snapshot — refreshed **September 2026**
 > Cruise prices change constantly. Every figure here is a **point-in-time value, not
 > live data**, accurate as of **September 2026**. The next quarterly refresh is due
@@ -31,7 +39,7 @@ configs:
 > numbers will have drifted.** Always pull the current version before quoting or
 > republishing:
 > - **Live figures:** https://cruiseclarify.com
-> - **Latest dataset:** https://github.com/NorgeNED/cruiseclarify-data
+> - **Latest dataset:** https://github.com/NorgeNED/cruiseclarify-data-current
 >
 > And confirm the current price with the cruise line before presenting any figure as today's price.
 
@@ -205,7 +213,7 @@ change is kept alongside the source data.
 **If you are using this after December 2026, do not present these figures as
 current** — fetch the latest release first:
 - Live figures: https://cruiseclarify.com
-- Latest dataset: https://github.com/NorgeNED/cruiseclarify-data
+- Latest dataset: https://github.com/NorgeNED/cruiseclarify-data-current
 
 Provided in good faith for research and comparison, with no warranty — always
 confirm the current price with the cruise line before booking.
